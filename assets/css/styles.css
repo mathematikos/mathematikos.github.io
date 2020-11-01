@@ -1,0 +1,33 @@
+:root {
+  --primary: #b0dfe5;
+  --secondary: #404040;
+  --tertiary: #588bae;
+  --quaternary: #003152;
+  --quinary: #f9f9f9;
+  
+  --primaryFont: Monospace;
+}
+
+h1 {
+	text-align: center;
+	font-family: var(--primaryFont);
+	text-transform: uppercase;
+	font-size: 400%;
+}
+
+.content{
+	text-align: justify;
+	font-family: Verdana;
+	width: 70%;
+	padding: 5%;
+	padding-top: 0%;
+	margin: 0 auto;
+}
+
+.content figure{
+	text-align: center;
+}
+
+.content figure img{
+	width: 80%;
+}
