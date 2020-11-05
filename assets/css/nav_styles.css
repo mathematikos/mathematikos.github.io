@@ -1,9 +1,9 @@
 :root {
-  --primary: #b0dfe5;
-  --secondary: #404040;
-  --tertiary: #588bae;
-  --quaternary: #003152;
-  --quinary: #f9f9f9;
+  --primary: #b0dfe5; /* light blue */
+  --secondary: #404040; /* darker gray */
+  --tertiary: #588bae; /* gray blue - middle*/
+  --quaternary: #003152; /* gray blue - dark*/
+  --quinary: #f9f9f9; /* very light gray */
   
   --primaryFont: Monospace;
 }
