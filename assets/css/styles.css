@@ -31,3 +31,20 @@ h1 {
 .content figure img{
 	width: 80%;
 }
+
+.vocabLetter{
+	text-align: center;
+	font-size: 150%;
+	font-family: var(--primaryFont);
+	margin: 5%;
+}
+
+
+.vocabEntry b{
+	float: left;
+}
+
+.vocabEntry div{
+	
+	margin-left: 20%;
+}
