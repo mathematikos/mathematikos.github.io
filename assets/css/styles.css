@@ -32,6 +32,10 @@ h1 {
 	width: 80%;
 }
 
+.egyptNumbers{
+	font-size: 500%;
+}
+
 .vocabLetter{
 	text-align: center;
 	font-size: 150%;
@@ -47,4 +51,14 @@ h1 {
 .vocabEntry div{
 	
 	margin-left: 20%;
+}
+
+@media screen and (max-width: 600px) {
+.content{
+	width: 100%;
+}	
+	
+.content figure img{
+	width: 100%;
+}
 }
