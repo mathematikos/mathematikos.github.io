@@ -22,6 +22,22 @@ h2 {
 	font-size: 300%;
 }
 
+h3 {
+	text-align: center;
+	font-family: var(--primaryFont);
+	text-transform: uppercase;
+	font-size: 200%;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.literature {
+	overflow-wrap: break-word;
+}
+
 .content{
 	text-align: justify;
 	font-family: Verdana;
@@ -58,6 +74,10 @@ h2 {
 .vocabEntry div{
 	
 	margin-left: 20%;
+}
+
+.statTable td,th{
+	padding-right: 3%;
 }
 
 @media screen and (max-width: 600px) {

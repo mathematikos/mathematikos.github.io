@@ -1,0 +1,822 @@
+---
+layout: default
+title: Štatistika
+---
+
+<h1>Štatistika</h1>
+
+<div class="content">
+Vitaj na článku o štatistike. Hneď v úvode máme pre teba dobrú správu. Vyhral si nehoráznu sumu peňazí. Je to véééľmi veľa miliárd. Gratulujeme!!!. Tak sa teraz tešíš, že máš veľa peňazí a od radosti nevieš, kde ich minúť. My ti pomôžeme. Minieš ich na futbalistov. Predstav si, že bývaš na dedine alebo v meste, ktoré nemá tím v niektorej z našich futbalových súťaží. Je ti to veľmi ľúto. Keďže máš dobré srdce a fúru peňazí, nejaký tím im zoženieš. Samozrejme ako milionár nebudeš trochárčiť a kúpiš ten najlepší na svete.<br /><br />
+
+Na svete je veľa klubov. Ktorý z nich je ten naj? Môžeš si ho vybrať podľa toho, komu fandíš, ale môže prísť niekto silnejší a tvoji miláčikovia skončia zle-nedobre. Takže osobné sympatie necháme bokom a vyberieme tím objektívnejším spôsobom. Možno už tušíš, že mierime k nadpisu tohto článku. K štatistike.<br /><br />
+
+Štatistika sa používa na vyhodnocovanie rôznych údajov. Tých je fúra zo všelijakých meraní, vyhodnocovaní experimentov, prieskumov. Firmy môžu mať údaje, keď merajú, či vyrábajú dobré súčiastky, z testovania výrobkov, z toho, keď zisťujú, aká je predajnosť výrobkov, a ďalších vecí. Vedci a študenti na výškach získavajú údaje z rôznych experimentov. Športovci si môžu merať svoj výkon, rýchlosť behu a neviem čo ešte. Na úradoch a v  agentúrach sa získavajú údaje z rôznych prieskumov.<br /><br />
+
+Údajov býva viac alebo menej, spravidla však dosť. Dosť môže byť niekoľko stoviek, tisíc a možno aj miliónov. Toto všetko treba porovnať, vyhodnotiť a dostať z toho nejaké čitateľné výsledky. Ak by si mal dvoch športovcov, ktorých treba porovnať, tak by si o každom musel prečítať tisíc záznamov a nejak sa v tom vyznať. Keď máš štatistiku, tak použiješ len nejaký priemer alebo miery variability a už ich vieš dostatočne dobre porovnať a toho lepšieho poslať na olympiádu.<br /><br />
+
+O štatistike budeme písať od začiatku, teda od získania údajov. Povieme si niečo aj o tom, ako sa získali údaje o futbalistoch, z ktorých budeme vyberať najlepší tím. Potom si tieto údaje trochu obzrieme a pôjdeme už na štatistiku. To budú miery polohy, miery variability, korelácia a outliers. Skončíme analýzou tímov pomocou štatistiky a vyberieme ten najlepší.
+
+<h2>Získavanie údajov</h2>
+Štatistiku používame vtedy, keď máme veľmi veľa údajov a chceme z nich zistiť nejaké užitočné informácie. Napríklad manažér v nejakej firme chce zefektívniť výrobný proces, tak si nechá zberať údaje o výrobe. Po mesiaci má gigabajty dát, ale tie sú mu na nič, pokiaľ nepríde niekto, kto by mu z nich získal užitočné informácie. Ten niekto je človek, ktorý vie štatistiku a dokáže z tých veľa údajov získať niečo užitočné. <br /><br />
+
+Štatistika nie sú iba nejaké vzorce, ktorými sa dajú z dát vytiahnuť informácie. Štatistika začína už pri získavaní údajov. <br /><br /> 
+
+Keď v škole počítaš príklad zo štatistiky, tak máš väčšinou údaje zadané. Napríklad niečo takéto: Učiteľ telocviku meral žiakom 5.A. čas na 100 metrov behu. Časy boli takéto: 28.5s, 30.1s, 25.6s, 48.2s atď. S údajmi teda nemáš žiadne starosti, iba ich zoberieš a vyrátaš to, čo od teba chcú. <br /><br />
+
+V skutočnosti je získavanie údajov zložitejšie. Predstav si, že robíš na štatistickom úrade a chceš zistiť koľko zvierat priemerne chovajú Slováci (je to hlúposť, ale na príklad stačí. Pokojne si vymysli aj nejakú normálnejšiu otázku :D ). Spravíš si teda dotazník s otázkou a ideš od obyvateľstva získať údaje o počte chovaných zvierat.<br /><br />
+
+Myslíš, že sa spýtaš každého jedného obyvateľa Slovenska? Asi nebudeš mať možnosť obehať celé Slovensko. Musíš si teda vybrať iba zopár nejakých ľudí. Zistíš údaje iba o nejakej časti slovákov, nie o všetkých. Keď vypočítaš priemer z napr. 1000 Slovákov, môžeš povedať, že platí pre celú krajinu? Asi nie. To je prvý problém.<br /><br />
+
+Teda už máš vybratú vzorku. Ale vybral si ju správne? Keď vyberieš iba ľudí, ktorí žijú v bytoch, dostaneš trochu iný priemer, ako keď vyberieš iba farmárov. Takisto  deti budú chovať menej zvierat ako dospelí, takže keď budeš robiť priemer zo svojich kamarátov dostaneš iný priemer, akokeby si ho robil z rodičov alebo starých rodičov. Z tohto vyplýva, že nemôžeš do vzorky vyberať iba "rovnakých" ľudí. To je druhý problém. Dá sa vyriešiť tým, že do vzorky vyberieš z každého rožka troška. Spýtaš sa aj detí, aj dospelých, aj tých čo majú alergiu na srsť, aj tých čo zvieratá chovajú vo veľkom. Rôznorodú vzorku dostaneš tak, že ľudí povyberáš náhodne. Keď ti pomáha náhoda, je malá pravdepodobnosť, že do vzorky povyťahuješ rovnakých ľudí.<br /><br />
+
+Už máš vo vzorke aj rôznych ľudí, ale máš ju dostatočne veľkú? Veľkosť vzorky tiež vplýva na výsledky. Čím ju máš väčšiu, tým budú údaje presnejšie.<br /><br />
+
+Toto sú  také základné problémy, s ktorými sa štatistika stretá hneď na začiatku. S tým, že nemôžeš získať údaje od všetkých, naozaj nič nespravíš. Dá sa tomu pomôcť tým, že sa budeš snažiť mať vzorku čo najväčšiu. A tiež čo najrôznorodejšiu. <br /><br />
+
+<h2>Získanie údajov o futbalistoch</h2>
+Vráťme sa k nášmu problému, že chceš kúpiť futbalistov. Chceš ten najlepší klub, ale aby si mohol objektívne určiť, ktorý je ten najlepší, potrebuješ zistiť, kde hrajú tí najelpší futbalisti. <br /><br />
+
+Kvalitu futbalistu chceš tiež určiť objektívne a tak začneš o ňom zberať údaje. Začneš merať ako rýchlo behá, akú má silnú strelu, ako dobre prihráva, ako dobre vedie loptu a milión päť podobných vecí. Nebojsa, nemusíš teraz k sebe domov zavolať Ronalda a dať mu behať šesťdesiatku na čas. Meranie údajov už za teba urobili iný. Na <a href="https://www.youtube.com/watch?v=2T3BmvWIHy4&ab_channel=EASPORTSFIFA" target="_blank">videu</a> si môžeš pozrieť, ako to spravili. <br /><br />
+
+Namerané údaje zapísali do tabuľky a zverejnili ju na internet [1]. My sme si ju odtiaľ stiahli, aby sme vás mohli trápiť so štatistikou. Takže údaje máme a môžeme si ich trochu poprezerať.
+
+
+
+<h2>Začiatok analýzy údajov o futbalistoch</h2>
+Ako správny štatistik, musíš sa na začiatku oboznámiť s tvojimi údajmi. Prvú vec, ktorú sme zisťovali, bola veľkosť údajov. Počítač nám vypísal, že máme 18 278 hráčov a každý má 104 atribútov. Aby si vedel, čo je atribút, tak je to nameraný údaj o futbalistovi. Napríklad jeho meno, plat, pozícia, tím, sila strely, rýchlosť a ďalších vyše sto podobných vecí. Pri výpočtoch nám bude pomáhať počítač, lebo ak by sme mali analyzovať 18 000 futbalistov na papier, tak by sme si ruky po lakte zodrali.<br /><br />
+
+<figure>
+  <img src="../assets/images/stat_RawData.png" alt="=Údaje o futbalistoch">
+  <figcaption>Obr. 1.: Údaje o futbalistoch zapísané v tabuľke. Sú tu iba niektoré údaje o niektorých futbalistoch. Nezmestili sa všetky, pretože futbalistov je viac ako 18 000 a o každom futbalistovi je 104 údajov.</figcaption>
+</figure>
+
+
+Potom sme zisťovali aké máme údaje o futbalistoch. Počítač sme poprosili, aby nám vypísal názvy atribútov. Tu sú: 
+
+<figure style="text-align: justify">
+<i>
+sofifa_id, player_url, short_name, long_name, age, dob, height_cm, weight_kg, nationality, club, <b>overall</b>, potential, value_eur, wage_eur, player_positions, preferred_foot, international_reputation, weak_foot, skill_moves, work_rate, body_type, real_face, release_clause_eur, player_tags, team_position, team_jersey_number, loaned_from, joined, contract_valid_until, nation_position, nation_jersey_number, pace, shooting, passing, dribbling, defending, physic, gk_diving, gk_handling, gk_kicking, gk_reflexes, gk_speed, gk_positioning, player_traits, attacking_crossing, attacking_finishing, attacking_heading_accuracy, attacking_short_passing, attacking_volleys, skill_dribbling, skill_curve, skill_fk_accuracy, skill_long_passing, skill_ball_control, movement_acceleration, movement_sprint_speed, movement_agility, movement_reactions, movement_balance, power_shot_power, power_jumping, power_stamina, power_strength, power_long_shots, mentality_aggression, mentality_interceptions, mentality_positioning, mentality_vision, mentality_penalties, mentality_composure, defending_marking, defending_standing_tackle, defending_sliding_tackle, goalkeeping_diving, goalkeeping_handling, goalkeeping_kicking, goalkeeping_positioning, goalkeeping_reflexes, ls, st, rs, lw, lf, cf, rf, rw, lam, cam, ram, lm, lcm, cm, rcm, rm, lwb, ldm, cdm, rdm, rwb, lb, lcb, cb, rcb, rb
+</i><br /><br />
+<figcaption style="text-align: center">Obr. 2.: Atribúty futbalistov. Je tu napísaných všetkých 104 atribútov. Hrubým je napísaný atribút <i>overall</i>, s ktorým budeme ďalej pracovať.</figcaption>
+</figure>
+<br /><br />
+
+Chceli sme vedieť čo, ktorý atribút znamená, a tak sme trochu googlili. Chceli sme nájsť atribút, ktorý bude reprezentovať celkovú kvalitu futbalistu a aj sme ho našli. Je to atribút <i>overall</i> [2]. Zistili sme o ňom, že môže mať hodnoty od 0 po 99 [3]. Čím je hodnota vyššia, tým je futbalista lepší. Messi s hodnotou 94 vedie rebríček. Za ním je Ronaldo s 93, Neymar s 92. Štvrtý Oblak a piaty Hazard majú zhodne po 91. Rebríček uzatvára posledný Pan Ximing s hodnotou 48. <br /><br />
+
+Futbalistov sme priradili jednotlivým klubom, aby sme mohli zistiť, ktorý klub má najlepších futbalistov a ktorý teda chceme kúpiť. Zistli sme, že máme 668 klubov. <br /><br />
+
+Na jedenástich futbalistoch Interu Milano budeme vysvetľovať vzorce, tak ti ich sem napíšeme, nech vieš s akými údajmi počítame. Ak mieniš čítať článok až do konca, tak si prepíš týchto jedenásť futbalistov aj s <i>overallmi</i> niekde vedľa. Budeme s nimi často rátať, tak nech nemusíš stále skrolovať. <br /><br />
+<table class="center">
+<tr>
+<th>Meno hráča</th>
+<th>Overall</th>
+</tr>
+
+<tr>
+<td>Samir Handanovič</td>
+<td>88</td>
+</tr>
+
+<tr>
+<td>Diego Godín</td>
+<td>88</td>
+</tr>
+
+<tr>
+<td>Milan Škriniar</td>
+<td>86</td>
+</tr>
+
+<tr>
+<td>Romelu Lukaku</td>
+<td>85</td>
+</tr>
+
+<tr>
+<td>Mauro Emanuel Icardi Rivero</td>
+<td>85</td>
+</tr>
+
+<tr>
+<td>Stefan de Vrij</td>
+<td>84</td>
+</tr>
+
+<tr>
+<td>Matteo Politano</td>
+<td>82</td>
+</tr>
+
+<tr>
+<td>Lautaro Martínez</td>
+<td>81</td>
+</tr>
+
+<tr>
+<td>João Mário Naval Costa Eduardo</td>
+<td>81</td>
+</tr>
+
+<tr>
+<td>Marcelo Brozović</td>
+<td>81</td>
+</tr>
+
+<tr>
+<td>Nicolò Barella</td>
+<td>80</td>
+</tr>
+</table>
+<br />
+
+
+Máme už údaje o futbalistoch, máme atribút, ktorý definuje ako je futbalista dobrý, ale stále nevieme, ktorý tím je ten naj. Na to, aby sme sa to dozvedeli, treba vedieť niečo zo štatistiky. To niečo je dosť dlhé, takže nezávidíme.  Drž sa!
+
+<h1>Miery polohy</h1>
+Miery polohy hovoria o polohe údajov na číselnej osi. Sú to čísla, ktoré vhodne reprezentujú údaje. K mieram polohy patrí modus, kvantily a stredná hodnota. Stredná hodnota môže byť buď medián alebo priemer. <br /><br />
+
+Vďaka mieram polohy vieš, v akých číslach sa ti pohybujú údaje bez toho, aby si si ich musel všetky prečítať. Napríklad ak priemer cien bytov je 90 000 eur, nemusíš poznať všetky ceny bytov, aby si vedel, že ceny bytov sa pohybujú v desiatkach tisíc. Keď meriaš teploty v januári, priemer ti vyjde možno -5&#8451 . Vieš, že teploty sa budú pohybovať niekde v mínusových číslach.<br /><br />
+
+Miery polohy vedia odhaliť aj nejaké nepresnosti. Napríklad meriaš veľkosť bacilov. Priemerne budú merať 400nm. Keď nameráš päť metrového bacila, vieš, že si niekde spravil chybu. Využiť to môžeš napríklad, keď si chceš porovnať plat. Budeš pracovať ako čašník a na internete zistíš, že priemerná hrubá mzda v tvojom obore je nejakých 850 eur. Keď dostaneš aj ty mzdu niekde okolo 850 eur, vieš, že je to na poriadku. Keď dostaneš nejakú veľku, napríklad 5000 eur, tak je to dosť ďaleko od strednej hodnoty a ty vieš, že šéf si ťa extrémne váži. Keď dostaneš 200 eur, vieš že treba hľadať iné zamestnanie.<br /><br />
+
+<h2>Priemer</h2>
+Priemer snáď poznáš zo základnej školy, takže vysvetlením by sme ťa mohli len pomýliť :D. Pre tých, čo sa vyhli základnej škole je priemer prostredná hodnota medzi údajmi. Nemusí to byť priamo hodnota niektorého z údajov. Priemer je vypočítaný z dát. Zo všetkých čísiel na svete je to číslo, ktoré je najbližšie ku každému údaju. <br /><br />
+
+Používame ho vtedy, keď chceme vedieť v akých číslach sa pohybujú údaje. Keď máme údaje o cenách bytov, tak priemer bude napríklad 90 000 eur a my vieme, že ceny bytov sa pohybujú v desiatkach tisíc eur. Keď máme údaje o cenách potravín, tak priemer bude napríklad 4 eurá a vďaka tomu vieme, že za potraviny platíme pár eur. Pomocou priemeru vieme porovnať dáta o rovnakých veciach. Napríklad pomocou priemeru môžeme porovnať ceny bytov v Bratislave, Kysuckom Novom Meste a v Prešove. Nemôžeme však už porovnávať rôzne veci. Ceny rožkov s cenami bytov by sme porovnali ťažko. Tiež aj priemerné ceny bytov s priemernou teplotou v januári by sa porovnať nedali. <br /><br />
+
+Matematika by nebola matematikou, keby aj na výpočet priemeru neexistoval nejaký všeobecný zápis. Je to tento peknučký vzorček: 
+$$ \overline{x}=\frac{1}{n}\sum_{i=1}^n x_{i} $$
+
+Písmeno <i>x</i> označuje dáta. Pre nás je to <i>overall</i> hráčov. $\overline{x}$ označuje priemer z dát. Konkrétne priemer značí tá palička nad x-kom. Takže odteraz keď budeš vidieť paličku nad nejakým písmenom, budeš vedieť, že je to priemer. Ďalej tam je $\frac{1}{n}$. Písmeno <i>n</i> označuje počet dát, z ktorých sa ráta priemer. Možno si si už za svojho pôsobenia vo vzdelávaciom systéme všimol, že keď násobíš zlomkom $\frac{1}{n}$, tak vlastne delíš n-kom. Ďalej je tam $\sum_{i=1}^n x_{i}$. Tým spočítaš všetky dáta. Pre nás to znamená zrátanie <i>overall</i> hráčov. Ak nevieš ako funguje suma, je to vysvetlené <a href="/pages/vocabulary.html#vocabSuma" target="_blank">tu</a>. Zhrnutie vzorca je také, že zrátaš všetky dáta a vydelíš ich ich počtom.<br /><br />
+
+Priemer z hráčov Inter Milano vyrátame takto: $ \overline{overall}=\frac{1}{11}\sum_{i=1}^{11} overall_{i}=83,73 $. Zázrak dostať z takého vzorca výsledok, že? Nie je to však nič zložité, v hlave (na kalkulačke) rátaš normálne $\frac{88+88+86+85+85+84+82+81+81+81+80}{11} = 83,73$, len zápis je kratší. <br /><br />
+
+<figure>
+  <img src="../assets/images/stat_Mean.png" alt="=Rátanie priemeru">
+  <figcaption>Obr. 3.: Pri počítaní priemeru sa údaje zarovnajú.</figcaption>
+</figure>
+
+Keď sa ráta priemer, údaje sa v podstate pekne zarovnajú. Ten čo má viac dá tomu, čo má menej. To čo trčí sa zarovná a to čo má málo, tam sa pridá. Výsledok je stred medzi údajmi. <br /><br />
+
+<h2>Medián</h2>
+Medián je prostredná hodnota z údajov. Keď sú údaje zoradené od najmenšieho po najväčší, tak medián je v strede, napr. pri piatich údajoch je medián tretí údaj. Keď je údajov párny počet, tak medián je priemer z prostredných dvoch. Napríklad pri šiestich údajoch sa zoberie tretí a štvrtý údaj. Spočítajú sa a predelia dvomi (spraví sa priemer). Výsledok je medián. <br /><br />
+
+Medián rozdeľuje údaje na dve polovice. Na tú, kde sú údaje s menšími hodnotami ako medián a na tú, kde majú údaje väčšie hodnoty ako medián. <br /><br />
+
+Medián sa označuje podobne ako priemer, len miesto čiarky je vlnovka. Pre údaje označené písmenom x je medián $\tilde{x}$.<br /><br />
+
+Pre Inter Milano je medián šiesty hráč. Je to Stefan de Vrij s <i>overallom</i> 84. Ak by sme napríklad niekde zapatrošili futbalistu Nicolò Barellu, tak by sme medián museli rátať z desiatich hráčov. Zobrali by sme si prostredných dvoch. Sú to Stefan de Vrij a Mauro Emanuel Icardi Rivero. Z ich <i>overallov</i> by sa vyrátal priemer: (84+85)/2 = 84,5. Medián by bol potom 84,5. <br /><br />
+
+<figure>
+  <img src="../assets/images/stat_Median.png" alt="=Rátanie mediánu">
+  <figcaption>Obr. 4.: Medián je prostredný z údajov. Keď je počet údajov párny, tak sa medián spraví ako priemer dvoch prostredných údajov.</figcaption>
+</figure>
+
+<h2>Kvantil</h2>
+Prišiel si pozrieť na tréning svojho tímu a vidíš, že futbalistom sa veľmi nechce. Chceš ich motivovať. Rozdelíš ich do dvoch skupín podľa <i>overallu</i>. Horšia skupina bude nosiť na ihrisko lopty, lepšia nie. <br /><br />
+
+Aby hráč vedel, do ktorej skupiny patrí, potrebuje vedieť <i>overall</i>, ktorý oddeľuje horších od lepších. Zoradíš si hráčov podľa <i>overallu</i>a vyberieš prostredného. Hráč, ktorý má menší overall ako prostredný, patrí k horším, ten čo má väčší, patrí k lepším.<br /><br />
+
+Ak by bol tvoj tím Inter Milano, tak prostredným hráčom bude Samir Handanovič. Tí čo majú menší alebo rovnaký <i>overall</i>, sú horší, tí čo majú väčší, patria do lepšej skupiny. Možno si si všimol, že sme vlastne vypočítali medián Inter Milano.<br /><br />
+
+<i>Overall</i> hráča, ktorý oddeľuje skupiny napíšeš niekde na nástenku a už všetci budú vedieť, či majú nosiť lopty alebo nie.<br /><br />
+
+Zavolá ti sponzor a ponúkne, že tretine futbalistov zaplatí wellness. Použiješ ho ako odmenu. Teraz už máš tri druhy odmien. Prvá je wellness+nenosenie, druhá je nenosenie a tretia je nosenie všetkých vecí na ihrisko. Rozdelíš teda hráčov do troch skupín. Zoradíš ich od najhoršieho po najlepšieho a nájdeš hráčov, ktorí delia tím na tri skupiny. Ich <i>overally</i> zasa napíšeš na nástenku a všetci budú vedieť, čo sa ich týka. Pre Inter Milano by boli títo hráči Lukaku a Martinéz, lebo delia tím na tri skupiny. <br /><br />
+
+Futbalistov, ale aj iné údaje, môžeš rozdeliť na koľko skupín chceš. Údaje, ktoré oddeľujú skupiny sa nazývajú <b>kvantily</b>.<br /><br />
+
+Keď máš 11 hráčov, tak tých čo rozdelia údaje na skupiny nájdeš ľahko. Pre 18 000 by si sa niečo nahľadal. Veľké množstvá údajov vyžadujú inteligentnejšie riešenie ako je čítať riadok za riadkom. <br /><br />
+Keď sme delili hráčov na dve skupiny, kvantil bol hráč na pozícií v strede. Hráči, ktorí oddeľovali tri skupiny sa nachádzali na konci prvej a druhej tretiny údajov. Keď chceme vo všeobecnosti vypočítať kvantily (údaje, ktoré oddeľujú ostatné údaje) potrebujeme vedieť pozíciu, na ktorej sa nachádzajú. <br /><br />
+
+Recept na výpočet pozície údaju začína tým, že údaje zoradíme od najmenšieho po najväčší. Pozíciu vypočítame z veľkosti údajov a z časti, v ktorej sa kvantil nachádza (či je napríklad v polovici, prvej tretine, štvrtej jedenástine etc.). Časť v ktorej sa nachádza vyjadríme klasicky zlomkom (ktorá časť deleno počet častí). Veľkosť údajov si označíme <i>N</i>, počet častí bude označený písmenom <i>q</i>, ktorý kvantil počítame bude <i>k</i> a výsledná pozícia bude <i>P</i>. Takto vypočítame pozíciu, na ktorej sa kvantil nachádza. 
+
+$$ P_k = \frac{k}{q} * (N+1)$$
+
+Samotný kvantil je údaj na tejto pozícií (pre nás je to <i>overall</i> hráča). Kvantil označíme písmenom <i>Q</i>. To malé <i>k</i> znamená poradové číslo kvantilu.
+
+$$ Q_k = x_{p_k}$$
+
+Vo vzorci na vypočítanie pozície kvantilu sa k počtu údajov pripočítava 1. Dôvod ti ukážeme na príklade 11 futbalistov. Chceme z nich vypočítať pozíciu hráča, ktorý rozdeľuje údaje na polovicu. Keď si to spočítaš na prstoch, tak je to šiesty hráč. Ak by sme dali len 0.5*11, tak výsledok je 5,5. Keď dáme 0.5*12, výsledok je 6. <br /><br />
+
+Počítanie pozície iba z počtu hráčov N a nie z N+1, vždy vráti výsledok trochu menší ako má byť. Keď sa tam pričíta 1, vyjde to presne. Toto platí pre akýkoľvek počet údajov a pre akúkoľvek časť údajov (napríklad aj pre druhú tretinu z jedenástich hráčov). Môžeš si to vyskúšať na viacerých príkladoch, ale tie si musíš vymyslieť sám.<br /><br />
+
+
+Teórie bolo zatiaľ dosť, poďme na príklad. Chceme si rozdeliť hráčov Interu Milano na tri časti podľa <i>overall</i>. 
+<figure>
+  <img src="../assets/images/stat_QuantileOddData.png" alt="Rátanie kvantilov, keď kvantil vyjde presne na pozícií">
+  <figcaption>Obr. 5.: Tu sú kvantily pre <i>overall</i> hráčov Interu Milano.</figcaption>
+</figure>
+
+Hráčov chceme deliť na tri časti, teda počet častí <i>q</i> bude 3. Kvantily budú dva (vždy keď niečo delíš na časti, tak hraníc medzi časťami je o jednu menej ako častí). Písmeno <i>k</i>, ktoré označuje poradie kvantilu bude nadobúdať hodnoty 1 a 2. Počet dát <i>N</i> bude v našom prípade 11. Pozíciu sme rátali pre dva kvantily. Prvý kvantil vyšiel na pozícií 4 a druhý na pozícií 8. Kvantily sú teda čísla 81 a 85. <br /><br />
+
+Keď sa ti stane taká vec, že kvantil nevyjde presná pozícia, ale nejaké  desatinné číslo, tak ho zaokrúhliš raz nadol a raz nahor. Zoberieš údaje z týchto dvoch pozícií a spravíš z nich priemer. Kvantil bude niekde medzi týmito dvomi číslami. V tomto príklade sme pridali dvanásty <i>overall</i>:
+<figure>
+  <img src="../assets/images/stat_QuantileEvenData.png" alt="Rátanie kvantilov, keď kvantil vyjde medzi pozíciami">
+  <figcaption>Obr. 6.: Rátanie kvantilov, keď pozícia nevýde presné číslo</figcaption>
+</figure>
+
+Vráťme sa k motivovaniu hráčov. Futbalisti, ktorých <i>overall</i> je horší alebo rovný ako 81.5 musia nosiť na ihrisko všetky veci. Tí, ktorých <i>overall</i> je lepší ako 81.5 a zároveň horší alebo rovnaký ako 85.5, nemusia na ihrisko nosiť nič. Tí, čo sú lepší ako 85.5, nemusia na ihrisko nosiť nič a ešte k tomu idú aj na wellness.<br /><br />
+
+Ešte máme s kvantilmi jeden problém. Možno si si všimol, že ak by sme Inter Milano rozdelili na štyri časti, tak prvý kvantil by bol na treťom mieste. Tam je hodnota 81. Ale aj na druhom a štvrtom mieste je hodnota 81. Toto je ten problém. Keď ako kvantilomä určíme číslo 81, neplatí, že štvrtina hodnôt bude menšia alebo rovná ako 81. To, že kvantil nám vyjde jedna z rovnakých hodnôt, sa nevyskytuje našťastie veľmi často. Ak sa to už stane, býva to vtedy, keď je dát málo. To je aj náš prípad. Tento problém sa dá vyriešiť tak, že kvantil vyrátaš vzorcom, <b>ktorý používaš</b> a výsledok prehlásiš za správny, aj keď budú okolo kvantilu rovnaké hodnoty. (Chceli by sme upozorniť na dve slová "<b>ktorý používaš</b>", pretože kvantil sa dá vypočítať viacerými spôsobmi.) My by sme teda povedali, že 25%-tný kvantil je 81. [4]<br /><br />
+
+Údaje môžeš deliť na hocikoľko častí chceš. Ľudia však najčastješie rozdeľujú dáta iba na nejaké časti. Tieto rozdelenia dostali aj svoje názvy. Sú to: 
+
+<ul>
+<li>Medián - delí dáta na dve časti</li>
+<li>Tercil - delí dáta na tretiny (tercil sme počítali v príklade pre Milano)</li>
+<li>Kvartil - delí dáta na štvrtiny</li>
+<li>Decil - delí dáta na desatiny</li>
+<li>Percentil - delí dáta na stotiny</li>
+</ul>
+
+Keď počítaš hocijaký kvantil, časť, v ktorej sa nachádza je $\frac{k}{q}$. Toto ti vyjde desatinné číslo. Keď to vynásobiš číslom 100, dostaneš to v percentách. Aby ľudia vedeli, o ktorých kvantiloch sa rozpráva, pomenovali ich podľa percent. Napríklad údaje delíš na štyri časti a chceš tretí kvantil. Zlomok $\frac{3}{4}$ vyjde 0,75.Po vynásobení 100 je to 75%. Tento kvantil sa nazýva 75 percentný kvantil. Keď delíme údaje na 88 častí a chceme kvantil číslo 66, dostaneme $\frac{66}{88}*100=75$. To je zasa 75% percentný kvantil. Keď delíme údaje na 30 častí a chceme trinásty kvantil, dostaneme $\frac{13}{30}*100=43,333$. Tento kvantil nazývame 43,333 percentný kvantil. Takýchto príkladov na pomenovanie si môžeš vymyslieť veľa.<br /><br />
+
+Ak sa ti doteraz toto všetko zdalo neznáme ver, že si sa už s kvantilmi stretol. Táto pamätná chvíľa nastala, keď si ukončil deviaty ročník základnej školy testom nazývaným monitor. Keď vám prišli výsledky, určite si sa so spolužiakmi porovnával, kto má lepší percentil. Ak si mal z matematiky percentil napríklad 68, znamná to, že si lepší ako 68% deviatakov na Slovensku.
+
+
+<h2>Modus</h2>
+Modus je najpočetnejšia hodnota z údajov. Spočítajú sa rovnaké údaje a tých, ktorých je najviac, tak to je modus. <br /><br />
+
+Pre Inter je hodnota 88 dva razy, 86 raz, 85 je dva razy, 84 a 82 sú po jednej, 81 je tri razy a 80 iba raz. Najviac je hodnoty 81, lebo sa vyskytuje v dátach tri razy. Modus je teda 81. <br /><br />
+
+<figure>
+  <img src="../assets/images/stat_Modus.png" alt="=Rátanie modusu">
+  <figcaption>Obr. 7.: Modus je hodnota, ktorá sa v údajoch vyskytuje najčastejšie.</figcaption>
+</figure>
+
+<h1>Miery variability</h1>
+Miery variability používame keď chceme vedieť ako veľmi sú údaje rozdielne. Ďalšie využitie je, keď je priemer viacerých štatistických súborov rovnaký a my ich chceme napriek tomu porovnať.<br /><br />
+
+Tieto miery nám povedia niečo o tom, ako veľmi sa údaje od seba líšia. Väčšinou sa zisťuje, ako sú dáta  rozložené okolo priemeru. Či sú ďaleko alebo blízko. Napríklad, ak máme dve čísla a ich priemer je 5, chceme vedieť, či sú obe blízko päťky (4 a 6: (4+6)/2=5) alebo sú ďaleko od päťky (-100 a 110: (-100+110)/2=5). <br /><br />
+
+Čím sú údaje menej rozdielne, tým sú miery variability menšie. Či sú pre nás lepšie vyrovnané dáta alebo úplne rozdielne, záleží od problému, ktorí riešime.<br /><br />
+
+Na obrázku ti chceme ukázať, čo znamená rozptýlenie dát okolo priemeru. Na prvej osi sú údaje okolo priemeru rozptýlené menej a na druhej viac. Údaje sú nakreslené bledomodré a priemer je číslo 5.
+<figure>
+  <img src="../assets/images/stat_VariabilityOfData.png" alt="=Variabilita údajov">
+  <figcaption>Obr. 8.: Prvé údaje sú od 4 po 6. Nejak veľmi sa od seba nelíšia, tak ich variabilita je menšia. Druhé dáta sú od 1 po 10. Ich údaje sa už líšia viac. Variabilita druhých dát je väčšia.</figcaption>
+</figure>
+
+<h2>Variančné rozpätie</h2>
+Variančné rozpätie hovorí o tom, v akom rozsahu sú dáta. Čím je menšie, tým sú dáta viac rovnaké. 
+
+$$ R=x_{max}-x_{min}$$
+
+Vzorec je ľahký. Je to rozdiel medzi najväčšou hodnotou a najmenšou hodnotu z dát.
+
+Pre Inter Milano by sme zobrali najlepšieho Samira Handanoviča s 88 a najhoršieho Nicolò Barellu s 80. Vypočítali by sme to $ R=88-80=8$. Vieme, že Inter Milano má variančné rozpätie 8. <br /><br />
+
+<h2>Priemerná absolútna odchýlka</h2>
+Svoju funkcionalitu má priemerná absolútna odchýlka vo svojom názve. Že ako? No pozeraj. Najprv potrebujeme vypočítať priemer z dát. V priemernej absolútnej odchýlke sa pre každý údaj zisťuje rozdiel medzi ním a priemerom. To je tá odchýlka (že ako veľmi sa údaj líši od priemeru). Z rozdielov medzi údajmi a priemerom berieme absolútnu hodnotu. Je to preto, lebo chceme vedieť iba ten rozdiel, o koľko je údaj väčší alebo menší. Nechceme vedieť to, či je menší alebo väčší. To, že sa berie absolútna hodnota zastrešuje v názve slovo absolútna. Teraz to priemerná. Dobre, takže v tomto momente už máme niekde vyrátané rozdiely medzi údajmi a priemerom. Vieme povedať, o koľko sa asi údaje líšia od priemeru? No ťažko, lebo keď si to vyskúšaš na nejako príklade, tak uvidíš, že jeden rozdiel ti vyjde tak, druhý inak, tretí bude zasa iný. Potrebujeme z toho dostať iba jedno číslo. To spravíme tak, že z týchto rozdielov spravíme priemer. Dostaneme tak, že o koľko priemerne sa líšia údaje od priemeru, teda dostaneme priemernú absolútnu odchýlku. <br /><br />
+
+$$ \overline{d}=\frac{1}{n} \sum_{i=1}^n \left| \overline{x} - x_{i} \right| $$
+
+Vzorec si rozoberieme zvnútra. V sume vidíš $ \left| \overline{x} - x_{i} \right| $, čo znamená že sa od priemeru odráta údaj a z rozdielu sa spraví absolútna hodnota. Znak $ \sum $ nám hovorí, že ideme spočítavať. Spočítava sa samozrejme to, čo je vnútry sumy. Zrátavajú sa teda absolútne hodnoty z rozdielu medzi priemerom a údajmi. Robí sa to pre každý údaj. Prezradiť ti to môžu aj písmenká i a n na spodu a na vrchu sumy. Písmeno i hovorí, že odkiaľ sa začína spočítavať a písmeno n, že pokiaľ. V tomto vzorci vidíš, že sa berú údaje od prvého po posledný (po n). Rozdiely sú sčítané a teraz treba priemer dokončiť. Na to je ten zlomok $ \frac{1}{n} $, ktorý výsledok sumy vydelí počtom údajov. Dúfam, že si si už za svojho pôsobenia vo vzdelávacom systéme všimol, že keď niečo násobíš $ \frac{1}{n} $, tak to vlastne delíš n-kom. <br /><br />
+
+Podobne, ako variančné rozpätie, aj priemerná absolútna odchýlka hovorí o tom, ako veľmi sú dáta rozptýlené okolo priemeru. Nie je to však už iba nejaké rýchlo vypočítateľné orientačné číslo, ale je to konkrétna hodnota. Priemerná absolútna odchýlka presne hovorí o tom, o koľko priemerne sa údaje líšia od priemeru.<br /><br />
+
+Pre Inter Milano to vypočítame takto: $ \overline{d}=\frac{1}{11} \sum_{i=1}^{11} \left| \overline{overall} - overall_{i} \right| = 2,479 $ <i>. V hlave budeš robiť klasický výpočet. Ak by si náhodou zabudol, tak zvislé zátvorky znamenajú absolútnu hodnotu. (|83.73-88| + |83.73-88| + |83.73-86| + |83.73-85| + |83.73-85| + |83.73-84| + |83.73-82| + |83.73-81| + |83.73-81| + |83.73-81| + |83.73-80|)/11 = 27.269 / 11 = 2.479  </i>. Teraz vieme, že hráči Interu Milano sa od priemeru líšia priemerne o 2,479 bodov <i>overall</i>.
+
+<figure>
+  <img src="../assets/images/stat_MAE.png" alt="=Rátanie priemernej absolútnej odchýlky">
+  <figcaption>Obr. 9.: Tu je ukázané, ako funguje matematika v priemernej absolútnej odchýlke. 1. Namerané údaje. 2. Pre každý údaj sa dozvieme, o koľko sa líši od priemeru. 3. Rozdiely medzi údajmi a priemerom. 4. Z rozdielov sa spraví priemer a vidíme, že údaje sa priemerne líšia od priemeru o jednu kocku.</figcaption>
+</figure>
+
+<h2>Rozptyl</h2>
+Niektoré údaje sa líšia od priemeru málo a iné veľa. V niektorých situáciach (napríklad, keď trénuješ neurónovú sieť :D ) treba veľký rozdiel zvýrazniť oveľa viac ako malý. Čím je rozdiel väčší, tým ho chceš viac zvýrazniť. Takúto vec ti spraví kvadratická funkcia. Ak nevieš čo to je, tak umocni rozdiel medzi priemerom a údajom na druhú a máš kvadratickú funkciu. Skús si umocniť zopár čísiel a uvidíš, že čím väčšie číslo, tým je výsledok o dosť väčší. Rozptyl sa ráta podobne ako priemerná absolútna chyba, ibaže z rozdielu medzi priemerom a údajom sa nerobí absolútna chyba, ale umocní sa na druhú. <br /><br />
+
+Fajn, máme teda zvýraznené veľké rozdiely a keď treba vieme rozptyl použiť. Ale má to jednu chybičku na kráse a tá nám niekedy môže vadiť. Ukážeme ti to na príklade. Na telesnej dal učiteľ behať šesťdesiatku a každému žiakovi meral čas. Pretože ho bavila štatistika, vyrátal si rozptyl. No a tu je tá chybička na kráse. Keď niečo dávaš na druhú, tak výsledok je na druhú. Keď meriaš čas v sekundách a dáš ho na druhú, tak budeš mať sekundy na druhú. Chceme ti týmto ukázať, že rozptyl nevyjde v jednotkách údajov, ale v tých jednotkách na druhú. Niekedy ti to nevadí a potrebuješ práve vypočítať rozptyl. Ale sú situácie, keď chceš mať zvýraznené rozdiely a zároveň to mať v jednotkách údajov. O tom však neskôr, v smerodajnej odchýlke.
+
+$$ s^2=\frac{1}{n} \sum_{i=1}^n \left( \overline{x} - x_{i} \right)^2 $$
+
+Vzorec je podobný ako v priemernej absolútnej odchýlke. Týmto $ \left( \overline{x} - x_{i} \right)^2 $ sa vypočítajú rozdiely medzi údajov a priemerom a každý z nich sa dá na druhú. Suma zabezpečí, že sa ich výsledky spočítajú a nakoniec sa to predelím n-kom, aby bol priemer.
+Funguje podobne ako priemerná absolútna odchýlka. Rozdiel je ten, sa z rozdielu medzi priemerom a údajom nerobí absolútna hodnota, ale výsledok sa umocní na druhú. <br /><br />
+
+Pre Inter Milano to vypočítame takto: $ s^2=\frac{1}{11} \sum_{i=1}^{11} \left( \overline{overall} - overall_{i} \right)^2 = 7.652$<i>. V hlave alebo na kalkulačke si sumu rozpíšeš normálne: ((83.73-88)<sup>2</sup> + (83.73-88)<sup>2</sup> + (83.73-86)<sup>2</sup> + (83.73-85)<sup>2</sup> + (83.73-85)<sup>2</sup> + (83.73-84)<sup>2</sup> + (83.73-82)<sup>2</sup> + (83.73-81)<sup>2</sup> + (83.73-81)<sup>2</sup> + (83.73-81)<sup>2</sup> + (83.73-80)<sup>2</sup>)/11 = 84.182 / 11 = 7.652  </i>. Ak sa ti nechce toto rátať z hlavy, tak môžeš aj na papier. Aspoň uvidíš, že zápis so sumou ušetrí veľa miesta. <br /><br />
+
+Zvýraznenie väčších odchýlok ti ukážeme na príklade. Tu sú rozdiely medzi údajom a priemerom: 1,2,3,4,5,6. Absolútna hodnota je to isté. Druhé mocniny rozdielu medzi priemerom a údajom sú tieto: 1,4,9,16,25,36. Už tak na pohľad vidíš, že 1 a 6 nie sú až tak rozdielne čísla. Ale medzi 1 a 36 je oveľa väčší rozdiel. Druhá mocnina práve väčší rozdiel zvýrazní viac ako menší rozdiel. <br /><br />
+
+
+<figure>
+  <img src="../assets/images/stat_MSE.png" alt="=Rátanie rozptylu">
+  <figcaption>Obr. 10.: Tu je zobrazené, ako funguje matematika v rozptyle. 1. Namerané údaje. 2. Pre každý údaj sa dozvieme, o koľko sa líši od priemeru. 3. Rozdiely medzi údajmi a priemerom sa umocnia. Všimni si, že veľké rozdiely sú viac zvýraznené než pri priemernej absolútnej chybe. V našom príde je týmto veľkým rozdielom číslo 2. Kým pri priemernej absolútnej chybe je rozdiel stále dva, tak pri rozptyle je už štyri. 4. Z umocnených rozdielov sa spraví priemer. Priemer je 1,667 a s trochou fantázie si domysli na obrázku, že údaje sa priemerne líšia o 1,667 kocky (tá vrchná "kocka" je 0,667 kocky ).</figcaption>
+</figure>
+
+Rozptyl môžeš nájsť aj pod názvom variancia alebo disperzia.
+
+<h2>Smerodajná odchýlka</h2>
+V rozptyle sme spomínali, že sa nám niekedy hodia zvýraznené veľké odchýlky, ale chceme ich mať v jednotách údajov. Nie je nič ľahšie. Rozptyl vyjde v jednotkách na druhú a keď mám niečo na druhú a už tu nechcem mať na druhú, tak to odmocním. Presne to robí smerodajná odchýlka. Odmocňuje rozptyl. Že tam tie veľké rozdiely zostali zachované si môžeš všimnúť na tom, že smerodajná odchýlka je trochu väčšia ako priemerná absolútna. Čím je väčšia od priemernej absolútnej, tým sú v údajoch väčšie rozdiely. Zároveň to už však je v jednotkách údajov a teraz môžeš povedať, že údaje sa priemerne líšia od priemeru o toľko a o toľko.
+
+$$ s=\sqrt{\frac{1}{n} \sum_{i=1}^n \left( \overline{x} - x_{i} \right)^2} $$
+
+Vzorec je teda rovnaký ako rozptyl, len sa robí z neho druhá odmocnina.<br /><br />
+
+Smerodajnú odchýlku pre Inter Milano vyrátame takto: $ s=\sqrt{\frac{1}{11} \sum_{i=1}^{11} \left( \overline{overall} - overall_{i} \right)^2} = 2.766$. Rozptyl pod odmocninou už máme vyrátaný, tak to len odmocníme $ s=\sqrt{7.652} = 2.766$. Teraz môžeme povedať, že hráči sa priemerne od seba líšia o 2,766 <i>overall-u</i>. Vo výsledku máme zvýraznené veľké rozdiely, takže ak by sa nejaký hrá 
+
+<figure>
+  <img src="../assets/images/stat_Std.png" alt="=Rátanie smerodajnej odchýlky">
+  <figcaption>Obr. 11.: Tu je matematika skrývajúca sa za smerodajnou odchýlkou. 1. Namerané údaje. 2. Pre každý údaj sa dozvieme, o koľko sa líši od priemeru. 3. Rozdiely medzi údajmi a priemerom sa umocnia. Všimni si, že veľké rozdiely sú viac zvýraznené než pri priemernej absolútnej chybe. V našom príde je týmto veľkým rozdielom číslo 2. Kým pri priemernej absolútnej chybe je rozdiel stále dva, tak pri rozptyle je už štyri. 4. Z umocnených rozdielov sa spraví priemer a ten sa odmocní. Výsledok je 1,291 a s trochou fantázie si domysli na obrázku, že údaje sa priemerne líšia o 1,291 kocky (tá vrchná "kocka" je 0,291 kocky ).</figcaption>
+</figure>
+
+Smerodajnú ochýlku môžeš nájsť aj pod menami štandartná odchýlka alebo štandartná deviácia.
+
+<h2>Variančný koeficient</h2>
+V živote človeka príde moment, keď bude chcieť porovnať variabilitu dvoch rôznych súborov. Aj keď sa to nezdá, ale dá sa to. Keď pozrieme na dáta, vieme povedať, že tieto sú okolo priemeru rozptýlené málo, tieto trochu viac a iné sú rozptýlené veľmi ďaleko. <br /><br />
+
+Doteraz sme mali miery variability, ktoré sú absolútne. To znamená, že od ničoho nezávisia. Tieto miery vyjadrujú konktrétne číslo, ako veľká je  variabilita. Oni sú fajn, lebo vieš povedať, že údaje sa od priemeru líšia o toľko a o toľko. Ale variabilita dvoch súborov sa pomocou nich porovnať nedá. <br /><br />
+
+Predstav si, že si biológ a z nejakého dôvodu by si potreboval zistiť, či sa vo svojich veľkostiach viacej líšia baktérie alebo vráskavce obrovské. Zmeriaš si teda veľkosť niekoľkých baktérií a niekoľkých vráskavcov. Zistíš, že baktérie majú veľkosť pár stoviek nanometrov a vráskace mávajú okolo 30 metrov. Z oboch vypočítaš smerodajnú odchýlku. Pre baktérie ti vyjde napríklad 100nm a pre vráskavce 1m. Aby sme neporovnávali metre a nanometre, premeníme si ich na centimetre. 100nm je 0,00001cm a 1m je 100cm. Je to jasné, vráskavce sa líšia vo svojich veľkostiach viac. Ale naozaj? Nehrá tu rolu aj veľkosť živočíchov? Asi to s tým porovnaním nebude také ľahké. Nemôžeme predsa takto porovnávať dve rozdielne veci.<br /><br />
+
+Našťastie existuje spôsob, ako vyriešiť tento problém. Variabilitu údajov môžeme vyjadriť relatívne. Vyjadríme ju vzhľadom na veľkosť údajov, čiže zistíme, ako veľká časť variability pripadá na jednu jednotku údajov. Údaje sú v nejakých jednotkách. Keď meriaš veľkosť vráskavca, tak údaje a priemer, ktorý dostaneš bude v metroch. Veľkosť baktérií je v nanometroch. Ceny bytov sú v eurách. Telocvikár meria čas v sekundách. Futbalisti majú <i>overall</i> v bodoch. Jedna jednotka je teda 1 meter, 1 nanometer, 1 euro, 1 sekunda, 1 bod etc. Aká veľká časť variability pripadá na jednu jednotku údajov zistíš tak, že variabilitu vydelíš veľkosťou údajov. Ten, kto vymýšlal variančný koeficient si povedal, že na vyjadrenie varaibility použije smerodajnú odchýlku a na veľkosť údajov použije priemer. <br /><br />
+
+$$ v=\frac{s}{\overline{x}}*100$$
+
+Toto je teda variančný koeficient. Smerodadjná odchýlka sa vydelí priemerom a dostaneme aká časť variability pripadá na jednu jednotku. Výsledok sa ešte môže (aj nemusí) vynásobiť stovkou a dostaneme variabilitu dát v percentách. Vďaka tomu vieme povedať, či je variabilita malá alebo veľká. Keď vyjde málo percent, tak dáta sú rozptýlené okolo priemeru málo a keď veľa percent, tak sú rozptýlené veľa. <br /><br />
+
+Skúsme teda porovnať variabilitu vráskavca a baktérií variančným koeficientom. Vráskavec meria v priemere 30m a baktéria 400nm. Smerodajná odchýlka pre vráskavce je 1m a pre baktériu 100nm. Teraz to dokonca ani netreba premieňať na centimetre, lebo variančný koeficient je variabilita na jednu jednotku dát a je jedno, aká je tá jednotka. Je jedno či sú to metre, alebo nanometre alebo niečo iné. No poďme počítať. Variančný koeficient pre vráskavca je 1m/30m=0,033=3,33%. Variančný koeficient pre baktérie je 100nm/400nm=0,25=25%. Teraz je už jasné, že viac sa líšií veľkosť baktérií ako veľkosť vráskavcov. O dosť viac. Takto môžeme porovnávať variabilitu údajov, ktoré nie sú rovnaké. Napríklad môžeme porovnať variabilitu teplôt v máji s variabilitou cien bytov alebo podobné hruška a jablká.<br /><br />
+
+ 
+Pozrime sa na to, ako veľmi sú rozptýlení hráči Inter Milano. Vypočítame si variančný koeficient $ v=\frac{2,766}{\overline{83,73}}*100=3,303%$. Po výpočte vidíme, že hráči Interu nie sú veľmi rozptýlený. 3,303% nie je veľa. Dokonca ich môžeme porovnať s baktériami a vráskavcami. Veľkosť baktérií a počet bodov <i>overall</i> hráčov má zhruba rovnaké rozptýlenie. <br /><br />
+
+<figure>
+  <img src="../assets/images/stat_VarCoef.png" alt="Variančný koeficient">
+  <figcaption>Obr. 12.: Takto vyzerá keď sa smerodajná odchýlka vydelí veľkosťou dát.</figcaption>
+</figure>
+
+
+
+<h1>Korelácia</h1>
+Korelácia hovorí o tom, či a ako sú dáta od seba závislé. Vďaka korelácií by sme zistili, či spolu súvisí <i>overall</i> hráča a jeho cena. Možno by sme našli vzťah, že čím je hráč lepší, tým bude drahší. Koreláciu medzi výškou a vekom hráča by sme asi nenašli, pretože výška hráča nezávisí od jeho veku. Zápornú koreláciu by sme možno našli medzi atribútmi <i>gk_diving</i> a <i>skill_ball_control</i>. Prvý hovorí o tom, ako dobre sa brankár hádže za loptou a druhý o tom, ako dobre hráč vedie loptu. Môžeme predpokladať, že hráči, ktorí sa dobre hádžu po lopte sú brankári a vo vedení lopty sú slabší. Hráči v poli sa zasa budú biedne hádzať za loptou, ale vedednie lopty budú mať excelentné. Či sú tieto naše hypotézy pravdivé, sa dá overiť korelačným koeficientom. 
+
+<h2>Korelačný koeficient</h2>
+
+
+Za svoj život si si určite všimol, že niektoré veci spolu súvisia. Napríklad, čím viac si odkladáš na účet, tým viac tam máš našetrené. Keď ideš autom, tak čím rýchlejšie ide, tým kratší čas mu trvá, kým príde na miesto (P.S. toto nie je výzva, aby si chodil 200. Choď radšej podľa predpisov, aby si niekde nenabúral). Podobných príkladov na štýl čím viac, tým viac alebo čím viac, tým menej nájdeš v živote veľa.<br /><br />
+
+My by sme sa chceli dozvedieť, či je nejaká súvislosť atribútu <i>overall</i> s cenou hráča. Tak si zoberieme <i>overall</i> a cenu všetkých 18 000 hráčov a ideme sa na to pozrieť. Dovidenia za sto rokov. Dosť bolo humoru, chceme to spraviť inteligentnejšie. Použijeme na to korelačný koeficient. <br /><br />
+
+Korelačný koeficient sa ráta z kovariancie (ozn. <i>k</i>) a smerodajných odchýlok. Kovariancia sa ráta ako suma údajov <i>x</i> a <i>y</i>, od ktorých sú odrátané ich priemery. V našom prípade sú to <i>overall</i> a cena hráča.<br /><br />
+
+Kovariancia:<br /><br />
+
+$$ k=\frac{1}{n}\sum_{i=1}^n \left(x_{i} - \overline{x} \right) \cdot \left(y_{i} - \overline{y} \right) $$
+
+Korelačný koeficient:<br /><br />
+
+$$ r=\frac{k}{s_{x} \cdot s_{y}} $$
+
+Výsledkom korelačného koeficientu je nejaké číslo od -1 po 1. Výsledok určuje silu a druh závislosti. Keď je od -1 po 0, znamená, že údaje rastú každý opačne. Teda keď je x menšie, y je väčšie. Čím je číslo bližšie k -1, tým je závisloť silnejšia. Výsledok 0 znamená, že medzi údajmi nie je žiaden vzťah. Čísla okolo 0 hovoria o veľmi slabej závislosti. Keď ideme na opačnú stranu k 1, tak údaje rastú rovnako. Čím je  <i>x</i> väčšie, tým je aj <i>y</i> väčšie. Zasa platí, že čím bližšie je výsledok k 1, tým je závislosť silnejšia.<br /><br />
+
+Teraz si ideme ukázať, ako takýto zázrak môže fungovať. <br /><br />
+
+
+
+Niektoré veci medzi sebou súvisia viac, niektoré menej a niektoré vôbec. Táto súvislosť sa dá vyjadriť matematikou.<br /><br />
+
+Začneme tým, že máme údaje o troch futbalistoch v tabuľke. Chceme vedieť ako súvisí overall s cenou hráča a gk_diving so skill_ball_control. Keď sa pozrieme na tie údaje, tak je vidno, že čím je väčší overall, tým je väčšia cena. S  gk_diving a skill_ball_control je to tak, že čím je jedno menšie, tým je druhé väčšie. Závislosť tam teda máme.<br /><br />
+
+<table class="center statTable">
+<tr>
+<th>Meno</th>
+<th>Overall</th>
+<th>Cena</th>
+<th>Gk_diving</th>
+<th>Skill_ball_control</th>
+</tr>
+
+<tr>
+<td>Jonathan Mitchell</td>
+<td>64</td>
+<td>500 000</td>
+<td>63</td>
+<td>40</td>
+</tr>
+
+<tr>
+<td>Anthony Lopes</td>
+<td>85</td>
+<td>33 500 000</td>
+<td>87</td>
+<td>21</td>
+</tr>
+
+<tr>
+<td>Lionel Messi</td>
+<td>94</td>
+<td>95 500 000</td>
+<td>0</td>
+<td>96</td>
+</tr>
+</table>
+<br /><br />
+
+Závislosť sme zatiaľ merali dvomi slovami: menšie a väčšie. Teraz ich potrebujeme nejak vyjadriť matematikou. Chceme vedieť, či je údaj malý alebo veľký. Keď máme len údaj, nevieme o ňom povedať aký je. Ale keď ho s niečím porovnáme, tak už vieme povedať, či je oproti tomu veľký alebo malý. Údaj môžeme porovnať voči ostatným údajom. Nechceme ho však porovnávať s každým z údajov, lebo z takého porovnania by sme nič nemali. Potrebujeme nejakú vhodnú reprezentáciu týchto údajov a ako už tušíš, je to priemer. <br /><br />
+
+Priemery pre naše štyri atribúty sú takéto: overall=81, cena=43 166 666,67 gk_diving=50 a skill_ball_control=52,33.<br /><br />
+
+Či je údaj väčší alebo menší ako priemer, zistíme ľahko. Od údaja odčítame priemer a keď bude údaj väčší, výsledok bude kladný. Keď bude údaj menší, výsledok bude záporný. V tabuľke si ukážeme rozdiely medzi údajom a priemerom.<br /><br />
+
+<table class="center statTable">
+<tr>
+<th>Meno</th>
+<th>Overall</th>
+<th>Cena</th>
+<th>Gk_diving</th>
+<th>Skill_ball_control</th>
+</tr>
+
+<tr>
+<td>Jonathan Mitchell</td>
+<td>-17</td>
+<td>-42 666 666,67</td>
+<td>13</td>
+<td>-12</td>
+</tr>
+
+<tr>
+<td>Anthony Lopes</td>
+<td>4</td>
+<td>-9 666 666,67</td>
+<td>37</td>
+<td>-31</td>
+</tr>
+
+<tr>
+<td>Lionel Messi</td>
+<td>13</td>
+<td>52 333 333,33</td>
+<td>-50</td>
+<td>43,67</td>
+</tr>
+
+</table>
+<br /><br />
+
+Keby náhodou, čísla v tabuľke sme dostali ako údaj-priemer. Pre Mitchellov overall to vyzeralo 64-81=-17. Pre ostatné údaje podobne. Rozdiely, ktoré máme v tabuľke už hovoria o tom, či je údaj veľký alebo malý. Dokonca hovoria o tom, ako veľmi je veľký alebo malý. Čím je ďalej od priemeru tým je väčší (alebo na druhú stranu od priemeru je menší). Všimni si, že aj pri rozdieloch platí ten istý vzťah ako pri údajoch v prvej tabuľke. Čím je overall vyšší, tým je aj cena vyššia. Čím je vyšší gk_diving, tím je menšia skill_ball_control. Zatiaľ sme na tom dobre. Vzťahy medzi údajmi stále platia a navyše sme dostali čísla, o ktorých vieme povedať, či sú oproti ostatným veľké alebo malé.<br /><br />
+
+Stále však nevieme v matematickom jazyku povedať, či údaje rastú rovnakým smerom (jedno väčšie, druhé väčšie) alebo opačným (jedno menšie, druhé väčšie). S týmto nám pomôže násobenie. Rozdiely, medzi ktorými chceme zistiť vzťah, vynásobíme medzi sebou.<br /><br />
+
+Tu je pekné sledovať, ako matematika zafunguje.<br /><br />
+
+Keď platí, že overall aj cena rastú rovnako (jeden malý, druhý malý), tak matematika zafunguje tak, že rozdiely buď budú oba záporné (lebo overall aj cena sú malé) alebo budú oba kladné (lebo overall aj cena sú veľké). Vždy keď ich spolu vynásobíš, dostaneš kladné číslo.<br /><br />
+
+Matematika zafunguje aj vtedy, keď údaje budú rásť opačným smerom, ako je gk_diving a skill_ball_control. Čím lepší gk_diving, tým horší skill_ball_control a čím horší gk_diving, tým lepší skill_ball_control. Keď bude jeden z nich menší ako priemer a druhý väčší, tak prvý rozdiel bude záporné číslo a druhý kladné. Mínus krát plus je mínus. Výsledok bude záporný.<br /><br />
+
+Zase sme na tom o kúsok lepšie. Už vieme povedať aj vzťah medzi dvomi údajmi, resp. ich rozdielmi. Keď je súčin rozdielov kladný, sú oba údaje väčšie ako priemer. Keď je súčin záporný, jeden údaj je menší ako priemer a druhý väčší.<br /><br />
+
+<table class="center statTable">
+<tr>
+<th>Meno</th>
+<th>Overall * Cena</th>
+<th>Gk_diving * Skill_ball_control</th>
+</tr>
+
+<tr>
+<td>Jonathan Mitchell</td>
+<td>725 333 333,33</td>
+<td>-160,33</td>
+</tr>
+
+<tr>
+<td>Anthony Lopes</td>
+<td>-38 666 666,67</td>
+<td>-1 1159,33</td>
+</tr>
+
+<tr>
+<td>Lionel Messi</td>
+<td>680 333 333,33</td>
+<td>-2 183,33</td>
+</td>
+</tr>
+</table>
+<br /><br />
+
+V tabuľke máme vypočítané súčiny. Ešte stále však nevieme povedať, aký je vzťah medzi údajmi. Ak by sme súčiny počítali nie pre troch, ale pre 18 000 futbalistov, tak by sa nám vzťah hľadal ťažko. Potrebujeme niečo jednoduchšie, nejaké jedno číslo. Nie je nič jednoduchšie. Spravíme si zo súčinov priemer. Priemer pre súčin overallu a ceny je 455 666 666,67. Priemer pre súčin gk_diving a skill_ball_control je -1 167,67. <br /><br />
+
+Super, máme jedno číslo a mohli by sme porovnať závislosť. Pri overalle a cene teda platí, že rastú rovnakým smerom. Gk_diving a skill_ball_control rastú každé opačným smerom. Medzi overallom a cenou vyšla závislosť v miliónoch a medzi  gk_diving a skill_ball_control iba v tisícoch. Platí, že overall a cena majú medzi sebou oveľa väčšiu závislosť ako  gk_diving a skill_ball_control? No nie, neplatí. Zase treba prihliadnuť na veľkosť dát.<br /><br />
+
+Ako porovnať nerovnaké dáta sme mali už vo variančnom koeficiente. Riešením bolo spraviť porovnávané údaje relatívne (rozptyl sme vyjadrili na jednu jednotku údajov, pamätáš?). Niečo podobné chceme teda aj tu. To, čo sme teraz porovnali je priemer z rozdielov. Spravíme teda rozdiely relatívne. To znamená, že ich vyjadríme na jednu jednotku. Zatiaľ ešte nevieme na akú.<br /><br />
+
+Keď porozmýšlaš nad rozdielom, zistíš, že je to vlastne nejaká variabilita. Lebo keď odčítaš priemer od údaju, dostaneš, ako ďaleko sú od seba. Takže rozdiel je variabilita a tú treba vyjadriť na jednotku variability. Veľkosť variability sme už počítali viacerými spôsobmi. Vyberieme si z nich smerodajnú odchýlku.<br /><br />
+
+Poznáme variabilitu pre jeden údaj a aj pre všetky údaje (je to smerodajná odchýlka). Už stačí len spraviť rozdiel deleno smerodajná odchýlka a máme rozdiel relatívny. Tak to vyskúšame.<br /><br />
+
+Vypočítame si smerodajné odchýlky pre overall=12.57, cena=39 381 326.57, gk_diving=36.69 a skill_ball_control=31.84. <br /><br />
+
+Skúsime vypočítať vzťah medzi dátami znovu. Pre každý údaj vypočítame rozdiel medzi ním a priemerom. Tu prichádza zásadný krok. Každý rozdiel vydelíme jeho smerodajnou odchýlkou (rozdiely overallu sa delia smerodajnou odchýlkou overallu, rozdiely ceny sa delia smerodajnou odchýlkou ceny a podobne). Takto upravené rozdiely môžeme medzi sebou vynásobiť. Nakoniec z nich spravíme priemer a dostaneme závisloť medzi údajmi.<br /><br />
+
+V tejto tabuľke sú rozdiely vydelené príslušnou smerodajnou odchýlkou. Pre overall Jonathana Mitchella je to -17/12=-1,417 a pre ostatné sa to ráta rovnako. Ani delenie nepokazilo vzťahy medzi údajmi. Stále platí, že čím väčší overal, tým väčšia cena a čím väčší gk_diving, tým menší skill_ball_control.<br /><br />
+
+<table class="center statTable">
+<tr>
+<th>Meno</th>
+<th>Overall</th>
+<th>Cena</th>
+<th>Gk_diving</th>
+<th>Skill_ball_control</th>
+</tr>
+
+<tr>
+<td>Jonathan Mitchell</td>
+<td>-1,352</td>
+<td>-1,083</td>
+<td>0,354</td>
+<td>-0,387</td>
+</tr>
+
+<tr>
+<td>Anthony Lopes</td>
+<td>0,318</td>
+<td>-0,245</td>
+<td>1,009</td>
+<td>-0,984</td>
+</tr>
+
+<tr>
+<td>Lionel Messi</td>
+<td>1,034</td>
+<td>1,329</td>
+<td>-1,363</td>
+<td>1,372</td>
+</tr>
+
+</table>
+<br /><br />
+
+Tu si vynásobíme rozdiely, medzi ktorými chceme hľadať vzťahy.<br /><br />
+
+<table class="center statTable">
+<tr>
+<th>Meno</th>
+<th>Overall * Cena</th>
+<th>Gk_diving * Skill_ball_control</th>
+</tr>
+
+<tr>
+<td>Jonathan Mitchell</td>
+<td>1,465</td>
+<td>-0,137</td>
+</tr>
+
+<tr>
+<td>Anthony Lopes</td>
+<td>-0,078</td>
+<td>-0,993</td>
+</tr>
+
+<tr>
+<td>Lionel Messi</td>
+<td>1,374</td>
+<td>-1,869</td>
+</td>
+</tr>
+</table>
+<br /><br />
+No a nakoniec súčiny spriemerujeme. Pre Overall * Cena je priemer 0,921. Pre Gk_diving * Skill_ball_control je priemer -0,999. Konečne máme správny výsledok, ktorý môžeme porovnať. Vidíme, že overall a cena rastú rovnakým smerom. Gk_diving a kill_ball_control rastú opačným smerom a medzi nimi je vzťah silnejší ako medzi overllom a cenou.<br /><br />
+ 
+Keď predchádzajúce výpočty upravíme, dostaneme kovarianciu a korelačný koeficient<br /><br />
+
+<figure>
+  <img src="../assets/images/stat_CorrelationProof.png" alt="Odvodenie korelácie a korelačného koeficientu">
+  <figcaption>Obr. 13.: Naše výpočty sme upravili a dostali sme koreláciu a korelačný koeficient.</figcaption>
+</figure>
+
+<ol>
+<li>Máme dva dátové súbory. Sú to x a y. Môžeš si za tým predstaviť náš overall a cenu.</li>
+<li>Z x aj y sa vypočítal priemer a smerodajná odchýlka. Od každého údaju sa priemer odráta. Tento rozdiel sa predelí smerodajnou odchýlkou. Príslušné rozdiely sa vynásobia (u nás to bol overall a cena hráča). Nakoniec sa z toho spraví priemer.</li>
+<li>Aby sme nemuseli každé x a y deliť zvlášť, upravíme si zápis. Zlomky, ktoré sa spolu násobia dáme do jedného.</li>
+<li>Ďalšia úprava. Sčítanie zlomkov nahradíme sumou. Písmeno <i>i</i> bude postupne prechádzať všetkými údajmi x a y.</li>
+<li>Delenie smerodajnými odchýlkami dáme von pred sumu. Matematika nám to dovolí, pretože smerodajné odchýlky sú počas celého sčítavania rovnaké a je jedno, či sa najprv delí a potom sčítavá alebo sa najprv sčíta a potom sa to celé vydelí. </li>
+<li>Delenie smerodajnými odchýlkami presunieme do ďalšieho kroku. Vznikol vzorec, ktorý už poznáš. Je to kovariancia.</li>
+<li>Kovarianciu predelíme smerodajnými odchýlkami a dostaneme výraz, ktorý sa nazýva korelačný koeficient.</li>
+</ol>
+
+Celé to, čo sme tu písali viedlo k tomu, aby sme dostali dva výrazy. Prvý sa nazýva kovariancia.
+
+$$ k=\frac{1}{n}\sum_{i=1}^n \left(x_{i} - \overline{x} \right) \cdot \left(y_{i} - \overline{y} \right) $$
+
+Kovariancia je priemer z vynásobených rozdielov. Hovorí už o tom, ako sú dáta závislé, ale ešte nevieme povedať, či veľa alebo málo. To budeme vedieť až keď kovarianciu spravíme relatívnu. Vztiahneme ju na smerodajné odchýlky. Tento výraz sa nazýva korelačný koeficient.
+
+$$ r=\frac{k}{s_{x} \cdot s_{y}} $$
+
+Korelačný koeficient hovorí o tom, ako spolu dáta súvisia. Môže byť kladný, záporný alebo nula. Čím väčšie číslo, tým je vzťah medzi dátami silnejší. Keď medzi údajmi nie je žiadna závislosť, tak údaje vyzerajú tak, že niektoré sú oba rovnako malé alebo veľké, ďalšie sú zas také, že je jeden menší, druhý väčší. Čiže niekedy súčin medzi rozdielny vyjde kladné číslo, inokedy záporné. Keď to spolu sčítaš, tak sa to vynuluje. Nie celkom, ale je to číslo blízke nule.<br /><br />
+
+Aby sme sa uistili, že sme s tromi futbalistami počítali dobre, vypočítame si korelačný koeficient medzi overallom a cenou aj vzorcom.
+Potrebujeme na to priemery a smerodajné odchýlky. Priemery sú pre overall=81, cena=43 166 666,67 a smerodajné odchýlky sú pre overall=12.57, cena=39 381 326.65. <br /><br />
+
+$$
+\begin{equation}
+\displaylines{
+k=\frac{1}{3}\sum_{i=1}^3 \left(overall_{i} - \overline{overall} \right) \cdot \left(cena_{i} - \overline{cena} \right) \\
+ = \frac{1}{3}*((64 - 81)*(500\ 000 - 43\ 166\ 666,67) + (85 - 81)*(33\ 500\ 000 - 43\ 166\ 666,67) +\\
+ + (94 - 81)*(95\ 500\ 000 - 43\ 166\ 666,67))\\
+ = \frac{1}{3}*(-17*(-42\ 666\ 666,67) + 4*(-9\ 666\ 666,67) + 13*52\ 333\ 333,33)\\
+ = \frac{1}{3}*(725\ 333\ 333,33\ -\ 38\ 666\ 666,67+680\ 333\ 333,33)\\
+ = \frac{1\ 367\ 000\ 000}{3}\\
+ = 455\ 666\ 666,67
+}
+\end{equation}
+$$
+
+<br /><br />
+
+
+$$ r=\frac{k}{s_{overall} \cdot s_{cena}} = \frac{913 444 444, 437}{12.57 \cdot 39 381 326.65} =  \frac{455 666 666,67}{495 023 274,9849} = 0,921 $$
+
+Už vieme ako korelačný koeficient prišiel na svet, vieme čo znamená a vieme ho aj vyrátať. Ukážeme si teda, ako vyzerá v praxi. Spravíme si graf, ktorý bude hovoriť o tom, aká je korelácia medzi niektorými atribútmi hráčov Interu Milano. Červené políčko znamená, že korelácia je silná a oba atribúty rastú rovnakým smerom. Korelácia je silná aj keď je políčko tmavomodré, ale tu atribúty rastú opačným smerom. Bledo zelená farba hovorí, že medzi atribútmi vzťah nie je.
+
+<figure>
+  <img src="../assets/images/stat_InterCorrelation.png" alt="Korelácia hráčov Inter Milano">
+  <figcaption>Obr. 14.: Korelácia hráčov Interu Milano</figcaption>
+</figure>
+
+Ešte v úvode sme chceli zistiť vzťahy medzi overralom a cenou, medzi výškou a vekom, medzi gk_diving a skill_ball_control. Pozri sa na graf a skús na to prísť sám. Nachvíľu prestaň čítať a pozri sa na ten graf, lebo text pokračuje riešením. Medzi overallom a cenou je korelácia  a rastú tým istým smerom. Vek a výška medzi sebou vzťah nemajú. Medzi gk_diving a skill_ball_control je záporná korelácia, to znamená, že rastie každé iným smerom. Porozmýšľaj aj nad vzťahmi, ktoré majú medzi sebou iné atribúty. Skús podumať aj nad tým, prečo políčka na diagonále majú korelačný koeficient 1.
+
+
+
+<h1>Outliers</h1>
+Na koniec si povieme niečo o outliers. Táto vec nepatrí k nástrojom štatistiky (teda k vzorcom), ale sú to dáta.<br /><br />
+ 
+Ako angličtiny znalý človek, vieš, že outliers znamená <i>tí, čo ležia mimo</i>. Out je von alebo mimo a liers je ležiaci. Nevieme presný termín v slovenčine, tak budeme používať tento anglický. Outlier je teda to, čo leží mimo. V dátach sú to údaje, ktoré sú absolútne od veci. Buď sú príliš veľké alebo príliš malé. <br /><br />
+
+Príklady: Meriaš teploty v januári. V jeden deň príde teplý front a bude 41 &degC. Je to jasný outlier, v januári predsa nameráš tak od +2&degC po -20&degC. Druhý príklad. Meriaš výšku prvákov. Prváci merajú tak 130cm. Lenže v triede je aj prepadnutý 15-násť ročný Móric. Ten má 190cm. Zase vyčnieva z radu. Je to outlier. Takisto outlierom by bola aj napriemerne inteligentná 7-ročná Anička. Študovala by už na strednej škole. Jej spolužiaci merajú okolo 180cm a ona iba 130cm. Aj jej výška vyčnieva z radu. Outlierov v dátach nie je veľa. Od toho sú outlieri. Ak by ich bolo veľa, už by nevyčnievaly z radu. Ak by v januári bežne bývalo 40 &degC, tak by to bolo úplne normálne, nie výnimočné.<br /><br />
+
+Na outlier-ov treba dávať pozor. Sú to takí záškodníci. Natiahnu ti priemer, ani nevieš ako. Napríklad zoberme si skupinku desiatich zamestnancov a ich šéfa. Každý zamestnanec má plat 500 eur a šéf má 5000. Rád by si povedal, že zamestanci dostávajú priemerne 500 eur, ale nemôžeš, lebo šéf ti priemer posunie úplne niekde inde. Rátaj s nami: (500*10+5000)/11=909,09 eur. Priemer ti síce vyskočí takto vysoko, ale medián ťa zachráni. Ten ti povie, že stredná hodnota je 500. <br /><br />
+
+Je fajn si spraviť z dát medián aj priemer, lebo ti povedia, či máš v dátach outlierov alebo nie. Skús si typnúť ako. Hej, je to tak, že keď sú to podobné čísla, tak tam outliere nie sú, ale keď ti priemer vyjde 1000 a medián 500 (skratka je veľký rozdiel medzi preimerom a mediánom), tak niečo nie je v poriadku. Outlierov ti môžu naznačiť aj miery variability, lebo keď tam máš outliera, tak ti vyjde variabilita dát veľká. Veľkú variabilitu ti môžu spraviť aj veľmi rozptýlené dáta. Ale môžeš sa spoľahnúť na to, že keď ti vyjde variabilita malá, tak tam outliers nie sú.<br /><br />
+
+Okrem priemeru je na outlierov citlivé aj variančné rozpätie.
+
+Outliere v bežných prípadoch ani nechceš v dátach, lebo ti veľmi skreslia informácie o nich (viď tie výplaty). Preto sa pri výpočtoch outliery tak nejak zabudnú do nich pridať.
+
+<h2>Odhalenie outlierov</h2>
+Už sme si povedali, že outliery v dátach znamenajú niečo zlé. Môžu znamenať, že naše merania boli chybné alebo bolo chybné, to čo sa meralo. Keď zistíme, že ich máme v dátach, treba hľadať chybu. Ale najprv to treba zistiť, takže sa ideme pozrieť, či nám štatistika pomôže. <br /><br />
+ 
+Spravili sme si dva ukážkové štatistické súbory. Oba majú 21 údajov. Prvý má však všetky dáta rovnaké až na jedného outliera. Druhý má dáta pekne rozložené od 1 do 100. <br /><br />
+
+x1 = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,100]<br />
+x2 = [1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]<br /><br />
+
+Najprv skúsime vypočítať priemer a medián. Priemer x1 je 5,714 a medián je 1. Priemer x2 je 50,047 a medián je 50. Pre x1 sa medián a priemer líši, čiže môžeme za tým tušiť nejakého outliera. Pre súbor x2 sú medián a priemer takmer rovnaké, čiže tam outlier nebude, dáta sú tam rozptýlené asi rovnomerne.<br /><br />
+
+Pozrieme sa, čo na to hovoria miery variability.<br /><br />
+
+Variančné rozpätie pre oba súbory je 99, takže nevieme povedať, ktorý súbor je rozptýlený viac. Na variančné rozpätie si treba dať pozor, lebo je ľahko ovplyvniteľné outliermi. Ráta sa iba z dvoch údajov a to je málo. Keď je tam outlier, tak je samozrejme maximum alebo minimum. Outlier zväčší variančné rozpätie aj keď sú ostatné údaje rozptýlené rovnomerne. To sa stalo aj v prípade x1.<br /><br />
+
+Presnejšie je použiť priemernú absolútnu chybu, rozptyl alebo smerodajnú odchýlku. Tie sa rátajú zo všetkých údajov a vplyv outliera sa tak zmenší, lebo ho prevážia ostatné údaje. Priemerná absolútna chyba je pre x1 je 8,979 a pre x2 je 26,145. Z tohoto už jasne vidieť, že x2 je rozptýlený viac.<br /><br />
+
+Keď chceme zvýrazniť tie dáta, ktoré sú od priemeru ďalej, použijeme rozptyl. Na súbore x1 je vidno ako zvýrazňuje väčšie chyby. Pre x1 je drvivá väčšina údajov od priemeru vzdialená o 4,714. Toto nie je veľké číslo, tak aj druhá mocnina bude malá. Ak by sme rátali rozptyl bez tej stovky, tak by vyšiel 22,221. Keď prirátame aj rozdiel medzi 100 a 5,714 tak výsledok bude 444,489. Môžete vidieť, že stačí jeden veľký rozdiel a rozptyl hneď vyskočí. V súbore x2 sú už rozdiely medzi údajmi a priemerom väčšie, tak aj rozptyl bude veľký. Pre x1 je teda rozptyl 444,489 a pre x2 je rozptyl 911,950.<br /><br />
+
+Ak chceme vrátiť rozptyl späť do jednotiek, v ktorých sme počítali, tak ho odmocníme. Vznikne smerodajná odchýlka.  Outlier je zvyčajne od priemeru vzdialený ďaleko. Rozptyl veľké vzdialenosti zachytí, lebo ich umocňuje. Smerodajná odchýlka vracia rozptyl späť do jednotiek, ale veľké rozdiely sú už v nej zachytené (vďala tomu, že sa ráta z rozptylu). Smerodajná odchýlka je pre x1 rovná 21,082 a pre x2 je 30,198. Keď výsledky porovnáme s priemernou absolútnou chybou vidíme, že pre x1 sa líšia viac ako pre x2. Aj z tohoto je vidno, že v dátach niečo nie je na poriadku.
+
+
+<h1>Analýza údajov o futbalistoch</h1>
+
+Po dlhom vyčerpávajúcom texte sme sa dostali na koniec a máme všetky potrebné nástroje štatistiky. Poznáme miery polohy, miery variability aj koreláciu. Ideme ich teda teraz aplikovať na futbalové tímy a konečne vyberieme jeden z nich. <br /><br />
+
+<table class="center statTable">
+<tr>
+<th>Názov klubu</th>
+<th>$\overline{x}$</th>
+<th>$\tilde{x}$</th>
+<th>$R$</th>
+<th>$\overline{d}$</th>
+<th>$s^2$</th>
+<th>$s$</th>
+<th>$v$</th>
+</tr>
+
+<tr>
+<td>FC Bayern München</td>
+<td>81.304</td>
+<td>84</td>
+<td>26</td>
+<td>5.402</td>
+<td>45.516</td>
+<td>6.746</td>
+<td>8.297</td>
+</tr>
+
+<tr>
+<td>Real Madrid</td>
+<td>80.121</td>
+<td>82</td>
+<td>29</td>
+<td>6.405</td>
+<td>61.682</td>
+<td>7.853</td>
+<td>9.802</td>
+</tr>
+
+<tr>
+<td>Juventus</td>
+<td>80.060</td>
+<td>83</td>
+<td>27</td>
+<td>5.922</td>
+<td>50.299</td>
+<td>7.092</td>
+<td>8.858</td>
+</tr>
+
+<tr>
+<td>FC Barcelona</td>
+<td>78.363</td>
+<td>82</td>
+<td>30</td>
+<td>8.849</td>
+<td>85.140</td>
+<td>9.227</td>
+<td>11.774</td>
+</tr>
+
+<tr>
+<td>Bayer 04 Leverkusen</td>
+<td>77.280</td>
+<td>78</td>
+<td>20</td>
+<td>4.108</td>
+<td>25.881</td>
+<td>5.087</td>
+<td>6.583</td>
+</tr>
+</table>
+<br />
+
+Ako prvý sme vypočítali priemer pre každý zo 668 klubov a zoradili sme ich podľa neho od najlepšieho po najhorší. Sem do tabuľky sme si vybrali prvých päť najlepších klubov podľa priemeru. Vedľa priemeru sme vypočítali medián. Chceli sme si overiť, že priemer je správny. Teda že nemáme medzi klubmi nejaký, ktorý má samých slabých hráčov a jedného úplne geniálneho, ktorý potiahne priemer vysoko. Vidíme, že priemer a medián sa nám veľmi nelíšia, takže outlierov v kluboch nemáme.<br /><br />
+
+Možno Juventus má jedného alebo zopár slabších hráčov, pretože má priemer 80,060, čo ho v priemeroch dalo na tretie miesto, ale medián má 83, teda druhý najlepší. Títo slabší hráči mohli potiahnuť priemer Juventusu viac dole. Najmenší rozdiel medzi mediánom a priemerom má Leverkusen. To znamená, že nemá niektorých hráčov výrazne slabších alebo silnejších (teda nemá outlierov).<br /><br />
+
+Ďalšie na rade sú miery variability. Tie nám hovoria o tom, ako veľmi sú hráči rozdielny. Či je ich <i>overall</i> zhruba na rovnakej úrovni alebo sú tam lepší a horší. Asi chceme tím s čo najmenšou variabilitou, pretože hráčom na jednej úrovni sa hrá spolu lepšie ako hráčom, kde sú niektorí príliš slabý a niektorí príliš silný.<br /><br />
+
+Prvé, najľahšie čo môžeme vypočítať je variančné rozpätie. Najmenej rozdielny hráči vyzerajú byť v Leverkusene, ale stále treba mať na pamäti, že variančné rozpätie je citlivé na outlierov, tak sme preistotu vypočítali aj priemernú absolútnu odchýlku, rozptyl a smerodajnú odchýlku. Všetky tri nám potvrdily, že najmenej rozdielny sú hráči Leverkusenu. Po započítaní veľkých odchýlok od priemeru vyšla smerodajná odchýlka ani nie o 1 menšia od priemernej absolútnej chyby. Ani pri ostatných tímoch sa smerodajná odchýlka veľmi nelíšili od priemernej absolútnej odchýlky. Veľké rozdiely tam nie sú, tak aj miery variability potvrdili, že v tímoch sú vyrovnaný hráči.<br /><br />
+
+Ak by si vedel, z akých dát sme počítali štatistiky, tak tu sú <i>overall</i> pre tímy: <br />
+<b>FC Bayern München:</b> 89,  88, 87, 86, 86, 86, 85, 85, 84, 84, 84, 84, 84, 84, 84, 83, 79, 79, 75, 72, 72, 67, 63 <br />
+<b>Real Madrid:</b> 91, 90, 89, 88, 88, 87, 87, 87, 86, 85, 85, 85, 85, 85, 83, 83, 82, 81, 81, 80, 80, 79, 79, 77, 76, 74, 73, 70, 69, 66, 66, 65, 62 <br />
+<b>Juventus:</b> 93, 89, 88, 86, 86, 86, 85, 85, 85, 85, 84, 84, 83, 83, 83, 83, 83, 83, 82, 82, 81, 79, 79, 77, 75, 74, 72, 71, 69, 68, 67, 66, 66 <br />
+<b>FC Barcelona:</b> 94, 90, 89, 89, 89, 88, 87, 86, 86, 85, 85, 85, 84, 84, 84, 82, 82, 81, 79, 76, 71, 71, 71, 70, 70, 68, 67, 67, 67, 65, 65, 65, 64 <br />
+<b>Bayer 04 Leverkusen:</b> 84, 83, 83, 83, 82, 82, 82, 82, 80, 80, 79, 78, 78, 77, 77, 77, 75, 75, 75, 74, 72, 71, 71, 68, 64 <br />
+<br /><br />
+
+Štatistika nám povedala, že najlepší priemer má FC Bayern München, ale zasa najvyrovnanejší hráči sú v Bayer 04 Leverkusen. Rozhodujeme sa teda medzi týmito dvomi klubmi. My sme si na to vybrali kvantily. Spravíme to tak, že si všetkých 18 278 hráčov zoradíme od najhoršieho po najlepší. Potom ich rozdelíme do skupín zhruba po 30 (v jednom tíme je zhruba 30 hráčov).Počet skupín bude 18 278/30=609. Dáta rozdelíme do 609 skupín pomocou kvantilov. Kvantilov bude 608. Keď budeme mať dáta v skupinách, tak sa pozrieme, koľko hráčov z oboch tímov patrí do najlepšej skupiny. Vyberieme si ten, kde ich bude najviac. Najlepšia skupina sú tí hráči, ktorí sú väčší ako posledný šestoôsmi kvantil. Ako sa kvantil ráta, to už napísané je, tak si teraz povieme len výsledok. Je to 88. V Leverkusene nie je nikto lepší ako 88 a v Mníchove je jeden. Tak si definitívne vyberáme FC Bayern München.<br /><br />
+
+Aby si vedel, že do štatistiky patria aj grafy, tak sme ich zopár spravili pre FC Bayern München.
+
+<figure>
+  <img src="../assets/images/stat_linearGraph.png" alt="Graf závislosti ceny od overallu">
+  <figcaption>Obr. 15.: Graf zobrazuje, ako rastie cena hráčov v závislosti od ich overallu. Ceny sú uvedené v desiatkach miliónov (tá 6 znamená, že hráč stál 60 000 000 a nie 6 eur.)</figcaption>
+</figure>
+
+<figure>
+  <img src="../assets/images/stat_barGraph.png" alt="Porovnanie schopností pravákov a ľavákov">
+  <figcaption>Obr. 16.: Tu sme porovnali pravákov a ľavákov. Pre obe skupiny sme z každého atribútu vypočítali priemer. Čiže napríklad tempo je priemerné tempo ľavákov a pravákov.</figcaption>
+</figure>
+
+<figure>
+  <img src="../assets/images/stat_histGraph.png" alt="Histogram overallov">
+  <figcaption>Obr. 17.: Graf zobrazuje počet hráčov s daným <i>overallom</i>. Hráčov s <i>overallom</i> 84 je v Mníchove najviac. </figcaption>
+</figure>
+
+<figure>
+  <img src="../assets/images/stat_pieGraph.png" alt="Rozdelenie hráčov podľa veku">
+  <figcaption>Obr. 18.: Tu je zobrazené rozdelenie hráčov podľa ich veku. Dvadsaťtri ročných a tridsaťročných je najviac.</figcaption>
+</figure>
+
+<figure>
+  <img src="../assets/images/stat_scatterGraph.png" alt="Korelácia medzi schopnosťou strieľať a ">
+  <figcaption>Obr. 19.: Tento graf zobrazuje závislosť medzi schopnosťou strieľať a brániť. Hráči, ktorí majú vysoký počet bodov pre bránenie, majú nízky počet bodov pre strieľanie a naopak. Môžeme usúdiť, že čím lepší obranca, tým horšie strieľa.</figcaption>
+</figure>
+
+
+<h1>Naozajstné využitie štatistiky</h1>
+Na stránke ourworldindata.org sú uverejnené rôzne štatistiky, ktoré sa týkajú nášho sveta. Je tam niečo o životnom prostredí, vývoji popolácie, zdraví a ďalších veciach. Požičali sme si tri články, ktoré tu v krátkosti opíšeme, aby si videl, že štatistika má naozajstné využitie. Články sú po anglicky, tak ich nadpisy necháme v pôvodnom znení.
+
+<h3>Human height</h3>
+<b>odkaz: </b> <a href="https://ourworldindata.org/human-height" target="_blank">https://ourworldindata.org/human-height</a><br /><br />
+Tento celkom zaujímavý výskum skúmal výšku ľudí v dejinách ale aj v rámci sveta. Zistili, že do istej miery má na výšku vplyv strava, ale svoje zohráva aj genetika. Keď merali výšku ľudí naprieč storočiami (merali kostry), zistili, že čím sme ako ľudstvo mali výživnejšiu stravu, tým sme boli vyšší. Niekoľko rokov dozadu začala výška ľudí stagnovať aj napriek stále výživnej strave. Prišli na to, že za to môže genetika, ktorá nám nedovolí viac narásť. Okrem toho merali aj výšku ľudí v jednotlivých štátoch. Najnižší sú ľudia v Timore. Priemerne merajú 159.9cm. Nízkych ľudí nájdete aj v Jemene a Indií, ale hlavne v oceánskych štátoch ako je Indonézia, Papua Nová Guinea a Filipíny. Najvyšší na svete je národ holandský. Tam ľudia priemerne dorastajú na 182cm. Zahanbiť sa nedá ani zvyšok Európy, Rusko a Severná Amerika. My na Slovensku patríme s priemernou výškou 179cm medzi vyššie národy. 
+
+
+<h3>Food supply</h3>
+<b>odkaz: </b> <a href="https://ourworldindata.org/food-supply" target="_blank">https://ourworldindata.org/food-supply</a><br /><br />
+V článku sa venovali výžive ľudí po celom svete. Chceli vedieť, ako výživná je strava ľudí v rôznych častiach sveta. Najprv sa pozreli na štáty, koľko priemerne kalórií denne príjmu ich obyvatelia. Najviac ich príjmu v Severnej Amerike, Európe, ale aj vo veľkej časti Južnej Ameriky a Ázie. Najhoršie sú na tom štáty Afriky a Strednej Ameriky. Skoro pre každý štát zisťovali ako sa líšií príjem kalórií medzi obyvateľstvom. Použili na to variančný koeficient. Najväčšie rozdiely sú medzi ľuďmi v Haiti. Veľké rozdiely sú aj vo väčšine afrických štátov, ale aj v Číne či Mongolsku. Najmenšie rozdiely v príjme kalórií majú obyvatelia Argentíny. Dobre je na tom aj Venezuela, Gabon alebo Azerbajdžan. Pre Severnú Ameriku a Európu údaje nie sú dostupné. Zisťovali aj koľko bielkovín a tukov prijmú ľudia zo živočíšnej a rastlinnej stravy. Najviac proteínov a tukov sa príjme v živočíšnej potrave. Pomocou korelácie zistili, že čím má krajina väčší HDP, tým viac výživnú stravu majú jej obyvatelia.
+
+<h3>Palm oil</h3>
+<b>odkaz: </b> <a href="https://ourworldindata.org/palm-oil" target="_blank">https://ourworldindata.org/palm-oil</a><br /><br />
+Palmový olej sa dnes používa všade. Od kozmetiky cez biopalivá až po potraviny. V roku 1961 svet priemerne vyprodukoval 1,48 milióna ton palmového oleja ročne. Toto číslo rástlo, až sme sa dostali na dnešných 71,45 milióna ton. Je to najviac zo všetkých rastlinných olejov. Najviac palmového oleja produkujú Malajzia, Indonézia a Timor. Vyrába sa však aj Thajsku, Kolumbií, Nigérií či Brazílií. Najväčšími konzumentami sú Spojené štáty, Čína, India, ale prekvapivo aj Taliansko a Španielsko. S veľkou spotrebou palmového oleja prichádza aj potreba dorábať ho stále viac. Od roku 2001 po rok 2016 prišla Indonézia o 23% svojich dažďových pralesov. Našťastie je trend odlesňovania v Indonézií klesajúci. S alternatívanmi palmového oleja to tiež nie je jednoduché, pretože ostatné rastliny, z ktorých sa dá olej vyrobiť, potrebujú pôdy ešte oveľa, oveľa viac. Nižšia spotreba palmového oleja by sa dala docieliť aj tak, že by sa prestal používať v biopalivách. Svojou trochou môže prispieť každý tým, že zníži jeho spotrebu, napríklad v potravinách.
+
+<h1>Záver</h1>
+Toto bol veľmi dlhý článok. Ak si vydržal čítať až do konca, tak gratulujeme :D. Keď raz budeš niekde na výške alebo v práci vyhodnocovať výsledky experimentov, prieskumov, meraní a neviem čoho ešte, tak si na štatistiku určite spomenieš. Dúfame, že sme ťa veľmi nepoplietli, ale naopak, niečomu si sa naučil.
+
+
+<h1>Zdroje</h1>
+
+<div class='literature'>
+[1] FIFA 20 complete player dataset. 2020. https://www.kaggle.com/stefanoleone992/fifa-20-complete-player-dataset <br /><br />
+[2] Overall Rating. 2021. https://www.fifplay.com/encyclopedia/overall-rating/ <br /><br />
+[3] Player Attributes. 2021. https://www.fifplay.com/encyclopedia/player-attributes/ <br /><br />
+[4] Quartiles when all numbers are same. 2016. https://math.stackexchange.com/questions/1577748/quartiles-when-all-numbers-are-same <br /><br />
+
+</div>
+</div>
