@@ -1,0 +1,195 @@
+---
+layout: default
+title: Vektory
+---
+
+<h1>Vektory</h1>
+
+<div class="content">
+Vetu: "Prídem o päť minút." ti už niekto povedal aspoň stokrát. Keď to počuješ, pozrieš na hodinky s cieľom zistiť, kedy kamarát príde. Ak máš na hodinkách 12:00 vieš, že kamarát príde 12:05. Ak ukazujú 8:53, kamarát bude u teba 8:58.<br /><br />
+
+Tých 5 minút je z matematického hľadiska vektor, pretože predstavuje zmenu. Čas 12:00 je bod, kde sa vektor aplikuje. Keď teda aplikujeme vektor 5 minút na čas 12:00, zmení sa nám tento čas na 12:05. Keď ten istý vektor aplikujeme na čas 8:53, tak budeme mať 8:58. Keď vektor 15 minút aplikujeme na čas 12:00, budeme mať čas 12:15. Môžeme mať aj záporný vektor, napríklad -5 minút. Keď aplikujeme ten na čas 12:00, dostaneme 11:55. Vektor môže mať teda veľkosť aj smer. Veľkosť je počet minút (napr. 5 min) a smer je + alebo -.<br /><br />
+
+<figure>
+  <img src="../assets/images/aGeom_vecTime.png" alt="Čas ako vektor">
+  <figcaption>Obr. 1.: Vektor predstavuje zmenu nejakého bodu</figcaption>
+</figure>
+
+Príklad s časom bol vektor v jednorozmernom priestore (iba na osi x). Vektory samozrejme existujú aj v 2D a 3D. <br /><br />
+
+Ako sme si už povedali, <b>vektor je zmena polohy bodu</b>. Pre viacrozmerný priestor je to zmena po každej osi. Zapisujeme ju do hranatých zátvoriek, podobne ako bod. V 3D priestore by vektor mohol byť takýto: [3,8,-1]. Znamená to, že bod sa zo svojho miesta pohne o 3 kroky na osi x, o 8 krokov na osi y a o -1 krok na osi z. <br /><br />
+
+<b>Vektory sa</b> zvyčajne <b>označujú</b> malými písmenami u,v,w, nad ktorými sa píše šípočka: $\vec{u}$, $\vec{v}$, $\vec{w}$. Niekde ich označujú tučným písmom: <b>u</b>,<b>v</b>,<b>w</b>. Veľkosť vektora sa označuje rovnými zátvorkami $|\vec{v}|$. <br /><br />
+
+<b>Vektor má veľkosť a smer</b>. Veľkosť vektora znamená, že ako veľa pohnem bod. Smer vektora je smer, ktorým sa bod pohne. Na papier sa kreslí vektor ako šípka. Veľkosť šípky je veľkosť vektora a smer šípky je smer vektora.<br /><br />
+
+Vektor sa kreslí medzi dvomi bodmi. Bod na začiatku vektora je ten, z ktorého vychádzame a bod na konci vektora je ten, do ktorého prídeme. Tieto dva body však nie sú samotný vektor. Vektor je tá šípka/cesta/zmena medzi nimi. Vychádzať môžeme z hocijakého bodu a prísť tiež do hocijakého bodu. <b>Ak sa však pohneme o rovnaký úsek, rovnakým smerom, je to stále ten istý vektor,</b> nech sa pohneme skadiaľkoľvek. Vektor je teda daný veľkosťou a smerom, nie pozíciou.
+
+<figure>
+  <img src="../assets/images/aGeom_vecVectors.png" alt="Vektor je daný veľkosťou a smerom. Nie pozíciou.">
+  <figcaption>Obr. 2.: Vektor je daný veľkosťou a smerom, preto šípky rovnakej dĺžky a rovnakého smeru predstavujú ten istý vektor, aj keď sú na rôznych miestach.</figcaption>
+</figure>
+
+<h2>Posunutie vektora na začiatok sústavy</h2>
+Kúsok ďalej budeme počítať veľkosť vektora, sčítavať vektory a robiť s nimi rôzne operácie. Na to potrebujeme vedieť, ako je vektor dlhý po všetkých osiach. Teda koľko dielikov zaberá na osi x, koľko na y a koľko na osi z. <br /><br />
+
+Počet dielikov zistíme tak, že od koncového bodu vektora odpočítame začiatočný bod. Tým ho vlastne posunieme do bodu 0,0. Súradnice koncového bodu vektora nám povedia, koľko dielikov je vektor dlhý. Pri posúvaní vektora musíme samozrejme odpočítať aj začiatočný bod od seba samého, aby vektor začínal v bode [0,0]. <br /><br />
+
+Na obrázku môžeš vidieť vektor na troch rôznych miestach, ktorý sme posunuli do bodu [0,0]. Výpočet je spravený pre začiatočný bod A a koncový bod A’. <br /><br />
+
+<figure>
+  <img src="../assets/images/aGeom_vecCoors.png" alt="Umiestnenie vektora do začiatku súradnicového systému">
+  <figcaption>Obr. 3.: Vektor $\vec{v}$ je na troch rôznych miestach. Na začiatok ho presunieme tak, že od koncového aj začiatočného bodu odčítame začiatočný bod.</figcaption>
+</figure>
+
+Takže vždy, keď budeme robiť nejaké operácie s vektormi, posunieme si ich tak, aby začínali v bode [0,0]. Vďaka tomu sa môžeme spoľahnúť na to, že súradnice vektora nám hovoria o počte dielikov na jednotlivých osiach. 
+
+<h2>Veľkosť a smer vektora</h2>
+
+Zatiaľ sme hovorili iba to, že vektor údáva nejaký smer a veľkosť ako sa treba pohnúť. Nevieme nič presné, ani presne o koľko a ani presne kam. Vieme to vypočítať zo súradníc jeho koncového bodu, keď začína v bode [0,0]. Posunúť vektor na začiatok sústavy už vieš, tak môžeme ísť smelo počítať veľkosť a smer vektora.<br /><br />
+
+Smer je jednoduchý. Sú to súradnice jeho koncového bodu. Veľkosť vektora je vzdialenosť medzi jeho začiatočným a koncovým bodom. Vieme ju vypočítať pomocou Pytagorovej vety, lebo poznáme vzdialenosť medzi týmito bodmi aj na osi x aj na osi y.
+
+<figure>
+  <img src="../assets/images/aGeom_vecSize.png" alt="Výpočet veľkosti vektora pomocou Pytagorovej vety">
+  <figcaption>Obr. 4.: Veľkosť vektora $\vec{v}$ sme vypočítali pomocou Pytagorovej vety. Smer vektora udáva koncový bod vektora (lebo vektor naň ukazuje). </figcaption>
+</figure>
+
+<h2>Umiestnenie vektora</h2>
+Pri vektoroch sa môžeš stretnúť so slovami <b>kolineárny</b> a <b>komplanárny</b>. Na prvé počutie to znie dosť zložito, ale tieto dve slová iba pomenúvavajú umiestenie vektorov. Keď hovoríme, že vektory sú kolineárne, myslíme tým, že vektory sú rovnobežné. <br /><br />
+
+Kolinárne vektory môžeme ešte rozdeliť na <b>súhlasné</b> a <b>nesúhlasné</b>. Súhlasné vektory idú rovnobežne, rovnakým smerom. Nesúhlasné vektory sú tiež rovnobežné, ale idú opačným smerom. <br /><br />
+
+<b>Komplanárne</b> vektory sú také, ktoré ležia v rovnobežných rovinách.
+
+<h2>Násobenie vektora číslom</h2>
+Vektor môžeme vynásobiť hocijakým číslom. Po násobení sa zmení veľkosť vektora. Vektor najprv posunieme na začiatok súradnicovej sústavy a potom jeho koncové súradnice vynásobíme nejakým číslom. Dostaneme nové súradnice, ktoré budú určovať vynásobený vektor.<br /><br />
+
+Keď násobíme vektor <b>kladným číslom väčším ako 1, bude dlhší</b>. Keď je to <b>kladné číslo medzi 0 a 1, vektor sa skráti</b>. Keď sa násobí <b>záporným číslom, vektor bude mať opačný smer</b>. 
+
+<figure>
+  <img src="../assets/images/aGeom_vecMultWithK.png" alt="Násobenie vektora číslom">
+  <figcaption>Obr. 5.: Menili sme veľkosť vektora  $\vec{v}$. Po vynásobení číslom 2 vznikol dlhší vektor $\vec{u}$. Keď sa $\vec{v}$ vynásobil číslom 0,5, vznikol skrátený vektor $\vec{w}$. Po vynásobení číslom -2 vznikol vektor $\vec{t}$ s opačným smerom. Vektory $\vec{u}$ a $\vec{t}$ sú rovnako dlhé, len majú opačný smer.  </figcaption>
+</figure>
+
+<h2>Sčítavanie vektorov</h2>
+Vektory, ktoré ideme sčítavať, najprv presunieme na začiatok sústavy. Potom sčítame ich koncové súradnice na jednotlivých osiach. Teda sčítame súradnice vektorov na osi x, na osi y a ak treba, aj na osi z. Vznikne nám jeden nový vektor. Keď nejaký bod posunieme o tento nový vektor, dostaneme ho na to isté miesto, akokeby sme ho posunuli o každý starý vektor. <br /><br />
+
+Na obrázku sú štyri modré vektory, ktoré chceme sčítať. Po ich zrátaní vznikne výsledný vektor, ktorý je nakreslený červenou. V prvej časti výsledný vektor dostaneme tak, že sčítame x a y súradnice modrých vektorov. Je jedno, s ktorým vektorom začneme a ktorými poračujeme, výsledok je vždy rovnaký. V druhej časti je ukázané sčítavanie vektorov tak, že bod sa posunie najprv o prvý vektor, potom o druhý, o tretí, o štvrtý. Tu je tiež jedno, ktorým vektorom začneme.
+<figure>
+  <img src="../assets/images/aGeom_vecSuma.png" alt="Sčítanie vektorov">
+  <figcaption>Obr. 6.: Sčítanie vektorov znamená, že bod postupne posunieme o každý vektor.</figcaption>
+</figure>
+
+<h2>Skalárny súčin</h2>
+V polovici 19. storočia sa ujo Hamilton zaoberal niečím, čo sa nazýva "quaternion". Pri skúmaní quaternion-ov objavil vec, ktorú dnes voláme skalárny súčin. Táto vec sa neskôr adaptovala do vektorov.<br /><br />
+
+Skalárny súčin je jeden zo spôsobov ako spolu vynásobiť dva vektory. <b>Výsledok skalárneho súčinu je číslo a hovorí o tom, ako veľmi sú vektory rovnobežné.</b> Teda ako veľmi pôsobí jeden vektor v smere druhého. Keď chceme povedať, že dva vektory sa násobia skalárnym súčinom, <b>znamienko súčinu je bodka</b>. Skalárny súčin môžeme vyjadriť dvomi rôznymi spôsobmi. Algebraickým a geometrickým. <br /><br />
+
+Geometrický: vyjadríme ho pomocou uhla medzi vektormi
+$$ \vec{v} \cdot \vec{u} = |\vec{v}| \cdot |\vec{u}| \cdot cos \alpha $$
+
+Algebraický: vyjadrí sa pomocou súradníc
+$$ \vec{v} \cdot \vec{u} = u_{x} \cdot v_{x} + u_{y} \cdot v_{y}$$
+
+<figure>
+  <img src="../assets/images/aGeom_vecDotProduct.png" alt="Skalárny súčin">
+  <figcaption>Obr. 7.: Skalárny súčin troch vektorov. Vypočítali sme ho pre každú dvojicu vektorov algebraicky aj geometricky. Všimni si, že výsledky algebraickej aj geometrickej formy sú rovnaké. Pri geometrickej forme sa kosínus násobí číslami 4,5 a 3. To je veľkosť vektorov. Uhol medzi $\vec{u}$ a $\vec{u}$ je 63&#176;, medzi $\vec{u}$ a $\vec{w}$ je 27&#176; a medzi $\vec{v}$ a $\vec{w}$ je 90&#176;   </figcaption>
+</figure>
+
+
+V praxi je niekedy treba zistiť uhol medzi dvomi vektormi. Tu prichádza na scénu skalárny súčin, pretože vďaka nemu vieme uhol vypočítať. Geometrickú a algebraickú podobu skalárneho súčinu vieme dať do rovnosti. Následne si z toho odvodíme kosínus uhla medzi vektormi. (Pozor, výsledok je kosínus uhla a nie samotný uhol. Keď treba vypočítať uhol, tak výsledok ešte musí ísť do funkcie arkuskosínus (arccos))
+
+$$ 
+\begin{equation}
+\displaylines{
+u_{x} \cdot v_{x} + u_{y} \cdot v_{y} = |\vec{v}| \cdot |\vec{u}| \cdot cos \alpha \\ 
+\frac{u_{x} \cdot v_{x} + u_{y} \cdot v_{y}}{|\vec{v}| \cdot |\vec{u}| } = cos \alpha
+}
+\end{equation}
+$$
+
+Keď sú dva vektory rovnobežné, uhol medzi nimi je 0&#176;. Výsledkom cos0&#176; je 1. Keď sú vektory na seba kolmé, uhol medzi nimi je 90&#176;. Výsledok cos90&#176; je 0. Ak by si náhodou potreboval vyhľadať skalárny súčin na nete aj v angličtine, tak po anglicky sa to povie dot product.<br /><br />
+
+<!--
+<div class="extendingText">
+<h2>Skalárny súčin pre tých, ktorých to ešte stále baví</h2>
+Veci v tejto kapitole ti netreba vedieť, takže ju môžeš s pokojným svedomím preskočiť. Ak čítaš ďalej, tak ťa matika zjavne baví a za to ti ukážeme, matematickú intuíciu za skalárnym súčinom. Najskôr si však potrebuje zadefinovať niekoľko vecí.<br /><br />
+
+Vec prvá - násobenie. Obyčanjné násobenie ktoré poznáš, hovorí o niečom takomto: keď si tri razy odtrhnem po štyri jablká, budem mať spolu dvanásť jabĺk. Čiže v každej časti násobenia je jedno číslo. Lenže vektory sú dve (prípadne tri) čísla - lebo veď smer po osi x, y a možno aj z. Takže už v košíku nie sú len jablká, ale pribudli tam aj hrušky (pre 3D aj slivky). <br /><br />
+
+Takže potrebujeme vymyslieť nejaké násobenie aj pre vektory. Môžeme to zatiaľ spraviť tak, že vynásobíme každú súradnicu s každou. <i>$\vec{v} \cdot \vec{u}$ = v(x,y) $\cdot$ u(x,y) = v<sub>x</sub>.u<sub>x</sub> + v<sub>x</sub>.u<sub>y</sub> + v<sub>y</sub>.u<sub>x</sub> + v<sub>y</sub>.u<sub>y</sub></i><br /><br />
+
+Vec druhá - jednotkový vektor. Jednotkový vektor má každá os a je to taký vektor, že na tej osi je 1. Napríklad os x má jednotkový vektor $\vec{i}(1,0)$ a os y má $\vec{j}(0,1)$. Jednotkový vektor je aj na obrázku. Pri jednotkových vektoroch spravili matematici takú dohodu, že keď násobia jednotkový vektor sám so sebou, výsledok je 1. Keď násobia dva rôzne jednotkové vektory, výsledok je 0. 
+
+<figure>
+  <img src="../assets/images/aGeom_vecDotProdInt1.png" alt="Jednotkový vektor">
+  <figcaption>Obr. 1.: Na prvom obrázku sú ukázané jednotkové vektory pre osi x a y. Na druhom obrázku je nakreslené, že vektor môžeme napísať ako súčet jeho zložiek. Tie môžeme napísať ako násobok jednotkových vektorov.</figcaption>
+</figure>
+
+Menšia odbočka k tomu, prečo dohoda platí. Máme dva jednotkové vektory $\vec{i}(1, 0)$ a $\vec{j}(0, 1)$. Os x nachvíľu premenujeme na jablká a os y na hrušky. Pri násobení vektora samého so sebou je výsledok 1, teda $\vec{i}(1,0) \cdot \vec{i}(1,0) = 1$. Lebo keď jeden raz odtrhneme jedno jablko, máme 1 jablko. To isté platí aj keď násobíme vektor $\vec{j}$ sám so sebou. Keď jeden raz odtrhneme jednu hrušku, máme jednu hrušku. Násobenie $\vec{i}(1,0) \cdot \vec{j}(0,1) = 0$, lebo jeden raz trháme nula jabĺk a nula razy trháme jednu hrušku, takže vo výsledku nemáme nič.<br /><br />
+
+Vec tretia (tá je nakreslaná v obrázku pri čísle 2). Vektor je daný súradnicami. Pri hlbšom zamyslení zistíš, že súradnice sú vlastne vektory na tých osiach a náš vektor je len ich súčet. Zamysli sa ešte hlbšie a prídeš na to, že "súradnicové vektory" sú len násobkami jednotkových vektorov. Preto si môžeme dovoliť zapísať akýkoľvek vektor ako súčet "súradnicových vektorov". <br /><br />
+
+Keď máme vektory zapísané v tvare sčítania "súradnicových vektorov" a tie sú napísané ako násobky jednotkových vektorov, takmôžeme vynásobiť každú súradnicu s každou. Tam kde sa stretne $\vec{i}$ a $\vec{j}$ vektor, ten člen vypadne a nakoniec nám zostane len to známe <i>v<sub>x</sub>u<sub>x</sub>+v<sub>y</sub>u<sub>y</sub></i>.
+
+<figure>
+  <img src="../assets/images/aGeom_vecDotProdInt2.png" alt="Odvodenie algebraickej formy skalárneho súčinu">
+  <figcaption>Obr. 1.: Odvodenie algebraickej formy skalárneho súčinu</figcaption>
+</figure>
+
+Z algebraickej formy skalárneho súčinu vieme odvodiť formu geometrickú a tak ukázať, že platí (samozrejme dá sa odvodiť aj inak, ale my to spravíme takto).
+
+<figure>
+  <img src="../assets/images/aGeom_vecDotProdInt3.png" alt="Odvodenie geometrickej formy skalárneho súčinu">
+  <figcaption>Obr. 1.: Odvodenie geometrickej formy skalárneho súčinu</figcaption>
+</figure>
+
+</div> --> <!-- End of shadow text div-->
+
+<h2>Vektorový súčin</h2>
+Vektorový súčin vznikol rovnako ako skalárny. To isté storočie, ten istý ujo, ten istý problém. Prvé najslávnejšie použitie vektorového súčinu bolo v rovniciach uja Maxwella, ktoré hovoria dačo o elektromagnetizme.<br /><br />
+
+Z vektorového súčinu sa tiež dozvieme niečo o tom, <b>ako veľmi sú vektory na seba kolmé</b>. Ako bonus získame vektor <b>kolmý</b> na tieto dva vektory, pretože <b>výsledkom vektorového súčinu je vektor</b>. Vektorový súčin sa robí v 3D priestore (v 2D nedáš dva vektory a ešte aj tretí kolmý na ne). Znamienko súčinu je $\times$, lebo ho treba odlíšiť od skalárneho súčinu.<br /><br />
+
+Rovnako ako skalárny súčin má algebraickú a aj geometrickú formu.<br /><br />
+
+Algebraický tvar: vyjadrí sa pomocou súradníc
+$$ \vec{v} \times \vec{u} = [u_{y} \cdot v_{z} - u_{z} \cdot v_{y}, u_{z} \cdot v_{x} - u_{x} \cdot v_{z}, u_{x} \cdot v_{y} - u_{y} \cdot v_{x}]$$
+
+Geometrický tvar: vyjadrí sa pomocou uhla medzi vektormi
+$$ \vec{v} \times \vec{u} = |\vec{v}| \cdot |\vec{u}| \cdot sin \alpha \cdot \vec{n} $$
+
+Tu sa možno zarazíš nad dvomi vecami. Vec prvá, že ako sa dá vypočítať veľkosť vektora v 3D. Dá sa to rovnako ako v 2D, lebo Pytagorova veta funguje skrz všetky priestory (aj tie viac rozmerné ;) ). Veľkosť vektora v 3D sa vypočíta takto:
+
+$$ |\vec{v}| = \sqrt{v_{x}^2 + v_{y}^2 + v_{z}^2} $$
+
+Vec druhá je ten vektor $\vec{n}$ na konci vzorca. To je jednotkový vektor kolmý na naše dva vektory. O jednotkovom vektore sa pobavíme neskôr. <br /><br />
+
+
+
+<figure>
+  <img src="../assets/images/aGeom_vecCrossProduct.png" alt="Vektorový súčin">
+  <figcaption>Obr. 8.: Vektorový súčin. Násobili sme vektor $\vec{v}$ s vektorom $\vec{u}$ a vznikol vektor $\vec{w}$, ktorý je kolmý na oba tieto vektory. Tu by sme ťa chceli upozorniť na jednu zaujímavú vec. Vektory, ktoré sa spolu násobia, tvoria kosodĺžnik. My sme ho vyznačili žltou farbou. Obsah kosodĺžnika je rovnaký, ako dĺžka výsledného vektora (v našom prípade vektor $\vec{w}$). Nám vyšla veľkosť vektora $\vec{w}$ a obsah kosodĺžnika zhruba 19.</figcaption>
+</figure>
+
+Čím viac sú násobené vektory na seba kolmé, tým väčší bude výsledný vektor. Keď sú násobené vektory rovnobežné, výsledný vektor je nulový (má súradnice [0,0,0]). Vektorový súčin nájdeš v angličtine ako cross product.
+
+<h2>Jednotkový a normálový vektor</h2>
+Sú to vektory, ktoré dostali mená, lebo sa často používajú. <br /><br />
+
+<b>Normálový vektor</b> je taký vektor, ktorý je na niečo <b>kolmý</b>. Je jedno, či na iný vektor/y, priamku, plochu. Skratka slovami normálový vektor sa označuje vektor, ktorý je na niečo kolmý.<br /><br />
+
+Jednotkový vektor je vektor, ktorý má iba na jednej osi dĺžku 1, na ostatných nula. Pre os x sú jeho súradnice [1,0,0], pre y [0,1,0] a pre z [0,0,1]. Najlepšie je to vidno na obrázku.
+
+<figure>
+  <img src="../assets/images/aGeom_vecUnitVec.png" alt="Jednotkový vektor">
+  <figcaption>Obr. 9.: Jednotkový vektor na osi x je nakreslený žltou, na osi y červenou a na osi z zelenou farbou.</figcaption>
+</figure>
+
+<h2>Zhrnutie</h2>
+Vektor je niečo, čo ukazuje smer, ktorým sa má bod pohnúť a aj ako veľmi sa má pohnúť. Aby sa s vektormim ľahšie počítalo, treba ich presunúť do začiatku súradnicovej sústavy. Vektory vieme sčítať a vieme ich aj násobiť. Vektor môžeme násobiť jedným číslom a to tak, že tým číslom vynásobíme každú dúradnicu. Týmto meníme veľkosť vektora, vieme ho skrátiť alebo natiahnuť. Vektory sa dajú násobiť aj medzi sebou a to dvomi spôsobmi. Skalárnym alebo vektorovým súčinom. Z oboch súčinov vieme zistiť to, ako sú vektory na seba kolmé. Výsledkom skalárneho súčinu je číslo a výsledkok vektorového súčinu je vektor.
+
+
+
+</div>
