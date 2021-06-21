@@ -1,0 +1,128 @@
+---
+layout: default
+title: Analýza údajov o futbalistoch
+---
+
+<h1>Analýza údajov o futbalistoch</h1>
+
+<div class="content">
+
+Po dlhých kapitolách sme sa dostali na koniec a máme všetky potrebné nástroje štatistiky. Poznáme miery polohy, miery variability aj koreláciu. Ideme ich teda teraz aplikovať na futbalové tímy a konečne vyberieme jeden z nich. <br /><br />
+
+<table class="center statTable">
+<tr>
+<th>Názov klubu</th>
+<th>$\overline{x}$</th>
+<th>$\tilde{x}$</th>
+<th>$R$</th>
+<th>$\overline{d}$</th>
+<th>$s^2$</th>
+<th>$s$</th>
+<th>$v$</th>
+</tr>
+
+<tr>
+<td>FC Bayern München</td>
+<td>81.304</td>
+<td>84</td>
+<td>26</td>
+<td>5.402</td>
+<td>45.516</td>
+<td>6.746</td>
+<td>8.297</td>
+</tr>
+
+<tr>
+<td>Real Madrid</td>
+<td>80.121</td>
+<td>82</td>
+<td>29</td>
+<td>6.405</td>
+<td>61.682</td>
+<td>7.853</td>
+<td>9.802</td>
+</tr>
+
+<tr>
+<td>Juventus</td>
+<td>80.060</td>
+<td>83</td>
+<td>27</td>
+<td>5.922</td>
+<td>50.299</td>
+<td>7.092</td>
+<td>8.858</td>
+</tr>
+
+<tr>
+<td>FC Barcelona</td>
+<td>78.363</td>
+<td>82</td>
+<td>30</td>
+<td>8.849</td>
+<td>85.140</td>
+<td>9.227</td>
+<td>11.774</td>
+</tr>
+
+<tr>
+<td>Bayer 04 Leverkusen</td>
+<td>77.280</td>
+<td>78</td>
+<td>20</td>
+<td>4.108</td>
+<td>25.881</td>
+<td>5.087</td>
+<td>6.583</td>
+</tr>
+</table>
+<br />
+
+Ako prvý sme vypočítali priemer pre každý zo 668 klubov a zoradili sme ich podľa neho od najlepšieho po najhorší. Sem do tabuľky sme si vybrali prvých päť najlepších klubov podľa priemeru. Vedľa priemeru sme vypočítali medián. Chceli sme si overiť, že priemer je správny. Teda že nemáme medzi klubmi nejaký, ktorý má samých slabých hráčov a jedného úplne geniálneho, ktorý potiahne priemer vysoko. Vidíme, že priemer a medián sa nám veľmi nelíšia, takže outlierov v kluboch nemáme.<br /><br />
+
+Možno Juventus má jedného alebo zopár slabších hráčov, pretože má priemer 80,060, čo ho v priemeroch dalo na tretie miesto, ale medián má 83, teda druhý najlepší. Títo slabší hráči mohli potiahnuť priemer Juventusu viac dole. Najmenší rozdiel medzi mediánom a priemerom má Leverkusen. To znamená, že nemá niektorých hráčov výrazne slabších alebo silnejších (teda nemá outlierov).<br /><br />
+
+Ďalšie na rade sú miery variability. Tie nám hovoria o tom, ako veľmi sú hráči rozdielny. Či je ich <i>overall</i> zhruba na rovnakej úrovni alebo sú tam lepší a horší. Asi chceme tím s čo najmenšou variabilitou, pretože hráčom na jednej úrovni sa hrá spolu lepšie ako hráčom, kde sú niektorí príliš slabý a niektorí príliš silný.<br /><br />
+
+Prvé, najľahšie čo môžeme vypočítať je variančné rozpätie. Najmenej rozdielny hráči vyzerajú byť v Leverkusene, ale stále treba mať na pamäti, že variančné rozpätie je citlivé na outlierov, tak sme preistotu vypočítali aj priemernú absolútnu odchýlku, rozptyl a smerodajnú odchýlku. Všetky tri nám potvrdily, že najmenej rozdielny sú hráči Leverkusenu. Po započítaní veľkých odchýlok od priemeru vyšla smerodajná odchýlka ani nie o 1 menšia od priemernej absolútnej chyby. Ani pri ostatných tímoch sa smerodajná odchýlka veľmi nelíšili od priemernej absolútnej odchýlky. Veľké rozdiely tam nie sú, tak aj miery variability potvrdili, že v tímoch sú vyrovnaný hráči.<br /><br />
+
+Ak by si vedel, z akých dát sme počítali štatistiky, tak tu sú <i>overall</i> pre tímy: <br />
+<b>FC Bayern München:</b> 89,  88, 87, 86, 86, 86, 85, 85, 84, 84, 84, 84, 84, 84, 84, 83, 79, 79, 75, 72, 72, 67, 63 <br />
+<b>Real Madrid:</b> 91, 90, 89, 88, 88, 87, 87, 87, 86, 85, 85, 85, 85, 85, 83, 83, 82, 81, 81, 80, 80, 79, 79, 77, 76, 74, 73, 70, 69, 66, 66, 65, 62 <br />
+<b>Juventus:</b> 93, 89, 88, 86, 86, 86, 85, 85, 85, 85, 84, 84, 83, 83, 83, 83, 83, 83, 82, 82, 81, 79, 79, 77, 75, 74, 72, 71, 69, 68, 67, 66, 66 <br />
+<b>FC Barcelona:</b> 94, 90, 89, 89, 89, 88, 87, 86, 86, 85, 85, 85, 84, 84, 84, 82, 82, 81, 79, 76, 71, 71, 71, 70, 70, 68, 67, 67, 67, 65, 65, 65, 64 <br />
+<b>Bayer 04 Leverkusen:</b> 84, 83, 83, 83, 82, 82, 82, 82, 80, 80, 79, 78, 78, 77, 77, 77, 75, 75, 75, 74, 72, 71, 71, 68, 64 <br />
+<br /><br />
+
+Štatistika nám povedala, že najlepší priemer má FC Bayern München, ale zasa najvyrovnanejší hráči sú v Bayer 04 Leverkusen. Rozhodujeme sa teda medzi týmito dvomi klubmi. My sme si na to vybrali kvantily. Spravíme to tak, že si všetkých 18 278 hráčov zoradíme od najhoršieho po najlepší. Potom ich rozdelíme do skupín zhruba po 30 (v jednom tíme je zhruba 30 hráčov).Počet skupín bude 18 278/30=609. Dáta rozdelíme do 609 skupín pomocou kvantilov. Kvantilov bude 608. Keď budeme mať dáta v skupinách, tak sa pozrieme, koľko hráčov z oboch tímov patrí do najlepšej skupiny. Vyberieme si ten, kde ich bude najviac. Najlepšia skupina sú tí hráči, ktorí sú väčší ako posledný šestoôsmi kvantil. Ako sa kvantil ráta, to už napísané je, tak si teraz povieme len výsledok. Je to 88. V Leverkusene nie je nikto lepší ako 88 a v Mníchove je jeden. Tak si definitívne vyberáme FC Bayern München.<br /><br />
+
+Aby si vedel, že do štatistiky patria aj grafy, tak sme ich zopár spravili pre FC Bayern München.
+
+<figure>
+  <img src="../assets/images/stat_linearGraph.png" alt="Graf závislosti ceny od overallu">
+  <figcaption>Obr. 1.: Graf zobrazuje, ako rastie cena hráčov v závislosti od ich overallu. Ceny sú uvedené v desiatkach miliónov (tá 6 znamená, že hráč stál 60 000 000 a nie 6 eur.)</figcaption>
+</figure>
+
+<figure>
+  <img src="../assets/images/stat_barGraph.png" alt="Porovnanie schopností pravákov a ľavákov">
+  <figcaption>Obr. 2.: Tu sme porovnali pravákov a ľavákov. Pre obe skupiny sme z každého atribútu vypočítali priemer. Čiže napríklad tempo je priemerné tempo ľavákov a pravákov.</figcaption>
+</figure>
+
+<figure>
+  <img src="../assets/images/stat_histGraph.png" alt="Histogram overallov">
+  <figcaption>Obr. 3.: Graf zobrazuje počet hráčov s daným <i>overallom</i>. Hráčov s <i>overallom</i> 84 je v Mníchove najviac. </figcaption>
+</figure>
+
+<figure>
+  <img src="../assets/images/stat_pieGraph.png" alt="Rozdelenie hráčov podľa veku">
+  <figcaption>Obr. 4.: Tu je zobrazené rozdelenie hráčov podľa ich veku. Dvadsaťtri ročných a tridsaťročných je najviac.</figcaption>
+</figure>
+
+<figure>
+  <img src="../assets/images/stat_scatterGraph.png" alt="Korelácia medzi schopnosťou strieľať a ">
+  <figcaption>Obr. 5.: Tento graf zobrazuje závislosť medzi schopnosťou strieľať a brániť. Hráči, ktorí majú vysoký počet bodov pre bránenie, majú nízky počet bodov pre strieľanie a naopak. Môžeme usúdiť, že čím lepší obranca, tým horšie strieľa.</figcaption>
+</figure>
+
+
+
+</div>

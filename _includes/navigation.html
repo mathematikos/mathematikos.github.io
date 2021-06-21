@@ -1,57 +1,197 @@
-<div class="topnav" id="myTopnav">
-  <a href="/index.html" class="active">Mathematikos</a>
-  
-  <div class="dropdown">
-    <button class="dropbtn">Čísla</button>
-    <div class="dropdown-content">
-      <a href="/pages/howNumbersWereBorn.html">Ako vznikli čísla</a>
-	  <!--a href="/pages/numbers.html">Číselné množiny</a-->
-	  <a href="/pages/numberSystems.html">Číselné sústavy</a>
-      <!--a href="#">Exponenciálna funkcia</a-->
-    </div> <!--end of dropdown content-->
-  </div> <!--end of dropdown-->
-  
-  <div class="dropdown">
-    <button class="dropbtn">Algebra</button>
-    <div class="dropdown-content">
-      <a href="/pages/linearFunction.html">Lineárna funkcia</a>
-      <!--a href="#">Exponenciálna funkcia</a-->
-    </div> <!--end of dropdown content-->
-  </div> <!--end of dropdown-->
-  
-  <div class="dropdown">
-    <button class="dropbtn">Štatistika</button>
-    <div class="dropdown-content">
-      <a href="/pages/statistics.html">Štatistika</a>
-    </div> <!--end of dropdown content-->
-  </div> <!--end of dropdown-->
-  
-  <div class="dropdown">
-    <button class="dropbtn">Analytická geometria</button>
-    <div class="dropdown-content">
-      <a href="/pages/aGeom_history.html">Vznik analytickej geometrie</a>
-	  <a href="/pages/aGeom_usage.html">Využitie analytickej geometrie</a>
-	  <a href="/pages/aGeom_space.html">Priestor</a>
-	  <a href="/pages/aGeom_coorSys.html">Súradnicová sústava</a>
-	  <a href="/pages/aGeom_vectors.html">Vektory</a>
-	  <!--a href="/pages/aGeom_usageCG.html">Konkrétny príklad použitia AG</a-->
-    </div> <!--end of dropdown content-->
-  </div> <!--end of dropdown-->
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 
-  <!--a href="#contact">Geometria</a-->
-  <a href="/pages/vocabulary.html">Slovník</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-	<i class="fa fa-bars"></i>
-  </a>
-</div>
+    <!-- styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap" rel="stylesheet"/>
+    <link href="https://necolas.github.io/normalize.css/latest/normalize.css" rel="stylesheet"/>
+    <link href="/assets/scripts/zeynep/zeynep.min.css" rel="stylesheet"/>
+    <link href="/assets/css/zeynep/base.css" rel="stylesheet"/>
+    <link href="/assets/css/zeynep/left.css" rel="stylesheet"/>
+  </head>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+  <body>
+
+    <div class="zeynep">
+      <ul>
+        <li>
+          <a href="/index.html">Mathematikos</a>
+        </li>
+
+        <li class="has-submenu">
+          <a href="#" data-submenu="numbers">Čísla</a>
+
+          <div id="numbers" class="submenu">
+            <div class="submenu-header">
+              <a href="#" data-submenu-close="numbers">Menu</a>
+            </div>
+
+            <label>Čísla</label>
+
+            <ul>
+              <li>
+                <a href="/pages/howNumbersWereBorn.html">Ako vznikli čísla</a>
+              </li>
+
+              <li>
+                <a href="/pages/numbers.html">Číselné množiny</a>
+              </li>
+
+              <li>
+                <a href="/pages/numberSystems.html">Číselné sústavy</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="has-submenu">
+          <a href="#" data-submenu="algebra">Algebra</a>
+
+          <div id="algebra" class="submenu">
+            <div class="submenu-header">
+              <a href="#" data-submenu-close="algebra">Menu</a>
+            </div>
+
+            <label>Algebra</label>
+
+            <ul>
+              <li>
+                <a href="/pages/linearFunction.html">Lineárna funkcia</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+		
+		<li class="has-submenu">
+          <a href="#" data-submenu="aGeom">Analytická geometria</a>
+
+          <div id="aGeom" class="submenu">
+            <div class="submenu-header">
+              <a href="#" data-submenu-close="aGeom">Menu</a>
+            </div>
+
+            <label>Analytická geometria</label>
+            <ul>
+              <li>
+                <a href="/pages/aGeom_history.html">Vznik analytickej geometrie</a>
+              </li>
+			  
+			  <li>
+                <a href="/pages/aGeom_usage.html">Využitie analytickej geometrie</a>
+              </li>
+			  
+			  <li>
+                <a href="/pages/aGeom_space.html">Priestor</a>
+              </li>
+			  
+			  <li>
+                <a href="/pages/aGeom_coorSys.html">Súradnicová sústava</a>
+              </li>
+			  
+			  <li>
+                <a href="/pages/aGeom_vectors.html">Vektory</a>
+              </li>
+			  
+            </ul>
+          </div>
+        </li>
+		
+		<li class="has-submenu">
+          <a href="#" data-submenu="statistics">Štatistika</a>
+
+          <div id="statistics" class="submenu">
+            <div class="submenu-header">
+              <a href="#" data-submenu-close="statistics">Menu</a>
+            </div>
+
+            <label>Štatistika</label>
+            <ul>
+              <li>
+                <a href="/pages/stat_intro.html">Úvod do štatistiky</a>
+              </li>
+			  
+			   <li>
+                <a href="/pages/stat_data.html">Údaje</a>
+              </li>
+			  
+			   <li>
+                <a href="/pages/stat_PositionMeasures.html">Miery polohy</a>
+              </li>
+			  
+			   <li>
+                <a href="/pages/stat_VariabilityMeasures.html">Miery variability</a>
+              </li>
+			  
+			   <li>
+                <a href="/pages/stat_correlation.html">Korelácia</a>
+              </li>
+			  
+			   <li>
+                <a href="/pages/stat_outliers.html">Outliers</a>
+              </li>
+			  
+			   <li>
+                <a href="/pages/stat_playerAnalysis.html">Analýza údajov o futbalistoch</a>
+              </li>
+			  
+			   <li>
+                <a href="/pages/stat_usage.html">Naozajstné využitie štatistiky</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a href="/pages/vocabulary.html">Slovník</a>
+        </li>
+      </ul>
+    </div>
+
+	 <div class="navbar">
+      <button type="button" class="btn-open first">
+		<img src="../assets/images/hamburgerIcon.png">
+	  </button>
+	  
+	 </div>
+
+    <div class="zeynep-overlay"></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/assets/scripts/zeynep/zeynep.min.js"></script>
+
+    <script>
+      $(function() {
+        // init zeynepjs side menu
+        var zeynep = $('.zeynep').zeynep({
+          opened: function () {
+            // log
+            // console.log('the side menu opened')
+          },
+          closed: function () {
+            // log
+            // console.log('the side menu closed')
+          }
+        })
+
+        // dynamically bind 'closing' event
+        zeynep.on('closing', function () {
+          // log
+          // console.log('this event is dynamically binded')
+        })
+
+        // handle zeynepjs overlay click
+        $('.zeynep-overlay').on('click', function () {
+          zeynep.close()
+        })
+
+        // open zeynepjs side menu
+        $('.btn-open').on('click', function () {
+          zeynep.open()
+        })
+      })
+    </script>
+
+  </body>
+</html>
