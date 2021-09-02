@@ -1,42 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="sk">
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--meta charset={{ page.charset | default: 'ASCII'}} Liquid variable jekyll -->
-<link rel="stylesheet" type="text/css" href="/assets/css/nav_styles.css">
-<link rel="stylesheet" type="text/css" href="/assets/css/carusel_styles.css">
-<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+<meta name="description" content="{{ page.description | default: page.title }}">
+<meta name="keywords" content="{{ page.keywords }}">
+<meta name="author" content="{{ site.author }}">
 
+<title>{{ page.title }}</title>
 
-<!-- include library for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{%- assign styles = "nav_styles, carusel_styles, styles" | split: ", " %}
+{% for style in styles %}
+<link rel="stylesheet" type="text/css" href="/assets/css/{{ style }}.css">
+{%- endfor %}
 
 <!-- include library for display math equations -->
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
- <script id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js">
- </script>
- 
-  
- <!-- enable inline formulas in mathajax. After enabling this, we have to escape 'normal' dollar signs with \$.-->
- <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
 </script>
-<script type="text/javascript"
-        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3.2/es5/tex-chtml.js">
 </script>
-
-<title>{{ page.title }}</title>
 </head>
 <body>
 {% include navigation.html %}
 
 {{ content }}
-
 </body>
 </html>

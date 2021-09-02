@@ -59,6 +59,7 @@ h3 {
 
 .content figure img{
 	width: 80%;
+	height: auto;
 }
 
 .egyptNumbers{
@@ -86,6 +87,34 @@ h3 {
 	padding-right: 3%;
 }
 
+.history_container {
+	width: 100%;
+	margin-bottom: 2%;
+	
+}
+
+.history_intro {
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+.history_intro img{
+	width: 35%;
+	height: auto;
+}
+
+.vertical_line {
+  border-left: 6px solid var(--primary);
+  height: 100px;
+  margin-left: 50%;
+}
+
+
+#opticalIllusionImages img{
+	width: 50%;
+	height: auto;
+}
+
 @media screen and (max-width: 600px) {
 .content{
 	width: 100%;
@@ -93,5 +122,11 @@ h3 {
 	
 .content figure img{
 	width: 100%;
+	height: auto;
+}
+
+.history_intro img{
+	width: 100%
+	height: auto;
 }
 }

@@ -1,0 +1,105 @@
+---
+title: Použitie analytickej geometrie v počítačovej grafike
+permalink: /analyticka_geometria_v_pocitacovej_grafike
+---
+
+<h1>Použitie analytickej geometrie v počítačovej grafike</h1>
+
+<div class="content">
+Niekde na začiatku sme spomínali využitie analytickej geometrie. Rozobrali sme ho len tak letmo, že sa používa tam a tam. Tu máme pre teba konkrétny príklad, s ktorým sa stretávaš skoro každý deň a ani o tom nevieš. Analytická geometria sa totiž využíva v počítačovej grafike, ktorej súčasťou sú aj animované filmy a počítačové hry. Bez nej by to vlastne ani nemohlo existovať. 
+
+<figure>
+  <img src="../assets/images/aGeom_meme.jpg" alt="Základom animácií je analytická geometria">
+  <figcaption>Obr. 1.: Základom počítačových hier či animovaných filmov je analytická geometria.</figcaption>
+</figure>
+
+Analytická geometria sa samozrejme využíva aj vo veľa iných odvetviach, ale chceme ti ju ukázať práve na hrách, pretože sa s nimi stretávaš dosť často a možno si si niekedy položil otázku, že ako to celé funguje.<br /><br />
+
+Najprv ťa zavedieme do sveta tvorcov počítačových hier, aby sme ti ukázali ako to celé vzniká. Ukážeme si aj nejaké základné veci, ktoré musíš vedieť o počítačoch. Nakoniec sa pustíme do matematiky, ktorá tvorí základ hier.
+
+<h2>Ako vzniká hra</h2>
+Na samom začiatku stojí myšlienka. Ak ideš robiť hru, musíš vedieť, o čom tá hra bude. My budeme v tomto článku robiť hru o Červenej čiapočke. Bude to úplný trhák.<br /><br />
+
+Keď už vieš, o čom bude hra, musíš si spraviť prieskum trhu. To znamená, že si pozrieš podobné hry, aby si videl, či už náhodou taká hra nie je. Prípadne sa môžeš aj inšpirovať, ale musíš sa držať hesla „steal like king, not like thief“.<br /><br />
+
+Zistil si, že tvoja hra bude unikát (v skutočnosti nebude, lebo dnes je vymyslené už hádam všetko) a môžeš sa pustiť do hry. Do tímu musíš pribrať grafika a programátora. Jeden ti spraví objekty a grafiku do hry a druhý zaručí, že hra bude fungovať. Ak si šikovný, netreba ti ani jeden, lebo si spravíš všetko sám. Aj tak sú drahí.<br /><br />
+
+Nakoniec hru otestuješ. Dáš ju zahrať kamarátom, rodine alebo profesionálnym testerom. Spýtaš sa ich, či sa im hra páčila, čo by na nej zmenili a podobne. Spätná väzba od používateľov je dôležitá. Koniec koncov hra je určená pre nich. Ak ti testeri našli veľa chýb, musíš hru opraviť.<br /><br />
+
+Hra je otestovaná, funguje bez problémov. Už ju len zavesíš do nejakého online obchodu a užívaš si zarobené milióny.
+
+<h2>Čo všetko musíš vedieť o počítačoch</h2>
+Cesta od myšlienky k miliónom na účte samozrejme nie je taká jednoduchá. Okrem dobrej myšlienky musíš vedieť zopár vecí o počítačoch, trochu o fyzike, niečo z matematiky a vlastne tak skoro zo všetkého.<br /><br />
+
+Všetky objekty, ktoré budeš používať v hre, musíš nejako dostať do počítača, musíš ich tam mať uložené, treba ich zobraziť a možno aj nejako rozhýbať. V našej hre budeme používať Červenú čiapočku, babičku, vlka, poľovníka, domček a posteľ pre babičku, košíček s dobrotami a tmavý hustý les.<br /><br />
+
+Teraz si ideme vysvetliť použitie analytickej geometrie vo vyššie spomenutých krokoch. Popritom si vysvetlíme aj potrebné veci z počítačov a z fyziky.
+
+<h2>Súradnicová sústava</h2>
+Všetky objekty, ktoré budeme používať v hre, treba nejako dostať do počítača a držať ich tam uložené. Počítač rozumie len číslam, a preto treba všetky objekty premeniť na čísla. Tu prichádza na scénu súradnicová sústava.<br /><br />
+
+Pomocou nej dokážeme všetky objekty zapísať pomocou čísiel. Ukážeme ti to na príklade postele, ktorú vlastní babička Červenej čiapočky.  Nájdeš si na nej nejaké body a určíš ich polohu v súradnicovej sústave. Súradnice bodov oznámiš počítaču a oznámiš mu aj to, ktoré body majú byť spojené. On vďaka tomu vie, na akom mieste má nakresliť body a ako majú byť spojené.
+
+<figure>
+  <img src="../assets/images/aGeom_coorSystemBed.png" alt="Zobrazenie postele pomocou bodov v karteziánskej súradnicovej sústave">
+  <figcaption>Obr. 2.: Na posteli si vyznačíme nejaké body, ktorých polohu zapíšeme v súradnicovej sústave.</figcaption>
+</figure>
+
+V realite to funguje tak, že grafik vytvorí v programe (napr. Blender) objekt. Povrch objektu sa skladá z veľmi veľa bodov, ktoré sú pospájané do trojuholníčkov. Program vygeneruje textový súbor, kde sú napísané súradnice všetkých bodov a je tam aj napísané to, ktoré body majú byť spojené. Iný program (v ktorom sa robí hra) tento súbor prečíta a objekt zobrazí.
+
+<figure>
+  <img src="../assets/images/aGeom_bedObj.png" alt="Zobrazenie postele pomocou bodov v karteziánskej súradnicovej sústave">
+  <figcaption>Obr. 3.: a) umelec vytvoril posteľ pre babičku. b) posteľ sa skladá z veľmi veľa bodov, ktoré sú pospájané do trojuholníkov. Táto "sieť" nie je normálne vidieť (viď obrázok a), ale dá sa zobraziť. c) súradnice bodov sú zapísané v textovom súbore. Na obrázku nie sú všetky, lebo ich je veľmi veľa. V súbore je zapísané aj to, ktoré body majú byť spojené. Programy vedia tento súbor prečítať a potom podľa neho zobraziť objekt.</figcaption>
+</figure>
+
+Super, okrem postele nám grafici vytvorili aj ostatné objekty patriace do Červenej čiapočky. Všetky sú reprezentované bodmi, teda máme akési množiny bodov, s ktorými vieme ďalej počítať. Prvú časť vývoja hry máme teda za sebou.
+
+<h2>Vektory</h2>
+Všetky objekty poslušne čakajú zapísané v súboroch. Chceme ich trochu rozhýbať. Najprv si ale musíme vysvetliť, ako taký pohyb v počítačoch funguje. Naučíme sa niečo o programoch na vývoj hier a o tom, ako funguje animácia.
+
+<h3>Programy na vývoj hier</h3>
+V hrách treba, aby sa objekty hýbali a prípadne aspoň trochu poslúchali fyziku nášho sveta. Nechceme predsa, aby Červená čiapočka vyletela do vesmíru, keď zakopne o kameň. Chceme, aby pekne poslúchla gravitáciu a capla na zem.<br /><br />
+
+Vývojari hier zvyčajne nerobia celú fyziku od základu, ale používajú programy, v ktorých sa robia hry. Tie už fyziku obsahujú, takže vývojárom ju už stačí len použiť.  Spomenieme len niekoľko prírodných zákonov, ktoré sa dodržiavajú v hrách. Je to už spomínaná gravitácia, trenie, hmotnosť objektov, pôsobenie síl, plynutie času, pohyb. Náš skutočný svet ovplyvňuje oveľa viac zákonov. Nie je možné ich všetky nasimulovať, lebo by na ne nestačil ani ten najvýkonnejší počítač na svete.
+
+<h3>Animácia</h3>
+Program nám už zabezpečil, že fyziku potrebnú na pohyb máme spočítanú, no pohyb treba aj nejako zobraziť. Pohyblivým obrázkom sa hovorí animácia.<br /><br />
+
+Keď si bol menší, možno si skúšal v zošite na kraji strán nakresliť napríklad panáčika, ktorý skáče. Na každú stranu si nakreslil kúsok jeho pohybu. Na prvej strane stojí na zemi, na druhej je už vo vzduchu, na tretej je viac vo vzduchu, a tak ďalej, kým nebude znovu na zemi. Keď si strany rýchlo prehŕňal, zdalo sa ti, že sa panáčik hýbe. Deje sa to vďaka tomu, že náš mozog nedokáže vnímať rýchlo meniace sa obrázky, a tak si ich spája do jedného, ktorý sa pohybuje.
+
+<figure>
+  <img src="../assets/images/HowAnimationWorks.gif" alt="Ako funguje animácia">
+  <figcaption>Obr. 4.: Táto animácia sa skladá zo šiestich obrázkov. Na každom je panáčik v inej fáze pohybu. Keď sa obrázky pustia dostatočne rýchlo za sebou, navodzuje to pocit, že panáčik skáče.</figcaption>
+</figure>
+
+Na tomto fakte sú založené filmy aj hry. Kedysi sa animované filmy robili tak, že umelci ručne kreslili film, obrázok po obrázku. Na každom obrázku postavy o kúsok pohli. Obrázky sa potom nafotili a keď sa pustili rýchlo za sebou, zdalo sa, že sa veci vo filme hýbu. Toto bolo časovo veľmi náročné.<br /><br />
+
+Jeden z prvých animovaných filmov bol Snehulienka a sedem trpaslíkov. Film robili tvorcovia od roku 1934 po 1937, teda tri roky. Na filme pracovalo vyše 750 umelcov, spravili viac ako 2 000 000 skíc a samotný film sa skladal z 250 000 obrázkov. Uznáš sám, že nakresliť toto všetko ručne bola riadna makačka. [1]<br /><br />
+
+Dnes sa už obrázky nekreslia ručne, ale generujú ich počítače. Vďaka znalostiam fyziky a matematiky vedia, o koľko majú objekty posunúť v ďaľšom obrázku. 
+
+<h3>Vektory použité v pohybe</h3>
+Pohyb objektov v počítačových hrách sa snaží napodobňovať pohyb v našom svete. Pýtame sa, aký veľký kus cesty prejde objekt za nejaký čas. Zvykne sa to udávať v metroch za sekundu. Teda koľko metrov prejde objekt za jednu sekundu.<br /><br />
+ 
+Podobne je to aj pri hrách. Program zvyčajne vykresľuje obrázky každých 0,02 sekundy. To znamená, že chceme vedieť, kam sa objekt pohol a potom ho na tom mieste vykresliť. To o koľko sa objekt pohne, nám hovorí vektor. Kde bude objekt zistíme tak, že vektor pripočítame k pozícií objektu. Objekt sa následne vykreslí.<br /><br />
+
+Ukážeme si to na Červenej čiapočke. V skutočnom svete človek chodí rýchlosťou 5km/h, čo je 1,39m/s. Karkulka sa teda pohne každú sekundu o 1,39 metra. Povedali sme si, že počítač vykresľuje obrázky každých 0,02 sekundy. Musíme teda zistiť, o koľko sa pohne Čiapočka za tento čas. Je to 1,39*0,02 = 0,0278. Čiapočka bude v nasledujúcom obrázku o 0,0278 metra ďalej.<br /><br />
+ 
+V počítači sa to spraví tak, že sa spraví vektor rýchlosti. Zvyčajne sa udáva v m/s a potom sa prenásobí s časom (to je tých 0,02 sekundy). Veľkosť vektora je rýchlosť. Súradnice vektora udávajú jeho smer, lebo hovoria o tom, po ktorej osi sa má obrázok pohnúť a o koľko. Pred vykreslením obrázku sa vektor pripočíta k súradniciam objektu. Objekt sa už vykreslí na nových súradniciach.<br /><br />
+
+Na obrázku budeme počítať, o koľko sa pohne Karkulka za sekundu. Tých 0,0278 je príliš malých na kreslenie.
+<figure>
+  <img src="../assets/images/aGeom_karkulkaVectors.png" alt="Pohyb Červenej čiapočky">
+  <figcaption>Obr. 5.: 1) Červená čiapočka je v bode [0,0.5,0]. Os y sme pre jednoduchosť nekreslili, lebo ju netreba. 2) Červená čiapočka sa pohne o 1,39 metra smerom k domčeku. Keď si vektor rozložíme na zložky, v smere osi x sa pohne o 1.2 metra a v smere osi y sa pohne o 0.695 metra. 3) Každú sekundu pripočítame k pozícií Červenej čiapočky tento vektor. Po piatich sekundách prešla Karkulka 6.95 metrov.</figcaption>
+</figure>
+
+<h3>FPS</h3>
+Možno si sa už niekedy stretol so skratkou fps, čo znamená frames per seconds, po slovensky počet obrázkov za sekundu. Túto skratku môžeš vidieť napríklad v súvislosti s hrami, filmami či videami. Znamená to, že koľko obrázkov sa vykreslí za jednu sekundu. Dnes sa normálne používa 24 fps. Niektoré hry majú 60 fps. Čím je fps vyššie, tým sú rýchlejšie scény (napr. pohyb vystreleného puku) kvalitnejšie, ale objem dát je väčší. Slabší počítač nemusí stíhať obrázky vykresliť.<br /><br />
+
+<h1>Zdroje</h1>
+
+<div class='literature'>
+[1] JOHNSON. Z.: 20 Fun Facts About Snow White and the Seven Dwarfs on Its 80th Anniversary. 2017. https://www.eonline.com/news/901665/20-fun-facts-about-snow-white-and-the-seven-dwarfs-on-its-80th-anniversary
+</div>
+
+</div>

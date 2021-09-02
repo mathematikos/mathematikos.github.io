@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Mathematikos
 ---
 
@@ -7,19 +6,19 @@ title: Mathematikos
 
 <div class="mySlides fade">
   <!--div class="numbertext">1 / 3</div-->
-  <img src="assets/images/interesting1.png">
+  <img src="assets/images/interesting1.png" alt="Najkrajšia rovnica matematiky je Eulerova identita.">
   <!--div class="text">Caption Text</div-->
 </div>
 
 <div class="mySlides fade">
   <!--div class="numbertext">2 / 3</div-->
-  <img src="assets/images/interesting2.png">
+  <img src="assets/images/interesting2.png" alt="Dokážeš rozkrojiť tortu tromi rezmi na osem rovnakých častí?">
   <!--div class="text">Caption Two</div-->
 </div>
 
 <div class="mySlides fade">
   <!--div class="numbertext">3 / 3</div-->
-  <img src="assets/images/interesting3.png">
+  <img src="assets/images/interesting3.png" alt="Keď zložíš papier viac ako 103-krát, bude hrubší ako celý vesmír.">
   <!--div class="text">Caption Three</div-->
 </div>
 
@@ -27,9 +26,9 @@ title: Mathematikos
 <br>
 
 <div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
 </div>
 
 <script>
@@ -41,15 +40,15 @@ function showSlides() {
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) {slideIndex = 1;}
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 7000); // Change image every 2 seconds
+  setTimeout(showSlides, 7000); // Change image every 7 seconds
 }
 </script>

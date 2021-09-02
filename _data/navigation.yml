@@ -1,0 +1,70 @@
+- title: Mathematikos
+  url: /
+
+- title: Čísla
+  id: numbers
+  submenu:
+    - page: Ako vznikli čísla
+      url: /ako_vznikli_cisla
+    - page: Písmená
+      url: /pismena
+    - page: Číselné množiny
+      url: /ciselne_mnoziny
+    - page: Číselné sústavy
+      url: /ciselne_sustavy
+
+- title: Algebra
+  id: algebra
+  submenu:
+    - page: Lineárna funkcia
+      url: /linearna_funkcia
+
+- title: Analytická geometria
+  id: aGeom
+  submenu:
+    - page: Vznik analytickej geometrie
+      url: /vznik_analytickej_geometrie
+    - page: Využitie analytickej geometrie
+      url: /vyuzitie_analytickej_geometrie
+    - page: Priestor
+      url: /priestor
+    - page: Súradnicová sústava
+      url: /analyticka_geometria_suradnicova_sustava
+    - page: Vektory
+      url: /analyticka_geometria_vektory
+    - page: Priamka
+      url: /analyticka_geometria_priamka
+    - page: Použitie v počítačovej grafike
+      url: /analyticka_geometria_v_pocitacovej_grafike
+
+- title: Geometria
+  id: geometry
+  submenu:
+    - page: Priamka
+      url: /priamka
+
+- title: Štatistika
+  id: statistics
+  submenu:
+    - page: Úvod do štatistiky
+      url: /statistika_uvod
+    - page: Údaje
+      url: /statistika_udaje
+    - page: Miery polohy
+      url: /miery_polohy
+    - page: Miery variability
+      url: /miery_variability
+    - page: Korelácia
+      url: /korelacia
+    - page: Outliers
+      url: /outliers
+    - page: Analýza údajov o futbalistoch
+      url: /analyza_udajov_o_futbalistoch
+    - page: Naozajstné využitie štatistiky
+      url: /naozajstne_vyuzitie_statistiky
+
+- title: Slovník
+  url: /matematicko-slovensky_slovnik
+
+- title: Vývoj matematiky
+  url: /vyvoj_matematiky

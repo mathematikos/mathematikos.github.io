@@ -3,7 +3,7 @@
 
 .slideshow-container img {
 	max-width: 100%;
-	height: 82vh; /*tu som to nasla: https://stackoverflow.com/questions/11516291/css-get-height-of-screen-resolution*/
+	height: 82vh; /*https://stackoverflow.com/questions/11516291/css-get-height-of-screen-resolution*/
 	overflow: hidden;
 }
 

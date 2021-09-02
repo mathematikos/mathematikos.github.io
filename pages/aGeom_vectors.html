@@ -1,6 +1,8 @@
 ---
-layout: default
 title: Vektory
+description: "vektory"
+keywords: "vektor, veľkosť vektora, smer vektora, sčítanie vektorov, násobenie vektorov, skalárny súčin, vektorový súčin, normálový vektor"
+permalink: analyticka_geometria_vektory
 ---
 
 <h1>Vektory</h1>
@@ -111,41 +113,6 @@ $$
 
 Keď sú dva vektory rovnobežné, uhol medzi nimi je 0&#176;. Výsledkom cos0&#176; je 1. Keď sú vektory na seba kolmé, uhol medzi nimi je 90&#176;. Výsledok cos90&#176; je 0. Ak by si náhodou potreboval vyhľadať skalárny súčin na nete aj v angličtine, tak po anglicky sa to povie dot product.<br /><br />
 
-<!--
-<div class="extendingText">
-<h2>Skalárny súčin pre tých, ktorých to ešte stále baví</h2>
-Veci v tejto kapitole ti netreba vedieť, takže ju môžeš s pokojným svedomím preskočiť. Ak čítaš ďalej, tak ťa matika zjavne baví a za to ti ukážeme, matematickú intuíciu za skalárnym súčinom. Najskôr si však potrebuje zadefinovať niekoľko vecí.<br /><br />
-
-Vec prvá - násobenie. Obyčanjné násobenie ktoré poznáš, hovorí o niečom takomto: keď si tri razy odtrhnem po štyri jablká, budem mať spolu dvanásť jabĺk. Čiže v každej časti násobenia je jedno číslo. Lenže vektory sú dve (prípadne tri) čísla - lebo veď smer po osi x, y a možno aj z. Takže už v košíku nie sú len jablká, ale pribudli tam aj hrušky (pre 3D aj slivky). <br /><br />
-
-Takže potrebujeme vymyslieť nejaké násobenie aj pre vektory. Môžeme to zatiaľ spraviť tak, že vynásobíme každú súradnicu s každou. <i>$\vec{v} \cdot \vec{u}$ = v(x,y) $\cdot$ u(x,y) = v<sub>x</sub>.u<sub>x</sub> + v<sub>x</sub>.u<sub>y</sub> + v<sub>y</sub>.u<sub>x</sub> + v<sub>y</sub>.u<sub>y</sub></i><br /><br />
-
-Vec druhá - jednotkový vektor. Jednotkový vektor má každá os a je to taký vektor, že na tej osi je 1. Napríklad os x má jednotkový vektor $\vec{i}(1,0)$ a os y má $\vec{j}(0,1)$. Jednotkový vektor je aj na obrázku. Pri jednotkových vektoroch spravili matematici takú dohodu, že keď násobia jednotkový vektor sám so sebou, výsledok je 1. Keď násobia dva rôzne jednotkové vektory, výsledok je 0. 
-
-<figure>
-  <img src="../assets/images/aGeom_vecDotProdInt1.png" alt="Jednotkový vektor">
-  <figcaption>Obr. 1.: Na prvom obrázku sú ukázané jednotkové vektory pre osi x a y. Na druhom obrázku je nakreslené, že vektor môžeme napísať ako súčet jeho zložiek. Tie môžeme napísať ako násobok jednotkových vektorov.</figcaption>
-</figure>
-
-Menšia odbočka k tomu, prečo dohoda platí. Máme dva jednotkové vektory $\vec{i}(1, 0)$ a $\vec{j}(0, 1)$. Os x nachvíľu premenujeme na jablká a os y na hrušky. Pri násobení vektora samého so sebou je výsledok 1, teda $\vec{i}(1,0) \cdot \vec{i}(1,0) = 1$. Lebo keď jeden raz odtrhneme jedno jablko, máme 1 jablko. To isté platí aj keď násobíme vektor $\vec{j}$ sám so sebou. Keď jeden raz odtrhneme jednu hrušku, máme jednu hrušku. Násobenie $\vec{i}(1,0) \cdot \vec{j}(0,1) = 0$, lebo jeden raz trháme nula jabĺk a nula razy trháme jednu hrušku, takže vo výsledku nemáme nič.<br /><br />
-
-Vec tretia (tá je nakreslaná v obrázku pri čísle 2). Vektor je daný súradnicami. Pri hlbšom zamyslení zistíš, že súradnice sú vlastne vektory na tých osiach a náš vektor je len ich súčet. Zamysli sa ešte hlbšie a prídeš na to, že "súradnicové vektory" sú len násobkami jednotkových vektorov. Preto si môžeme dovoliť zapísať akýkoľvek vektor ako súčet "súradnicových vektorov". <br /><br />
-
-Keď máme vektory zapísané v tvare sčítania "súradnicových vektorov" a tie sú napísané ako násobky jednotkových vektorov, takmôžeme vynásobiť každú súradnicu s každou. Tam kde sa stretne $\vec{i}$ a $\vec{j}$ vektor, ten člen vypadne a nakoniec nám zostane len to známe <i>v<sub>x</sub>u<sub>x</sub>+v<sub>y</sub>u<sub>y</sub></i>.
-
-<figure>
-  <img src="../assets/images/aGeom_vecDotProdInt2.png" alt="Odvodenie algebraickej formy skalárneho súčinu">
-  <figcaption>Obr. 1.: Odvodenie algebraickej formy skalárneho súčinu</figcaption>
-</figure>
-
-Z algebraickej formy skalárneho súčinu vieme odvodiť formu geometrickú a tak ukázať, že platí (samozrejme dá sa odvodiť aj inak, ale my to spravíme takto).
-
-<figure>
-  <img src="../assets/images/aGeom_vecDotProdInt3.png" alt="Odvodenie geometrickej formy skalárneho súčinu">
-  <figcaption>Obr. 1.: Odvodenie geometrickej formy skalárneho súčinu</figcaption>
-</figure>
-
-</div> --> <!-- End of shadow text div-->
 
 <h2>Vektorový súčin</h2>
 Vektorový súčin vznikol rovnako ako skalárny. To isté storočie, ten istý ujo, ten istý problém. Prvé najslávnejšie použitie vektorového súčinu bolo v rovniciach uja Maxwella, ktoré hovoria dačo o elektromagnetizme.<br /><br />
@@ -189,7 +156,5 @@ Jednotkový vektor je vektor, ktorý má iba na jednej osi dĺžku 1, na ostatn�
 
 <h2>Zhrnutie</h2>
 Vektor je niečo, čo ukazuje smer, ktorým sa má bod pohnúť a aj ako veľmi sa má pohnúť. Aby sa s vektormim ľahšie počítalo, treba ich presunúť do začiatku súradnicovej sústavy. Vektory vieme sčítať a vieme ich aj násobiť. Vektor môžeme násobiť jedným číslom a to tak, že tým číslom vynásobíme každú dúradnicu. Týmto meníme veľkosť vektora, vieme ho skrátiť alebo natiahnuť. Vektory sa dajú násobiť aj medzi sebou a to dvomi spôsobmi. Skalárnym alebo vektorovým súčinom. Z oboch súčinov vieme zistiť to, ako sú vektory na seba kolmé. Výsledkom skalárneho súčinu je číslo a výsledkok vektorového súčinu je vektor.
-
-
 
 </div>

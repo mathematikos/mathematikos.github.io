@@ -1,197 +1,76 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<link href="https://necolas.github.io/normalize.css/latest/normalize.css" rel="stylesheet"/>
+<link href="/assets/scripts/zeynep/zeynep.min.css" rel="stylesheet"/>
+<link href="/assets/css/zeynep/base.css" rel="stylesheet"/>
+<link href="/assets/css/zeynep/left.css" rel="stylesheet"/>
 
-    <!-- styles -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap" rel="stylesheet"/>
-    <link href="https://necolas.github.io/normalize.css/latest/normalize.css" rel="stylesheet"/>
-    <link href="/assets/scripts/zeynep/zeynep.min.css" rel="stylesheet"/>
-    <link href="/assets/css/zeynep/base.css" rel="stylesheet"/>
-    <link href="/assets/css/zeynep/left.css" rel="stylesheet"/>
-  </head>
+<div class="navbar">
+  <button type="button" class="btn-open first" aria-label="menu">
+	<img src="../assets/images/hamburgerIcon.png" alt="menu">
+  </button>
+</div>
 
-  <body>
+<div class="zeynep">
+  <ul>
+{%- for item in site.data.navigation %}
+  {%- if item.url %}
+	<li>
+	  <a href="{{ item.url }}">{{ item.title }}</a>
+	</li>
+  {%- else %}
+    <li class="has-submenu">
+	  <a href="#" data-submenu="{{ item.id }}">{{ item.title }}</a>
+	  <div id="{{ item.id }}" class="submenu">
+		<div class="submenu-header">
+		  <a href="#" data-submenu-close="{{ item.id }}">Menu</a>
+		</div>
+		<label>{{ item.title }}</label>
+		<ul>
+	{%- for entry in item.submenu %}
+		  <li>
+			<a href="{{ entry.url }}">{{ entry.page }}</a>
+		  </li>
+	{%- endfor %}
+		</ul>
+	  </div>
+	</li>
+  {%- endif %}
+{%- endfor %}
+  </ul>
+</div>
 
-    <div class="zeynep">
-      <ul>
-        <li>
-          <a href="/index.html">Mathematikos</a>
-        </li>
+<div class="zeynep-overlay"></div>
 
-        <li class="has-submenu">
-          <a href="#" data-submenu="numbers">Čísla</a>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="/assets/scripts/zeynep/zeynep.min.js"></script>
 
-          <div id="numbers" class="submenu">
-            <div class="submenu-header">
-              <a href="#" data-submenu-close="numbers">Menu</a>
-            </div>
+<script>
+  $(function() {
+	// init zeynepjs side menu
+	var zeynep = $('.zeynep').zeynep({
+	  opened: function () {
+		// log
+		// console.log('the side menu opened')
+	  },
+	  closed: function () {
+		// log
+		// console.log('the side menu closed')
+	  }
+	})
 
-            <label>Čísla</label>
+	// dynamically bind 'closing' event
+	zeynep.on('closing', function () {
+	  // log
+	  // console.log('this event is dynamically binded')
+	})
 
-            <ul>
-              <li>
-                <a href="/pages/howNumbersWereBorn.html">Ako vznikli čísla</a>
-              </li>
+	// handle zeynepjs overlay click
+	$('.zeynep-overlay').on('click', function () {
+	  zeynep.close()
+	})
 
-              <li>
-                <a href="/pages/numbers.html">Číselné množiny</a>
-              </li>
-
-              <li>
-                <a href="/pages/numberSystems.html">Číselné sústavy</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="has-submenu">
-          <a href="#" data-submenu="algebra">Algebra</a>
-
-          <div id="algebra" class="submenu">
-            <div class="submenu-header">
-              <a href="#" data-submenu-close="algebra">Menu</a>
-            </div>
-
-            <label>Algebra</label>
-
-            <ul>
-              <li>
-                <a href="/pages/linearFunction.html">Lineárna funkcia</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-		
-		<li class="has-submenu">
-          <a href="#" data-submenu="aGeom">Analytická geometria</a>
-
-          <div id="aGeom" class="submenu">
-            <div class="submenu-header">
-              <a href="#" data-submenu-close="aGeom">Menu</a>
-            </div>
-
-            <label>Analytická geometria</label>
-            <ul>
-              <li>
-                <a href="/pages/aGeom_history.html">Vznik analytickej geometrie</a>
-              </li>
-			  
-			  <li>
-                <a href="/pages/aGeom_usage.html">Využitie analytickej geometrie</a>
-              </li>
-			  
-			  <li>
-                <a href="/pages/aGeom_space.html">Priestor</a>
-              </li>
-			  
-			  <li>
-                <a href="/pages/aGeom_coorSys.html">Súradnicová sústava</a>
-              </li>
-			  
-			  <li>
-                <a href="/pages/aGeom_vectors.html">Vektory</a>
-              </li>
-			  
-            </ul>
-          </div>
-        </li>
-		
-		<li class="has-submenu">
-          <a href="#" data-submenu="statistics">Štatistika</a>
-
-          <div id="statistics" class="submenu">
-            <div class="submenu-header">
-              <a href="#" data-submenu-close="statistics">Menu</a>
-            </div>
-
-            <label>Štatistika</label>
-            <ul>
-              <li>
-                <a href="/pages/stat_intro.html">Úvod do štatistiky</a>
-              </li>
-			  
-			   <li>
-                <a href="/pages/stat_data.html">Údaje</a>
-              </li>
-			  
-			   <li>
-                <a href="/pages/stat_PositionMeasures.html">Miery polohy</a>
-              </li>
-			  
-			   <li>
-                <a href="/pages/stat_VariabilityMeasures.html">Miery variability</a>
-              </li>
-			  
-			   <li>
-                <a href="/pages/stat_correlation.html">Korelácia</a>
-              </li>
-			  
-			   <li>
-                <a href="/pages/stat_outliers.html">Outliers</a>
-              </li>
-			  
-			   <li>
-                <a href="/pages/stat_playerAnalysis.html">Analýza údajov o futbalistoch</a>
-              </li>
-			  
-			   <li>
-                <a href="/pages/stat_usage.html">Naozajstné využitie štatistiky</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-
-        <li>
-          <a href="/pages/vocabulary.html">Slovník</a>
-        </li>
-      </ul>
-    </div>
-
-	 <div class="navbar">
-      <button type="button" class="btn-open first">
-		<img src="../assets/images/hamburgerIcon.png">
-	  </button>
-	  
-	 </div>
-
-    <div class="zeynep-overlay"></div>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/assets/scripts/zeynep/zeynep.min.js"></script>
-
-    <script>
-      $(function() {
-        // init zeynepjs side menu
-        var zeynep = $('.zeynep').zeynep({
-          opened: function () {
-            // log
-            // console.log('the side menu opened')
-          },
-          closed: function () {
-            // log
-            // console.log('the side menu closed')
-          }
-        })
-
-        // dynamically bind 'closing' event
-        zeynep.on('closing', function () {
-          // log
-          // console.log('this event is dynamically binded')
-        })
-
-        // handle zeynepjs overlay click
-        $('.zeynep-overlay').on('click', function () {
-          zeynep.close()
-        })
-
-        // open zeynepjs side menu
-        $('.btn-open').on('click', function () {
-          zeynep.open()
-        })
-      })
-    </script>
-
-  </body>
-</html>
+	// open zeynepjs side menu
+	$('.btn-open').on('click', function () {
+	  zeynep.open()
+	})
+  })
+</script>

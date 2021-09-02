@@ -48,15 +48,11 @@ main {
 	margin-bottom: 2%;
 }
 
+
 .navbar img{
 	width: 40px; 
 	height: 40px;
 	float: right;
-}
-
-.navbar span{
-	font-family: Monospace;
-	float: both;
 }
 
 .btn-open {
@@ -79,11 +75,11 @@ main {
 
 .btn-open.first {
   background-color: #ffffff;
-  color: #ffffff;
+  color: #003152;
 }
 .btn-open.second {
   background-color: #ffffff;
-  color: #fd698d;
+  color: #003152;
 }
 
 /* zeynepjs menu styles */
