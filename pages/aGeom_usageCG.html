@@ -96,6 +96,34 @@ Na obrázku budeme počítať, o koľko sa pohne Karkulka za sekundu. Tých 0,02
 <h3>FPS</h3>
 Možno si sa už niekedy stretol so skratkou fps, čo znamená frames per seconds, po slovensky počet obrázkov za sekundu. Túto skratku môžeš vidieť napríklad v súvislosti s hrami, filmami či videami. Znamená to, že koľko obrázkov sa vykreslí za jednu sekundu. Dnes sa normálne používa 24 fps. Niektoré hry majú 60 fps. Čím je fps vyššie, tým sú rýchlejšie scény (napr. pohyb vystreleného puku) kvalitnejšie, ale objem dát je väčší. Slabší počítač nemusí stíhať obrázky vykresliť.<br /><br />
 
+<h2>Priesečník bodu a priamky</h2>
+S objektami sme už spravili skoro všetko, okrem jednej veci. Nezobrazli sme ich na obrazovku. Práve to ideme teraz urobiť, ale najprv musíme vedieť niečo o tom, ako taká obrazovka funguje.
+
+<h3>Pixel</h3>
+V dnešnej dobe sa väčšina obrazoviek skladá z pixelov. Pixel je taký mini-mini-mini štvorček, ktorý sa dokáže rozsvietiť na rôzne farby. Na obrazovke je ich veľmi veľa, napríklad 4K obrazovky majú po šírke 3 840 a po výške 2 160 pixelov. To je spolu 8 294 400 pixelov. Každý z nich sa dokáže rozsvietiť na inú farbu a tak zobraziť nejaký obrázok. Čím je pixelov viac, tým je obrázok kvalitnejší a je na ňom vidieť viacej detailov. Technické pozadie fungovania pixelov necháme na inokedy. Teraz nám stačí vedieť, že sú.
+
+<figure>
+  <img src="../assets/images/aGeom_usagePixelsMonitor.png" alt="Pixely na monitore">
+  <figcaption>Obr. 6.: V skutočnosti sa obrazovky skladajú z miliónov malých štvorčekov, z ktorých každý vie mať inú farbu.</figcaption>
+</figure>
+
+<figure>
+  <img src="../assets/images/aGeom_usagePixels.png" alt="Rozlíšenie">
+  <figcaption>Obr. 7.: Tu je jabĺčko, ktoré niesie Červená čiapočka svojej babičke. Jabĺčko je zobrazené na štyroch rôznych obrazovkách. Obrazovka a) má rozlíšenie 2x2 pixelov. Obrazovka b) má 10x10 pixelov. Obrazovka c) má 20x20 pixelov. Obrazovka d) je HD, teda má rozlíšenie 1080x720 pixelov. Čím väčšie je rozlíšenie obrazovky, tým je jabĺčko krajšie a menej kockaté.</figcaption>
+</figure>
+
+<h3>Raytracing</h3>
+Jeden z najznámejších spôsobov zobrazovania objektov v hrách je raytracing. Tu ti vysvetlíme jeho veľmi zjednodušenú podobu.<br /><br />
+
+Všetky objekty v hre Červená čiapočka sú 3D, sú umiestnené  v súradnicovej sústave, skladajú sa z veľmi veľa trojuholníčkov a každý trojuholníček má svoju farbu. Objekty potrebujeme nejako zobraziť na našej štvorčekovej obrazovke.<br /><br />
+
+Túto úlohu berie na seba raytracing. Zoberie si ten náš svet z hry a akože doňho umiestni obrazovku. Z každého štvorček na obrazovke spraví priamku a vypočíta, či sa náhodou nestretla s nejakým trojuholníčkom objektu. Ak priamka preťala trojuholníček, tak sa zoberie jeho farba a vyfarbí sa ňou štvorček na obrazovke.
+
+<figure>
+  <img src="../assets/images/aGeom_usageRaytracing.gif" alt="Raytracing">
+  <figcaption>Obr. 8.: Objekty v hre sú zapísané v súradnicovej sústave. Do sústavy pridáme aj obrazovku. Z každého štvorčeka sa spraví priamka. Ak sa priamka pretne s trojuholníčkom nejakého objektu, zoberie sas jeho farba a vyfarbí sa ňou štvorček na obrazovke.</figcaption>
+</figure>
+
 <h1>Zdroje</h1>
 
 <div class='literature'>

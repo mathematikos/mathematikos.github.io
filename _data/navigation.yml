@@ -34,8 +34,12 @@
       url: /analyticka_geometria_vektory
     - page: Priamka
       url: /analyticka_geometria_priamka
+    - page: Rovina
+      url: /analyticka_geometria_rovina
     - page: Použitie v počítačovej grafike
       url: /analyticka_geometria_v_pocitacovej_grafike
+    - page: Počítačová grafika dnes
+      url: /pocitacova_grafika_dnes
 
 - title: Geometria
   id: geometry

@@ -1,0 +1,71 @@
+---
+title: Rovina
+description: "rovina"
+keywords: "rovina"
+permalink: analyticka_geometria_rovina
+---
+
+<h1>Rovina</h1>
+
+<div class="content">
+Pri rovine sa budeme často odkazovať na priamku, pretože sa v niečom podobajú. Rovinu, podobne ako priamku, nemusíme iba kresliť, ale vieme ju vyjadriť číslami. Priamku sme vysvetľovali v 2D, pretože sa to ľahšie kreslí. Rovinu musíme v 3D, lebo v menej rozmernom priestore neexistuje. <br /><br />
+
+Rovinu vieme definovať bodmi. Nestačia nám však dva body, treba tri, pretože rovina sa nachádza v 3D. <b>Rovina</b> je teda definovaná <b>tromi bodmi</b>. Označíme si ich A, B a C. Rovinu môžeme mať danú aj dvomi vektormi alebo vektorom a bodom. Vektorom dáme mená $\vec{u}$ a $\vec{v}$
+
+Ak by sme poznali iba dva body, alebo dokonca iba jeden, nevedeli by sme o ktorú rovinu sa jedná. Mali by sme na výber z viacero rovín, ktoré sú „otočené“ okolo tých dvoch bodov. Viď obrázok.
+
+Dôležité upozornenie. Rovina je nekonečná. My ju budeme kresliť ako štvorec, pretože nekonečno sa nám nevojde do obrázku.<br /><br />
+
+<figure>
+  <img src="../assets/images/aGeom_planeDefinition.png" alt="Definícia roviny pomocou dvoch bodov">
+  <figcaption>Obr. 1.: a) Ak by bola rovina daná iba jedným bodom, nevieme, o ktorú rovinu ide. Jeden bod môže patriť do nekonečne veľa rovín. b) Rovina daná dvomi bodmi. Tu sme vylúčili roviny podobné rovine sigma z obrázku a. Teda všetky roviny, do ktorých nepatrí bod B (je buď nad rovinou, pod ňou alebo vedľa nej). Stále však vieme tieto dva body priradiť nekonečne veľa rovinám. c) Rovina daná tromi bodmi. To je tá správna definícia, pretože tretí bod eliminuje roviny, ktoré sú nejak naklonené. Z obrázku b vypadávajú roviny sigma a tau.</figcaption>
+</figure>
+
+<h2>Parametrická rovnica roviny</h2>
+
+Pri spomienke na priamku sa ti možno vynorí v hlave matná predstava, ako sme z dvoch bodov dostali parametrickú rovnicu priamky. Rovina je na tom podobne. <br /><br />
+
+Zasa chceme vedieť dočiahnuť na každý bod na ploche. Dočahovaný bod sa bude volať X. Potrebujeme na to bod, z ktorého budeme dočahovať. Jeden bod poznáme, volá sa A. Ďalej treba nejaké vektory, ktorými budeme dočahovať bod X. Jeden bude málo, pretože nedočiahne body, ktoré sú nad ním alebo pod ním. Musíme mať dva. Oba vektory sa musia dať ľubovoľne naťahovať a skracovať. Dosiahneme to tak, že vektory budeme vedieť násobiť ľubovoľným číslom. <br /><br />
+
+Teraz to treba už len poskladať dokopy. Pomocou dvoch vektorov vieme dočahovať na body tak, že ich naškálujeme a sčítame. Potom ich súčet už len aplikujeme na nejaký bod, ktorý poznáme. V našom prípade je to A. Vektory sa škálujú pomocou parametrov, za ktoré sa dajú dosadiť ľubovoľné čísla. Parametre sa zvyčajne nazývajú t a s.
+
+
+<b>Akýkoľvek bod na priamke dostaneme tak, že sčítame dva naškálované vektory a pripočítame ich k bodu, ktorý poznáme.</b>
+
+$$ X = A + t\vec{u} + s\vec{v} $$
+
+<figure>
+  <img src="../assets/images/aGeom_planeParamEq.png" alt="Parametrická rovnica priamky">
+  <figcaption>Obr. 2.: Na bodoch X, Y, Z a Ž chceme ukázať, ako sa pomocou jedného bodu a dvoch vektorov dá dočiahnuť na každý bod v rovine. Treba poznať jeden bod v rovine, od ktorého sa dá odraziť. V našom prípade sa je to bod A. Potom treba dva vektory. Sú to $\vec{u}$ a $\vec{v}$. Tieto dva vektory sa rôzne naškálujú a potom sa spočítajú. Rôznym škálovaním vektorov $\vec{u}$ a $\vec{v}$ sa dosiahne na každý bod v rovine.</figcaption>
+</figure>
+
+<h2>Normálový vektor roviny</h2>
+
+Vo všeobecnej rovnici roviny budeme potrebovať normálový vektor, tak si ho tu spravíme. Odstopuj si 5 minút a skús porozmýšľať, ako by sa to dalo...Ok, môžeš čítať ďalej.<br /><br />
+
+Poznáme tri body a vieme z nich spraviť dva vektory. Poznáme ich pod menami $\vec{u}$ a $\vec{v}$ . Kedysi dávno, ešte pri vektoroch sme si povedali, že keď sa vynásobia dva vektory pomocou vektorového súčinu, vznikne tretí vektor, ktorý je na ne kolmý. Keďže naše dva vektory patria rovine, tak vzniknutý vektor je kolmý aj na rovinu. Vektor kolmý na rovinu sa nazýva normálový vektor roviny a zvyčajne sa označuje $\vec{n}$.
+
+<figure>
+  <img src="../assets/images/aGeom_planeNormalVec.png" alt="Normálový vektor roviny">
+  <figcaption>Obr. 3.: Na rovine poznáme tri body A, B, C. Spravíme z nich vektory $\vec{u}$ a $\vec{v}$. Vektorovým  súčinom dostaneme normálový vektor roviny $\vec{n}$.</figcaption>
+</figure>
+
+<h2>Všeobecná rovnica roviny</h2>
+
+Aj všeobecná rovnica roviny sa podobá na priamku. Tiež slúži na to, aby sme zistili, či nejaký bod leží na danej rovine alebo nie. Princíp je podobný.<br /><br />
+
+Aj rovnica je podobná ako pri priamke. <i>ax+by+bz</i> je skalárny súčin normálového vektora a vektora zo začiatku sústavy do bodu X. Pod písmenom <i>d</i>, podobne ako pri priamke, sa skrýva skalárny súčin normálového vektora a vektora zo začiatku sústavy do bodu, ktorý na rovine poznáme. Ak sú tieto dva skalárne súčiny rovnaké, bod X leží v rovine. 
+
+$$ ax+by+cz+d=0 $$
+
+Na obrázku chceme ukázať mágiu, ktorá sa za rovnicou skrýva. Trochu ju však upravíme. Nebudeme mať dva vektory začínajúce na začiatku sústavy. Spravíme si iba jeden vektor zo známeho bodu do bodu X. Či bod X leží na rovine zistíme pomocou skalárneho súčinu. Spravíme si vektor z bodu X do jedného z bodov, ktorý poznáme. Druhý vektor, potrebný do skalárneho súčinu, je normálový vektor roviny. Ak ich skalárny súčin je 0, vektory sú na seba kolmé. Bod leží na rovine. Postup je aj na obrázku.
+
+<figure>
+  <img src="../assets/images/aGeom_planeGeneralEq.png" alt="Všeobecná rovnica roviny">
+  <figcaption>Obr. 4.: Vo všeobecnej rovnici roviny ide o to, aby sme sa dozvedeli, či bod leží alebo neleží v rovine. Na ukážku sme si vybrali dva body. Bod X patrí rovine, bod Y v nej neleží. Pre oba body sme postupovali rovnako. Spravili sme si vektor zo známeho bodu do bodu X (alebo Y). Skalárnym súčinom s normálovým vektorom sme overili, či je normálový vektor kolmý na náš vytvorený vektor. V prípade bodu X vyšiel skalárny súčin 0, bod teda leží na rovine. Bod Y na nej neleží, lebo skalárny súčin nevyšiel 0.</figcaption>
+</figure>
+
+
+
+
+</div>
