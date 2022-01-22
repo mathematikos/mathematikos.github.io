@@ -48,7 +48,7 @@ Takže vždy, keď budeme robiť nejaké operácie s vektormi, posunieme si ich 
 
 <h2>Veľkosť a smer vektora</h2>
 
-Zatiaľ sme hovorili iba to, že vektor údáva nejaký smer a veľkosť ako sa treba pohnúť. Nevieme nič presné, ani presne o koľko a ani presne kam. Vieme to vypočítať zo súradníc jeho koncového bodu, keď začína v bode [0,0]. Posunúť vektor na začiatok sústavy už vieš, tak môžeme ísť smelo počítať veľkosť a smer vektora.<br /><br />
+Zatiaľ sme hovorili iba to, že vektor udáva nejaký smer a veľkosť ako sa treba pohnúť. Nevieme nič presné, ani presne o koľko a ani presne kam. Vieme to vypočítať zo súradníc jeho koncového bodu, keď začína v bode [0,0]. Posunúť vektor na začiatok sústavy už vieš, tak môžeme ísť smelo počítať veľkosť a smer vektora.<br /><br />
 
 Smer je jednoduchý. Sú to súradnice jeho koncového bodu. Veľkosť vektora je vzdialenosť medzi jeho začiatočným a koncovým bodom. Vieme ju vypočítať pomocou Pytagorovej vety, lebo poznáme vzdialenosť medzi týmito bodmi aj na osi x aj na osi y.
 
@@ -58,9 +58,9 @@ Smer je jednoduchý. Sú to súradnice jeho koncového bodu. Veľkosť vektora j
 </figure>
 
 <h2>Umiestnenie vektora</h2>
-Pri vektoroch sa môžeš stretnúť so slovami <b>kolineárny</b> a <b>komplanárny</b>. Na prvé počutie to znie dosť zložito, ale tieto dve slová iba pomenúvavajú umiestenie vektorov. Keď hovoríme, že vektory sú kolineárne, myslíme tým, že vektory sú rovnobežné. <br /><br />
+Pri vektoroch sa môžeš stretnúť so slovami <b>kolineárny</b> a <b>komplanárny</b>. Na prvé počutie to znie dosť zložito, ale tieto dve slová iba pomenúvajú umiestenie vektorov. Keď hovoríme, že vektory sú kolineárne, myslíme tým, že vektory sú rovnobežné. <br /><br />
 
-Kolinárne vektory môžeme ešte rozdeliť na <b>súhlasné</b> a <b>nesúhlasné</b>. Súhlasné vektory idú rovnobežne, rovnakým smerom. Nesúhlasné vektory sú tiež rovnobežné, ale idú opačným smerom. <br /><br />
+Kolineárne vektory môžeme ešte rozdeliť na <b>súhlasné</b> a <b>nesúhlasné</b>. Súhlasné vektory idú rovnobežne, rovnakým smerom. Nesúhlasné vektory sú tiež rovnobežné, ale idú opačným smerom.<br /><br />
 
 <b>Komplanárne</b> vektory sú také, ktoré ležia v rovnobežných rovinách.
 
@@ -75,15 +75,15 @@ Keď násobíme vektor <b>kladným číslom väčším ako 1, bude dlhší</b>. 
 </figure>
 
 <h2>Sčítavanie vektorov</h2>
-Vektory, ktoré ideme sčítavať, najprv presunieme na začiatok sústavy. Potom sčítame ich koncové súradnice na jednotlivých osiach. Teda sčítame súradnice vektorov na osi x, na osi y a ak treba, aj na osi z. Vznikne nám jeden nový vektor. Keď nejaký bod posunieme o tento nový vektor, dostaneme ho na to isté miesto, akokeby sme ho posunuli o každý starý vektor. <br /><br />
+Vektory, ktoré ideme sčítavať, najprv presunieme na začiatok sústavy. Potom sčítame ich koncové súradnice na jednotlivých osiach. Teda sčítame súradnice vektorov na osi x, na osi y a ak treba, aj na osi z. Vznikne nám jeden nový vektor. Keď nejaký bod posunieme o tento nový vektor, dostaneme ho na to isté miesto, ako keby sme ho posunuli o každý starý vektor. <br /><br />
 
-Na obrázku sú štyri modré vektory, ktoré chceme sčítať. Po ich zrátaní vznikne výsledný vektor, ktorý je nakreslený červenou. V prvej časti výsledný vektor dostaneme tak, že sčítame x a y súradnice modrých vektorov. Je jedno, s ktorým vektorom začneme a ktorými poračujeme, výsledok je vždy rovnaký. V druhej časti je ukázané sčítavanie vektorov tak, že bod sa posunie najprv o prvý vektor, potom o druhý, o tretí, o štvrtý. Tu je tiež jedno, ktorým vektorom začneme.
+Na obrázku sú štyri modré vektory, ktoré chceme sčítať. Po ich zrátaní vznikne výsledný vektor, ktorý je nakreslený červenou. V prvej časti výsledný vektor dostaneme tak, že sčítame x a y súradnice modrých vektorov. Je jedno, s ktorým vektorom začneme a ktorými pokračujeme, výsledok je vždy rovnaký. V druhej časti je ukázané sčítavanie vektorov tak, že bod sa posunie najprv o prvý vektor, potom o druhý, o tretí, o štvrtý. Tu je tiež jedno, ktorým vektorom začneme.
 <figure>
   <img src="../assets/images/aGeom_vecSuma.png" alt="Sčítanie vektorov">
   <figcaption>Obr. 6.: Sčítanie vektorov znamená, že bod postupne posunieme o každý vektor.</figcaption>
 </figure>
 
-<h2>Skalárny súčin</h2>
+<h2><a id="aGeom_vecDotProduct">Skalárny súčin</a></h2>
 V polovici 19. storočia sa ujo Hamilton zaoberal niečím, čo sa nazýva "quaternion". Pri skúmaní quaternion-ov objavil vec, ktorú dnes voláme skalárny súčin. Táto vec sa neskôr adaptovala do vektorov.<br /><br />
 
 Skalárny súčin je jeden zo spôsobov ako spolu vynásobiť dva vektory. <b>Výsledok skalárneho súčinu je číslo a hovorí o tom, ako veľmi sú vektory rovnobežné.</b> Teda ako veľmi pôsobí jeden vektor v smere druhého. Keď chceme povedať, že dva vektory sa násobia skalárnym súčinom, <b>znamienko súčinu je bodka</b>. Skalárny súčin môžeme vyjadriť dvomi rôznymi spôsobmi. Algebraickým a geometrickým. <br /><br />
@@ -114,7 +114,7 @@ $$
 Keď sú dva vektory rovnobežné, uhol medzi nimi je 0&#176;. Výsledkom cos0&#176; je 1. Keď sú vektory na seba kolmé, uhol medzi nimi je 90&#176;. Výsledok cos90&#176; je 0. Ak by si náhodou potreboval vyhľadať skalárny súčin na nete aj v angličtine, tak po anglicky sa to povie dot product.<br /><br />
 
 
-<h2>Vektorový súčin</h2>
+<h2><a id="aGeom_vecCrossProduct"></a>Vektorový súčin</h2>
 Vektorový súčin vznikol rovnako ako skalárny. To isté storočie, ten istý ujo, ten istý problém. Prvé najslávnejšie použitie vektorového súčinu bolo v rovniciach uja Maxwella, ktoré hovoria dačo o elektromagnetizme.<br /><br />
 
 Z vektorového súčinu sa tiež dozvieme niečo o tom, <b>ako veľmi sú vektory na seba kolmé</b>. Ako bonus získame vektor <b>kolmý</b> na tieto dva vektory, pretože <b>výsledkom vektorového súčinu je vektor</b>. Vektorový súčin sa robí v 3D priestore (v 2D nedáš dva vektory a ešte aj tretí kolmý na ne). Znamienko súčinu je $\times$, lebo ho treba odlíšiť od skalárneho súčinu.<br /><br />
@@ -143,18 +143,18 @@ Vec druhá je ten vektor $\vec{n}$ na konci vzorca. To je jednotkový vektor kol
 Čím viac sú násobené vektory na seba kolmé, tým väčší bude výsledný vektor. Keď sú násobené vektory rovnobežné, výsledný vektor je nulový (má súradnice [0,0,0]). Vektorový súčin nájdeš v angličtine ako cross product.
 
 <h2>Jednotkový a normálový vektor</h2>
-Sú to vektory, ktoré dostali mená, lebo sa často používajú. <br /><br />
+Sú to vektory, ktoré dostali mená, lebo sa často používajú.<br /><br />
 
 <b>Normálový vektor</b> je taký vektor, ktorý je na niečo <b>kolmý</b>. Je jedno, či na iný vektor/y, priamku, plochu. Skratka slovami normálový vektor sa označuje vektor, ktorý je na niečo kolmý.<br /><br />
 
-Jednotkový vektor je vektor, ktorý má iba na jednej osi dĺžku 1, na ostatných nula. Pre os x sú jeho súradnice [1,0,0], pre y [0,1,0] a pre z [0,0,1]. Najlepšie je to vidno na obrázku.
+<b>Jednotkový vektor je vektor, ktorý má  dĺžku 1.</b> 
 
 <figure>
   <img src="../assets/images/aGeom_vecUnitVec.png" alt="Jednotkový vektor">
-  <figcaption>Obr. 9.: Jednotkový vektor na osi x je nakreslený žltou, na osi y červenou a na osi z zelenou farbou.</figcaption>
+  <figcaption>Obr. 9.: Všetky tri vektory $\vec{u}$, $\vec{v}$ a $\vec{w}$ sú jednotkové vektory, pretože majú dĺžku 1.</figcaption>
 </figure>
 
 <h2>Zhrnutie</h2>
-Vektor je niečo, čo ukazuje smer, ktorým sa má bod pohnúť a aj ako veľmi sa má pohnúť. Aby sa s vektormim ľahšie počítalo, treba ich presunúť do začiatku súradnicovej sústavy. Vektory vieme sčítať a vieme ich aj násobiť. Vektor môžeme násobiť jedným číslom a to tak, že tým číslom vynásobíme každú dúradnicu. Týmto meníme veľkosť vektora, vieme ho skrátiť alebo natiahnuť. Vektory sa dajú násobiť aj medzi sebou a to dvomi spôsobmi. Skalárnym alebo vektorovým súčinom. Z oboch súčinov vieme zistiť to, ako sú vektory na seba kolmé. Výsledkom skalárneho súčinu je číslo a výsledkok vektorového súčinu je vektor.
+Vektor je niečo, čo ukazuje smer, ktorým sa má bod pohnúť a aj ako veľmi sa má pohnúť. Aby sa s vektormi ľahšie počítalo, treba ich presunúť do začiatku súradnicovej sústavy. Vektory vieme sčítať a vieme ich aj násobiť. Vektor môžeme násobiť jedným číslom a to tak, že tým číslom vynásobíme každú súradnicu. Týmto meníme veľkosť vektora, vieme ho skrátiť alebo natiahnuť. Vektory sa dajú násobiť aj medzi sebou a to dvomi spôsobmi. Skalárnym alebo vektorovým súčinom. Z oboch súčinov vieme zistiť to, ako veľmi sú vektory rovnobežné (resp. kolmé). Výsledkom skalárneho súčinu je číslo a výsledok vektorového súčinu je vektor.
 
 </div>

@@ -1,7 +1,7 @@
 ---
 title: Počítačová grafika dnes
 description: "počítačová grafika dnes"
-keywords: "pong"
+keywords: "pocitacova grafika, pong, plyn, tekutina, Navier-Stoke rovnica, textil, vlasy, svetlo"
 permalink: pocitacova_grafika_dnes
 ---
 
@@ -9,11 +9,11 @@ permalink: pocitacova_grafika_dnes
 <h3>(Píše sa rok 2021)</h3>
 
 <div class="content">
-Ping-pong patril medzi prvé počítačové hry. Svetlo sveta uzrel v roku 1972 (relatívne nedávno, nie?). Grafika hry bola naozaj jednoduchá. Ako rakety slúžili dve čiary. Sieťka bola dlhá čiara v strede. Hráči ovládali rakety a odrážali si malý štvorček-loptičku. Na vrchu obrazovky bolo počítadlo bodov. Oficiálny názov hry je Pong.[1] 
+Pingpong patril medzi prvé počítačové hry. Svetlo sveta uzrel v roku 1972 (relatívne nedávno, nie?). Grafika hry bola naozaj jednoduchá. Ako rakety slúžili dve čiary. Sieťka bola dlhá čiara v strede. Hráči ovládali rakety a odrážali si malý štvorček-loptičku. Na vrchu obrazovky bolo počítadlo bodov. Oficiálny názov hry je Pong. [1]
 
 <figure>
-  <img src="../assets/images/aGeom_CGtodayPong.png" alt="Prvá počítačová hra - pong">
-  <figcaption>Obr. 1.[2]: Prvá počítačová hra - pong</figcaption>
+  <img src="../assets/images/aGeomGifs/aGeom_CGtodayPong.gif" alt="Prvá počítačová hra - Pong">
+  <figcaption>Obr. 1.: Prvá počítačová hra - Pong <a href="https://www.youtube.com/watch?v=XNRx5hc4gYc&ab_channel=pongmuseum" target="_blank">[2]</a></figcaption>
 </figure>
 
 Odvtedy prešla počítačová grafika vývojom a dnes je úžasná, niekedy sa ani nedá rozoznať od reality. Za svoj nádherný vzhľad vďačí matematike. Matematika totiž opisuje prírodné zákony s dokonalou presnosťou a túto schopnosť vieme preniesť do počítačov. Nie celú, iba jej malý zlomok, ale aj to stačí na to, aby sa nám animácie zdali ako živé. Simulovať celú prírodu, tak ako je v skutočnosti, na to by pravdepodobne nestačili ani všetky počítače na svete.<br /><br />
@@ -21,81 +21,95 @@ Odvtedy prešla počítačová grafika vývojom a dnes je úžasná, niekedy sa 
 Nie všetky veci sa robia rovnako a tak si ukážeme, ako fungujú aspoň niektoré z nich.
 
 <h2>SIGGRAPH</h2>
-SIGGRAPH je grafická konferenia, kde výskumníci z oblasti počítačovej grafiky každoročne prezentujú svoje objavy. Keď si dáš vyhľadať videá <a href="https://www.youtube.com/watch?v=jYdMKdRUq_8&ab_channel=ACMSIGGRAPH" target="blank">SIGGRAPH 2020</a> (alebo iný rok), nájdeš zhrnutie konferencie. Výsledky sú veľmi zaujímavé na pohľad. Často ide o simulácie rôznych tekutín, pohybu postáv, textílií a podobných vecí. Výskumníci sa každý rok tešia, že prekonali ďalšiu prekážku a počítačová grafika sa zasa o čosi viac podobá nášmu svetu.<br /><br />
+SIGGRAPH je grafická konferencia, kde výskumníci z oblasti počítačovej grafiky každoročne prezentujú svoje objavy. Keď si dáš vyhľadať videá <a href="https://www.youtube.com/watch?v=jYdMKdRUq_8&ab_channel=ACMSIGGRAPH" target="_blank">SIGGRAPH 2020</a> (alebo iný rok), nájdeš zhrnutie konferencie. Výsledky sú veľmi zaujímavé na pohľad. Často ide o simulácie rôznych tekutín, pohybu postáv, textílií a podobných vecí. Výskumníci sa každý rok tešia, že prekonali ďalšiu prekážku a počítačová grafika sa zasa o čosi viac podobá nášmu svetu.<br /><br />
 
 Konferenciu nespomíname náhodou. Za každým objavom stojí matematika a môžeš tak vidieť jej použitie v praxi. Aj v tomto článku budeme ukazovať obrázky zo SIGGRAPH-u, aby si videl, kde sme dnes.
 
 <h2>Pevné objekty</h2>
-Táto kategŕia je čo do výpočtov aj do práce z tých ľahších. Tuhé/pevné telesá tvoria väčšinu objektov. Sú to všetky také klasické objekty, ako domy, autá, stoličky, vlaky, atď. Skratka to, čo je aj v načom svete pevné/tuhé. <br /><br />
+Táto kategória je čo do výpočtov aj do práce z tých ľahších. Tuhé/pevné telesá tvoria väčšinu objektov. Sú to všetky také klasické objekty, ako domy, autá, stoličky, vlaky atď. Skrátka to, čo je aj v našom svete pevné/tuhé.<br /><br />
 
-Prácu s nimi sme si predviedli aj v článkoch o analytickej geometrí. Grafik spraví v programe nejaký objekt. Ten sa skladá z veľmi veľa trojuholníčkov. Ukázali sme si aj vykresľovanie týchto objektov, tzv. raytracing.
+Prácu s nimi sme si predviedli aj v článkoch o analytickej geometrii. Grafik spraví v programe nejaký objekt. Ten sa skladá z veľmi veľa trojuholníčkov. Ukázali sme si aj vykresľovanie týchto objektov, tzv. raytracing.
 
 <figure>
   <img src="../assets/images/aGeom_CGtodayRigidbodies.jpg" alt="Pevné telesá">
   <figcaption>Obr. 2.[15]: Pevné telesá sú také, ktoré majú stále svoj rovnaký tvar. Môžu to byť napríklad domy, autá, nábytok ale aj ľudia či stromy.</figcaption>
 </figure>
 
-
 <h2>Plyny a tekutiny</h2>
-Úžasné  efekty vo filmoch spravia dym, tekutiny (nar. voda), dym, prach, oheň. Všetky také veci, ktoré sa stále menia, hýbu a ťažko sa dajú zachytiť.
+Oheň, voda, dym, prach. To všetko sú veci, ktoré dokážu vo filmoch spraviť úžasné efekty. Netreba ich natáčať vždy len naživo. Dajú sa spraviť aj na počítači. 
 
 <figure>
-  <img src="../assets/images/aGeom_CGtodayFluids.png" alt="Plyny a tekutiny">
-  <figcaption>Obr. 3.: Obrázky z konferencie SIGGRAPH. Oheň je z roku 2011 <a href="https://www.youtube.com/watch?v=hZC6ORUbLog&ab_channel=DougJames" target="blank">[8]</a>, voda <a href="https://www.youtube.com/watch?v=Au3A7YUOol8&t=278s&ab_channel=ChenfanfuJiang" target="blank">[7]</a> a dym <a href="https://www.youtube.com/watch?v=Qi8pDl7jMd0&t=127s&ab_channel=ZahraForootaninia" target="blank">[9]</a> z roku 2020.</figcaption>
+  <img src="../assets/images/aGeomGifs/aGeom_CGtodayFire.gif" alt="SIGGRAPH 2011: oheň">
+  <figcaption>Obr. 3.: SIGGRAPH 2011: oheň <a href="https://www.youtube.com/watch?v=hZC6ORUbLog&ab_channel=DougJames" target="_blank">[8]</a></figcaption>
 </figure>
 
-Oheň, voda, dym, prach. Všetky sa skladajú z milíonov malých molekúl. Obaliť všetky molekuly do trojuholníčkov, tak ako sa to robí pri pevných telesách, by bolo trošku náročné. Našťastie má matematika riešenie aj na toto.<br /><br />
+<figure>
+  <img src="../assets/images/aGeomGifs/aGeom_CGtodayWater.gif" alt="SIGGRAPH 2020: voda">
+  <figcaption>Obr. 4.: SIGGRAPH 2020: voda <a href="https://www.youtube.com/watch?v=Au3A7YUOol8&t=278s&ab_channel=ChenfanfuJiang" target="_blank">[7]</a></figcaption>
+</figure>
 
-Kedysi dávno, medzi rokmi 1822 a 1850 dvaja matematici Navier a Stoke opísali správanie plynov a kvapalín. Základom pre ich rovnicu bol Newtonov zákon sily $\vec{F} = m \cdot \vec{a}$. Ide tam o niečo také, že pre každú časticu plynu/kvapaliny chcú vypočítať to, ako sa hýbe - teda jej zrýchlenie $\vec{a}$. Hmotnosť častice $m$ je známa. Možno aj ty si sa kedysi na chémií učil, koľko váži molekula vody. Potom je tam vektor sily $\vec{F}$. Tento vektor sa skladá zo všetkých síl, ktoré na časticu pôsobia. V Navier-Stokovej rovnici je to gravitačné zrýchlenie, rýchlosť tekutiny/plynu, tlak (ktorý vyvýja plyn/kvapalina na nejakú jednotku plochy), hustota a viskozita. [4]<br /><br />
+<figure>
+  <img src="../assets/images/aGeomGifs/aGeom_CGtodaySmoke.gif" alt="SIGGRAPH 2020: dym">
+  <figcaption>Obr. 5: SIGGRAPH 2020: dym <a href="https://www.youtube.com/watch?v=Qi8pDl7jMd0&t=127s&ab_channel=ZahraForootaninia" target="_blank">[9]</a></figcaption>
+</figure>
 
-Navier-Stokova rovnica je základ aj pre dnešné simulácie kvapalín a plynov. Samozerejme existujú jej rôzne vylepšenia, ktoré zdokonaľujú vzhľad a správanie plynov/kvapalín. Na jej použitie v počítači existujú rôzne spôsoby. 
+Všetky tekutiny a plyny sa skladajú z miliónov malých molekúl. Obaliť všetky molekuly do trojuholníčkov, tak ako sa to robí pri pevných telesách, by bolo trošku náročné. Našťastie má matematika riešenie aj na toto.<br /><br />
+
+Kedysi dávno, medzi rokmi 1822 a 1850 dvaja matematici Navier a Stoke opísali správanie plynov a kvapalín. Základom pre ich rovnicu bol Newtonov zákon sily $\vec{F} = m \cdot \vec{a}$. Ide tam o niečo také, že pre každú časticu plynu/kvapaliny chcú vypočítať to, ako sa hýbe - teda jej zrýchlenie $\vec{a}$. Hmotnosť častice $m$ je známa. Možno aj ty si sa kedysi na chémií učil, koľko váži molekula vody. Potom je tam vektor sily $\vec{F}$. Tento vektor sa skladá zo všetkých síl, ktoré na časticu pôsobia. V Navier-Stokovej rovnici je to gravitačné zrýchlenie, rýchlosť tekutiny/plynu, tlak (ktorý vyvíja plyn/kvapalina na nejakú jednotku plochy), hustota a viskozita. [4]<br /><br />
+
+Navier-Stokova rovnica je základ aj pre dnešné simulácie kvapalín a plynov. Samozrejme existujú jej rôzne vylepšenia, ktoré zdokonaľujú vzhľad a správanie plynov/kvapalín. Na jej použitie v počítači existujú rôzne spôsoby.
 
 <h2>Textílie</h2>
-Textil zasa nemôžeme obaliť trojouholníčkami. Chceme, aby sa hýbal. Chceme, aby uterák nepadal ako doska, ale ako uterák. Chceme, aby tričko nevyzeralo na človeku ako brnenie, ale ako tričko. Chceme, aby vlajka netrčala na stožiari ako kus dreva, ale aby pekne viala vo vetre.<br /><br />
+Textil zasa nemôžeme obaliť trojuholníčkami. Chceme, aby sa hýbal. Chceme, aby uterák nepadal ako doska, ale ako uterák. Chceme, aby tričko nevyzeralo na človeku ako brnenie, ale ako tričko. Chceme, aby vlajka netrčala na stožiari ako kus dreva, ale aby pekne viala vo vetre.<br /><br />
 
-Textílie vieme zobraziť tromi spôsobmi. Prvý je geometrický. Je to najjednoduchší spôsob a používal sa už dávno. Je rovnaký ako pevné telesá. Látku vymodeluje grafik v nejakom programe. Lenže takáto handrička je ako pevné teleso. Nemá žiadne fyzikálne vlastnosti textilu a nevie sa nijako hýbať, krčiť, viať. Iba stojí. Druhý spôsob je fyzikálny. Vedci sa pozrú na vlastnosti materiálu (napr. ako sa dá natiahnuť, či je tenký, hrubý, dá sa ľahko ohnúť alebo je to naškrobená košeľa). Podobne ako Navier so Stokom, spravia nejaké rovnice. Tie sa potom použijú na to, aby sa vedelo, ako sa má textil správať. Fyzikálny spôsob je veľmi náročný na výpočty a dlho trvá, kým sa napríklad správne nasimuluje celý pád uteráku na zem. Preto sa niekedy používa hybridný model. Tam grafici spravia nejaké základné tvary uteráka a zvyšok sa dopočíta.[3]
+Textílie vieme zobraziť tromi spôsobmi. Prvý je geometrický. Je to najjednoduchší spôsob a používal sa už dávno. Je rovnaký ako pevné telesá. Látku vymodeluje grafik v nejakom programe. Lenže takáto handrička je ako pevné teleso. Nemá žiadne fyzikálne vlastnosti textilu a nevie sa nijako hýbať, krčiť, viať. Iba stojí. Druhý spôsob je fyzikálny. Vedci sa pozrú na vlastnosti materiálu (napr. ako sa dá natiahnuť, či je tenký, hrubý, dá sa ľahko ohnúť alebo je to naškrobená košeľa). Podobne ako Navier so Stokom, spravia nejaké rovnice. Tie sa potom použijú na to, aby sa vedelo, ako sa má textil správať. Fyzikálny spôsob je veľmi náročný na výpočty a dlho trvá, kým sa napríklad správne nasimuluje celý pád uteráku na zem. Preto sa niekedy používa hybridný model. Tam grafici spravia nejaké základné tvary uteráka a zvyšok sa dopočíta. [3]
 
 <figure>
-  <img src="../assets/images/aGeom_CGtodayTextile.png" alt="Textil">
-  <figcaption>Obr. 4.: Textil na SIGGRAPH-e. Tričko z roku 2021 <a href="https://www.youtube.com/watch?v=vn-WzWm74Pc&t=108s&ab_channel=VisualComputing%40ISTAustria" target="blank">[10]</a>, mokrý uterák z roku 2018 <a href="https://www.youtube.com/watch?v=xvyGpBKevLM&t=24s&ab_channel=RaymondYunFei" target="blank">[11]</a> a utierky z roku 2017 <a href="https://www.youtube.com/watch?v=eGtB0VXJsuI&t=27s&ab_channel=ChenfanfuJiang" target="blank">[12]</a>.</figcaption>
+  <img src="../assets/images/aGeomGifs/aGeom_CGtodayTextile.gif" alt="SIGGRAPH 2017:">
+  <figcaption>Obr. 6: SIGGRAPH 2017: textil <a href="https://www.youtube.com/watch?v=eGtB0VXJsuI&t=27s&ab_channel=ChenfanfuJiang" target="_blank">[12]</a></figcaption>
 </figure>
 
-Textil na týchto obrázkoch vyzerá oveľa efektnejšie, keď sa hýbe, takže pre úplný dojem treba pozrieť videá.
+Oblečenie sa snažili nasimulovať aj v roku 2021 <a href="https://www.youtube.com/watch?v=vn-WzWm74Pc&t=108s&ab_channel=VisualComputing%40ISTAustria" target="_blank">[10]</a>. Panáčik, ktorý sa hýbe, má na sebe oblečené tričká z rôznych materiálov. Tričká sa vlnia a krčia podľa jeho pohybu. V roku 2018 skúmali mokrú textíliu <a href="https://www.youtube.com/watch?v=xvyGpBKevLM&t=24s&ab_channel=RaymondYunFei" target="_blank">[11]</a>. Chceli vedieť, čo sa s látkou deje, keď je namočená alebo ako vyzerá v okamihu, keď sa na ňu vyleje voda.
+
+<!--figure>
+  <img src="../assets/images/aGeom_CGtodayTextile.png" alt="Textil">
+  <figcaption>Obr. 4.: Textil na SIGGRAPH-e. Tričko z roku 2021 , mokrý uterák z roku 2018 <a href="https://www.youtube.com/watch?v=xvyGpBKevLM&t=24s&ab_channel=RaymondYunFei" target="_blank">[11]</a> a utierky z roku 2017 <a href="https://www.youtube.com/watch?v=eGtB0VXJsuI&t=27s&ab_channel=ChenfanfuJiang" target="_blank">[12]</a>.</figcaption>
+</figure-->
 
 <h2>Vlasy</h2>
-Vlasy dotvárajú charakter človeka. Dokonca dokážu doladiť celú atmosféru. Uvedomoli si to aj tvorcovia animovaných filmov a tak sa pustili do výskumu vlasov.<br /><br />
+Vlasy dotvárajú charakter človeka. Dokonca dokážu doladiť celú atmosféru. Uvedomili si to aj tvorcovia animovaných filmov a tak sa pustili do výskumu vlasov.<br /><br />
 
 Vlasom máme na hlave véééľmi veľa. Spraviť každý vlas zvlášť zaberie nejaký ten rok. Ešte treba, aby sa vedel správne pohnúť na každý závan vetra alebo pohyb. Samozrejme musí dobre vyzerať spolu s ostatnými. Nechceme, aby postavička mala vlasy pripomínajúce ježkov kožuch.<br /><br />
 
-S týmito požiadavkami zasa pomôže matematika. Niektorí ľudia sa pozerali na to, ako fungujú vlasy. Ako vyzerajú, keď sa človek nehýbe, ako keď otočí hlavou, keď uteká alebo keď mu do nich fúka vietor. Zasa spravili nejaké rovnice, ktoré opisujú správanie jedného vlasu.Lenže vlasov je veľmi veľa a nechceme rovnice počítať pre každý vlas. Robí sa to tak, že sa vyberú nejaké vlasy, pre ne sa vypočítajú rovnice a okolité vlasy sa správajú podľa nich. Takto treba robiť výpočty pre menej vlasov, ale animácia stále vyzerá dobre. [5]<br /><br />
+S týmito požiadavkami zasa pomôže matematika. Niektorí ľudia sa pozerali na to, ako fungujú vlasy. Ako vyzerajú, keď sa človek nehýbe, ako keď otočí hlavou, keď uteká alebo keď mu do nich fúka vietor. Zasa spravili nejaké rovnice, ktoré opisujú správanie jedného vlasu. Lenže vlasov je veľmi veľa a nechceme rovnice počítať pre každý vlas. Robí sa to tak, že sa vyberú nejaké vlasy, pre ne sa vypočítajú rovnice a okolité vlasy sa správajú podľa nich. Takto treba robiť výpočty pre menej vlasov, ale animácia stále vyzerá dobre. [5]<br /><br />
 
-Aj štúdiou Pixar sa zaoberalo vlasmi, keď chcelo spraviť pekné filmy. Vo filme Brave má hlavná hrdinka krásne, ryšavé a hlavne kučeravé vlasy. Nad tým, ako spraviť kučeravé vlasy si lámali hlavy dlho. Nakoniec zistili, že kučeravý vlas sa správa ako pružina a tak do rovnice pre vlas vložili rovnicu pružiny. Výsledok sa im celkom podaril, čo povieš?. [6]
+Aj štúdio Pixar sa zaoberalo vlasmi, keď chcelo spraviť pekné filmy. Vo filme Brave má hlavná hrdinka krásne, ryšavé a hlavne kučeravé vlasy. Nad tým, ako spraviť kučeravé vlasy si lámali hlavy dlho. Nakoniec zistili, že kučeravý vlas sa správa ako pružina a tak do rovnice pre vlas vložili rovnicu pružiny. Výsledok sa im celkom podaril, čo povieš? [6]
 
 <figure>
-  <img src="../assets/images/aGeom_CGtodayHair.png" alt="Kučeravé vlasy">
-  <figcaption>Obr. 5.<a href="https://www.youtube.com/watch?v=YeYW8TIWLG8&ab_channel=KhanAcademyLabs" target="blank">[13]</a>: Kučeravé vlasy potrápili aj tvorcov animovaných filmov</figcaption>
+  <img src="../assets/images/aGeomGifs/aGeom_CGtodayHair.gif" alt="Kučeravé vlasy">
+  <figcaption>Obr. 7.<a href="https://www.youtube.com/watch?v=YeYW8TIWLG8&ab_channel=KhanAcademyLabs" target="_blank">[13]</a>: Kučeravé vlasy potrápili aj tvorcov animovaných filmov.</figcaption>
 </figure>
 
 <h2>Svetlo</h2>
-Či je dôležité svetlo, o tom sa ani nemusíme baviť. Okrem toho, že nám umožňuje vidieť objetky, dotvára aj atmosféru. Vieme spraviť krásny slnečný deň, smutný upršaný alebo strašideľnú tmavú noc. Nehovoriac o rôznych efektoch, ktoré robia odrazy svetla.<br /><br />
+Či je dôležité svetlo, o tom sa ani nemusíme baviť. Okrem toho, že nám umožňuje vidieť objekty, dotvára aj atmosféru. Vieme spraviť krásny slnečný deň, smutný upršaný alebo strašidelnú tmavú noc. Nehovoriac o rôznych efektoch, ktoré robia odrazy svetla.<br /><br />
 
-Na osvetľovanie scén v hrách a animovaných filmoch existuje viacero spôsobov, viac či menej realistických. Tu si povieme niečo o jednej z nich, o raytracingu. Už sme sa o ňom bavili, ale tu si ho vysvetlíme detailne.<br /><br />
+Na osvetľovanie scén v hrách a animovaných filmoch existuje viacero spôsobov, viac či menej realistických. Tu si povieme niečo o jednej z nich, o raytracingu.<br /><br />
 
-Najprv nám však treba vedieť, ako funguje naozajstné svetlo. Svetlo pochádza zo slnka. Predstavme si, že k nám príde v lúčoch. Taký lúč doputuje na zem a do niečoho narazí. Napríklad do červeného auta. Červené auto pohltí jeho červenú zložku a zvyšok sa odrazí do nejakého iného predmetu. Takto sa odráža slnečný lúč po svete. Niektoré odrazené lúče zachytí naše oko a vďaka tomu vidíme svet.<br /><br />
+Najprv nám však treba vedieť, ako funguje naozajstné svetlo. Svetlo pochádza zo slnka. Pre jednoduchosť si predstavme, že k nám prichádza v lúčoch. Už starý Isaac Newton zistil, že lúč sa skladá z viacerých farieb (na detaily teraz nie je priestor, ale určite niečo viac nájdeš na internete). Taký lúč doputuje na zem a do niečoho narazí. Napríklad do červeného jablka. Jablko pohltí všetky farby z lúča, okrem červenej. Tú odrazí. Odrazená červená farba sa nám dostane do oka a preto vidíme jablko červené. Zelené jablko zasa pohltí všetky farby okrem zelenej, ktorú odrazí. Naše oko zachytí odrazenú farbu a my vidíme zelené jablko. Svetlo teda funguje tak, že príde k nám v lúčoch, odráža sa po svete a niektoré z tých odrazených lúčov zachytí naše oko.<br /><br />
 
-Počítačová grafika tiež skúša napodobniť odrážanie lúčov. Zo slnka príde ohromne veľa lúčov a len malé percento z nich zachytia naše oči. Je hlúposť sledovať každý lúč a pozerať ako sa odráža. Raytracing to robí naopak. Pre každý pixel budúceho obrázku vyšle lúč, ktorý vychádza z kamery, prechádza cez daný pixel, poodráža sa od objektov v scéne a skončí v slnku. Takto dostaneme iba toľko lúčov koľko potrebujeme. Lúč narazí do prvého objektu. Zapamätá si jeho farbu, potom sa odrazí do ďalšieho objektu a z tohto objektu pripočíta kúsok farby. Lúč sa môže odraziť niekoľkokrát. Ak sa lúč úspešne dostane do slnka, farba bude normálna. Ak sa lúč nedostane do slnka (zavadzá mu tam iný objekt) znamená to, že farba je v tieni. Preto sa trochu stmavý. Lúč sa odráža podľa zákonu uhla odrazu, čiže podľa toho, ako to funguje v prírode. 
+Počítačová grafika tiež skúša napodobniť odrážanie lúčov. Zo slnka príde ohromne veľa lúčov a len malé percento z nich zachytia naše oči. Je hlúposť sledovať každý lúč a pozerať, ako sa odráža. Raytracing to robí naopak. Pre každý pixel budúceho obrázku vyšle lúč, ktorý vychádza z kamery, prechádza cez daný pixel, poodráža sa od objektov v scéne a z každého objektu, ktorý stretol, zoberie kúsok farby. Takto dostaneme iba toľko lúčov koľko potrebujeme. Lúč narazí do prvého objektu. Zapamätá si jeho farbu, potom sa odrazí do ďalšieho objektu a z tohto objektu pripočíta kúsok farby. Lúč sa môže odraziť niekoľkokrát. Lúč sa odráža podľa zákonu uhla odrazu, čiže podľa toho, ako to funguje v prírode. Ak chceme zistiť, či sa objekt nachádza na svetle alebo v tieni, zoberieme si vektor, ktorý ukazuje z objektu do slnka a tým smerom vyšleme ďalší lúč. Ak lúč na svojej ceste za slnkom stretne iný objekt, znamená to, že náš objekt je v tieni. Vtedy farbu trošku stmavíme.
 
 <figure>
-  <img src="../assets/images/aGeom_CGtodayRaytracing.png" alt="Raytracing">
-  <figcaption>Obr. 6.<a href="https://www.youtube.com/watch?v=AiliuDkVJRs&t=19s&ab_channel=NVIDIADeveloper" target="blank">[14]</a>: Osvetlenie pomocou raytracingu. Dokáže na predmetoch vytvoriť odrazy okolia. No je to výpočtovo zložité aj v dnešnej dobe.</figcaption>
-</figure> 
+  <img src="../assets/images/aGeomGifs/aGeom_CGtodayLight.gif" alt="Raytracing">
+  <figcaption>Obr. 8.: Osvetlenie pomocou raytracingu. Dokáže na predmetoch vytvoriť odrazy okolia. No je to výpočtovo zložité aj v dnešnej dobe. <a href="https://www.youtube.com/watch?v=AiliuDkVJRs&t=19s&ab_channel=NVIDIADeveloper" target="_blank">[14]</a></figcaption>
+</figure>
 
 <h1>Zdroje</h1>
 
 <div class='literature'>
-[1] Pong. 2021. https://en.wikipedia.org/wiki/Pong <br /><br />
+[1] Pong. 2021. https://en.wikipedia.org/wiki/Pong<br /><br />
 
-[2] https://www.pcsteps.com/7119-first-computer-game-1912/<br /><br />
+[2] https://www.youtube.com/watch?v=XNRx5hc4gYc&ab_channel=pongmuseum<br /><br />
 
 [3] RUDOLF A., BOGOVIC S., CAR B. R. et al.: Textile Forms’ Computer Simulation Techniques. 2017. https://www.intechopen.com/chapters/54600<br /><br />
 
@@ -103,7 +117,7 @@ Počítačová grafika tiež skúša napodobniť odrážanie lúčov. Zo slnka p
 
 [5] CHAI M., ZHENG CH., ZHOU. K.: Adaptive Skinning for Interactive Hair-Solid Simulation<br /><br />
 
-[6]  IBEN H., MEYER M., PETROVIC L.: Artistic Simulation of Curly Hair<br /><br />
+[6] IBEN H., MEYER M., PETROVIC L.: Artistic Simulation of Curly Hair<br /><br />
 
 [7] An Interface Quadrature Material Point Method for Coupled Solids and Fluids. 2020. https://www.youtube.com/watch?v=Au3A7YUOol8&t=278s&ab_channel=ChenfanfuJiang<br /><br />
 
@@ -111,9 +125,11 @@ Počítačová grafika tiež skúša napodobniť odrážanie lúčov. Zo slnka p
 
 [9] Frequency-Domain Smoke Guiding. 2020. https://www.youtube.com/watch?v=Qi8pDl7jMd0&t=127s&ab_channel=ZahraForootaninia<br /><br />
 
+
 [10] Homogenized Yarn-Level Cloth. 2020. https://www.youtube.com/watch?v=vn-WzWm74Pc&t=108s&ab_channel=VisualComputing%40ISTAustria<br /><br />
 
 [11] A Multi-Scale Model for Simulating Liquid-Fabric Interactions. 2018. https://www.youtube.com/watch?v=xvyGpBKevLM&t=24s&ab_channel=RaymondYunFei<br /><br />
+
 
 [12] Anisotropic Elastoplasticity for Cloth, Knit and Hair Frictional Contact. 2017. https://www.youtube.com/watch?v=eGtB0VXJsuI&t=27s&ab_channel=ChenfanfuJiang<br /><br />
 
@@ -123,6 +139,5 @@ Počítačová grafika tiež skúša napodobniť odrážanie lúčov. Zo slnka p
 
 [15] www.pexels.com
 </div>
-
 
 </div>

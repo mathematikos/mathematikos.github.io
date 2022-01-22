@@ -6,14 +6,15 @@ permalink: analyticka_geometria_priamka
 ---
 
 <h1>Priamka</h1>
+
 <div class="content">
 V starovekom Grécku žil jeden pán. Volal sa Euklides. Rád sa bavil s geometriou a jednu jeho geometrickú myšlienku si požičiame. Euklides zistil, že keď zoberieme nejaké dva body, môže ísť nimi práve len jedna priamka (schválne si nakresli na papier dve bodky a sprav cez ne viac ako jednu čiaru...vidíš, nedá sa).<br /><br />
 
-Teda stačia nám iba dva body na to, aby sme vedeli identifikovať priamku v priestore (to znamená, že keď mám nejakú svoju obľúbenú priamku, dokážem ju rozlíšiť od ostatných). V analytickej geometrii platí to isté. <b>Priamku viem zapísať dvomi bodmi</b>.
+Teda stačia nám iba dva body na to, aby sme vedeli identifikovať priamku v priestore (to znamená, že keď mám nejakú svoju obľúbenú priamku, dokážem ju rozlíšiť od ostatných). V analytickej geometrii platí to isté. <b>Priamku vieme zapísať dvomi bodmi</b>.
 
 <h2>Smerový vektor priamky</h2>
 
-Niekedy nám to však nestačí (napríklad, keď chceme osvetliť objekty v počitačových hrách) a treba priamku vyjadriť pomocou bodu a smerového vektora. Smerový vektor priamky, je taký <b>vektor, ktorý ukazuje smerom, ktorým ide priamka</b>. Smerovým vektorom máme určený smer priamky a bodom jej polohu. Pozri sa na obrázok, čo by sa stalo, ak by sme poznali buď bod alebo smerový vektor a nie oboje.
+Niekedy nám to však nestačí (napríklad, keď chceme osvetliť objekty v počítačových hrách) a treba priamku vyjadriť pomocou bodu a smerového vektora. Smerový vektor priamky, je taký <b>vektor, ktorý ukazuje smerom, ktorým ide priamka</b>. Smerovým vektorom máme určený smer priamky a bodom jej polohu. Pozri sa na obrázok, čo by sa stalo, ak by sme poznali buď bod alebo smerový vektor a nie oboje.
 
 <figure>
   <img src="../assets/images/aGeom_lineDefinition.png" alt="Priamka je daná bodom a smerovým vektorom">
@@ -22,24 +23,22 @@ Niekedy nám to však nestačí (napríklad, keď chceme osvetliť objekty v po�
 
 Teraz ti dáme 5 minút času na to, aby si porozmýšľal, ako môžeme dostať smerový vektor. Nachystaj si stopky. Pripraviť sa. Pozor. Štart. Môžeš začať rozmýšľať……….Ok, 5 minút prešlo, a preto ti môžeme prezradiť riešenie &#128512;. Smerový vektor (tak ako každý vektor) vieme získať tak, že odčítame jeden bod od druhého. Hore sme napísali, že priamka je daná dvomi bodmi. Dva body ležiace na priamke máme a teraz stačí už len odčítať jeden od druhého.<br /><br />
 
-Napríklad máme priamku danú bodmi A[1,2,3] a B[6,5,4]. Smerový vektor dostaneme ako $\vec{s}$ = B-A = [6-1; 5-2; 4-3] = [5; 3; 1] . Body sme odčítali po súradniciach. Teda x-ovú súradnicu A sme odčítali od x-ovej súradnice B. Pre y a z súradnice to platí rovnako.<br /><br /> 
+Napríklad máme priamku danú bodmi A[1,2,3] a B[6,5,4]. Smerový vektor dostaneme ako $\vec{s}$ = B-A = [6-1; 5-2; 4-3] = [5; 3; 1]. Body sme odčítali po súradniciach. Teda x-ovú súradnicu A sme odčítali od x-ovej súradnice B. Pre y a z súradnice to platí rovnako.<br /><br />
 
-Na opísanie priamky teraz môžeme použiť bod a smerový vektor.
+Na opísanie priamky teraz môžeme použiť bod a smerový vektor. Okrem smerového vektora priamka má aj <b>normálový vektor</b>. Normálový vektor je <b>kolmý na priamku</b>. Vieme ho dostať zo smerového vektora tak, že mu otočíme súradnice a jednej z nich zmeníme znamienko. Smerový vektor $\vec{s}$ má súradnice [x,y], normálový vektor $\vec{n}$ bude mať súradnice [-y,x].
 
-Okrem smerového vektora priamka má aj <b>normálový vektor</b>. Normálový vektor je <b>kolmý na priamku</b>. Vieme ho dostať zo smerového vektora tak, že mu otočíme súradnice a jednej z nich zmeníme znamienko. Smerový vektor $\vec{s}$ má súradnice [x,y], normálový vektor $\vec{n}$ bude mať súradnice [-y,x].
-
-<h2>Parametrická rovnica priamky</h2>
+<h2><a id="aGeom_priamkaParamRov">Parametrická rovnica priamky</a></h2>
 Povedali sme si, že priamku vieme vyjadriť dvomi bodmi alebo bodom a vektorom. Ale čo tie ďalšie body ležiace na priamke. Veď priamka je zložená z nekonečne veľa bodov, ktoré na nej ležia. Tie už nevieme opísať?<br /><br />
 
 Odpoveď je, že vieme. Všetky body, ktoré ležia na priamke vieme nejako opísať a aj to potrebujeme (tiež napríklad na to, aby v počítačových hrách fungovalo svetlo).<br /><br />
 
-Teraz sa nám zíde nejaký bod na priamke a jej smerový vektor. Pri vektoroch sme si povedali, že keď k nejakému bodu pripočítame vektor dostaneme iný bod (ktorý je posunutý o ten vektor). Hovorili sme si aj, že vektorom vieme ľubovoľne meniť veľkosť tým, že ich násobíme číslom. Nachystaj si stopky, máš ďalších 5 minút a skús porozmýšľať, ako toto môžeme zúžitkovať….<br /><br />
+Teraz sa nám zíde nejaký bod na priamke a jej smerový vektor. Pri vektoroch sme si povedali, že keď k nejakému bodu pripočítame vektor dostaneme iný bod (ktorý je posunutý o ten vektor). Hovorili sme si aj, že vektorom vieme ľubovoľne meniť veľkosť tým, že ich násobíme číslom. Nachystaj si stopky, máš ďalších 5 minút a skús porozmýšľať, ako toto môžeme zužitkovať….<br /><br />
 
-….dobre, čas už uplynul a možno si prišiel na to, že by sme mohli k bodu prirátať vektor. Stále máme len dva body, ale keď ten vektor prenásobíme ľubovoľným číslom, dočiahneme na každý bod na priamke. Toto vieme po matematicky zapísať oveľa strašidelnejšie:
+….Dobre, čas už uplynul a možno si prišiel na to, že by sme mohli k bodu prirátať vektor. Stále máme len dva body, ale keď ten vektor prenásobíme ľubovoľným číslom, dočiahneme na každý bod na priamke. Toto vieme po matematicky zapísať oveľa strašidelnejšie:
 
 $$ X=A+t\vec{s} $$
 
-<b>X</b> je nový bod, ktorý <b>chceme dostať</b>. Bod <b>A</b> je ten, ktorý <b>poznáme</b>. Vektor <b>$\vec{s}$</b> poznáme tiež, je to <b>smerový vektor priamky</b>. Písmeno <b><i>t</i></b> sa nazýva <b>parameter</b>. Zaň si dosádzame ľubovoľné číslo, podľa toho, na ktorý bod chceme dočiahnuť.<br /><br />
+<b>X</b> je nový bod, ktorý <b>chceme dostať</b>. Bod <b>A</b> je ten, ktorý <b>poznáme</b>. Vektor <b>$\vec{s}$</b> poznáme tiež, je to <b>smerový vektor priamky</b>. Písmeno <b><i>t</i></b> sa nazýva <b>parameter</b>. Zaň si dosádzame ľubovoľné číslo, podľa toho, na ktorý bod chceme dočiahnuť.
 
 <figure>
   <img src="../assets/images/aGeom_lineParamEq.png" alt="Parametrická rovnica priamky">
@@ -51,81 +50,61 @@ Každý bod na priamke vieme opísať aj všeobecnou rovnicou priamky. Napriek t
 
 Vyššie sme si povedali, že priamku vieme vyjadriť smerovým vektorom (označme ho $\vec{s}$) a bodom (označme ho A). Tieto dve veci využívame aj keď chceme zistiť či bod leží alebo neleží na priamke.<br /><br />
 
-Zo smerového vektora $\vec{s}$ si spravíme normálový vektor $\vec{n}$. Normálový vektor je kolmý na priamku a teda aj na hociaký iný vektor, ktorý je s priamkou rovnobežný. Teraz si spravíme vektor z bodu A do bodu X (vektor si označme $\vec{v}$). Ak je normálový vektor stále kolmý na náš vektor $\vec{v}$, tak bod leží na priamke. Ak nie sú kolmé, bod na priamke neleží.<br /><br />
+Zo smerového vektora $\vec{s}$ si spravíme normálový vektor $\vec{n}$. Normálový vektor je kolmý na priamku a teda aj na hocijaký iný vektor, ktorý je s priamkou rovnobežný. Teraz si spravíme vektor z bodu A do bodu X (vektor si označme $\vec{v}$). Ak je normálový vektor stále kolmý na náš vektor $\vec{v}$, tak bod leží na priamke. Ak nie sú kolmé, bod na priamke neleží.
 
 <figure>
   <img src="../assets/images/aGeom_lineGeneralEq.png" alt="Všeobecná rovnica priamky">
-  <figcaption>Obr. 3.: a)  na priamke poznáme bod, smerový vektor a z neho odvodený normálový vektor. b) chceme zistiť, či dva body X a Y ležia na priamke. Spravíme vektory ktoré idú z bodu A do bodu X a Y. Ak je vzniknutý vektor stále kolmý na normálový, tak bod na priamke leží.</figcaption>
+  <figcaption>Obr. 3.: a) na priamke poznáme bod, smerový vektor a z neho odvodený normálový vektor. b) chceme zistiť, či dva body X a Y ležia na priamke. Spravíme vektory ktoré idú z bodu A do bodu X a Y. Ak je vzniknutý vektor stále kolmý na normálový, tak bod na priamke leží.</figcaption>
 </figure>
 
 Aby sme sa z obrázku dostali opäť do sveta analytickej geometrie, overíme si kolmosť vektorov pomocou skalárneho súčinu.<br /><br />
 
-Prvý vektor, ktorý potrebujeme, je normálový vektor. Ten zo smerového vektora dostaneme otočením súradníc a pridaním mínuska k jednej z nich (nezáleží na tom ku ktorej, pretože vektor má vždy 2 normálové vektory, ktoré ukazujú len opačným smerom) $\vec{s}[s_x,s_y]=>\vec{n}[-s_y,s_x]$.<br /><br />
+Prvý vektor, ktorý potrebujeme, je normálový vektor. Ten zo smerového vektora dostaneme otočením súradníc a pridaním mínuska k jednej z nich (nezáleží na tom ku ktorej, pretože vektor má vždy 2 normálové vektory, ktoré ukazujú len opačným smerom) $\vec{s}[s_x,s_y]\implies\vec{n}[-s_y,s_x]$.<br /><br />
 
 Druhý vektor dostaneme z bodu A a z bodu X klasicky odčítaním súradníc $\vec{v}[x-a_x,y-a_y]$.<br /><br />
 
 Teraz už len overíme, či sa ich skalárny súčin rovná 0. Ak rovnica bude platiť, bod leží na priamke.
 
 $$
-\begin{equation}
-\displaylines{
-\vec{n} \cdot \vec{v} \\
--s_y(x-a_x)+s_x(y-a_y)=0 \\
--s_y x + s_y a_x + s_x y – s_x a_y = 0 \ \ \ \ \ \ \ /*(-1) \\
-s_y x - s_x y - s_y a_x + s_x a_y = 0 \\
-s_y x - s_x y - (s_y a_x - s_x a_y) = 0
-}
-\end{equation}
+\begin{align}
+\vec{n} \cdot \vec{v} & = 0 \\
+-s_y(x-a_x) + s_x(y-a_y) & = 0 \\
+-s_y x + s_y a_x + s_x y – s_x a_y & = 0 \qquad /\cdot(-1) \\
+s_y x - s_x y - s_y a_x + s_x a_y & = 0 \\
+s_y x - s_x y - (s_y a_x - s_x a_y) & = 0
+\end{align}
 $$
 
 Rovnaký výsledok dostaneme, keď všeobecnú rovnicu odvodíme od parametrickej rovnice.
-$$ X=A+t\vec{s} $$
-$$
-\begin{equation}
-\displaylines{
-x = a_x+ts_x\ \ \ \ \ \ \ \ \ \ /*s_y\\
-y = a_y+ts_y\ \ \ \ \ \ \ \ \ \ /*(-s_x)
-}
-\end{equation}
-$$
 
 $$
-\begin{equation}
-\displaylines{
-s_y x = s_y a_x+ts_x s_y \\
--s_x y = -s_x a_y-t s_x s_y 
-}
-\end{equation}
-$$
-
-$$
-\begin{equation}
-\displaylines{
-s_y x -s_x y = s_y a_x-s_x a_y \\
-s_y x -s_x y - (s_y a_x-s_x a_y) = 0
-}
-\end{equation}
+\begin{align}
+X & = A + t\vec{s} \\
+\hline
+x & = a_x + t s_x \qquad /\cdot s_y \\
+y & = a_y + t s_y \qquad /\cdot(-s_x) \\
+\hline
+s_y x & = s_y a_x + t s_x s_y \\
+-s_x y & = -s_x a_y - t s_x s_y \\
+\hline
+s_y x - s_x y & = s_y a_x - s_x a_y \\
+s_y x - s_x y - (s_y a_x - s_x a_y) & = 0
+\end{align}
 $$
 
 Na chvíľu prehoďme kúsok rovnice na druhú stranu.
 
-$$
-
-s_y x - s_x y = (s_y a_x - s_x a_y)
-
-$$
+$$ s_y x - s_x y = (s_y a_x - s_x a_y) $$
 
 Z úprav, ktoré sme robili, vznikla rovnica, ktorá tiež hovorí o tom, či bod leží na priamke. Možno si si všimol, že tu porovnávame dva skalárne súčiny. Ak sú rovnaké, bod leží na priamke. Na ľavej strane rovnice je skalárny súčin normálového vektora $[s_y,-s_x]$ a vektora, ktorý má koncový bod v bode X. Na pravej strane rovnice je skalárny súčin toho istého normálového vektora a vektora, ktorý má koncový bod v bode A.<br /><br />
 
 Teraz iba trochu upraceme písmená a dostaneme všeobecnú rovnicu priamky ako z učebnice.
 
 $$
-\begin{equation}
-\displaylines{
-s_y x - s_x y - (s_y a_x - s_x a_y) = 0 \\
-a x + b y + c = 0
-}
-\end{equation}
+\begin{align}
+s_y x - s_x y - (s_y a_x - s_x a_y) & = 0 \\
+a x + b y + c & = 0
+\end{align}
 $$
 
 Malá úloha na záver. Všimni si, čo sme nahradili písmenami a, b, c.
@@ -135,7 +114,7 @@ Opäť ďalší spôsob, ako vyjadriť priamku. Tentoraz nám rovnica slúži na
 
 <figure>
   <img src="../assets/images/aGeom_lineStraightLineEq.png" alt="Smernicová rovnica priamky">
-  <figcaption>Obr. 4.: Odvodenie smernicovej rovnice priamky</figcaption>
+  <figcaption>Obr. 4.: Odvodenie smernicovej rovnice priamky.</figcaption>
 </figure>
 
 
@@ -153,17 +132,15 @@ f) Tu dopočítame dĺžku fialového otáznika. Zoberieme y-ovú súradnicu bod
 
 g) Už len spočítame fialový a žltý otáznik a máme y-ovú súradnicu bodu X: $y=\frac{s_y}{s_x}x+a_y-\frac{s_y}{s_x}a_x$. Pre lepšiu čitateľnosť nahradíme tie škaredé zlomky písmenami. Dostali sme $y=kx+b$. Písmeno <b>k</b> sa nazýva <b>smernica</b> a hovorí o tom, ako veľmi <b>priamka rastie</b>. Písmeno <b>b</b> zas hovorí o <b>posunutí priamky na osi y</b>. Stavím sa, že si niečo podobné už videl. Rovnaký predpis má aj lineárna funkcia. Je to preto, lebo aj lineárna funkcia je vlastne priamka, na ktorej hľadáš y-ové súradnice k tým x-ovým.<br /><br />
 
-Smericový tvar rovnice priamky vieme samozrejme odvodiť aj od všeobecnej rovnice priamky. Dosiahneme to tak, že osamostatníme y.
+Smernicový tvar rovnice priamky vieme samozrejme odvodiť aj od všeobecnej rovnice priamky. Dosiahneme to tak, že osamostatníme y.
 
 $$
-\begin{equation}
-\displaylines{
-s_y x – s_x y - (s_y a_x – s_x a_y) = 0 \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ /- s_y x + (s_y a_x – s_x a_y) \\
-– s_x y = - s_y x + (s_y a_x – s_x a_y) \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ / /(– s_x) \\
-y = \frac{s_y}{s_x} x + (a_y-\frac{s_y}{s_x} a_x) \\
-y = kx+b
-}
-\end{equation}
+\begin{align}
+s_y x – s_x y - (s_y a_x – s_x a_y) & = 0 \qquad / - s_y x + (s_y a_x – s_x a_y) \\
+– s_x y & = - s_y x + (s_y a_x – s_x a_y) \qquad / /(– s_x) \\
+y & = \frac{s_y}{s_x} x + (a_y - \frac{s_y}{s_x} a_x) \\
+y & = kx + b
+\end{align}
 $$
 
 <h2>Záver</h2>

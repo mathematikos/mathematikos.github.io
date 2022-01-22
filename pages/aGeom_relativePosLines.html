@@ -1,0 +1,63 @@
+---
+title: Vzájomná poloha priamok
+description: "Vzájomná poloha priamok"
+keywords: "vzajomna poloha, priamka"
+permalink: analyticka_geometria_vzajomna_poloha_priamka
+---
+
+<h1>Vzájomná poloha priamok</h1>
+
+<div class="content">
+
+Priamky môžu byť <b>rovnobežné rôzne, rovnobežné totožné, rôznobežné a v priestore ešte mimobežné</b>. 
+
+<figure>
+  <img src="../assets/images/aGeom_posLines.png" alt="Vzájomná poloha priamok">
+  <figcaption>Obr. 1. Vzájomná poloha priamok</figcaption>
+</figure>
+
+Vzájomnú polohu priamok by sme mohli určiť podľa toho, ako idú priamky. Napríklad, ak idú vedľa seba sú rovnobežné rôzne. Smer priamok vieme zistiť z ich smerového vektora. No nie celkom to stačí. To, že idú priamky vedľa seba ukážu smerové vektory aj pri rovnobežných rôznych aj pri rovnobežných totožných priamkach. Potrebujeme ich ešte rozlíšiť. Pozri na obrázok a skús povedať, že čím sa tieto dva prípady líšia. Ak si hádal, že je to počet spoločných bodov, tak si tipoval správne. Rovnobežné totožné majú nekonečno veľa spoločných bodov a rovnobežné rôzne nemajú ani jeden spoločný bod. <b>Vzájomnú polohu priamok teda určujeme zo smerových vektorov a z počtu spoločných bodov</b>.<br /><br />
+
+Teraz sa bližšie pozrieme na smerové vektory priamok. Ako si môžeš všimnúť na obrázku č. 2, pri rovnobežných priamkach idú vektory tým istým smerom, ibaže sú ináč veľké. Pri rôznobežných a mimobežných priamkach, idú vektory každý iným smerom. Pri zisťovaní, akým smerom idú vektory, nám môže pomôcť lineárna závislosť vektorov.
+
+<figure>
+  <img src="../assets/images/aGeom_posLinesDirVec.png" alt="Smerové vektory priamok">
+  <figcaption>Obr. 2. Smerové vektory priamok</figcaption>
+</figure>
+
+Lineárna závislosť hovorí o tom, že ak idú vektory rovnakým smerom, sú lineárne závislé a ak idú iným smerom, nie sú lineárne závislé.<br /><br />
+
+Ešte si na obrázku  č. 2 všimni, koľko bodov majú priamky spoločné. <b>Rovnobežné rôzne priamky nemajú spoločný žiaden bod. Rovnobežné totožné majú spoločné všetky body. Rôznobežné majú spoločný jeden bod. Mimobežné priamky tiež nemajú spoločný žiaden bod.</b><br /><br />
+
+Na nasledujúcich obrázkoch si ukážeme, ako sa určuje vzájomná poloha priamok. 
+
+<figure>
+  <img src="../assets/images/aGeom_posLinesEquations.png" alt="Vzájomná poloha priamok - príklad, zadanie">
+  <figcaption>Obr. 3. Na týchto priamkach si ukážeme, ako sa ráta ich vzájomná poloha. Napísali sme k nim aj smerové vektory, označené písmenom <i>v</i> a ich parametrické rovnice. Pre nedostatok fantázie sa parameter volá takisto ako priamka (napr. pre priamku <i>r</i> sa parameter tiež nazýva <i>r</i>).</figcaption>
+</figure>
+
+Postup je taký, že si najprv zoberieme smerové vektory priamok a spýtame sa, či <b>sú lineárne závislé</b>. Ak sú lineárne závislé (idú tým istým smerom), tak sa rozhodujeme, či sú <b>rovnobežné rôzne</b> alebo <b>rovnobežné totožné</b>. Ak <b>nie sú lineárne závislé</b> (nejdú tým istým smerom), znamená to, že sú buď <b>rôznobežné</b> alebo <b>mimobežné</b>.<br /><br /> 
+
+Po tom, čo sme určili lineárnu závislosť, máme ešte stále na výber z dvoch možností. Tú správnu vyberieme tak, že určíme počet spoločných bodov priamok. Pri lineárne závislých vektoroch sú priamke rovnobežné totožné alebo rovnobežné rôzne. Ak nemajú žiaden spoločný bod, tak sú rôzne, ak ich majú nekonečne veľa, tak sú totožné. Vektory, ktoré sú lineárne nezávislé, môžu mať priamky mimobežné alebo rôznobežné. Mimobežné priamky nemajú žiaden bod spoločný, rôznobežné sa pretínajú práve v jednom bode.
+
+<figure>
+  <img src="../assets/images/aGeom_posLinesHelp.png" alt="Vzájomná poloha priamok - príklad, pomôcka">
+  <figcaption>Obr. 4. Vzájomnú polohu priamok určíme tak, že sa najprv spýtame, či ich vektory sú lineárne závislé a potom na počet ich spoločných bodov.</figcaption>
+</figure>
+
+
+Vyskúšame si to na priamkach <i>p</i> a <i>r</i>. Skôr, ako sa dozvieš riešenie, pozri na obrázok č. 3 a skús povedať, akú majú vzájomnú polohu. Pravdepodobne si tipneš zle, pretože obrázok klame. Aj to je dôvod, prečo chceme používať analytickú geometriu. Čísla sú presnejšie, ako obrázky :).
+
+<figure>
+  <img src="../assets/images/aGeom_posLinesExample.png" alt="Vzájomná poloha priamok - príklad 2">
+  <figcaption>Obr. 5. Chceme určiť vzájomnú polohu priamok <i>p</i> a <i>r</i>. Najprv sa pozrieme na to, či sú lineárne závislé a potom na počet spoločných bodov.</figcaption>
+</figure>
+
+Na priamkach <i>s</i> a <i>s'</i>, <i>r</i> a <i>q</i>, <i>s</i> a <i>q</i> si vyskúšame zrátať aj ostatné vzájomné polohy.
+
+<figure>
+  <img src="../assets/images/aGeom_posLinesExample1.png" alt="Vzájomná poloha priamok - príklad 3">
+  <figcaption>Obr. 6. Tu sú tri príklady. V každom sa najprv zisťuje, či smerové vektory priamok sú lineárne závislé. Potom sa pozeráme, koľko bodov majú priamky rovnakých. Robí sa to tak, že sa parametrické rovnice priamok dajú do rovnosti.</figcaption>
+</figure>
+
+</div>

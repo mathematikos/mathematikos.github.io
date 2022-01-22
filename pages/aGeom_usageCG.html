@@ -60,7 +60,7 @@ Všetky objekty poslušne čakajú zapísané v súboroch. Chceme ich trochu roz
 <h3>Programy na vývoj hier</h3>
 V hrách treba, aby sa objekty hýbali a prípadne aspoň trochu poslúchali fyziku nášho sveta. Nechceme predsa, aby Červená čiapočka vyletela do vesmíru, keď zakopne o kameň. Chceme, aby pekne poslúchla gravitáciu a capla na zem.<br /><br />
 
-Vývojari hier zvyčajne nerobia celú fyziku od základu, ale používajú programy, v ktorých sa robia hry. Tie už fyziku obsahujú, takže vývojárom ju už stačí len použiť.  Spomenieme len niekoľko prírodných zákonov, ktoré sa dodržiavajú v hrách. Je to už spomínaná gravitácia, trenie, hmotnosť objektov, pôsobenie síl, plynutie času, pohyb. Náš skutočný svet ovplyvňuje oveľa viac zákonov. Nie je možné ich všetky nasimulovať, lebo by na ne nestačil ani ten najvýkonnejší počítač na svete.
+Vývojári hier zvyčajne nerobia celú fyziku od základu, ale používajú programy, v ktorých sa robia hry. Tie už fyziku obsahujú, takže vývojárom ju už stačí len použiť.  Spomenieme len niekoľko prírodných zákonov, ktoré sa dodržiavajú v hrách. Je to už spomínaná gravitácia, trenie, hmotnosť objektov, pôsobenie síl, plynutie času, pohyb. Náš skutočný svet ovplyvňuje oveľa viac zákonov. Nie je možné ich všetky nasimulovať, lebo by na ne nestačil ani ten najvýkonnejší počítač na svete.
 
 <h3>Animácia</h3>
 Program nám už zabezpečil, že fyziku potrebnú na pohyb máme spočítanú, no pohyb treba aj nejako zobraziť. Pohyblivým obrázkom sa hovorí animácia.<br /><br />
@@ -76,7 +76,7 @@ Na tomto fakte sú založené filmy aj hry. Kedysi sa animované filmy robili ta
 
 Jeden z prvých animovaných filmov bol Snehulienka a sedem trpaslíkov. Film robili tvorcovia od roku 1934 po 1937, teda tri roky. Na filme pracovalo vyše 750 umelcov, spravili viac ako 2 000 000 skíc a samotný film sa skladal z 250 000 obrázkov. Uznáš sám, že nakresliť toto všetko ručne bola riadna makačka. [1]<br /><br />
 
-Dnes sa už obrázky nekreslia ručne, ale generujú ich počítače. Vďaka znalostiam fyziky a matematiky vedia, o koľko majú objekty posunúť v ďaľšom obrázku. 
+Dnes sa už obrázky nekreslia ručne, ale generujú ich počítače. Vďaka znalostiam fyziky a matematiky vedia, o koľko majú objekty posunúť v ďalšom obrázku. 
 
 <h3>Vektory použité v pohybe</h3>
 Pohyb objektov v počítačových hrách sa snaží napodobňovať pohyb v našom svete. Pýtame sa, aký veľký kus cesty prejde objekt za nejaký čas. Zvykne sa to udávať v metroch za sekundu. Teda koľko metrov prejde objekt za jednu sekundu.<br /><br />
@@ -85,7 +85,7 @@ Podobne je to aj pri hrách. Program zvyčajne vykresľuje obrázky každých 0,
 
 Ukážeme si to na Červenej čiapočke. V skutočnom svete človek chodí rýchlosťou 5km/h, čo je 1,39m/s. Karkulka sa teda pohne každú sekundu o 1,39 metra. Povedali sme si, že počítač vykresľuje obrázky každých 0,02 sekundy. Musíme teda zistiť, o koľko sa pohne Čiapočka za tento čas. Je to 1,39*0,02 = 0,0278. Čiapočka bude v nasledujúcom obrázku o 0,0278 metra ďalej.<br /><br />
  
-V počítači sa to spraví tak, že sa spraví vektor rýchlosti. Zvyčajne sa udáva v m/s a potom sa prenásobí s časom (to je tých 0,02 sekundy). Veľkosť vektora je rýchlosť. Súradnice vektora udávajú jeho smer, lebo hovoria o tom, po ktorej osi sa má obrázok pohnúť a o koľko. Pred vykreslením obrázku sa vektor pripočíta k súradniciam objektu. Objekt sa už vykreslí na nových súradniciach.<br /><br />
+V počítači sa to spraví tak, že sa spraví vektor rýchlosti. Zvyčajne sa udáva v m/s a potom sa prenásobí s časom (to je tých 0,02 sekundy). Veľkosť vektora je rýchlosť. Súradnice vektora udávajú jeho smer, lebo hovoria o tom, po ktorej osi sa má objekt pohnúť a o koľko. Pred vykreslením obrázku sa vektor pripočíta k súradniciam objektu. Objekt sa už vykreslí na nových súradniciach.<br /><br />
 
 Na obrázku budeme počítať, o koľko sa pohne Karkulka za sekundu. Tých 0,0278 je príliš malých na kreslenie.
 <figure>
@@ -94,10 +94,10 @@ Na obrázku budeme počítať, o koľko sa pohne Karkulka za sekundu. Tých 0,02
 </figure>
 
 <h3>FPS</h3>
-Možno si sa už niekedy stretol so skratkou fps, čo znamená frames per seconds, po slovensky počet obrázkov za sekundu. Túto skratku môžeš vidieť napríklad v súvislosti s hrami, filmami či videami. Znamená to, že koľko obrázkov sa vykreslí za jednu sekundu. Dnes sa normálne používa 24 fps. Niektoré hry majú 60 fps. Čím je fps vyššie, tým sú rýchlejšie scény (napr. pohyb vystreleného puku) kvalitnejšie, ale objem dát je väčší. Slabší počítač nemusí stíhať obrázky vykresliť.<br /><br />
+Možno si sa už niekedy stretol so skratkou fps, čo znamená frames per second, po slovensky počet obrázkov za sekundu. Túto skratku môžeš vidieť napríklad v súvislosti s hrami, filmami či videami. Znamená to, že koľko obrázkov sa vykreslí za jednu sekundu. Dnes sa normálne používa 24 fps. Niektoré hry majú 60 fps. Čím je fps vyššie, tým sú rýchlejšie scény (napr. pohyb vystreleného puku) kvalitnejšie, ale objem dát je väčší. Slabší počítač nemusí stíhať obrázky vykresliť.<br /><br />
 
 <h2>Priesečník bodu a priamky</h2>
-S objektami sme už spravili skoro všetko, okrem jednej veci. Nezobrazli sme ich na obrazovku. Práve to ideme teraz urobiť, ale najprv musíme vedieť niečo o tom, ako taká obrazovka funguje.
+S objektmi sme už spravili skoro všetko, okrem jednej veci. Nezobrazili sme ich na obrazovku. Práve to ideme teraz urobiť, ale najprv musíme vedieť niečo o tom, ako taká obrazovka funguje.
 
 <h3>Pixel</h3>
 V dnešnej dobe sa väčšina obrazoviek skladá z pixelov. Pixel je taký mini-mini-mini štvorček, ktorý sa dokáže rozsvietiť na rôzne farby. Na obrazovke je ich veľmi veľa, napríklad 4K obrazovky majú po šírke 3 840 a po výške 2 160 pixelov. To je spolu 8 294 400 pixelov. Každý z nich sa dokáže rozsvietiť na inú farbu a tak zobraziť nejaký obrázok. Čím je pixelov viac, tým je obrázok kvalitnejší a je na ňom vidieť viacej detailov. Technické pozadie fungovania pixelov necháme na inokedy. Teraz nám stačí vedieť, že sú.
@@ -109,25 +109,54 @@ V dnešnej dobe sa väčšina obrazoviek skladá z pixelov. Pixel je taký mini-
 
 <figure>
   <img src="../assets/images/aGeom_usagePixels.png" alt="Rozlíšenie">
-  <figcaption>Obr. 7.: Tu je jabĺčko, ktoré niesie Červená čiapočka svojej babičke. Jabĺčko je zobrazené na štyroch rôznych obrazovkách. Obrazovka a) má rozlíšenie 2x2 pixelov. Obrazovka b) má 10x10 pixelov. Obrazovka c) má 20x20 pixelov. Obrazovka d) je HD, teda má rozlíšenie 1080x720 pixelov. Čím väčšie je rozlíšenie obrazovky, tým je jabĺčko krajšie a menej kockaté.</figcaption>
+  <figcaption>Obr. 7.: Tu je jabĺčko, ktoré nesie Červená čiapočka svojej babičke. Jabĺčko je zobrazené na štyroch rôznych obrazovkách. Obrazovka a) má rozlíšenie 2x2 pixelov. Obrazovka b) má 10x10 pixelov. Obrazovka c) má 20x20 pixelov. Obrazovka d) je HD, teda má rozlíšenie 1080x720 pixelov. Čím väčšie je rozlíšenie obrazovky, tým je jabĺčko krajšie a menej kockaté.</figcaption>
 </figure>
 
-<h3>Raytracing</h3>
-Jeden z najznámejších spôsobov zobrazovania objektov v hrách je raytracing. Tu ti vysvetlíme jeho veľmi zjednodušenú podobu.<br /><br />
+<h3>Raycasting a raytracing</h3>
+Raytracing je jeden z najznámejších spôsobov zobrazovania objektov v hrách. Jeho jednoduchšia podoba sa nazýva raycasting a tú si vysvetlíme.<br /><br />
 
 Všetky objekty v hre Červená čiapočka sú 3D, sú umiestnené  v súradnicovej sústave, skladajú sa z veľmi veľa trojuholníčkov a každý trojuholníček má svoju farbu. Objekty potrebujeme nejako zobraziť na našej štvorčekovej obrazovke.<br /><br />
 
-Túto úlohu berie na seba raytracing. Zoberie si ten náš svet z hry a akože doňho umiestni obrazovku. Z každého štvorček na obrazovke spraví priamku a vypočíta, či sa náhodou nestretla s nejakým trojuholníčkom objektu. Ak priamka preťala trojuholníček, tak sa zoberie jeho farba a vyfarbí sa ňou štvorček na obrazovke.
+Túto úlohu berie na seba raycasting. Zoberie si ten náš svet z hry a akože doňho umiestni obrazovku. Z každého štvorčeka na obrazovke spraví priamku a vypočíta, či sa náhodou nestretla s nejakým trojuholníčkom objektu. Ak priamka preťala trojuholníček, tak sa zoberie jeho farba a vyfarbí sa ňou štvorček na obrazovke.
 
 <figure>
-  <img src="../assets/images/aGeom_usageRaytracing.gif" alt="Raytracing">
-  <figcaption>Obr. 8.: Objekty v hre sú zapísané v súradnicovej sústave. Do sústavy pridáme aj obrazovku. Z každého štvorčeka sa spraví priamka. Ak sa priamka pretne s trojuholníčkom nejakého objektu, zoberie sas jeho farba a vyfarbí sa ňou štvorček na obrazovke.</figcaption>
+  <img src="../assets/images/aGeomGifs/aGeom_usageCGRaytracing.gif" alt="Raycasting">
+  <figcaption>Obr. 8.: Na zobrazenie objektov pomocou raytracingu si potrebujeme vytvoriť virtuálnu scénu zapísanú v matematike. Do scény pridáme objekty, obrazovku a kameru. Každá z vecí je zapísaná v súradnicovej sústave. Kamera sa pozerá cez obrazovku do scény. Cez každý pixel obrazovky sa spraví priamka, ktorá vychádza z kamery. Ak priamka narazí do nejakého objektu, pixel sa zafarbí na danú farbu.</figcaption>
 </figure>
+
+Priamka, ktorou zisťujeme, či z daného štvorčeka obrazovky niečo vidíme alebo nie, sa nazýva lúč. Tento lúč vychádza z miesta, z ktorého sa pozeráme cez obrazovku na scénu. Toto miesto sa nazýva kamera, ale v skutočnosti to naozajstná kamera nie je. Je to nejaký bod v súradnicovej sústave, ktorý sa nachádza za našou obrazovkou. Toto je bod, ktorý v lúči poznáme. Ďalej poznáme aj smer, ktorým ide lúč. Vieme si ho vypočítať z toho, cez ktorý štvorček sa práve pozerá. Poznáme teda bod a smer. To sú dve veci, z ktorých vieme zložiť priamku. Dostávame tak parametrickú rovnicu každého lúča. To je fajn, to potrebujeme.<br /><br />
+
+Ďalej vieme niečo o objektoch. Vieme, že sa skladajú z trojuholníčkov a súradnice ich bodov máme zapísané v súbore. V každom trojuholníku poznáme tri body. Pri rovinách sme si povedali, že rovina je tvorená tromi bodmi. Takže vieme zostrojiť rovnicu roviny pre každú tú malú plôšku, z ktorej sa objekt skladá.<br /><br />
+
+Dokonca vieme zistiť aj to, či a kde sa rovina a priamka pretnú. Spravíme to jednoducho tak, že bod vyjadrený parametrickou rovnicou priamky dosadíme do rovnice roviny. Keď nám vyjde parameter <i>t</i> nejaké číslo, tak vieme, že priamka pretla rovinu. Samotné <i>t</i> nám dokonca hovorí o tom, že ako ďaleko je ich prienik.<br /><br />
+
+Keď sa priamka s rovinou pretnú, ešte sa kontroluje, či priamka preťala rovinu "vnútri" toho trojuholníčka. Rovnica roviny totiž definuje celú rovinu, nie len ten trojuholník.<br /><br />
+
+Raycasting z matematického hľadiska funguje tak, že si pre každý pixel obrazovky vytvoríme lúč. Tento lúč je priamka, ktorá začína niekde u pozorovateľa (normálne sa to povie, že v kamere) a prechádza cez daný pixel. Vieme ju vyjadriť parametrickou rovnicou. Pre každý lúč sa zoberú všetky objekty, prejdú sa trojuholníček po trojuholníčku a skontroluje sa, či náhodou priamka daný trojuholníček nepretla. To môžeme spraviť vďaka tomu, že z trojuholníčka vieme zistiť rovnicu roviny a potom môžeme vypočítať priesečník lúča s touto rovinou. Ešte sa skontroluje, či prienik leží vnútri trojuholníčka a nie niekde mimo neho. Ak vieme, že lúč preťal trojuholníček, zoberieme jeho farbu a namaľujeme ňou pixel. Takto vieme zobraziť na monitor aj tie najkomplexnejšie scény z hier a filmov.<br /><br />
+
+Zatiaľ sme zabudli na jednu dôležitú vec. Na svetlo. Raycasting zoberie len tú farbu, ktorú grafik pre daný trojuholníček zapísal do súboru. Čo však, keď na trojuholník dopadá svetlo alebo je v tieni? Vtedy je farba trochu iná. Ako má vyzerať farba v tieni a ako na svetle vieme vypočítať, ale ako vieme, či je objekt na svetle alebo ho niečo zatieňuje?<br /><br />
+
+Do súradnicovej sústavy našej scény umiestnime niekde bod, ktorý bude predstavovať svetlo (slnko/lampu/oheň/čokoľvek). Dôležitá poznámka: smer, ktorým svieti svetlo vieme. Keď lúč pretne trojuholník, tak sa hneď neberie z neho farba, ale skontroluje sa, či je na svetle alebo v tieni. Spraví sa to tak, že sa vyšle ďalší lúč, nazvime ho "shadow ray". Začína v bode, kde sa pretla priamka s plochou a smeruje do svetla. Ak "shadow ray" na svojej ceste za svetlom narazí na nejaký iný objekt, znamená to, že náš objekt je v tieni. Ak nezaznamená žiaden prienik, náš objekt je na svetle.<br /><br />
+
+Naše objekty budú teraz pekne vyfarbené a dokonca tie, ktoré majú byť v tieni, budú v tieni. Žiaľ ešte stále sa ani zďaleka nepribližujeme k realite. Aby sme sa však ešte viac podobali nášmu svetu, treba počítať s ďalšími vecami. Je to odraz svetla na lesklých materiáloch (napr. zrkadlo) a prepúšťanie svetla cez priesvitné materiály (napr. sklo). Na ich výpočet sa vytvárajú ďalšie lúče a počítajú sa ďalšie prieniky. Pridanie lúčov, ktoré sa odrážajú alebo prechádzajú cez materiály, pre nás znamená, že sme sa dostali od raycastingu k raytracingu. To je však už trochu dlhšia rozprávka. Nastal čas, aby zazvonil zvonec a vývoju hry o Červenej čiapočke bol koniec &#128522; .<br /><br />
+
+Vďaka takejto matematike, možno jednoduchej a možno strašidelnej, vedia počítače takto pekne zobrazovať svetlo.
+<figure>
+  <img src="../assets/images/aGeomGifs/aGeom_CGtodayLight.gif" alt="Raytracing">
+  <figcaption>Obr. 9.: Toto nie sú fotky z naozajstného mesta. Je to vyrobené na počítači. Takáto realistická scéna nočného mesta mohla vzniknúť iba vďaka matematike. [2]</figcaption>
+</figure>
+
+<h2>Koniec hry o Červenej čiapočke</h2>
+Zazvonil zvonec a vývoju hry je koniec. Náš unikátny výtvor sme zavesili do obchodu s apkami a už len čakáme na to, kedy budeme milionármi. Ak chceš byť tiež milionár, tu sú nejaké ďalšie nápady na hry: Snehulienka, 12 mesiačikov, Šípková Ruženka. Tieto nápady na originálne hry čakajú len na teba, kedy sa naučíš matiku. Tak sa ju uč, nech nemusia čakať dlho &#128521;.
 
 <h1>Zdroje</h1>
 
 <div class='literature'>
-[1] JOHNSON. Z.: 20 Fun Facts About Snow White and the Seven Dwarfs on Its 80th Anniversary. 2017. https://www.eonline.com/news/901665/20-fun-facts-about-snow-white-and-the-seven-dwarfs-on-its-80th-anniversary
+[1] JOHNSON. Z.: 20 Fun Facts About Snow White and the Seven Dwarfs on Its 80th Anniversary. 2017. https://www.eonline.com/news/901665/20-fun-facts-about-snow-white-and-the-seven-dwarfs-on-its-80th-anniversary<br /><br />
+
+[2] NVIDIA developer: RTX Boulevard - Direct Illumination Demo. 2021. https://www.youtube.com/watch?v=AiliuDkVJRs&t=19s&ab_channel=NVIDIADeveloper
 </div>
+
+
 
 </div>

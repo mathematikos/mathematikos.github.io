@@ -1,0 +1,51 @@
+---
+title: Vzájomná poloha priamky a roviny
+description: "Vzájomná poloha priamky a roviny"
+keywords: "rovina"
+permalink: analyticka_geometria_vzajomna_poloha_priamka_rovina
+---
+
+<h1>Vzájomná poloha priamky a roviny</h1>
+
+<div class="content">
+
+Rovina a priamka majú voči sebe tri druhy polôh. <b>Priamka patrí rovine, priamka je rovnobežná s rovinou a priamka je rôznobežná s rovinou.</b><br /><br />
+
+V prípade, že priamka leží na rovine, je možné, že ťa zvedie povedať, že priamka je totožná s rovinou. Na toto si daj pozor, je to zle. Všetky body priamky síce môžeš nájsť na rovine, ale nie všetky body roviny sú na priamke. Priamka a rovina nie sú rovnaké a slovo totožné znamená, že rovnaké sú.<br /><br />
+
+<figure>
+  <img src="../assets/images/aGeom_posLinePlane.png" alt="Vzájomná poloha priamky a roviny">
+  <figcaption>Obr. 1. Priamka a rovina sa môžu navzájom nachádzať v troch rôznych polohách. Môžu byť rôznobežné, rovnobežné alebo priamka môže ležať v rovine.</figcaption>
+</figure>
+
+Pozri sa na obrázok č. 1 a skús porozmýšľať, podľa čoho by sme mohli <b>rozlíšiť vzájomné polohy priamky a roviny</b>. Ak už máš rozmyslené, môžeš čítať ďalej. Možno si tipoval, že je to <b>počet spoločných bodov</b> a myslel si si správne. <br /><br />
+
+Ak je <b>priamka rovnobežná s rovinou, nemajú ani jeden bod spoločný</b>. Ak je <b>priamka rôznobežná s rovinou</b>, tak niekde priamka rovinu pretína a teda <b>majú iba jeden bod spoločný</b>. V prípade, že <b>priamka patrí rovine</b>, tak <b>majú spoločných nekonečne veľa bodov</b> (každý bod, ktorý je na priamke, patrí aj rovine).<br /><br />
+
+Chceme teda zistiť, koľko bodov majú priamka a rovina spoločných. Pohybujeme sa v priestore, takže všetky body na priamke dostaneme pomocou jej <a href="analyticka_geometria_priamka#aGeom_priamkaParamRov" target="_blank">parametrickej rovnice</a>. Všetky body na rovine vieme dostať viacerými rovnicami, ale vyberieme si <a href="analyticka_geometria_rovina#aGeom_rovinaVseobRov" target="_blank">všeobecnú rovnicu roviny</a>. Bude sa nám ľahšie počítať.<br /><br />
+
+Ešte treba zistiť, či majú nejaké body rovnaké. Otázku trochu preformulujeme a spýtame sa, či niektoré body priamky patria aj rovine. Využijeme všeobecnú rovnicu roviny. Tá hovorí o tom, či nejaký bod patrí alebo nepatrí rovine. Ak rovine patrí, obe strany všeobecnej rovnice roviny budú rovné nule a bod do roviny patrí. Ak budú strany rozdielne, bod do roviny nepatrí.<br /><br />
+
+Už máme nástroj, ktorým zistíme, či nejaký bod do roviny patrí alebo nie. Chceli sme vedieť, či majú priamka a rovina nejaké body spoločné, teda či nejaké body priamky patria rovine. Body na priamke máme vyjadrené parametrickou rovnicou priamky. Dosadíme ich do všeobecnej rovnice priamky, vypočítame a tešíme sa z výsledku.<br /><br />
+
+Po dosadení rovnice priamky do rovnice roviny, budeme mať jednu neznámu - parameter <i>t</i>. Ak ho vypočítame a dosadíme do rovnice priamky, dostaneme bod, v ktorom sa priamka a rovina pretínajú. Vtedy hovoríme, že priamka a rovina sú rôznobežné. Parameter však môže aj vypadnúť a rovnica môže byť na oboch stranách nula. To znamená, že za <i>t</i> môžeme dosadiť hocijaké číslo a bod bude stále patriť priamke. Každý bod priamky teda patrí aj rovine a môžeme povedať, že priamka patrí rovine. Pri poslednom type výsledku parameter znovu vypadne, ale na každej strane rovnice bude iné číslo. To znamená, že za <i>t</i> nedokážeme dosadiť nič. Parameter nemáme a tak nevieme dostať ani jeden bod na priamke. Znamená to, že priamka a rovina nemajú nič spoločné a teda sú rovnobežné.<br /><br />
+
+Vyskúšame si to na príklade:
+
+<figure>
+  <img src="../assets/images/aGeom_posLinesPlaneExample.png" alt="Vzájomná poloha priamky a roviny">
+  <figcaption>Obr. 2. Na obrázku je nakreslená rovina a tri priamky. K rovine poznáme všeobecnú rovnicu, a k priamkam máme body a ich smerové vektory. Chceme nejako zistiť ich vzájomnú polohu. Z obrázku sa veľa nedozvieme, tak musíme ísť počítať.</figcaption>
+</figure>
+
+<figure>
+  <img src="../assets/images/aGeom_posLinesPlaneExample1.png" alt="Vzájomná poloha priamky a roviny">
+  <figcaption>Obr. 3. Chceme zistiť aká je vzájomná poloha priamky a roviny. Potrebujeme na to všeobecnú rovnicu roviny a parametrickú rovnicu priamky. Súradnice vyjadrené parametrickou rovnicou priamky dosadíme za súradnice do všeobecnej rovnice roviny a spočítame.</figcaption>
+</figure>
+
+<figure>
+  <img src="../assets/images/aGeom_posLinesPlaneExample2.png" alt="Vzájomná poloha priamky a roviny">
+  <figcaption>Obr. 4. Ďalšie dva príklady na vzájomnú polohu priamky a roviny. Postup počítania je stále rovnaký. Zoberieme súradnice bodu vyjadrené pomocou parametrickej rovnice priamky a dosadíme ich za súradnice bodu vo všeobecnej rovnici roviny.</figcaption>
+</figure>
+
+
+</div>

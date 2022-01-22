@@ -8,64 +8,120 @@ permalink: analyticka_geometria_rovina
 <h1>Rovina</h1>
 
 <div class="content">
-Pri rovine sa budeme často odkazovať na priamku, pretože sa v niečom podobajú. Rovinu, podobne ako priamku, nemusíme iba kresliť, ale vieme ju vyjadriť číslami. Priamku sme vysvetľovali v 2D, pretože sa to ľahšie kreslí. Rovinu musíme v 3D, lebo v menej rozmernom priestore neexistuje. <br /><br />
+<b>Rovina</b> je daná <b>tromi bodmi</b>. Označíme si ich A, B a C. Môžeme ju definovať aj dvomi vektormi alebo vektorom a bodom. Vektorom dáme mená $\vec{u}$ a $\vec{v}$.<br /><br />
 
-Rovinu vieme definovať bodmi. Nestačia nám však dva body, treba tri, pretože rovina sa nachádza v 3D. <b>Rovina</b> je teda definovaná <b>tromi bodmi</b>. Označíme si ich A, B a C. Rovinu môžeme mať danú aj dvomi vektormi alebo vektorom a bodom. Vektorom dáme mená $\vec{u}$ a $\vec{v}$
+Ak by sme poznali iba dva body, alebo dokonca iba jeden, nevedeli by sme o ktorú rovinu sa jedná. Mali by sme na výber z viacero rovín, ktoré sú „otočené“ okolo tých dvoch bodov. Viď obrázok č. 1.<br /><br />
 
-Ak by sme poznali iba dva body, alebo dokonca iba jeden, nevedeli by sme o ktorú rovinu sa jedná. Mali by sme na výber z viacero rovín, ktoré sú „otočené“ okolo tých dvoch bodov. Viď obrázok.
-
-Dôležité upozornenie. Rovina je nekonečná. My ju budeme kresliť ako štvorec, pretože nekonečno sa nám nevojde do obrázku.<br /><br />
+Dôležité upozornenie. Rovina je nekonečná. My ju budeme kresliť ako štvorec, pretože nekonečno sa nám nevojde do obrázku.
 
 <figure>
   <img src="../assets/images/aGeom_planeDefinition.png" alt="Definícia roviny pomocou dvoch bodov">
-  <figcaption>Obr. 1.: a) Ak by bola rovina daná iba jedným bodom, nevieme, o ktorú rovinu ide. Jeden bod môže patriť do nekonečne veľa rovín. b) Rovina daná dvomi bodmi. Tu sme vylúčili roviny podobné rovine sigma z obrázku a. Teda všetky roviny, do ktorých nepatrí bod B (je buď nad rovinou, pod ňou alebo vedľa nej). Stále však vieme tieto dva body priradiť nekonečne veľa rovinám. c) Rovina daná tromi bodmi. To je tá správna definícia, pretože tretí bod eliminuje roviny, ktoré sú nejak naklonené. Z obrázku b vypadávajú roviny sigma a tau.</figcaption>
+  <figcaption>Obr. 1.: a) Ak by bola rovina daná iba jedným bodom, nevieme, o ktorú rovinu ide. Jeden bod môže patriť do nekonečne veľa rovín. b) Rovina daná dvomi bodmi Tu sme vylúčili roviny podobné rovine sigma z obrázku a, teda všetky roviny, do ktorých nepatrí bod B (je buď nad rovinou, pod ňou alebo vedľa nej). Stále však vieme tieto dva body priradiť nekonečne veľa rovinám. c) Rovina daná tromi bodmi. To je tá správna definícia, pretože tretí bod eliminuje roviny, ktoré sú nejak naklonené. Z obrázku b vypadávajú roviny sigma a tau.</figcaption>
 </figure>
 
 <h2>Parametrická rovnica roviny</h2>
 
-Pri spomienke na priamku sa ti možno vynorí v hlave matná predstava, ako sme z dvoch bodov dostali parametrickú rovnicu priamky. Rovina je na tom podobne. <br /><br />
+Rovinu vieme identifikovať pomocou troch bodov. Lenže rovina má viac ako tri body, oveľa viac. Rovina má nekonečno bodov. <b>Niekedy nám nestačí poznať iba tieto tri body, ale radi by sme ich poznali viac, dokonca všetky.</b> Treba ich teda nejako opísať.<br /><br />
 
-Zasa chceme vedieť dočiahnuť na každý bod na ploche. Dočahovaný bod sa bude volať X. Potrebujeme na to bod, z ktorého budeme dočahovať. Jeden bod poznáme, volá sa A. Ďalej treba nejaké vektory, ktorými budeme dočahovať bod X. Jeden bude málo, pretože nedočiahne body, ktoré sú nad ním alebo pod ním. Musíme mať dva. Oba vektory sa musia dať ľubovoľne naťahovať a skracovať. Dosiahneme to tak, že vektory budeme vedieť násobiť ľubovoľným číslom. <br /><br />
+Musíme vymyslieť spôsob, ako dočiahnuť na každý z nich. Všetko čo máme sú tri body, musíme si s nimi nejako vystačiť. Vieme si z nich spraviť dva vektory a aj si ich spravíme, pretože ich náhodou budeme potrebovať. Poznáme teda nejaký bod a dva vektory. Bod budeme volať <i>A</i> a vektory $\vec{u}$ a $\vec{v}$.<br /><br />
 
-Teraz to treba už len poskladať dokopy. Pomocou dvoch vektorov vieme dočahovať na body tak, že ich naškálujeme a sčítame. Potom ich súčet už len aplikujeme na nejaký bod, ktorý poznáme. V našom prípade je to A. Vektory sa škálujú pomocou parametrov, za ktoré sa dajú dosadiť ľubovoľné čísla. Parametre sa zvyčajne nazývajú t a s.
+Na tomto mieste si musíš spomenúť na násobenie vektora číslom a na sčítavanie vektorov, lebo to bude ďalšia vec, ktorú budeme potrebovať. Keď násobíme vektor nejakým číslom, vieme ho ľubovoľne skracovať alebo predlžovať. Keď vektory sčítame, dostaneme vektor medzi nimi.<br /><br />
 
+<b>Poznáme teda bod, dva vektory a máme dva nástroje: násobenie a sčitovanie vektorov.</b> Teraz to poskladáme dohromady. Vektory budeme násobiť nejakým číslom a tým budeme meniť ich veľkosť. Aj smer môžeme zmeniť na opačný, keď ich vynásobíme záporným číslom. Ich sčítaním dostaneme vektor medzi nimi. Ten môže dočiahnuť na akýkoľvek bod v rovine.<br /><br />
 
-<b>Akýkoľvek bod na priamke dostaneme tak, že sčítame dva naškálované vektory a pripočítame ich k bodu, ktorý poznáme.</b>
+Už máme vektor, ktorým budeme ukazovať, ale nemáme miesto, z ktorého budeme ukazovať. To miesto nájdeme ľahko. Vyberieme si jeden z troch bodov, ktoré poznáme. My si vyberieme bod <i>A</i>.<br /><br />
 
-$$ X = A + t\vec{u} + s\vec{v} $$
+Ukážeme si to na obrázku.
 
 <figure>
-  <img src="../assets/images/aGeom_planeParamEq.png" alt="Parametrická rovnica priamky">
-  <figcaption>Obr. 2.: Na bodoch X, Y, Z a Ž chceme ukázať, ako sa pomocou jedného bodu a dvoch vektorov dá dočiahnuť na každý bod v rovine. Treba poznať jeden bod v rovine, od ktorého sa dá odraziť. V našom prípade sa je to bod A. Potom treba dva vektory. Sú to $\vec{u}$ a $\vec{v}$. Tieto dva vektory sa rôzne naškálujú a potom sa spočítajú. Rôznym škálovaním vektorov $\vec{u}$ a $\vec{v}$ sa dosiahne na každý bod v rovine.</figcaption>
+  <img src="../assets/images/aGeom_planeDefinition.gif" alt="Parametrická rovnica roviny">
+  <figcaption>Obr. 2.: Na bodoch M, N, O, P chceme ukázať, ako sa pomocou jedného bodu a dvoch vektorov dá dočiahnuť na každý bod v rovine. Treba poznať jeden bod v rovine, od ktorého sa dá odraziť. V našom prípade je to bod A. Potom treba dva vektory. Sú to $\vec{u}$ a $\vec{v}$. Tieto dva vektory sa rôzne naškálujú a potom sa spočítajú. Rôznym škálovaním vektorov $\vec{u}$ a $\vec{v}$ sa dosiahne na každý bod v rovine.</figcaption>
 </figure>
+
+Vráťme sa k našej úlohe. Pomocou troch bodov sme chceli dočiahnuť na každý bod v rovine. Vyrobili sme si si vektory <i>u</i> a <i>v</i>. Vieme ich ľubovoľne skracovať a naťahovať. Keď ich sčítame, dostaneme akýkoľvek vektor v rovine. Zapíšeme si to teraz matematicky:
+
+$$ t \cdot \vec{v} + s \cdot \vec{u} $$
+
+Písmená <i>t</i> a <i>s</i> reprezentujú čísla, ktorými sa násobia vektory. Ešte treba vektor aplikovať na nejaký bod, v našom prípade je to bod <i>A</i>. Takto dostaneme každý bod v rovine. Nebudeme robiť rovnice pre každý bod roviny, tak si ich všeobecne označíme písmenom <i>X</i>.
+
+$$ X = A + t \cdot \vec{v} + s \cdot \vec{u} $$
+
+Krátka rekapitulácia rovnice. <b>Akýkoľvek bod roviny <i>X</i>, dostaneme tak, že k známemu bodu <i>A</i> pripočítame vektor, ktorý vznikne sčítaním vektorov <i>v</i> a <i>u</i>. Tieto dva vektory poznáme a ich veľkosť je zmenená vďaka parametrom <i>t</i> a <i>s</i></b>.
 
 <h2>Normálový vektor roviny</h2>
 
 Vo všeobecnej rovnici roviny budeme potrebovať normálový vektor, tak si ho tu spravíme. Odstopuj si 5 minút a skús porozmýšľať, ako by sa to dalo...Ok, môžeš čítať ďalej.<br /><br />
 
-Poznáme tri body a vieme z nich spraviť dva vektory. Poznáme ich pod menami $\vec{u}$ a $\vec{v}$ . Kedysi dávno, ešte pri vektoroch sme si povedali, že keď sa vynásobia dva vektory pomocou vektorového súčinu, vznikne tretí vektor, ktorý je na ne kolmý. Keďže naše dva vektory patria rovine, tak vzniknutý vektor je kolmý aj na rovinu. Vektor kolmý na rovinu sa nazýva normálový vektor roviny a zvyčajne sa označuje $\vec{n}$.
+Poznáme tri body a vieme z nich spraviť dva vektory. Poznáme ich pod menami $\vec{u}$ a $\vec{v}$. Pri vektoroch sme si povedali, že keď sa vynásobia dva vektory pomocou <a href="analyticka_geometria_vektory#aGeom_vecCrossProduct" target="_blank">vektorového súčinu</a>, vznikne tretí vektor, ktorý je na ne kolmý. Keďže naše dva vektory patria rovine, tak vzniknutý vektor je kolmý aj na rovinu. <b>Vektor kolmý na rovinu sa nazýva normálový vektor roviny a zvyčajne sa označuje $\vec{n}$</b>.
 
 <figure>
   <img src="../assets/images/aGeom_planeNormalVec.png" alt="Normálový vektor roviny">
   <figcaption>Obr. 3.: Na rovine poznáme tri body A, B, C. Spravíme z nich vektory $\vec{u}$ a $\vec{v}$. Vektorovým  súčinom dostaneme normálový vektor roviny $\vec{n}$.</figcaption>
 </figure>
 
-<h2>Všeobecná rovnica roviny</h2>
+<h2>Skalárny súčin normálového vektora a vektora, ktorý patrí rovine</h2>
 
-Aj všeobecná rovnica roviny sa podobá na priamku. Tiež slúži na to, aby sme zistili, či nejaký bod leží na danej rovine alebo nie. Princíp je podobný.<br /><br />
+Na pochopenie všeobecnej rovnice roviny treba ešte jednu vec. Je ňou poznatok, že <a href="analyticka_geometria_vektory#aGeom_vecDotProduct" target="_blank">skalárny súčin</a> dvoch vektorov, ktoré sú na seba kolmé, je nula. Normálový vektor roviny je kolmý na všetky vektory, ktoré patria rovine. Teda ich skalárny súčin bude 0. Vektory patriace rovine sa dajú vypočítať z bodov.
 
-Aj rovnica je podobná ako pri priamke. <i>ax+by+bz</i> je skalárny súčin normálového vektora a vektora zo začiatku sústavy do bodu X. Pod písmenom <i>d</i>, podobne ako pri priamke, sa skrýva skalárny súčin normálového vektora a vektora zo začiatku sústavy do bodu, ktorý na rovine poznáme. Ak sú tieto dva skalárne súčiny rovnaké, bod X leží v rovine. 
+<figure>
+  <img src="../assets/images/aGeom_planeDotProduct.png" alt="Skalárny súčin normálového vektora a vektora roviny">
+  <figcaption>Obr. 4.: Z akýchkoľvek dvoch bodov na rovine vieme spraviť vektor. Tento vektor bude patriť rovine. Normálový vektor naň bude kolmý. My sme si na ukážku vybrali body <i>A</i> a <i>X</i>. Skalárny súčin normálového vektora a vektora <i>A-X</i> bude 0.</figcaption>
+</figure>
 
-$$ ax+by+cz+d=0 $$
+Rovnica $(X-A) \cdot \vec{n} = 0$ sa dá roznásobiť a potom nám vzniknú dva skalárne súčiny. Jeden je skalárny súčin normálového vektora a bodu <i>X</i>, druhý je skalárny súčin normálového vektora a bodu <i>A</i>.
 
-Na obrázku chceme ukázať mágiu, ktorá sa za rovnicou skrýva. Trochu ju však upravíme. Nebudeme mať dva vektory začínajúce na začiatku sústavy. Spravíme si iba jeden vektor zo známeho bodu do bodu X. Či bod X leží na rovine zistíme pomocou skalárneho súčinu. Spravíme si vektor z bodu X do jedného z bodov, ktorý poznáme. Druhý vektor, potrebný do skalárneho súčinu, je normálový vektor roviny. Ak ich skalárny súčin je 0, vektory sú na seba kolmé. Bod leží na rovine. Postup je aj na obrázku.
+$$
+\begin{align}
+(X-A) \cdot \vec{n} = 0 \\
+X \cdot \vec{n} - A \cdot \vec{n} = 0
+\end{align}
+$$
+
+Z rovnice vidíme, že tieto dva skalárne súčiny sú rovnaké. Oba body patria rovine a teda môžeme povedať, že keď spravíme skalárny súčin akýchkoľvek bodov roviny s normálovým vektorom, tak výsledky musia byť rovnaké.
+
+<figure>
+  <img src="../assets/images/aGeom_planePointNormalScalar.png" alt="Skalárny súčin normálového vektora a bodu v rovine">
+  <figcaption>Obr. 5.: Skalárny súčin normálového vektora a akéhokoľvek bodu v rovine je rovnaký. Na obrázku sme násobili normálový vektor $\vec{n}$ s bodmi <i>X,Y,Z,Ž</i>. Výsledok skalárneho súčinu bol vždy rovnaký. Vyšiel <i>s</i>.
+  </figcaption>
+</figure>
+
+Poznámka pre pozorných čitateľov, ktorý si všimli, že hovoríme o skalárnom súčine vektora s bodom. Možno ti napadlo, že skalárny súčin sa robí medzi vektormi a tu máme zrazu vektor a bod. Z jedného uhla pohľadu máme vektor a bod, ale z druhého máme dva vektory. Keď sa na to pozrieš z druhého uhla, zistíš, že naše body sú vlastne koncové súradnice vektora začínajúceho v bode [0,0,0]. 
+
+<figure>
+  <img src="../assets/images/aGeom_planeVec000NormalScalar.png" alt="Body sú koncové súradnice vektora začínajúceho v bode [0,0,0]">
+  <figcaption>Obr. 6.: Na bod môžeme pozerať aj ako na vektor, ktorý začína v bode [0,0,0]</figcaption>
+</figure>
+
+<h2><a id="aGeom_rovinaVseobRov"></a>Všeobecná rovnica roviny</h2>
+
+Konečne sme sa dostali k všeobecnej rovnici roviny. Je to ďalší spôsob ako opísať každý bod v rovine. Táto rovnica je celkom šikovným nástrojom, ak <b>treba zistiť, či bod leží v rovine</b> alebo nie.<br /><br />
+
+Budeme potrebovať <b>normálový vektor roviny</b>, tak ho skúsime získať. Poznáme tri body v rovine. Spravíme si z nich dva vektory $\vec{u}$ a $\vec{v}$. <a href="analyticka_geometria_vektory#aGeom_vecCrossProduct" target="_blank">Vektorovým súčinom</a> týchto dvoch vektorov dostaneme normálový vektor roviny.<br /><br />
+
+Ďalej budeme potrebovať vedomosť o skalárnom súčine normálového vektora a vektora patriaceho rovine.<br /><br />
+
+Chceme si spraviť nástroj, vďaka ktorému budeme vedieť, či bod napr. <i>X</i> patrí rovine. Stačí nám zistiť, či skalárny súčin bodu <i>X</i> s normálovým vektorom je rovnaký ako skalárny súčin normálového vektora a bodu, o ktorom vieme, že je v rovine. Ak sú tieto dva skalárne súčiny rovnaké, bod patrí rovine, inak nepatrí.<br /><br />
 
 <figure>
   <img src="../assets/images/aGeom_planeGeneralEq.png" alt="Všeobecná rovnica roviny">
-  <figcaption>Obr. 4.: Vo všeobecnej rovnici roviny ide o to, aby sme sa dozvedeli, či bod leží alebo neleží v rovine. Na ukážku sme si vybrali dva body. Bod X patrí rovine, bod Y v nej neleží. Pre oba body sme postupovali rovnako. Spravili sme si vektor zo známeho bodu do bodu X (alebo Y). Skalárnym súčinom s normálovým vektorom sme overili, či je normálový vektor kolmý na náš vytvorený vektor. V prípade bodu X vyšiel skalárny súčin 0, bod teda leží na rovine. Bod Y na nej neleží, lebo skalárny súčin nevyšiel 0.</figcaption>
+  <figcaption>Obr. 7.: Vo všeobecnej rovnici roviny ide o to, aby sme sa dozvedeli, či bod leží alebo neleží v rovine. V rovine poznáme bod <i>A</i> a normálový vektor. Na ukážku sme si vybrali dva body. Bod X patrí rovine, bod Y v nej neleží. Pre všetky tri body <i>X,Y,A</i> sme si spravili skalárny súčin s normálovým vektorom. Potom sme tieto skalárne súčiny porovnali. Skalárne súčiny pre bod <i>X</i> a <i>A</i> sú rovnaké, lebo oba body patria rovine. Skalárny súčin pre bod <i>Y</i> je iný.</figcaption>
 </figure>
 
+Ešte to treba zapísať po matematicky, aby sme s tým vedeli pracovať. Poznáme teda normálový vektor roviny $\vec{n}=[a,b,c]$ a chceme zistiť, či akýkoľvek bod $X=[x,y,z]$ patrí rovine. Spravíme si teda ich skalárny súčin $a \cdot x + b \cdot y + c \cdot z $.<br /><br />
+
+Povedali sme si, že tento skalárny súčin musíme porovnať so skalárnym súčinom normálového vektora a bodu, ktorý patrí rovine. My poznáme bod $A=[a1,a2,a3]$. Spravíme si teda tento skalárny súčin: $a \cdot a1 + b \cdot a2 + c \cdot a3 $.<br /><br />
 
 
+ <!--Dôležitá je pre nás informácia, že keď spravíme <b>skalárny súčin akéhokoľvek bodu v rovine s normálovým vektorom roviny</b>, tak skalárny súčin <b>bude vždy rovnaký.</b><br /><br /-->
+
+Tento skalárny súčin bude treba vždy, keď budeme chcieť vedieť, či bod patrí rovine. Ak budeme chcieť overiť 1000 bodov, museli by sme ho vypočítať 1000 razy. Lenže on je stále taký istý a rátať ho znova a znova je zbytočné. Tak si ho vypočítame raz a zatiaľ ho skryjeme pod písmeno <i>s</i>.<br /><br />
+
+Aby sme vedeli, či bod <i>X</i> patrí rovine, potrebujeme porovnať dva skalárne súčiny. Prvý je skalárny súčin bodu <i>X</i> a normálového vektora. Druhý je skalárny súčin známeho bodu <i>A</i> a normálového vektora. Už sme si vypočítali oba, tak to teraz dáme do rovnosti. $a \cdot x + b \cdot y + c \cdot z = s $.<br /><br />
+
+Pre lepší pocit dáme <i>s</i> na druhú stranu $a \cdot x + b \cdot y + c \cdot z - s = 0$. To mínusko je tam také škaredé, tak sa ho zbavíme. Povieme, že <i>d = -s</i>. Takýmto trikom dostaneme peknú rovnicu:
+
+$$a \cdot x + b \cdot y + c \cdot z + d = 0$$
+
+<b>Dostali sme všeobecnú rovnicu roviny</b>. Ešte si ju trochu zopakujeme. Skalárny súčin normálového vektora a každého bodu na rovine je rovnaký. Spravíme si teda skalárny súčin nejakého bodu z roviny. V rovnici je jeho opačná hodnota <i>-s</i> označená písmenom <i>d</i>. Keď budeme chcieť vedieť, či nejaký bod patrí do roviny, iba ho dáme do skalárneho súčinu s normálovým vektorom. Ak bude výsledok rovnaký, bod patrí do roviny.
 
 </div>

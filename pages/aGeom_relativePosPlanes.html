@@ -1,0 +1,64 @@
+---
+title: Vzájomná poloha rovín
+description: "Vzájomná poloha rovín"
+keywords: "rovina"
+permalink: analyticka_geometria_vzajomna_poloha_rovina
+---
+
+<h1>Vzájomná poloha rovín</h1>
+
+<div class="content">
+Dve roviny môžu ležať <b>na sebe</b>, vtedy sú <b>totožné</b>. Keď ležia <b>nad sebou</b>, sú <b>rovnobežné</b>. Roviny, ktoré sa <b>pretínajú</b>, sú <b>rôznobežné</b>. <br /><br />
+
+Pozri sa na obrázok č. 1 a skús povedať, koľko spoločných bodov majú rovnobežné roviny, koľko rôznobežné a  koľko totožné.
+
+<figure>
+  <img src="../assets/images/aGeom_posPlanePlane.png" alt="Vzájomná poloha dvoch rovín">
+  <figcaption>Obr. 1.: Roviny môžu byť rovnobežné, rôznobežné alebo totožné.</figcaption>
+</figure>
+
+Vzájomnú polohu rovín vieme určiť pomocou ich všeobecných rovníc. Budeme sa pýtať, koľko bodov majú roviny spoločných. Keď z rovníc vyjde, že nemajú <b>žiaden spoločný bod</b>, tak sú <b>rovnobežné</b>. Keď výsledok povie, že majú <b>nekonečne veľa</b> spoločných bodov, tak sú <b>totožné</b>. Keď sú roviny <b>rôznobežné</b>, výsledkom je <b>priamka</b>. Ako si si na obrázku č. 1 určite všimol, rôznobežné roviny sa pretínajú a ich prienikom je priamka. <br /><br />
+
+Poďme sa pozrieť na to, ako vypočítame vzájomnú polohu rovín.
+
+<ol>
+<li>Potrebujeme všeobecné rovnice rovín, ktoré chceme počítať. </li>
+<li>Dáme si ich pod seba a počítame ako sústavu rovníc.</li>
+<li>Tešíme sa z výsledku.</li>
+</ol>
+
+Výsledok môže byť všelijaký. Napríklad môžu vypadnúť všetky premenné a výsledok bude, že nula sa rovná nule. To znamená, že za premenné môžeme dosadiť hocijaký bod, ktorý patrí jednej rovine a on bude patriť aj tej druhej. Z toho nám vyplýva, že roviny sú totožné.<br /><br />
+
+Pri rovnobežných rovinách nám zasa vypadnú všetky premenné, ale na každej strane rovnice bude iné číslo. To znamená, že na tomto svete neexistuje jeden jediný bod, ktorý patrí obom rovinám.<br /><br />
+
+Ostali nám roviny rôznobežné. Pri nich nevypadnú premenné, ale vieme ich vyjadriť. Môže sa zdať, že tu máme problém, lebo máme dve rovnice a tri neznáme. Čiže dve premenné musíme vyjadriť pomocou tej tretej. To je to, čo práve chceme, pretože dostaneme parametrickú rovnicu priamky a ešte na začiatku sme si povedali, že prienikom dvoch rovín je priamka.  
+<figure>
+  <img src="../assets/images/aGeom_posPlanePlaneExample1.png" alt="Vzájomná poloha priamky a roviny">
+  <figcaption>Obr. 2. Máme všeobecné rovnice dvoch priamok. Dáme ich do sústavy a snažíme sa vyjadriť <i>y</i>. To sa aj podarilo, <i>y</i> vyšlo, že <i>y = -9 -17z</i>. Dosadíme to za <i>x</i> a dostaneme, že <i>x = -13 -26z</i>. Ešte to tam kazí <i>z</i> až do chvíle, kým si uvedomíš, že <i>z</i> môžeme použiť ako parameter.</figcaption>
+</figure>
+
+Ešte si vypočítame dve sústavy rovníc.
+
+<figure>
+  <img src="../assets/images/aGeom_posPlanePlaneExample2.png" alt="Vzájomná poloha priamky a roviny">
+  <figcaption>Obr. 3. V prvej sústave nám vypadli všetky premennú  dostali sme <i>0 = 0</i>. To je prípad, kedy sú roviny totožné. V druhej sústave zasa vypadli všetky premenné, ale výsledok je <i>-2 = 0</i>. Znamená to, že roviny sú rovnobežné.</figcaption>
+</figure>
+
+<h2>Dôvod, prečo rovnice fungujú</h2>
+
+Ak ťa trápi otázka, prečo tie výpočty fungujú, si tu na správnom mieste. Aspoň trochu sa ti pokúsime objasniť kúzla skryté v rovniciach &#128512;.<br /><br />
+
+Najprv si v skratke povieme, čo je to všeobecná rovnica roviny. Ak chceš vedieť o nej viac, prečítaj si <a href="analyticka_geometria_rovina#aGeom_rovinaVseobRov" target="_blank">toto</a>. Všeobecná rovnica roviny má tvar <i>ax+by+cz+d=0</i>. Ako si si mohol všimnúť v príkladoch, písmená <i>a,b,c,d</i> sú čísla písmená <i>x,y,z</i> sú neznáme. Písmená <i>a,b,c</i> sú súradnice normálového vektora roviny. Písmeno <i>d</i> je opačná hodnota skalárneho súčinu normálového vektora roviny s nejakým bodom patriacim rovine. Neznáme písmená <i>x,y,z</i> sú súradnice bodu, ktorý patrí rovine. Môžeme použiť akýkoľvek bod, ktorý patrí rovine.<br /><br />
+
+Ďalej potrebujeme vedieť niečo o skalárnom súčine normálového vektora roviny a bodu, ktorý patrí rovine. Robíme teda skalárny súčin normálového vektora roviny a bodu, ktorý patrí rovine. Vieme, že pre všetky body roviny, bude tento skalárny súčin rovnaký.<br /><br />
+
+V rovnici máme dva skalárne súčiny. Prvý je normálový vektor s bodom, ktorý nepoznáme. To je to <i>ax+by+cz</i>. Druhý skalárny súčin je skrytý pod písmenom <i>d</i>. To je skalárny súčin normálového vektora s bodom, ktorý poznáme a vieme, že patrí rovine. Výsledkom skalárneho súčinu je číslo a v tejto rovnici sme ho skryli pod písmeno <i>d</i>. Tieto dva skalárne súčiny sú rovnaké a keď ich od seba odpočítame, musí vyjsť 0. Nech ťa nepletie, že vo vzorci je <i>+d</i>. Matematika už zariadi, že pri čísle bude správne znamienko. Ak za súradnice <i>x,y,z</i> dosadíme bod, ktorý rovine nepatrí, skalárne súčiny nebudú rovnaké. Toľko v krátkosti k tomu, ako funguje všeobecná rovnica roviny. <a href="analyticka_geometria_rovina#aGeom_rovinaVseobRov" target="_blank">Tu</a> máme napísané viac.<br /><br />
+
+Teraz sa pozrieme na to, ako by sme všeobecnú rovnicu roviny mohli použiť pri určovaní vzájomnej polohy rovín. Vieme, že aby rovnica roviny platila, musíme za <i>x,y,z</i> dosadiť bod, ktorý patrí rovine. Vieme ju teda použiť na to, aby sme zodpovedali otázku, že či bod patrí rovine alebo nie. Už sme si povedali, vzájomnú polohu rovín vieme určiť podľa toho, koľko bodov majú spoločných. Teda koľko nájdeme takých bodov, ktoré patria obom rovinám. Aby sme zistili, či majú roviny nejaké body rovnaké, dáme ich všeobecné rovnice do rovnosti, resp. do sústavy rovníc.<br /><br />
+
+Pri riešení nám môžu vypadnúť všetky čísla a ostane nám, že 0=0. Povedali sme si, že to znamená, že roviny sú totožné. Totožné roviny majú rovnaký smer normálového vektora, aj keď každá ho môže mať inak veľký. Pretože normálový vektor je rovnaký, tak vypadne. Ak majú rovnaké aj všetky body, tak vypadne aj skalárny súčin skrytý pod písmenom <i>d</i>, pretože aj ten je rovnaký pre obe roviny. Ostane 0=0.<br /><br />
+
+Aj pri rovnobežných rovinách je smer normálového vektora rovnaký a preto vypadne. Body však už nie sú rovnaké, skalárny súčin skrytý pod <i>d</i> bude pre každú rovinu iný a preto nevypadne. Na každej strane rovnice bude iné číslo, to znamená, že nikdy nenájdeme taký bod, ktorý bude patriť obom rovinám. Roviny sú rovnobežné.<br /><br />
+
+Pri rôznobežných rovinách dokážeme vyjadriť dve premenné pomocou tretej. Keď použijeme tú tretiu premennú ako parameter, dostaneme parametrickú rovnicu priamky. Keďže sme dostali rovnicu priamky, vieme, že spoločné body rovín ležia na priamke. Teda roviny sa pretínajú a sú rôznobežné. Príklad máme vypočítaný na obrázku č. 2.
+</div>
