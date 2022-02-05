@@ -42,20 +42,20 @@ main {
   padding: 55px 20px;
 }
 
-.navbar{
-	width: 100%;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-	margin-bottom: 2%;
+.navbar {
+	width:100%;
 }
 
-
-.navbar img{
+.navbar .btn-open img{
 	width: 40px; 
 	height: 40px;
-	float: right;
+	float:rigt;
 }
 
+
 .btn-open {
+  width: 40px; 
+  height: 40px;
   border: 0;
   border-radius: 10px;
   /*box-shadow: 0 2px 14px 0 rgba(0, 0, 0, .05);*/

@@ -8,6 +8,19 @@
   --primaryFont: Monospace;
 }
 
+#boy {
+	width: 50%;
+	float: right;
+	text-align: left;
+}
+
+#boy img {
+	width: 60%;
+	height: auto;
+	margin-top: -10%;
+}
+
+
 h1 {
 	text-align: center;
 	font-family: var(--primaryFont);
@@ -128,5 +141,14 @@ h3 {
 .history_intro img{
 	width: 100%
 	height: auto;
+}
+
+#boy {
+	width: 100%;
+	float: none;
+}
+
+#boy img{
+	width: 100%;
 }
 }
