@@ -85,7 +85,7 @@ main {
 /* zeynepjs menu styles */
 .zeynep {
   /*background-color: #ffffff;*/
-  background: url(/assets/images/bgMenu1.png);
+  background: url(/assets/images/homepage/bgMenu1.png);
   background-repeat: no-repeat;
   background-size: 110% 100%;
   font-family: Monospace;
@@ -134,7 +134,7 @@ main {
 
 /* zeynepjs submenu styles */
 .zeynep .submenu {
-  background: url(/assets/images/bgMenu2.png);
+  background: url(/assets/images/homepage/bgMenu2.png);
   background-repeat: no-repeat;
   background-size: 110% 100%;
   color: #003152;

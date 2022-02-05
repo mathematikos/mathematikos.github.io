@@ -8,6 +8,25 @@
   --primaryFont: Monospace;
 }
 
+.page{
+	width: 100%;
+	height: 100%;
+}
+
+#contact_page{
+text-align: center;
+background: url(/assets/images/homepage/bgContact.png);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+
+#contact_page div{
+color: white;
+font-family: Monospace;
+font-size: 250%;
+padding-top: 20%;
+}
+
 #boy {
 	width: 50%;
 	float: right;
@@ -151,4 +170,15 @@ h3 {
 #boy img{
 	width: 100%;
 }
+
+.page{
+ height: 210%;
+}
+
+#contact_page{
+height: 50%;
+width: 100%;
+font-size: 70%;
+}
+
 }
