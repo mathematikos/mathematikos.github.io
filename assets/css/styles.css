@@ -14,23 +14,24 @@
 }
 
 #contact_page{
-text-align: center;
-background: url(/assets/images/homepage/bgContact.png);
-background-repeat: no-repeat;
-background-size: 100% 100%;
+	text-align: center;
+	background: url(/assets/images/homepage/bgContact.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 #contact_page div{
-color: white;
-font-family: Monospace;
-font-size: 250%;
-padding-top: 20%;
+	color: white;
+	font-family: Monospace;
+	font-size: 250%;
+	padding-top: 20%;
 }
 
 #boy {
 	width: 50%;
 	float: right;
 	text-align: left;
+	margin-top: 50px;
 }
 
 #boy img {
@@ -83,6 +84,7 @@ h3 {
 	padding: 5%;
 	padding-top: 0%;
 	margin: 0 auto;
+	margin-top: 50px;
 }
 
 .content figure{

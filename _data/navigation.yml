@@ -13,8 +13,8 @@
     - page: Číselné sústavy
       url: /ciselne_sustavy
 
-- title: Algebra
-  id: algebra
+- title: Funkcie
+  id: funkcie
   submenu:
     - page: Lineárna funkcia
       url: /linearna_funkcia

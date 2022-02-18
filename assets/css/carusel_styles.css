@@ -15,10 +15,11 @@
   max-height: auto;
   position: relative;
   margin: auto;
-  margin-top: 0.5%;
+  margin-top: 50px;
   padding-left: 10%;
   text-align: right;
   float: left;
+  z-index: -100;
 }
 
 /* Caption text */
