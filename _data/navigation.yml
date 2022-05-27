@@ -18,6 +18,24 @@
   submenu:
     - page: Lineárna funkcia
       url: /linearna_funkcia
+      
+- title: Goniometria
+  id: goniometry
+  submenu:
+    - page: História goniometrie
+      url: /historia_goniometrie
+    - page: Použitie goniometrie
+      url: /pouzitie_goniometrie
+    - page: Ako vznikla goniometria
+      url: /ako_vznikla_goniometria
+    - page: Jednotková kružnica
+      url: /jednotkova_kruznica
+      
+- title: Geometria
+  id: geometry
+  submenu:
+    - page: Priamka
+      url: /priamka
 
 - title: Analytická geometria
   id: aGeom
@@ -50,12 +68,6 @@
       url: /analyticka_geometria_v_pocitacovej_grafike
     - page: Počítačová grafika dnes
       url: /pocitacova_grafika_dnes
-
-- title: Geometria
-  id: geometry
-  submenu:
-    - page: Priamka
-      url: /priamka
 
 - title: Štatistika
   id: statistics
