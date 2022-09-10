@@ -4,14 +4,17 @@
 - title: Čísla
   id: numbers
   submenu:
+    - page: Ako sme sa učili počítať
+      url: /ako_sme_sa_ucili_pocitat
     - page: Ako vznikli čísla
       url: /ako_vznikli_cisla
-    - page: Písmená
-      url: /pismena
-    - page: Číselné množiny
-      url: /ciselne_mnoziny
     - page: Číselné sústavy
       url: /ciselne_sustavy
+    - page: Číselné množiny
+      url: /ciselne_mnoziny
+    - page: Písmená
+      url: /pismena
+
 
 - title: Funkcie
   id: funkcie
