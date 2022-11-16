@@ -26,11 +26,17 @@ description: >-
 baseurl: ""
 url: "https://mathematikos.github.io"
 github_username: mathematikos
+social:
+  links:
+    - https://www.instagram.com/mathematikos_sk/
+locale: sk_SK
 
 # Build settings
 # theme: minima
-# plugins:
-#   - jekyll-feed
+plugins:
+#  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Front Matter Defaults
 defaults:
