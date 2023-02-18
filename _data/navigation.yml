@@ -33,6 +33,10 @@
       url: /ako_vznikla_goniometria
     - page: Jednotková kružnica
       url: /jednotkova_kruznica
+    - page: Goniometrické funkcie
+      url: /goniometricke_funkcie
+    - page: Sínus, kosínus, tangens
+      url: /goniometricke_funkcie_sinus_kosinus_tangens
       
 - title: Geometria
   id: geometry

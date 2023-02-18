@@ -1,0 +1,69 @@
+---
+title: Goniometrické funkcie
+description: "goniometrické funkcie"
+keywords: "goniometrické funkcie, sínus, kosínus, tangens, kotangens, sekans, kosekans, matematika"
+permalink: goniometricke_funkcie
+---
+
+<div class="content">
+
+<h1>Goniometrické funkcie</h1>
+Ľudia ako Newton, Descartes, Pascal, Fermat a mnohý ďalší spravili v matematike kus dobrej práce. Vďaka nim bola matematika v 18. storočí veda, ktorú sa oplatilo skúmať. Medzi ľudí, ktorí študovali matematiku, patril aj Leonard Euler. Okrem iného sa zaoberal aj matematickou analýzou, popri ktorej sa dostal ku goniometrii.<br /><br />
+
+Vo svojej knihe <i>Introductio in analysin infinitorum</i> vyslovil myšlienku, že <b>sínus a kosínus sa môžu používať ako funkcie. Nemusia to byť iba pomery strán v pravouhlom trojuholníku.</b><br /><br />
+
+Čo znamená, že sa budú používať ako funkcie? To znamená, že im dáme nejaké číslo, oni s ním niečo spravia a vrátia výsledok. Oni sa vlastne správajú ako funkcie už sami o sebe. Dá sa im uhol a oni preň vrátia prislúchajúci pomer strán.<br /><br />
+
+Ibaže je tu malý problém. Do sínusu a kosínusu sa môžu dať iba uhly menšie ako 90°, pretože väčšie v pravouhlom trojuholníku skrátka nie sú. Lenže keď už to chceme používať ako funkcie, chceme tam dať aj iné čísla. <b>Chceme vedieť výsledky aj pre čísla väčšie ako 90° alebo menšie ako 0°</b>, napr. pre 512°. Takéto uhly však v pravouhlom trojuholníku nenájdeme.<br /><br />
+
+Výsledok treba dostať iným spôsobom. <b>Potrebujeme niečo, kde by uhol mohol byť hocijaký a zároveň tam platilo, že sú to pomery strán v pravouhlom trojuholníku</b>.<br /><br />
+
+Pán Euler prišiel na to, že to niečo je <a href="jednotkova_kruznica" target="_blank"><b>jednotková kružnica</b></a>. Dajú sa tam nakresliť pravouhlé trojuholníky, takže sa môžu vypočítať pomery strán. Veľkou pomocou je, že jedna strana trojuholníka môže mať dĺžku 1. Dôvod si povieme v článkoch o konkrétnych funkciách. 
+
+<figure>
+  <img src="../assets/images/gonio_unitCircleTriangles.png" alt="Jednotková kružnica s vyznačenými pravouhlými trojuholníkami">
+  <figcaption>Obr. 1.: Na obrázku sú jednotkové kružnice, v ktorých sú vyznačené pravouhlé trojuholníky. Práve vďaka nim sa dajú zadefinovať goniometrické funkcie pre rôzne uhly. Existuje viacero vizualizácií, ale my budeme pracovať s tými, čo sú na obrázkoch <i>a</i>, <i>b</i>, a <i>c</i>. <b>EŠTE SI VŠIMNI ČIARU, KTORÁ JE NAZVANÁ "POLOMER". ĎALEJ JU BUDEME SPOMÍNAŤ, TAK ABY SI VEDEL O ČO IDE.</b></figcaption>
+</figure>
+
+Keď si vypočítame pomery strán v týchto trojuholníkoch, dostaneme hodnoty goniometrických funkcii. Vieme ich zakresliť pomocou čiar. Teraz nie je dôležité, ako presne vznikli čiary, povieme si o tom neskôr. Hlavná myšlieka je, že <b>hodnoty goniometrických funkcii sa dajú vyjadriť pomocou určitých čiar na jednotkovej kružnici</b>. V obrázku sú vyznačené farebne.
+
+<figure>
+  <img src="../assets/images/gonio_unitCircle.png" alt="Jednotková kružnica s vyznačenými goniometrickými funkciami">
+  <figcaption>Obr. 2.: Na jednotkovej kružnici sú zobrazené hodnoty goniometrických funkcií pomocou čiar. Dĺžka čiary je rovná hodnote goniometrickej funkcie. Čiže keď napr. sínus bude 1, aj jeho čiara bude dlhá 1.</figcaption>
+</figure>
+
+Fajn, máme pravouhlé trojuholníky, ale ešte treba, aby sa do goniometrickej funkcie mohol dať hocijaký uhol. No a to sa dá veľmi ľahko. <b>Uhol medzi "polomerom" a kladnou časťou osi x sa dá ľubovoľne meniť. Spolu s ním sa menia aj dĺžky čiar, teda hodnoty goniometrických funkcií.</b>
+
+<figure>
+  <a id="gonio_unitCircleAnimation"><img src="../assets/images/gonio_unitCircleAnimation.gif" alt="Goniometrické funkcie sú pre všetky uhly"></a> 
+  <figcaption>Obr. 3.: Uhol medzi "polomerom" a kladnou časťou osi x sa mení. Všimni si, ako sa spolu s ním menia aj dĺžky čiar - teda hodnoty goniometrických funkcií.</figcaption>
+</figure>
+
+Pomery strán pravouhlých trojuholníkov sme si zatiaľ ukázali iba v prvom kvadrante jednotkovej kružnice. Ako je to s ostatnými? Vo všetkých štyroch kvadrantoch sa dajú zostrojiť pravouhlé trojuholníky a následne vypočítať ich pomery strán. Samozrejme ich vieme zobraziť ako dĺžky jednotlivých čiar.<br /><br />
+
+<figure>
+  <img src="../assets/images/gonio_unitCircleAllGonioFun.png" alt="Goniometrické funkcie vo všetkých kvadrantoch">
+  <figcaption>Obr. 4.: Goniometrické funkcie vo všetkých štyroch kvadrantoch. Už sme ich farebne nerozlišovali, to už musíš vedieť ;).</figcaption>
+</figure>
+
+Ten uhol, pre ktorý sa počítajú pomery strán je medzi "polomerom" a tou "bližšou" časťou osi x. Na obrázku je pomenovaný písmeno &#946;. Nás zaujíma uhol medzi "polomerom" a kladnou časťou osi x. Na obrázku je vyznačený písmenom &#945;. Keďže dĺžky čiar sú pre &#945; aj &#946; rovnaké, z tohto pohľadu je jedno, ktorý uhol do funkcie dáme. Dávame však uhol &#945;, lebo ten môže byť hocijako veľký.<br /><br />
+
+<figure>
+  <img src="../assets/images/gonio_unitCircleAngles.png" alt="Podľa uhlu &#946 sa počíta pomer strán, ale do funkcie sa dáva &#945. Pre oba uhly je výsledok rovnaký.">
+  <figcaption>Obr. 5.: Pomery strán v trojuholníkoch by sa počítali pre uhol &#946;. Do funkcie sa  však dáva uhol &#945;, nakoľko vie byť hocijaký (väčší ako 90°, záporný. V podstate hocijaké reálne číslo.). Môžeme tak spraviť preto, lebo hodnoty goniometrických funkcií su pre &#945; a &#946; rovnaké.</figcaption>
+</figure>
+
+<h2>Vizualizácia goniometrických funkcií</h2>
+
+Poznáme tri zaužívané spôsoby zobrazovania goniometrických funkcií. Jeden je na jednotkovej kružnici, druhý v grafe a tretí pomocou tabuľky. Na jednotkovej kružnici sú pekne vidieť vzťahy medzi funkciami, ale už horšie sú viditeľné vlastnosti funkcií. S grafom je to naopak. Lepšie sú vidno vlastnosti funkcií, ale horšie sú vidno ich vzájomné vzťahy. V tabuľke zasa ani nie je poriadne vidieť, že je to goniometrická funkcia, ale zato tam vieme vyrátať presné hodnoty funkcií.
+
+<h2>Goniometrické funkcie</h2>
+Goniometrické funkcie sú vysvetlené v zvlásť článkoch, pretože jeden článok by bol príliš dlhý. Tri najznámejšie a najpoužívanejšie - sínus, cosínus a tangens sú <a href="goniometricke_funkcie_sinus_kosinus_tangens" target="_blank">tu</a>. Ich menej známy bratranci cotangens, secans a cosecans sú tu.<br /><br />
+
+<h1>Zdroje</h1>
+<div class='literature'>
+[1] Merlet, J. P. 2004. A NOTE ON THE HISTORY OF TRIGONOMETRIC FUNCTIONS AND SUBSTITUTIONS. http://www.math.stonybrook.edu/~tony/history-resources/HISTORY_OF_TRIGONOMETRIC_F.pdf<br /><br />
+
+[2] Khan Academy. Unit Circle Definition of Trig Functions. https://www.youtube.com/watch?v=ZffZvSH285c&ab_channel=KhanAcademy. <br /><br />
+
+</div>
