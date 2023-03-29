@@ -96,6 +96,10 @@ h3 {
 	height: auto;
 }
 
+.audioPlayer{
+	text-align: center;
+}
+
 .egyptNumbers{
 	font-size: 500%;
 }

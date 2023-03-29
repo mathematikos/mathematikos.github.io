@@ -27,16 +27,18 @@
   submenu:
     - page: História goniometrie
       url: /historia_goniometrie
-    - page: Použitie goniometrie
-      url: /pouzitie_goniometrie
     - page: Ako vznikla goniometria
       url: /ako_vznikla_goniometria
+    - page: Použitie goniometrie
+      url: /pouzitie_goniometrie
     - page: Jednotková kružnica
       url: /jednotkova_kruznica
     - page: Goniometrické funkcie
       url: /goniometricke_funkcie
     - page: Sínus, kosínus, tangens
       url: /goniometricke_funkcie_sinus_kosinus_tangens
+    - page: Použitie goniometrických funkcií
+      url: /pouzitie_goniometrickych_funkcii
       
 - title: Geometria
   id: geometry
