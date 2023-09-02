@@ -40,6 +40,18 @@
 	margin-top: -10%;
 }
 
+.more {
+	display: none;
+	text-align: justify;
+	padding: 20px 20px;
+	background-color: blue;
+	border: 10px solid navy;
+	/*padding="20%";*/
+	}
+	
+.more div{
+	/*background-color: green;*/
+	}
 
 h1 {
 	text-align: center;
@@ -159,6 +171,14 @@ footer div{
   border-left: 6px solid var(--primary);
   height: 100px;
   margin-left: 50%;
+}
+
+.example /*text with math examples*/{
+	color: #646d7a;
+}
+
+.examples b /*text with math examples marked as bold*/{
+	color: #646d7a;
 }
 
 
