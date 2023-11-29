@@ -83,22 +83,33 @@ Už vieme, ako asi vznikli pozičné sústavy, tak si môžeme teda o nich nieč
 
 <b>V pozičnej sústave záleží na poradí cifier. Je to preto, lebo pozícia dáva cifre váhu.</b> To znamená, že keď je napríklad číslica 4 na pozícií jednotiek, máme 4 kusy niečoho. Keď je na pozícii desiatok, máme 40 kusov. Na pozícií stoviek reprezentuje 400 kusov.<br /><br />
 
-<b>V každej číselnej sústave je k dispozícií nejaký počet cifier. Tento počet je základ sústavy.</b> Z rôznych dôvodov (povieme si o nich), viac cifier sa použiť nedá. Keď sa pri počítaní cifry minú, presúvame sa na ďalšiu pozíciu. Pozícia dáva číslici váhu. To znamená, že tá istá cifra na inej pozícií, vyjadruje iný počet (napr. cifra 4 na pozícií jednotiek vyjadruje 4 sukne a na pozícií desiatok je to 40 sukieň). Kvôli tomu, že na každej pozícií má číslica inú váhu, v pozičnej sústave záleží na poradí čísiel. Napríklad čísla 248, 482, 842 sú všetky zložené z číslic 2,4,8 a predsa neznamenajú to isté. Aby sme videli, akú váhu dáva pozícia cifre, vieme si číslo zapísať takto: $$cifra\ \cdot\ základ\ sústavy^{pozícia-1} +...+ cifra\ \cdot\ základ\ sústavy^{pozícia-1}$$. Na čísle 248 zápis vyzerá takto: $$2 \cdot 10^{2} + 4 \cdot 10^{1} + 8 \cdot 10^{0}$$     
+<b>V každej číselnej sústave je k dispozícií nejaký počet cifier. Tento počet je základ sústavy.</b> Z rôznych dôvodov (povieme si o nich), viac cifier sa použiť nedá. Keď sa pri počítaní cifry minú, presúvame sa na ďalšiu pozíciu. Pozícia dáva číslici váhu. To znamená, že tá istá cifra na inej pozícií, vyjadruje iný počet (napr. cifra 4 na pozícií jednotiek vyjadruje 4 sukne a na pozícií desiatok je to 40 sukieň). Kvôli tomu, že na každej pozícií má číslica inú váhu, v pozičnej sústave záleží na poradí čísiel. Napríklad čísla 248, 482, 842 sú všetky zložené z číslic 2,4,8 a predsa neznamenajú to isté. Aby sme videli, akú váhu dáva pozícia cifre, vieme si číslo zapísať takto:
+<div class='overflowedItem'>
+$$cifra\ \cdot\ základ\ sústavy^{pozícia-1} +...+ cifra\ \cdot\ základ\ sústavy^{pozícia-1}$$
+</div>
+Na čísle 248 zápis vyzerá takto: $$2 \cdot 10^{2} + 4 \cdot 10^{1} + 8 \cdot 10^{0}$$
 
 Pozíciu počítame od nuly, aby sme mohli dostať jednotky. Lebo $10^{0} = 1$. Skús si vedľa na papier takto rozpísať číslo 456 987 123.<br /><br />
 
 <h2>Desiatková sústava</h2>
 
-Desiatková sústava je odvodená od počtu prstov. Máme v nej 10 číslic: 0,1,2,3,4,5,6,7,8,9. Jej základ je teda 10. Do vyššieho rádu sa prechádza, keď sa dovŕši 10 prstov. Číslo 121 343 sa dá zapísať takto: $$121\ 243 = 1\cdot10^5 + 2\cdot10^4 + 1\cdot10^3 + 2\cdot10^2 + 4\cdot10^1 + 3\cdot10^0$$
+Desiatková sústava je odvodená od počtu prstov. Máme v nej 10 číslic: 0,1,2,3,4,5,6,7,8,9. Jej základ je teda 10. Do vyššieho rádu sa prechádza, keď sa dovŕši 10 prstov. Číslo 121 343 sa dá zapísať takto:
+<div class='overflowedItem'>
+$$121\ 243 = 1\cdot10^5 + 2\cdot10^4 + 1\cdot10^3 + 2\cdot10^2 + 4\cdot10^1 + 3\cdot10^0$$
+</div>
 Na každej pozícií má číslica inú váhu. Sú to jednotky, desiatky, stovky, tisícky, atď. Číslica hovorí, koľko kusov danej váhy máme. Teda koľko máme jednotiek, desiatok, stoviek atď.
 
 <h2>Dvojková sústava</h2>
 Dvojková sústava vznikla kvôli počítačom. Tie vedia rátať iba s dvomi prstami :D . Ok, počítače prsty nemajú, ale vedia rátať iba s tým, či v ich pamäťovej bunke je hodnota alebo nie. Technické pozadie rozoberieme inokedy a necháme si iba vedomosť, že vedia rátať iba s dvomi číslami. Základ sústavy je preto 2. Číslo v dvojkovej sústave je zapísané číslicami 0 a 1, napr. 101110101. Vieme ho zapísať podobne ako v desiatkovej sústave:
+<div class='overflowedItem'>
 $$1\cdot2^8 + 0\cdot2^7 + 1\cdot2^6 + 1\cdot2^5 + 1\cdot2^4 + 0\cdot2^3 + 1\cdot2^2 + 0\cdot2^1 + 1\cdot2^0$$
+</div>
 
 <h2>Šestnástková sústava</h2>
 Vymysleli ju ľudia od počítačov, aby do nej mohli prevádzať čísla z dvojkovej sústavy. Číslo v šestnástkovej sústave je kratšie a teda prehľadnejšie, ako v dvojkovej. Vďaka tomu robia pri výpočtoch menej chýb. Používajú sa cifry 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F. Príklad čísla b0dfe5:
+<div class='overflowedItem'>
 $$b\cdot16^5 + 0\cdot16^4 + d\cdot16^3 + f\cdot16^2 + e\cdot16^1 + 5\cdot16^0$$
+</div>
 <span style="color: #b0dfe5">Vedel si, že číslo b0dfe5 v počítačoch reprezentuje farbu, ktorou je napísaný tento text?</span>
 <span style="color: #003152">Farbou číslo 003152 je napísaný tento text</span> <span style="color: #588bae"> a tento text má farbu 588bae.</span>
 
@@ -126,7 +137,7 @@ Týmto by sme chceli skončiť číselné sústavy. Už vieš, ako vznikla pozi�
 
 
 
-<h1>Pre tých, ktorých to ešte stále baví čítať</h1>
+<h2>Pre tých, ktorých to ešte stále baví čítať</h2>
 UPOZORNENIE!!! ... toto ti už netreba vedieť. Ak sa ti už nechce čítať ďalej nemusíš, máš voľno :D. Ale ak by ťa to náhodou chytilo, sú tu také lahôdky, ako spočítavanie čísiel v rôznych sústavách alebo prevody priamo medzi nimi. Ak si rozhodnutý čítať ďalej, tak sa osloboď od toho, že 2+2=4, lebo nie je. A možno predsa áno, aj keď nie.
 
 <h2>Spočítavanie čísiel v rôznych sústavách</h2>
@@ -164,7 +175,7 @@ Sčítavanie a násobenie v predchádzajúcich kapitolách sme nerobili len tak.
 
 Či vlastné číselné sústavy niekedy využiješ, ťažko povedať. Niečo sme ti však predsa chceli ukázať. Chceli sme ťa trochu vytrhnúť zo zaužívaných dráh myslenia a ukázať ti, že aj taká obyčajná vec, ako spočítavanie dvoch čísiel, môže byť zaujímavá.
 
-<h1>Zdroje</h1>
+<h2>Zdroje</h2>
 
 <div class='literature'>
 [1] relief perforé. 2021. https://collections.louvre.fr/en/ark:/53355/cl010121762

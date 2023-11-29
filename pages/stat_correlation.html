@@ -38,6 +38,7 @@ Niektoré veci medzi sebou súvisia viac, niektoré menej a niektoré vôbec. T�
 
 Začneme tým, že máme údaje o troch futbalistoch v tabuľke. Chceme vedieť ako súvisí overall s cenou hráča a gk_diving so skill_ball_control. Keď sa pozrieme na tie údaje, tak je vidno, že čím je väčší overall, tým je väčšia cena. S  gk_diving a skill_ball_control je to tak, že čím je jedno menšie, tým je druhé väčšie. Závislosť tam teda máme.<br /><br />
 
+<div class='overflowedItem'>
 <table class="center statTable">
 <tr>
 <th>Meno</th>
@@ -71,6 +72,7 @@ Začneme tým, že máme údaje o troch futbalistoch v tabuľke. Chceme vedieť 
 <td>96</td>
 </tr>
 </table>
+</div>
 <br /><br />
 
 Závislosť sme zatiaľ merali dvomi slovami: menšie a väčšie. Teraz ich potrebujeme nejak vyjadriť matematikou. Chceme vedieť, či je údaj malý alebo veľký. Keď máme len údaj, nevieme o ňom povedať aký je. Ale keď ho s niečím porovnáme, tak už vieme povedať, či je oproti tomu veľký alebo malý. Údaj môžeme porovnať voči ostatným údajom. Nechceme ho však porovnávať s každým z údajov, lebo z takého porovnania by sme nič nemali. Potrebujeme nejakú vhodnú reprezentáciu týchto údajov a ako už tušíš, je to priemer. <br /><br />
@@ -79,6 +81,7 @@ Priemery pre naše štyri atribúty sú takéto: overall=81, cena=43 166 666,67 
 
 Či je údaj väčší alebo menší ako priemer, zistíme ľahko. Od údaja odčítame priemer a keď bude údaj väčší, výsledok bude kladný. Keď bude údaj menší, výsledok bude záporný. V tabuľke si ukážeme rozdiely medzi údajom a priemerom.<br /><br />
 
+<div class='overflowedItem'>
 <table class="center statTable">
 <tr>
 <th>Meno</th>
@@ -113,6 +116,7 @@ Priemery pre naše štyri atribúty sú takéto: overall=81, cena=43 166 666,67 
 </tr>
 
 </table>
+</div>
 <br /><br />
 
 Keby náhodou, čísla v tabuľke sme dostali ako údaj-priemer. Pre Mitchellov overall to vyzeralo 64-81=-17. Pre ostatné údaje podobne. Rozdiely, ktoré máme v tabuľke už hovoria o tom, či je údaj veľký alebo malý. Dokonca hovoria o tom, ako veľmi je veľký alebo malý. Čím je ďalej od priemeru tým je väčší (alebo na druhú stranu od priemeru je menší). Všimni si, že aj pri rozdieloch platí ten istý vzťah ako pri údajoch v prvej tabuľke. Čím je overall vyšší, tým je aj cena vyššia. Čím je vyšší gk_diving, tím je menšia skill_ball_control. Zatiaľ sme na tom dobre. Vzťahy medzi údajmi stále platia a navyše sme dostali čísla, o ktorých vieme povedať, či sú oproti ostatným veľké alebo malé.<br /><br />
@@ -127,6 +131,7 @@ Matematika zafunguje aj vtedy, keď údaje budú rásť opačným smerom, ako je
 
 Zase sme na tom o kúsok lepšie. Už vieme povedať aj vzťah medzi dvomi údajmi, resp. ich rozdielmi. Keď je súčin rozdielov kladný, sú oba údaje väčšie ako priemer. Keď je súčin záporný, jeden údaj je menší ako priemer a druhý väčší.<br /><br />
 
+<div class='overflowedItem'>
 <table class="center statTable">
 <tr>
 <th>Meno</th>
@@ -152,6 +157,7 @@ Zase sme na tom o kúsok lepšie. Už vieme povedať aj vzťah medzi dvomi údaj
 <td>-2 183,33</td>
 </tr>
 </table>
+</div>
 <br /><br />
 
 V tabuľke máme vypočítané súčiny. Ešte stále však nevieme povedať, aký je vzťah medzi údajmi. Ak by sme súčiny počítali nie pre troch, ale pre 18 000 futbalistov, tak by sa nám vzťah hľadal ťažko. Potrebujeme niečo jednoduchšie, nejaké jedno číslo. Nie je nič jednoduchšie. Spravíme si zo súčinov priemer. Priemer pre súčin overallu a ceny je 455 666 666,67. Priemer pre súčin gk_diving a skill_ball_control je -1 167,67. <br /><br />
@@ -170,6 +176,7 @@ Skúsime vypočítať vzťah medzi dátami znovu. Pre každý údaj vypočítame
 
 V tejto tabuľke sú rozdiely vydelené príslušnou smerodajnou odchýlkou. Pre overall Jonathana Mitchella je to -17/12=-1,417 a pre ostatné sa to ráta rovnako. Ani delenie nepokazilo vzťahy medzi údajmi. Stále platí, že čím väčší overal, tým väčšia cena a čím väčší gk_diving, tým menší skill_ball_control.<br /><br />
 
+<div class='overflowedItem'>
 <table class="center statTable">
 <tr>
 <th>Meno</th>
@@ -204,10 +211,12 @@ V tejto tabuľke sú rozdiely vydelené príslušnou smerodajnou odchýlkou. Pre
 </tr>
 
 </table>
+</div>
 <br /><br />
 
 Tu si vynásobíme rozdiely, medzi ktorými chceme hľadať vzťahy.<br /><br />
 
+<div class='overflowedItem'>
 <table class="center statTable">
 <tr>
 <th>Meno</th>
@@ -233,6 +242,7 @@ Tu si vynásobíme rozdiely, medzi ktorými chceme hľadať vzťahy.<br /><br />
 <td>-1,869</td>
 </tr>
 </table>
+</div>
 <br /><br />
 No a nakoniec súčiny spriemerujeme. Pre Overall * Cena je priemer 0,921. Pre Gk_diving * Skill_ball_control je priemer -0,999. Konečne máme správny výsledok, ktorý môžeme porovnať. Vidíme, že overall a cena rastú rovnakým smerom. Gk_diving a kill_ball_control rastú opačným smerom a medzi nimi je vzťah silnejší ako medzi overllom a cenou.<br /><br />
  
@@ -266,6 +276,7 @@ Korelačný koeficient hovorí o tom, ako spolu dáta súvisia. Môže byť klad
 Aby sme sa uistili, že sme s tromi futbalistami počítali dobre, vypočítame si korelačný koeficient medzi overallom a cenou aj vzorcom.
 Potrebujeme na to priemery a smerodajné odchýlky. Priemery sú pre overall=81, cena=43 166 666,67 a smerodajné odchýlky sú pre overall=12.57, cena=39 381 326.65. <br /><br />
 
+<div class='overflowedItem'>
 $$
 \begin{equation}
 \displaylines{
@@ -279,11 +290,12 @@ k=\frac{1}{3}\sum_{i=1}^3 \left(overall_{i} - \overline{overall} \right) \cdot \
 }
 \end{equation}
 $$
-
+</div>
 <br /><br />
 
-
+<div class='overflowedItem'>
 $$ r=\frac{k}{s_{overall} \cdot s_{cena}} = \frac{913 444 444, 437}{12.57 \cdot 39 381 326.65} =  \frac{455 666 666,67}{495 023 274,9849} = 0,921 $$
+</div>
 
 Už vieme ako korelačný koeficient prišiel na svet, vieme čo znamená a vieme ho aj vyrátať. Ukážeme si teda, ako vyzerá v praxi. Spravíme si graf, ktorý bude hovoriť o tom, aká je korelácia medzi niektorými atribútmi hráčov Interu Milano. Červené políčko znamená, že korelácia je silná a oba atribúty rastú rovnakým smerom. Korelácia je silná aj keď je políčko tmavomodré, ale tu atribúty rastú opačným smerom. Bledo zelená farba hovorí, že medzi atribútmi vzťah nie je.
 

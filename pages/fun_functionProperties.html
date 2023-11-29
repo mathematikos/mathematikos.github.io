@@ -78,14 +78,18 @@ to sú čísla, ktoré dokáže funkcia vyprodukovať. Sú to jej výsledky. Zas
 
 <b>&#9745;Rast funkcie:</b><br />
 táto vlastnosť sa dá najlepšie pozorovať na grafe funkcie. Jedná sa o to, či funkcia ide hore, dole alebo je rovnaká. Vysvetlíme si každý z prípadov rastu funkcie:<br /><br />
-
-$ \forall x_1, x_2 \in A: x_1 \lt x_2 \Rightarrow f(x_1) \lt f(x_2) \Leftrightarrow rastúca$ - voľný preklad hovorí o tom, že aby bola funkcia rastúca, musia platiť nasledovné veci: keď zoberieme akékoľvek dve čísla z množiny A (čo je v našom prípade definičný obor) a vyrátam si pre ne výsledok funkcie, tak pri rastúcej funkcií bude mať menšie číslo menší výsledok a väčšie číslo väčší. Takáto funkcia bude mať hodnoty stále väčšie a väčšie. <b>Rastúca funkcia ide stále hore</b>.<br /><br />
-
-$ \forall x_1, x_2 \in A: x_1 \lt x_2 \Rightarrow f(x_1) \gt f(x_2) \Leftrightarrow klesajúca$ - zoberieme dve čísla z definičného oboru a ak pre menšie číslo dá funkcia väčší výsledok a pre väčšie číslo menší, vtedy je funkcia klesajúca. <b>Klesajúca funkcia ide stále dole</b>.<br /><br />
-
-$ \forall x_1, x_2 \in A: x_1 \lt x_2 \Rightarrow f(x_1) \le f(x_2) \Leftrightarrow neklesajúca$ - zasa zoberieme dve čísla z definičného oboru a ak pre menšie číslo dá funkcia menší výsledok a pre väčšie číslo rovnaký alebo väčší, hovoríme, že funkcia je neklesajúca. To znamená, že funkcia nerastie na celom svojom definičnom obore, ale na niektorých podintervaloch môže byť konštantná (že dáva stále rovnaké výsledky). <b>Neklesajúca funkcia ide hore, ale nie stále. Občas môže mať aj rovnaké hodnoty, no nikdy nebude klesať</b>.<br /><br />
-
-$ \forall x_1, x_2 \in A: x_1 \lt x_2 \Rightarrow f(x_1) \ge f(x_2) \Leftrightarrow nerastúca$ - zoberieme dve čísla z definičného oboru a ak pre menšie číslo dá funkcia väčší výsledok a pre väčšie číslo rovnaký alebo menší, hovoríme, že funkcia je nerastúca. Ona klesá, ale na niektorých miestach je rovnaká. Nikdy nebude rásť, preto sa volá nerastúca. <b>Nerastúca funkcia ide dole, ale nie stále. Občas môže byť aj konštantná, no nikdy nebude rásť</b>.<br /><br />
+<div class='overflowedItem'>
+$$ \forall x_1, x_2 \in A: x_1 \lt x_2 \Rightarrow f(x_1) \lt f(x_2) \Leftrightarrow rastúca $$
+</div> - voľný preklad hovorí o tom, že aby bola funkcia rastúca, musia platiť nasledovné veci: keď zoberieme akékoľvek dve čísla z množiny A (čo je v našom prípade definičný obor) a vyrátam si pre ne výsledok funkcie, tak pri rastúcej funkcií bude mať menšie číslo menší výsledok a väčšie číslo väčší. Takáto funkcia bude mať hodnoty stále väčšie a väčšie. <b>Rastúca funkcia ide stále hore</b>.<br /><br />
+<div class='overflowedItem'>
+$$ \forall x_1, x_2 \in A: x_1 \lt x_2 \Rightarrow f(x_1) \gt f(x_2) \Leftrightarrow klesajúca $$
+</div> - zoberieme dve čísla z definičného oboru a ak pre menšie číslo dá funkcia väčší výsledok a pre väčšie číslo menší, vtedy je funkcia klesajúca. <b>Klesajúca funkcia ide stále dole</b>.<br /><br />
+<div class='overflowedItem'>
+$$ \forall x_1, x_2 \in A: x_1 \lt x_2 \Rightarrow f(x_1) \le f(x_2) \Leftrightarrow neklesajúca $$
+</div> - zasa zoberieme dve čísla z definičného oboru a ak pre menšie číslo dá funkcia menší výsledok a pre väčšie číslo rovnaký alebo väčší, hovoríme, že funkcia je neklesajúca. To znamená, že funkcia nerastie na celom svojom definičnom obore, ale na niektorých podintervaloch môže byť konštantná (že dáva stále rovnaké výsledky). <b>Neklesajúca funkcia ide hore, ale nie stále. Občas môže mať aj rovnaké hodnoty, no nikdy nebude klesať</b>.<br /><br />
+<div class='overflowedItem'>
+$$ \forall x_1, x_2 \in A: x_1 \lt x_2 \Rightarrow f(x_1) \ge f(x_2) \Leftrightarrow nerastúca $$
+</div> - zoberieme dve čísla z definičného oboru a ak pre menšie číslo dá funkcia väčší výsledok a pre väčšie číslo rovnaký alebo menší, hovoríme, že funkcia je nerastúca. Ona klesá, ale na niektorých miestach je rovnaká. Nikdy nebude rásť, preto sa volá nerastúca. <b>Nerastúca funkcia ide dole, ale nie stále. Občas môže byť aj konštantná, no nikdy nebude rásť</b>.<br /><br />
 
 Nie pre všetky funkcie vieme povedať, ako rastú. Napríklad sínus je funkcia, ktorá vyzerá ako vlnka. Občas klesá a občas rastie. Niekedy zas treba povedať iba o nejakej časti funkcie, ako rastie. 
 
@@ -109,9 +113,10 @@ súvisí s rastom funkcie. Ako už názov napovedá, táto vlastnosť sa zaober�
 <b>Nepárna funkcia</b> je taká, že výsledok funkcie z čísla <i>-x</i> je rovnaký ako výsledok z čísla <i>x</i> krát -1. <b>Graf takejto funkcie je súmerný podľa stredu súradnicovej sústavy</b>. <span class="example">Príkladom nepárnej funkcie je y=x, lebo keď za x dáme -3, tak dostaneme y = -3 a keď za x dáme 3, tak -y = -3.</span> Matematickými klikihákmi je to zapísané takto:<br /><br />
 
 <b>Keď funkcia nie je súmerná podľa ničoho, hovoríme, že nie je ani párna ani nepárna.</b> <br /><br />
-
+<div class='overflowedItem'>
 $ \forall x \in D(f): f(-x) = f(x) \Leftrightarrow párna$<br />
 $ \forall x \in D(f): f(-x) = -f(x) \Leftrightarrow nepárna$<br />
+</div>
 
 <figure>
   <img src="../assets/images/fun_functionSymetry.png" alt="Párnosť funkcii">
@@ -131,10 +136,12 @@ Príklady: Funkcia <i>x<sup>2</sup></i> je ohraničená zdola, lebo nikdy nedá 
 </span>
 
 Matematikou je ohraničenie zapísané takto:<br />
+<div class='overflowedItem'>
 $A \subseteq D(f)$<br />
 $ \exists\ d \in R, že\ pre\ \forall \ x \in A: f(x) \geq d \Leftrightarrow zdola\ ohraničená $<br />
 $ \exists\ d \in R, že\ pre\ \forall \ x \in A: f(x) \leq d \Leftrightarrow zhora\ ohraničená $<br />
-$keď\ je\ na\ A\ ohraničená\ zhora\ aj\ zdola\ \Leftrightarrow ohraničená$<br /><br />
+$keď\ je\ na\ A\ ohraničená\ zhora\ aj\ zdola\ \Leftrightarrow ohraničená$<br />
+</div>
 
 Voľný preklad hovorí, že v prvom riadku si povieme, že definícia bude platiť pre nejakú podmnožinu definičného oboru, ale môže aj pre celý. Podmnožina definičného oboru dostala meno A. V druhom riadku je napísané, že <b>existuje reálne číslo d také, že všetky funkčné hodnoty, vypočítané z čísiel patriacich do A, budú väčšie alebo rovnaké ako toto číslo</b> (to znamená, že funkcia je zdola ohraničená, lebo žiaden výsledok funkcie nebude menší ako d). Tretí riadok si skús preložiť sám a štvrtému hádam rozumieš :).
 

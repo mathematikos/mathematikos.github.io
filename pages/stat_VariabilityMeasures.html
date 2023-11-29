@@ -40,7 +40,11 @@ Vzorec si rozoberieme zvnútra. V sume vidíš $ \left| \overline{x} - x_{i} \ri
 
 Podobne, ako variačné rozpätie, aj priemerná absolútna odchýlka hovorí o tom, ako veľmi sú dáta rozptýlené okolo priemeru. Nie je to však už iba nejaké rýchlo vypočítateľné orientačné číslo, ale je to konkrétna hodnota. Priemerná absolútna odchýlka presne hovorí o tom, o koľko priemerne sa údaje líšia od priemeru.<br /><br />
 
-Pre Inter Milano to vypočítame takto: $ \overline{d}=\frac{1}{11} \sum_{i=1}^{11} \left| \overline{overall} - overall_{i} \right| = 2,479 $ <i>. V hlave budeš robiť klasický výpočet. Ak by si náhodou zabudol, tak zvislé zátvorky znamenajú absolútnu hodnotu. (|83.73-88| + |83.73-88| + |83.73-86| + |83.73-85| + |83.73-85| + |83.73-84| + |83.73-82| + |83.73-81| + |83.73-81| + |83.73-81| + |83.73-80|)/11 = 27.269 / 11 = 2.479  </i>. Teraz vieme, že hráči Interu Milano sa od priemeru líšia priemerne o 2,479 bodov <i>overall</i>.
+Pre Inter Milano to vypočítame takto:
+<div class='overflowedItem'>
+$$ \overline{d}=\frac{1}{11} \sum_{i=1}^{11} \left| \overline{overall} - overall_{i} \right| = 2,479 $$
+</div>
+<i>V hlave budeš robiť klasický výpočet. Ak by si náhodou zabudol, tak zvislé zátvorky znamenajú absolútnu hodnotu. (|83.73-88| + |83.73-88| + |83.73-86| + |83.73-85| + |83.73-85| + |83.73-84| + |83.73-82| + |83.73-81| + |83.73-81| + |83.73-81| + |83.73-80|)/11 = 27.269 / 11 = 2.479  </i>. Teraz vieme, že hráči Interu Milano sa od priemeru líšia priemerne o 2,479 bodov <i>overall</i>.
 
 <figure>
   <img src="../assets/images/stat_MAE.png" alt="=Rátanie priemernej absolútnej odchýlky">
@@ -57,7 +61,11 @@ $$ s^2=\frac{1}{n} \sum_{i=1}^n \left( \overline{x} - x_{i} \right)^2 $$
 Vzorec je podobný ako v priemernej absolútnej odchýlke. Týmto $ \left( \overline{x} - x_{i} \right)^2 $ sa vypočítajú rozdiely medzi údajov a priemerom a každý z nich sa dá na druhú. Suma zabezpečí, že sa ich výsledky spočítajú a nakoniec sa to predelím n-kom, aby bol priemer.
 Funguje podobne ako priemerná absolútna odchýlka. Rozdiel je ten, sa z rozdielu medzi priemerom a údajom nerobí absolútna hodnota, ale výsledok sa umocní na druhú. <br /><br />
 
-Pre Inter Milano to vypočítame takto: $ s^2=\frac{1}{11} \sum_{i=1}^{11} \left( \overline{overall} - overall_{i} \right)^2 = 7.652$<i>. V hlave alebo na kalkulačke si sumu rozpíšeš normálne: ((83.73-88)<sup>2</sup> + (83.73-88)<sup>2</sup> + (83.73-86)<sup>2</sup> + (83.73-85)<sup>2</sup> + (83.73-85)<sup>2</sup> + (83.73-84)<sup>2</sup> + (83.73-82)<sup>2</sup> + (83.73-81)<sup>2</sup> + (83.73-81)<sup>2</sup> + (83.73-81)<sup>2</sup> + (83.73-80)<sup>2</sup>)/11 = 84.182 / 11 = 7.652  </i>. Ak sa ti nechce toto rátať z hlavy, tak môžeš aj na papier. Aspoň uvidíš, že zápis so sumou ušetrí veľa miesta. <br /><br />
+Pre Inter Milano to vypočítame takto:
+<div class='overflowedItem'>
+$$ s^2=\frac{1}{11} \sum_{i=1}^{11} \left( \overline{overall} - overall_{i} \right)^2 = 7.652 $$
+</div>
+<i>V hlave alebo na kalkulačke si sumu rozpíšeš normálne: ((83.73-88)<sup>2</sup> + (83.73-88)<sup>2</sup> + (83.73-86)<sup>2</sup> + (83.73-85)<sup>2</sup> + (83.73-85)<sup>2</sup> + (83.73-84)<sup>2</sup> + (83.73-82)<sup>2</sup> + (83.73-81)<sup>2</sup> + (83.73-81)<sup>2</sup> + (83.73-81)<sup>2</sup> + (83.73-80)<sup>2</sup>)/11 = 84.182 / 11 = 7.652  </i>. Ak sa ti nechce toto rátať z hlavy, tak môžeš aj na papier. Aspoň uvidíš, že zápis so sumou ušetrí veľa miesta. <br /><br />
 
 Zvýraznenie väčších odchýlok ti ukážeme na príklade. Tu sú rozdiely medzi údajom a priemerom: 1,2,3,4,5,6. Absolútna hodnota je to isté. Druhé mocniny rozdielu medzi priemerom a údajom sú tieto: 1,4,9,16,25,36. Už tak na pohľad vidíš, že 1 a 6 nie sú až tak rozdielne čísla. Ale medzi 1 a 36 je oveľa väčší rozdiel. Druhá mocnina práve väčší rozdiel zvýrazní viac ako menší rozdiel. <br /><br />
 
@@ -76,7 +84,11 @@ $$ s=\sqrt{\frac{1}{n} \sum_{i=1}^n \left( \overline{x} - x_{i} \right)^2} $$
 
 Vzorec je teda rovnaký ako rozptyl, len sa robí z neho druhá odmocnina.<br /><br />
 
-Smerodajnú odchýlku pre Inter Milano vyrátame takto: $ s=\sqrt{\frac{1}{11} \sum_{i=1}^{11} \left( \overline{overall} - overall_{i} \right)^2} = 2.766$. Rozptyl pod odmocninou už máme vyrátaný, tak to len odmocníme $ s=\sqrt{7.652} = 2.766$. Teraz môžeme povedať, že hráči sa priemerne od seba líšia o 2,766 <i>overall-u</i>.
+Smerodajnú odchýlku pre Inter Milano vyrátame takto:
+<div class='overflowedItem'>
+$$ s=\sqrt{\frac{1}{11} \sum_{i=1}^{11} \left( \overline{overall} - overall_{i} \right)^2} = 2.766 $$
+</div>
+Rozptyl pod odmocninou už máme vyrátaný, tak to len odmocníme $ s=\sqrt{7.652} = 2.766$. Teraz môžeme povedať, že hráči sa priemerne od seba líšia o 2,766 <i>overall-u</i>.
 
 <figure>
   <img src="../assets/images/stat_Std.png" alt="=Rátanie smerodajnej odchýlky">
