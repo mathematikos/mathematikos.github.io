@@ -1,0 +1,158 @@
+---
+title: Skalárny súčin
+description: "Skalárny súčin hovorí o tom, ako veľmi pôsobí jeden vektor v smere toho druhého. Poznáme dve vyjadrenia skalárneho súčinu - algebraické a geometrické."
+keywords: "skalárny súčin"
+permalink: /analyticka_geometria_skalarny_sucin
+---
+
+<div class="content">
+
+<h1>Skalárny súčin</h1>
+
+Skalárny súčin je jedna z tých novších vecí, ktoré sa objavili v matematike. Na používanie v bežnom živote je to príliš vysoká matematika, preto ho ani nenájdeme priamo medzi nami. Skrýva sa v rôznych veciach, ktoré by bez neho nemohli fungovať, a my si zase nevieme už teraz predstaviť fungovanie bez nich.<br /><br />
+
+Ale pekne po poriadku. Najprv sa pozrieme na to, <b>kedy skalárny súčin vznikol, na čo ho ľudia potrebovali, ako funguje a na čo ho potrebujeme dnes</b>.
+
+<h2>Objavenie skalárneho súčinu</h2>
+
+Začalo to v roku 1773 pánom pomenovaným <b>Joseph Louis Lagrange</b>. V jeho rodnej reči sa volal Giuseppe Luigi Lagrangia, lebo pôvodom bol Talian. Až neskôr sa dal prerobiť na Francúza. Jeho otec bol v službách kráľa Sardínie, ale aj tak neboli veľme bohatí. Otec totiž prerobil skoro všetky peniaze v nejakých podivuhodných finančných transakciách. Mladý Giuseppe tak bol nútený zanechať myšlienku na štúdium práva a venovať sa nejakému skromnejšiemu povolaniu, čo v tých časoch matematika zjavne bola.<br /><br />
+
+Čo bola pre Giuseppeho smola, pre ľudstvo bolo šťastie. <b>Pri štúdiu tetrahedronu prišiel na niečo, čo sa neskôr vyvinulo do skalárneho súčinu tak, ako ho poznáme dnes</b>. Prišiel aj na veľa iných užitočných vecí, ale teraz sa zameriame na skalárny súčin.[1]<br /><br />
+
+Ako to už v matematike býva, <b>na začiatku nebola podoba skalárneho súčinu taká ako dnes, ale postupne sa kryštalizovala</b>. Jeden pridal to, druhý to, až nakoniec vznikol skalárny súčin. <b>Hamilton</b> sa zaoberal <b>quaterniónmi a spravil skalárny súčin pre ne</b>. Okrem toho <b>zaviedol pojem skalárny súčin a vektor</b>. To bol rok 1843. Neskôr <b>Maxwell</b> použil Hamiltonovu prácu vo svojom elektromagnetizme a skalárny súčin sa tak stal <b>pevnou súčasťou fyziky</b>. Do konca storočia sem tam ešte niekto niečo k skalárnemu súčinu prilepil.<br /><br />
+
+Začiatkom 20.storočia robil <b>David Hilbert</b> a pár jeho kamošov na veci, ktorá sa volá Hilbertov priestor. Je to priestor, kde sa počíta s nekonečne rozmernými vektormi. Zadefinovali tu spôsob násobenia vektorov, ktorý sa nazýva inner product (pardon za anglický názov). Tento <b>inner product je zovšeobecnením skalárneho súčinu</b>. Takže takto sa skalárny súčin dostal do ešte väčšej matematiky, v akej bol.[2]<br /><br />
+
+<h2>Čo je to skalárny súčin</h2>
+<b>Skalárny súčin je niečo, čo môžeme nazvať spoločný účinok dvoch vektorov</b>. Na to, aby sme dostali celkový spoločný účinok, treba vyrátať spoločný účinok po jednotlivých zložkách vektorov a potom to spočítať dokopy. Spoločný účinok v jednom rozmere dostaneme tak, že vynásobíme veľkosť zložiek v danom rozmere.
+
+<figure>
+  <img src="../assets/images/aGeom_dotProdAlgebraicForm.png" alt="Čím si starší, tým je v matematike viac písmen">
+  <figcaption>Obr. 1.: Spoločný účinok, teda niečo ako veľmi dva vektory spolu pôsobia, sa dá vypočítať tak, že najprv vyrátame spoločný účinok vektorov po jednotlivých zložkách a potom sa to spolu zráta.</figcaption>
+</figure>
+
+Tento zápis sa nazýva aj <b>algebraický zápis</b> skalárneho súčinu.
+
+$$ \vec{u} \cdot \vec{v} = u_{x}v_{x} + u_{y}v_{y}$$
+
+Používa sa vtedy, keď sú známe súradnice vektorov. No nie vždy poznáme práve tie. Niekedy sa môže stať, že sú <b>známe iba veľkosti vektorov a uhol medzi nimi</b>. Vtedy sa tiež dá na tento problém pozrieť tak, že vyrátame spoločné pôsobenie po zložkách a potom to sčítame.
+
+
+<figure>
+  <img src="assets/images/aGeom_dotProdVectorsGivenByLengthAndAngle.png" alt="Čím si starší, tým je v matematike viac písmen">
+  <figcaption>Obr. 2.: Poznáme iba dĺžku vektorov a uhol medzi nimi.</figcaption>
+</figure>
+
+
+Ale musíme si problém na to prispôsobiť. Problém si prispôsobíme tak, že <b>jeden vektor necháme ísť presne v smere jedného z rozmerov. Jeho veľkosť bude teda veľkosť zložky v tomto rozmere a v ostatných rozmeroch budú zložky nulové</b>.
+
+<figure>
+  <img src="assets/images/aGeom_dotProdVectorParallelWithDimension.png" alt="Čím si starší, tým je v matematike viac písmen">
+  <figcaption>Obr. 3.: Jeden z vektorov (môže hociktorý) ide v smere jedného z rozmerov. Ostatné zložky bude mať teda nulové.</figcaption>
+</figure>
+
+Potom si <b>zistíme zložku toho druhého vektora, ktorá ide v smere toho prvého</b>. Tú dostaneme tak, že spravíme kolmicu z konca vektora na tú os, kde je ten prvý vektor. Dostávame pravouhlý trojuholník, kde poznáme veľkosť prepony a uhol medzi ňou a priľahlou stranou. Zo vzťahu pre kosínus sa dá odvodiť veľkosť priľahlej strany, čo je vlastne hľadaná zložka vektora.
+
+<figure>
+  <img src="assets/images/aGeom_dotProdOneCoordinationOfVector.png" alt="Čím si starší, tým je v matematike viac písmen">
+  <figcaption>Obr. 4.: Z druhého vektora si vypočítame tú zložku, ktorá ide v smere toho prvého vektora. Je to akokeby jeho x-ová súradnica. </figcaption>
+</figure>
+
+<b>Ostatné zložky zisťovať netreba, pretože ten prvý vektor ich má nulové a keď sa to spolu vynásobí, tak aj tak dostaneme nulu</b>. Keď už poznáme všetky zložky vektorov, len ich vynásobíme a zrátame.
+
+<figure>
+  <img src="assets/images/aGeom_dotProdGeometricForm.png" alt="Čím si starší, tým je v matematike viac písmen">
+  <figcaption>Obr. 5.: Zložky vektorov sa spolu vynásobia, aby sme dostali spoločný účinok vektorov v jednotlivých rozmeroch. Nakoniec sa to ešte všetko zráta, aby sme dostali celkový účinok.</figcaption>
+</figure>
+
+Dostávame niečo, čo sa volá <b>geometrický zápis vektorového súčinu</b>. Používa sa vtedy, keď poznáme veľkosti vektorov a uhol medzi nimi.
+
+$$ \vec{u} \cdot \vec{v} = |\vec{u}||\vec{v}|cos \alpha $$
+
+<h2>Výsledok skalárneho súčinu</h2>
+
+<b>Výsledok skalárneho súčinu je jedno číslo</b>. Je to preto, lebo sme počítali <b>iba s veľkosťami vektorov a nie so smermi</b>. Dostali sme niečo, čo nám hovorí o tom, ako veľmi dva vektory účinkujú/ťahajú/pôsobia v smere jedného alebo druhého z nich.<br /><br />
+
+Od skutočnosti, že výsledok je iba jedno číslo, je odvodený názov tejto operácia - skalárny súčin. Pretože <b>slovo skalár označuje veličinu zadanú iba jedným číslom</b> - skalárom.<br /><br />
+
+Keď výsledok vyjde 0, znamená to, že vektory sú na seba kolmé a teda ani trochu si navzájom nepomáhajú. Záporné číslo hovorí o tom, že ťahajú opačnými smermi.<br /><br />
+
+<b>Skalárny súčin sám o sebe nemá žiaden význam. Dáva mu ho až jeho použitie.</b><br /><br />
+
+Je to ako pri obyčajnom násobení. 10*20 = 200 nemá žiaden význam. Až keď povieme, že máme 10 debničiek, v každej je 20kg jabĺk a spolu máme 200kg jabĺk. Alebo máme záhradku s jednou stranou dlhou 10m a druhou 20m. Plocha záhradky je 200m<sup>2</sup>. Až teraz dostalo násobenie svoj význam. Takisto je to aj so skalárnym súčinom. 
+
+
+<h2>Vysvetlenie na príklade</h2>
+Napadlo nám, že možno sa ti to naše vysvetlenie stále zdá abstraktným, niečím neuchopiteľným. A tak ti skúsime vysvetliť skalárny súčin ešte raz, na jednom z jeho použití. Na množstve vykonanej práce. <b>Prácu o veľkosti jedného J (Joul) vykonáme vtedy, keď ťaháme nejakú vec po dráhe jeden meter silou jeden N (Newton)</b>.
+
+<figure>
+  <img src="assets/images/aGeom_dotProdWork.png" alt="Čím si starší, tým je v matematike viac písmen">
+  <figcaption>Obr. 6.: Panáčik ťahal kocku po dráhe dlhej 1 meter silou veľkou 1 Newton. Vykonal pri tom prácu 1 Joul.</figcaption>
+</figure>
+
+Hovoria ti niečo Železné vráta? Je to roklina, ktorú vyhĺbil Dunaj v Karpatoch medzi Srbskom a Rumunskom. Rieka je tu veľmi úzka a hlboká. Veľké bralá nie sú len okolo rieky, ale sú aj pod hladinou. Vytvárajú silné protiprúdy. Tak silné, že <b>lode idúce po prúde Dunaja nemohli kedysi tadiaľ prejsť. Musel ich ťahať vlak</b>. 
+
+<figure>
+  <img src="assets/images/aGeom_dotProdIronGatesPhoto.jpg" alt="Čím si starší, tým je v matematike viac písmen">
+  <figcaption>Obr. 7.: Železné vráta. Najnebezpečnejší úsek Dunaja.[3]</figcaption>
+</figure>
+
+
+Aby bolo možné túto nebezpečnú trať dobre navrhnúť, museli vtedajší inžinieri určite rátať tak, aby <b>vlak musel vykonať čo najmenej práce</b>. Teda museli vedieť vypočítať prácu.<br /><br />
+
+Loď išla rovno, v smere rieky, ale vlak ju neťahal úplne rovno. Išiel vedľa nej a tak ju ťahal trochu šikmo. Z tohto môžeme usúdiť, že <b>dráha aj sila sú vektory. Obe majú veľkosť a smer</b>.
+
+<figure>
+  <img src="assets/images/aGeom_dotProdIronGatesDanube.png" alt="Čím si starší, tým je v matematike viac písmen">
+  <figcaption>Obr. 8.: Vlak ide popri Dunaji a ťahá za sebou loď. Keď kapitán nie je unavený, loď vedie rovno. Lano, ktorým je loď upevnená o vlak, ide našikmo.</figcaption>
+</figure>
+
+Prácu, ktorú vlak vykoná, keď ťahá loď vypočítame ako <b>sila krát dráha. Pretože každý jeden meter dráhy musel vlak ťahať loď danou silou</b>. Teda každý jeden meter musíme pripočítať veľkosť sily.<br /><br />
+
+<figure>
+  <img src="assets/images/aGeom_dotProdIronGatesWorkUnfinished.png" alt="Čím si starší, tým je v matematike viac písmen">
+  <figcaption>Obr. 9.: Vieme, že prácu vypočítame tak, že za každý jeden meter, čo vlak potiahol loď, pripočítame silu, ktorou ju ťahal. Teda práca = dráha*sila. No je to naozaj tak?</figcaption>
+</figure>
+
+No <b>sila nás nebude zaujímať celá</b>. Pretože ona nie celá pôsobí v smere tej dráhy. <b>Časť z nej pôsobí aj do boku</b> a vôbec nepomáha ísť lodi dopredu.
+
+<figure>
+  <img src="assets/images/aGeom_dotProdIronGatesWorkComponents.png" alt="Čím si starší, tým je v matematike viac písmen">
+  <figcaption>Obr. 10.: Sila je vektor a teda ju vieme rozložiť na dve zložky. Loď pomáha ťahať dopredu iba tá časť sily, ktorá ide zarovno s dráhou. Sila, ktorá pôsobí doboku, je pre nás zbytočná.</figcaption>
+</figure>
+
+Skutočnú prácu vykoná iba časť sily, ktorá ide tým istým smerom ako loď. Každý jeden meter teda nepripočítavame celú silu, ale iba tú časť, ktorá loď naozaj ťahá dopredu. 
+
+
+<figure>
+  <img src="assets/images/aGeom_dotProdIronGatesWorkFinished.png" alt="Čím si starší, tým je v matematike viac písmen">
+  <figcaption>Obr. 11.: Výpočet trochu poopravíme a budeme spočítavať iba tú časť sily, ktorá naozaj vlak ťahá dopredu.</figcaption>
+</figure>
+
+Užitočnú časť sily dostaneme pomocou goniometrie.
+
+<figure>
+  <img src="assets/images/aGeom_dotProdIronGatesWorkDotProduct.png" alt="Čím si starší, tým je v matematike viac písmen">
+  <figcaption>Obr. 12.: Uhol medzi lanom a smerom lode sa dá zmerať. Takisto sa dá zmerať aj sila, ktorou vlak ťahá loď. Vďaka týmto údajom a goniometrii vieme vyrátať veľkosť sily, ktorá pôsobí v smere jazdy. Prácu teda vyrátame z dĺžky dráhy, ktorú bude vlak ťahať loď a zo sily, ktorou ju ťahá (samozrejme iba s tou zložkou, ktorá naozaj ťahá vlak. Tá druhá zložka nepomáha, je lenivá a tak ju nechceme.).</figcaption>
+</figure>
+
+Nepripadá ti to ako skalárny súčin? Pretože je to on. Tu sme počítali spoločný účinok dráhy a sily. Teda ako veľmi tieto dva vektory spolu pôsobia.
+
+<h2>Použitie skalárneho súčinu</h2>
+
+Už určite vieš, že sa ním počíta <b>práca</b>. Okrem nej sa vo fyzike dá skalárnym súčinom vyrátať napríklad aj <b>výkon</b>. V počítačoch sa používa pri <b>spracovaní obrázkov, zvuku</b> alebo v <b>neurónových sieťach</b>. Počítajú s ním aj ľudia, ktorí robia <b>počítačové hry</b>. Ďalšie aplikácie sú v matematike samotnej. Napríklad vyrátanie <b>uhla medzi vektormi, projekcia jedného vektora na druhý alebo zistenie rovnobežnosti/kolmosti dvoch vektorov</b>.
+
+<h2>Zdroje</h2>
+
+<div class='literature'>
+[1] Joseph-Louis Lagrange. 1999. https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/<br /><br />
+
+[2] Origin of the dot and cross product. 2011. https://math.stackexchange.com/questions/62318/origin-of-the-dot-and-cross-product<br /><br />
+
+[3] Iron Gates. 2023. https://en.wikipedia.org/wiki/Iron_Gates
+</div>
+
+
+
+
+</div>
