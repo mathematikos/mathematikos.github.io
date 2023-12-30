@@ -3,6 +3,7 @@ title: Skalárny súčin
 description: "Skalárny súčin hovorí o tom, ako veľmi pôsobí jeden vektor v smere toho druhého. Poznáme dve vyjadrenia skalárneho súčinu - algebraické a geometrické."
 keywords: "skalárny súčin"
 permalink: /analyticka_geometria_skalarny_sucin
+mathjax: true
 ---
 
 <div class="content">
@@ -27,7 +28,7 @@ Začiatkom 20.storočia robil <b>David Hilbert</b> a pár jeho kamošov na veci,
 <b>Skalárny súčin je niečo, čo môžeme nazvať spoločný účinok dvoch vektorov</b>. Na to, aby sme dostali celkový spoločný účinok, treba vyrátať spoločný účinok po jednotlivých zložkách vektorov a potom to spočítať dokopy. Spoločný účinok v jednom rozmere dostaneme tak, že vynásobíme veľkosť zložiek v danom rozmere.
 
 <figure>
-  <img src="../assets/images/aGeom_dotProdAlgebraicForm.png" alt="Algebraická forma skalárneho súčinu.">
+  <img loading="lazy" src="assets/images/aGeom_dotProdAlgebraicForm.png" alt="Algebraická forma skalárneho súčinu.">
   <figcaption>Obr. 1.: Spoločný účinok, teda niečo ako veľmi dva vektory spolu pôsobia, sa dá vypočítať tak, že najprv vyrátame spoločný účinok vektorov po jednotlivých zložkách a potom sa to spolu zráta.</figcaption>
 </figure>
 
@@ -39,7 +40,7 @@ Používa sa vtedy, keď sú známe súradnice vektorov. No nie vždy poznáme p
 
 
 <figure>
-  <img src="assets/images/aGeom_dotProdVectorsGivenByLengthAndAngle.png" alt="Poznáme iba dĺžku vektorov a uhol medzi nimi.">
+  <img loading="lazy" src="assets/images/aGeom_dotProdVectorsGivenByLengthAndAngle.png" alt="Poznáme iba dĺžku vektorov a uhol medzi nimi.">
   <figcaption>Obr. 2.: Poznáme iba dĺžku vektorov a uhol medzi nimi.</figcaption>
 </figure>
 
@@ -47,21 +48,21 @@ Používa sa vtedy, keď sú známe súradnice vektorov. No nie vždy poznáme p
 Ale musíme si problém na to prispôsobiť. Problém si prispôsobíme tak, že <b>jeden vektor necháme ísť presne v smere jedného z rozmerov. Jeho veľkosť bude teda veľkosť zložky v tomto rozmere a v ostatných rozmeroch budú zložky nulové</b>.
 
 <figure>
-  <img src="assets/images/aGeom_dotProdVectorParallelWithDimension.png" alt="Jeden z vektorov ide v smere jedného z rozmerov.">
+  <img loading="lazy" src="assets/images/aGeom_dotProdVectorParallelWithDimension.png" alt="Jeden z vektorov ide v smere jedného z rozmerov.">
   <figcaption>Obr. 3.: Jeden z vektorov (môže hociktorý) ide v smere jedného z rozmerov. Ostatné zložky bude mať teda nulové.</figcaption>
 </figure>
 
 Potom si <b>zistíme zložku toho druhého vektora, ktorá ide v smere toho prvého</b>. Tú dostaneme tak, že spravíme kolmicu z konca vektora na tú os, kde je ten prvý vektor. Dostávame pravouhlý trojuholník, kde poznáme veľkosť prepony a uhol medzi ňou a priľahlou stranou. Zo vzťahu pre kosínus sa dá odvodiť veľkosť priľahlej strany, čo je vlastne hľadaná zložka vektora.
 
 <figure>
-  <img src="assets/images/aGeom_dotProdOneCoordinationOfVector.png" alt="Z druhého vektora si vyrátame zložku, ktorá ide v smere prvého vektora.">
+  <img loading="lazy" src="assets/images/aGeom_dotProdOneCoordinationOfVector.png" alt="Z druhého vektora si vyrátame zložku, ktorá ide v smere prvého vektora.">
   <figcaption>Obr. 4.: Z druhého vektora si vypočítame tú zložku, ktorá ide v smere toho prvého vektora. Je to akokeby jeho x-ová súradnica. </figcaption>
 </figure>
 
 <b>Ostatné zložky zisťovať netreba, pretože ten prvý vektor ich má nulové a keď sa to spolu vynásobí, tak aj tak dostaneme nulu</b>. Keď už poznáme všetky zložky vektorov, len ich vynásobíme a zrátame.
 
 <figure>
-  <img src="assets/images/aGeom_dotProdGeometricForm.png" alt="Vynásobenie a spočítanie zložiek vektorov.">
+  <img loading="lazy" src="assets/images/aGeom_dotProdGeometricForm.png" alt="Vynásobenie a spočítanie zložiek vektorov.">
   <figcaption>Obr. 5.: Zložky vektorov sa spolu vynásobia, aby sme dostali spoločný účinok vektorov v jednotlivých rozmeroch. Nakoniec sa to ešte všetko zráta, aby sme dostali celkový účinok.</figcaption>
 </figure>
 
@@ -79,21 +80,20 @@ Keď výsledok vyjde 0, znamená to, že vektory sú na seba kolmé a teda ani t
 
 <b>Skalárny súčin sám o sebe nemá žiaden význam. Dáva mu ho až jeho použitie.</b><br /><br />
 
-Je to ako pri obyčajnom násobení. 10*20 = 200 nemá žiaden význam. Až keď povieme, že máme 10 debničiek, v každej je 20kg jabĺk a spolu máme 200kg jabĺk. Alebo máme záhradku s jednou stranou dlhou 10m a druhou 20m. Plocha záhradky je 200m<sup>2</sup>. Až teraz dostalo násobenie svoj význam. Takisto je to aj so skalárnym súčinom. 
-
+Je to ako pri obyčajnom násobení. 10*20 = 200 nemá žiaden význam. Až keď povieme, že máme 10 debničiek, v každej je 20kg jabĺk a spolu máme 200kg jabĺk. Alebo máme záhradku s jednou stranou dlhou 10m a druhou 20m. Plocha záhradky je 200m<sup>2</sup>. Až teraz dostalo násobenie svoj význam. Takisto je to aj so skalárnym súčinom.
 
 <h2>Vysvetlenie na príklade</h2>
 Napadlo nám, že možno sa ti to naše vysvetlenie stále zdá abstraktným, niečím neuchopiteľným. A tak ti skúsime vysvetliť skalárny súčin ešte raz, na jednom z jeho použití. Na množstve vykonanej práce. <b>Prácu o veľkosti jedného J (Joul) vykonáme vtedy, keď ťaháme nejakú vec po dráhe jeden meter silou jeden N (Newton)</b>.
 
 <figure>
-  <img src="assets/images/aGeom_dotProdWork.png" alt="Práca.">
+  <img loading="lazy" src="assets/images/aGeom_dotProdWork.png" alt="Práca.">
   <figcaption>Obr. 6.: Panáčik ťahal kocku po dráhe dlhej 1 meter silou veľkou 1 Newton. Vykonal pri tom prácu 1 Joul.</figcaption>
 </figure>
 
-Hovoria ti niečo Železné vráta? Je to roklina, ktorú vyhĺbil Dunaj v Karpatoch medzi Srbskom a Rumunskom. Rieka je tu veľmi úzka a hlboká. Veľké bralá nie sú len okolo rieky, ale sú aj pod hladinou. Vytvárajú silné protiprúdy. Tak silné, že <b>lode idúce po prúde Dunaja nemohli kedysi tadiaľ prejsť. Musel ich ťahať vlak</b>. 
+Hovoria ti niečo Železné vráta? Je to roklina, ktorú vyhĺbil Dunaj v Karpatoch medzi Srbskom a Rumunskom. Rieka je tu veľmi úzka a hlboká. Veľké bralá nie sú len okolo rieky, ale sú aj pod hladinou. Vytvárajú silné protiprúdy. Tak silné, že <b>lode idúce po prúde Dunaja nemohli kedysi tadiaľ prejsť. Musel ich ťahať vlak</b>.
 
 <figure>
-  <img src="assets/images/aGeom_dotProdIronGatesPhoto.jpg" alt="Železné vráta. Najnebezpečnejší úsek Dunaja">
+  <img loading="lazy" src="assets/images/aGeom_dotProdIronGatesPhoto.jpg" alt="Železné vráta. Najnebezpečnejší úsek Dunaja">
   <figcaption>Obr. 7.: Železné vráta. Najnebezpečnejší úsek Dunaja.[3]</figcaption>
 </figure>
 
@@ -103,36 +103,35 @@ Aby bolo možné túto nebezpečnú trať dobre navrhnúť, museli vtedajší in
 Loď išla rovno, v smere rieky, ale vlak ju neťahal úplne rovno. Išiel vedľa nej a tak ju ťahal trochu šikmo. Z tohto môžeme usúdiť, že <b>dráha aj sila sú vektory. Obe majú veľkosť a smer</b>.
 
 <figure>
-  <img src="assets/images/aGeom_dotProdIronGatesDanube.png" alt="Vlak ťahá lanom loď.">
+  <img loading="lazy" src="assets/images/aGeom_dotProdIronGatesDanube.png" alt="Vlak ťahá lanom loď.">
   <figcaption>Obr. 8.: Vlak ide popri Dunaji a ťahá za sebou loď. Keď kapitán nie je unavený, loď vedie rovno. Lano, ktorým je loď upevnená o vlak, ide našikmo.</figcaption>
 </figure>
 
 Prácu, ktorú vlak vykoná, keď ťahá loď vypočítame ako <b>sila krát dráha. Pretože každý jeden meter dráhy musel vlak ťahať loď danou silou</b>. Teda každý jeden meter musíme pripočítať veľkosť sily.<br /><br />
 
 <figure>
-  <img src="assets/images/aGeom_dotProdIronGatesWorkUnfinished.png" alt="Práca vlaku pri ťahaní lode. Za každý meter sa priráta sila, ktorou vlak ťahá loď.">
+  <img loading="lazy" src="assets/images/aGeom_dotProdIronGatesWorkUnfinished.png" alt="Práca vlaku pri ťahaní lode. Za každý meter sa priráta sila, ktorou vlak ťahá loď.">
   <figcaption>Obr. 9.: Vieme, že prácu vypočítame tak, že za každý jeden meter, čo vlak potiahol loď, pripočítame silu, ktorou ju ťahal. Teda práca = dráha*sila. No je to naozaj tak?</figcaption>
 </figure>
 
 No <b>sila nás nebude zaujímať celá</b>. Pretože ona nie celá pôsobí v smere tej dráhy. <b>Časť z nej pôsobí aj do boku</b> a vôbec nepomáha ísť lodi dopredu.
 
 <figure>
-  <img src="assets/images/aGeom_dotProdIronGatesWorkComponents.png" alt="Loď pomáha ťahať dopredu iba tá časť sily, ktorá ide zarovno s dráhou.">
+  <img loading="lazy" src="assets/images/aGeom_dotProdIronGatesWorkComponents.png" alt="Loď pomáha ťahať dopredu iba tá časť sily, ktorá ide zarovno s dráhou.">
   <figcaption>Obr. 10.: Sila je vektor a teda ju vieme rozložiť na dve zložky. Loď pomáha ťahať dopredu iba tá časť sily, ktorá ide zarovno s dráhou. Sila, ktorá pôsobí doboku, je pre nás zbytočná.</figcaption>
 </figure>
 
-Skutočnú prácu vykoná iba časť sily, ktorá ide tým istým smerom ako loď. Každý jeden meter teda nepripočítavame celú silu, ale iba tú časť, ktorá loď naozaj ťahá dopredu. 
-
+Skutočnú prácu vykoná iba časť sily, ktorá ide tým istým smerom ako loď. Každý jeden meter teda nepripočítavame celú silu, ale iba tú časť, ktorá loď naozaj ťahá dopredu.
 
 <figure>
-  <img src="assets/images/aGeom_dotProdIronGatesWorkFinished.png" alt="Práca sa počíta iba z časti sily, ktorá naozaj ťahá loď.">
+  <img loading="lazy" src="assets/images/aGeom_dotProdIronGatesWorkFinished.png" alt="Práca sa počíta iba z časti sily, ktorá naozaj ťahá loď.">
   <figcaption>Obr. 11.: Výpočet trochu poopravíme a budeme spočítavať iba tú časť sily, ktorá naozaj ťahá loď dopredu.</figcaption>
 </figure>
 
 Užitočnú časť sily dostaneme pomocou goniometrie.
 
 <figure>
-  <img src="assets/images/aGeom_dotProdIronGatesWorkDotProduct.png" alt="Skalárny súčin ukázaný na práci.">
+  <img loading="lazy" src="assets/images/aGeom_dotProdIronGatesWorkDotProduct.png" alt="Skalárny súčin ukázaný na práci.">
   <figcaption>Obr. 12.: Uhol medzi lanom a smerom lode sa dá zmerať. Takisto sa dá zmerať aj sila, ktorou vlak ťahá loď. Vďaka týmto údajom a goniometrii vieme vyrátať veľkosť sily, ktorá pôsobí v smere jazdy. Prácu teda vyrátame z dĺžky dráhy, ktorú bude vlak ťahať loď a zo sily, ktorou ju ťahá (samozrejme iba s tou zložkou, ktorá naozaj ťahá loď. Tá druhá zložka nepomáha, je lenivá a tak ju nechceme.).</figcaption>
 </figure>
 

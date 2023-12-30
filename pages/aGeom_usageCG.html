@@ -1,5 +1,6 @@
 ---
 title: Použitie analytickej geometrie v počítačovej grafike
+description: "Analytická geometria umožňuje zápis objektov, ktoré sa používajú v animovaných filmoch alebo hrách (napr. auto, dom, postavička...). Tiež umožňuje vyrátať hodnoverné osvetlenie priestoru alebo namapovať textúry na objekty."
 permalink: analyticka_geometria_v_pocitacovej_grafike
 ---
 
@@ -7,10 +8,10 @@ permalink: analyticka_geometria_v_pocitacovej_grafike
 
 <h1>Použitie analytickej geometrie v počítačovej grafike</h1>
 
-Niekde na začiatku sme spomínali využitie analytickej geometrie. Rozobrali sme ho len tak letmo, že sa používa tam a tam. Tu máme pre teba konkrétny príklad, s ktorým sa stretávaš skoro každý deň a ani o tom nevieš. Analytická geometria sa totiž využíva v počítačovej grafike, ktorej súčasťou sú aj animované filmy a počítačové hry. Bez nej by to vlastne ani nemohlo existovať. 
+Niekde na začiatku sme spomínali využitie analytickej geometrie. Rozobrali sme ho len tak letmo, že sa používa tam a tam. Tu máme pre teba konkrétny príklad, s ktorým sa stretávaš skoro každý deň a ani o tom nevieš. Analytická geometria sa totiž využíva v počítačovej grafike, ktorej súčasťou sú aj animované filmy a počítačové hry. Bez nej by to vlastne ani nemohlo existovať.
 
 <figure>
-  <img src="../assets/images/aGeom_meme.jpg" alt="Základom animácií je analytická geometria">
+  <img src="assets/images/aGeom_meme.jpg" alt="Základom animácií je analytická geometria">
   <figcaption>Obr. 1.: Základom počítačových hier či animovaných filmov je analytická geometria.</figcaption>
 </figure>
 
@@ -39,17 +40,17 @@ Teraz si ideme vysvetliť použitie analytickej geometrie vo vyššie spomenutý
 <h2>Súradnicová sústava</h2>
 Všetky objekty, ktoré budeme používať v hre, treba nejako dostať do počítača a držať ich tam uložené. Počítač rozumie len číslam, a preto treba všetky objekty premeniť na čísla. Tu prichádza na scénu súradnicová sústava.<br /><br />
 
-Pomocou nej dokážeme všetky objekty zapísať pomocou čísiel. Ukážeme ti to na príklade postele, ktorú vlastní babička Červenej čiapočky.  Nájdeš si na nej nejaké body a určíš ich polohu v súradnicovej sústave. Súradnice bodov oznámiš počítaču a oznámiš mu aj to, ktoré body majú byť spojené. On vďaka tomu vie, na akom mieste má nakresliť body a ako majú byť spojené.
+Pomocou nej dokážeme všetky objekty zapísať pomocou čísiel. Ukážeme ti to na príklade postele, ktorú vlastní babička Červenej čiapočky. Nájdeš si na nej nejaké body a určíš ich polohu v súradnicovej sústave. Súradnice bodov oznámiš počítaču a oznámiš mu aj to, ktoré body majú byť spojené. On vďaka tomu vie, na akom mieste má nakresliť body a ako majú byť spojené.
 
 <figure>
-  <img src="../assets/images/aGeom_coorSystemBed.png" alt="Zobrazenie postele pomocou bodov v karteziánskej súradnicovej sústave">
+  <img loading="lazy" src="assets/images/aGeom_coorSystemBed.png" alt="Zobrazenie postele pomocou bodov v karteziánskej súradnicovej sústave">
   <figcaption>Obr. 2.: Na posteli si vyznačíme nejaké body, ktorých polohu zapíšeme v súradnicovej sústave.</figcaption>
 </figure>
 
 V realite to funguje tak, že grafik vytvorí v programe (napr. Blender) objekt. Povrch objektu sa skladá z veľmi veľa bodov, ktoré sú pospájané do trojuholníčkov. Program vygeneruje textový súbor, kde sú napísané súradnice všetkých bodov a je tam aj napísané to, ktoré body majú byť spojené. Iný program (v ktorom sa robí hra) tento súbor prečíta a objekt zobrazí.
 
 <figure>
-  <img src="../assets/images/aGeom_bedObj.png" alt="Zobrazenie postele pomocou bodov v karteziánskej súradnicovej sústave">
+  <img loading="lazy" src="assets/images/aGeom_bedObj.png" alt="Zobrazenie postele pomocou bodov v karteziánskej súradnicovej sústave">
   <figcaption>Obr. 3.: a) umelec vytvoril posteľ pre babičku. b) posteľ sa skladá z veľmi veľa bodov, ktoré sú pospájané do trojuholníkov. Táto "sieť" nie je normálne vidieť (viď obrázok a), ale dá sa zobraziť. c) súradnice bodov sú zapísané v textovom súbore. Na obrázku nie sú všetky, lebo ich je veľmi veľa. V súbore je zapísané aj to, ktoré body majú byť spojené. Programy vedia tento súbor prečítať a potom podľa neho zobraziť objekt.</figcaption>
 </figure>
 
@@ -61,7 +62,7 @@ Všetky objekty poslušne čakajú zapísané v súboroch. Chceme ich trochu roz
 <h3>Programy na vývoj hier</h3>
 V hrách treba, aby sa objekty hýbali a prípadne aspoň trochu poslúchali fyziku nášho sveta. Nechceme predsa, aby Červená čiapočka vyletela do vesmíru, keď zakopne o kameň. Chceme, aby pekne poslúchla gravitáciu a capla na zem.<br /><br />
 
-Vývojári hier zvyčajne nerobia celú fyziku od základu, ale používajú programy, v ktorých sa robia hry. Tie už fyziku obsahujú, takže vývojárom ju už stačí len použiť.  Spomenieme len niekoľko prírodných zákonov, ktoré sa dodržiavajú v hrách. Je to už spomínaná gravitácia, trenie, hmotnosť objektov, pôsobenie síl, plynutie času, pohyb. Náš skutočný svet ovplyvňuje oveľa viac zákonov. Nie je možné ich všetky nasimulovať, lebo by na ne nestačil ani ten najvýkonnejší počítač na svete.
+Vývojári hier zvyčajne nerobia celú fyziku od základu, ale používajú programy, v ktorých sa robia hry. Tie už fyziku obsahujú, takže vývojárom ju už stačí len použiť. Spomenieme len niekoľko prírodných zákonov, ktoré sa dodržiavajú v hrách. Je to už spomínaná gravitácia, trenie, hmotnosť objektov, pôsobenie síl, plynutie času, pohyb. Náš skutočný svet ovplyvňuje oveľa viac zákonov. Nie je možné ich všetky nasimulovať, lebo by na ne nestačil ani ten najvýkonnejší počítač na svete.
 
 <h3>Animácia</h3>
 Program nám už zabezpečil, že fyziku potrebnú na pohyb máme spočítanú, no pohyb treba aj nejako zobraziť. Pohyblivým obrázkom sa hovorí animácia.<br /><br />
@@ -69,7 +70,7 @@ Program nám už zabezpečil, že fyziku potrebnú na pohyb máme spočítanú, 
 Keď si bol menší, možno si skúšal v zošite na kraji strán nakresliť napríklad panáčika, ktorý skáče. Na každú stranu si nakreslil kúsok jeho pohybu. Na prvej strane stojí na zemi, na druhej je už vo vzduchu, na tretej je viac vo vzduchu, a tak ďalej, kým nebude znovu na zemi. Keď si strany rýchlo prehŕňal, zdalo sa ti, že sa panáčik hýbe. Deje sa to vďaka tomu, že náš mozog nedokáže vnímať rýchlo meniace sa obrázky, a tak si ich spája do jedného, ktorý sa pohybuje.
 
 <figure>
-  <img src="../assets/images/HowAnimationWorks.gif" alt="Ako funguje animácia">
+  <img loading="lazy" src="assets/images/HowAnimationWorks.gif" alt="Ako funguje animácia">
   <figcaption>Obr. 4.: Táto animácia sa skladá zo šiestich obrázkov. Na každom je panáčik v inej fáze pohybu. Keď sa obrázky pustia dostatočne rýchlo za sebou, navodzuje to pocit, že panáčik skáče.</figcaption>
 </figure>
 
@@ -77,20 +78,20 @@ Na tomto fakte sú založené filmy aj hry. Kedysi sa animované filmy robili ta
 
 Jeden z prvých animovaných filmov bol Snehulienka a sedem trpaslíkov. Film robili tvorcovia od roku 1934 po 1937, teda tri roky. Na filme pracovalo vyše 750 umelcov, spravili viac ako 2 000 000 skíc a samotný film sa skladal z 250 000 obrázkov. Uznáš sám, že nakresliť toto všetko ručne bola riadna makačka. [1]<br /><br />
 
-Dnes sa už obrázky nekreslia ručne, ale generujú ich počítače. Vďaka znalostiam fyziky a matematiky vedia, o koľko majú objekty posunúť v ďalšom obrázku. 
+Dnes sa už obrázky nekreslia ručne, ale generujú ich počítače. Vďaka znalostiam fyziky a matematiky vedia, o koľko majú objekty posunúť v ďalšom obrázku.
 
 <h3>Vektory použité v pohybe</h3>
 Pohyb objektov v počítačových hrách sa snaží napodobňovať pohyb v našom svete. Pýtame sa, aký veľký kus cesty prejde objekt za nejaký čas. Zvykne sa to udávať v metroch za sekundu. Teda koľko metrov prejde objekt za jednu sekundu.<br /><br />
- 
+
 Podobne je to aj pri hrách. Program zvyčajne vykresľuje obrázky každých 0,02 sekundy. To znamená, že chceme vedieť, kam sa objekt pohol a potom ho na tom mieste vykresliť. To o koľko sa objekt pohne, nám hovorí vektor. Kde bude objekt zistíme tak, že vektor pripočítame k pozícií objektu. Objekt sa následne vykreslí.<br /><br />
 
 Ukážeme si to na Červenej čiapočke. V skutočnom svete človek chodí rýchlosťou 5km/h, čo je 1,39m/s. Karkulka sa teda pohne každú sekundu o 1,39 metra. Povedali sme si, že počítač vykresľuje obrázky každých 0,02 sekundy. Musíme teda zistiť, o koľko sa pohne Čiapočka za tento čas. Je to 1,39*0,02 = 0,0278. Čiapočka bude v nasledujúcom obrázku o 0,0278 metra ďalej.<br /><br />
- 
+
 V počítači sa to spraví tak, že sa spraví vektor rýchlosti. Zvyčajne sa udáva v m/s a potom sa prenásobí s časom (to je tých 0,02 sekundy). Veľkosť vektora je rýchlosť. Súradnice vektora udávajú jeho smer, lebo hovoria o tom, po ktorej osi sa má objekt pohnúť a o koľko. Pred vykreslením obrázku sa vektor pripočíta k súradniciam objektu. Objekt sa už vykreslí na nových súradniciach.<br /><br />
 
 Na obrázku budeme počítať, o koľko sa pohne Karkulka za sekundu. Tých 0,0278 je príliš malých na kreslenie.
 <figure>
-  <img src="../assets/images/aGeom_karkulkaVectors.png" alt="Pohyb Červenej čiapočky">
+  <img loading="lazy" src="assets/images/aGeom_karkulkaVectors.png" alt="Pohyb Červenej čiapočky">
   <figcaption>Obr. 5.: 1) Červená čiapočka je v bode [0,0.5,0]. Os y sme pre jednoduchosť nekreslili, lebo ju netreba. 2) Červená čiapočka sa pohne o 1,39 metra smerom k domčeku. Keď si vektor rozložíme na zložky, v smere osi x sa pohne o 1.2 metra a v smere osi y sa pohne o 0.695 metra. 3) Každú sekundu pripočítame k pozícií Červenej čiapočky tento vektor. Po piatich sekundách prešla Karkulka 6.95 metrov.</figcaption>
 </figure>
 
@@ -104,24 +105,24 @@ S objektmi sme už spravili skoro všetko, okrem jednej veci. Nezobrazili sme ic
 V dnešnej dobe sa väčšina obrazoviek skladá z pixelov. Pixel je taký mini-mini-mini štvorček, ktorý sa dokáže rozsvietiť na rôzne farby. Na obrazovke je ich veľmi veľa, napríklad 4K obrazovky majú po šírke 3 840 a po výške 2 160 pixelov. To je spolu 8 294 400 pixelov. Každý z nich sa dokáže rozsvietiť na inú farbu a tak zobraziť nejaký obrázok. Čím je pixelov viac, tým je obrázok kvalitnejší a je na ňom vidieť viacej detailov. Technické pozadie fungovania pixelov necháme na inokedy. Teraz nám stačí vedieť, že sú.
 
 <figure>
-  <img src="../assets/images/aGeom_usagePixelsMonitor.png" alt="Pixely na monitore">
+  <img loading="lazy" src="assets/images/aGeom_usagePixelsMonitor.png" alt="Pixely na monitore">
   <figcaption>Obr. 6.: V skutočnosti sa obrazovky skladajú z miliónov malých štvorčekov, z ktorých každý vie mať inú farbu.</figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/aGeom_usagePixels.png" alt="Rozlíšenie">
+  <img loading="lazy" src="assets/images/aGeom_usagePixels.png" alt="Rozlíšenie">
   <figcaption>Obr. 7.: Tu je jabĺčko, ktoré nesie Červená čiapočka svojej babičke. Jabĺčko je zobrazené na štyroch rôznych obrazovkách. Obrazovka a) má rozlíšenie 2x2 pixelov. Obrazovka b) má 10x10 pixelov. Obrazovka c) má 20x20 pixelov. Obrazovka d) je HD, teda má rozlíšenie 1080x720 pixelov. Čím väčšie je rozlíšenie obrazovky, tým je jabĺčko krajšie a menej kockaté.</figcaption>
 </figure>
 
 <h3>Raycasting a raytracing</h3>
 Raytracing je jeden z najznámejších spôsobov zobrazovania objektov v hrách. Jeho jednoduchšia podoba sa nazýva raycasting a tú si vysvetlíme.<br /><br />
 
-Všetky objekty v hre Červená čiapočka sú 3D, sú umiestnené  v súradnicovej sústave, skladajú sa z veľmi veľa trojuholníčkov a každý trojuholníček má svoju farbu. Objekty potrebujeme nejako zobraziť na našej štvorčekovej obrazovke.<br /><br />
+Všetky objekty v hre Červená čiapočka sú 3D, sú umiestnené v súradnicovej sústave, skladajú sa z veľmi veľa trojuholníčkov a každý trojuholníček má svoju farbu. Objekty potrebujeme nejako zobraziť na našej štvorčekovej obrazovke.<br /><br />
 
 Túto úlohu berie na seba raycasting. Zoberie si ten náš svet z hry a akože doňho umiestni obrazovku. Z každého štvorčeka na obrazovke spraví priamku a vypočíta, či sa náhodou nestretla s nejakým trojuholníčkom objektu. Ak priamka preťala trojuholníček, tak sa zoberie jeho farba a vyfarbí sa ňou štvorček na obrazovke.
 
 <figure>
-  <img src="../assets/images/aGeomGifs/aGeom_usageCGRaytracing.gif" alt="Raycasting">
+  <img loading="lazy" src="assets/images/aGeomGifs/aGeom_usageCGRaytracing.gif" alt="Raycasting">
   <figcaption>Obr. 8.: Na zobrazenie objektov pomocou raytracingu si potrebujeme vytvoriť virtuálnu scénu zapísanú v matematike. Do scény pridáme objekty, obrazovku a kameru. Každá z vecí je zapísaná v súradnicovej sústave. Kamera sa pozerá cez obrazovku do scény. Cez každý pixel obrazovky sa spraví priamka, ktorá vychádza z kamery. Ak priamka narazí do nejakého objektu, pixel sa zafarbí na danú farbu.</figcaption>
 </figure>
 
@@ -143,7 +144,7 @@ Naše objekty budú teraz pekne vyfarbené a dokonca tie, ktoré majú byť v ti
 
 Vďaka takejto matematike, možno jednoduchej a možno strašidelnej, vedia počítače takto pekne zobrazovať svetlo.
 <figure>
-  <img src="../assets/images/aGeomGifs/aGeom_CGtodayLight.gif" alt="Raytracing">
+  <img loading="lazy" src="assets/images/aGeomGifs/aGeom_CGtodayLight.gif" alt="Raytracing">
   <figcaption>Obr. 9.: Toto nie sú fotky z naozajstného mesta. Je to vyrobené na počítači. Takáto realistická scéna nočného mesta mohla vzniknúť iba vďaka matematike. [2]</figcaption>
 </figure>
 

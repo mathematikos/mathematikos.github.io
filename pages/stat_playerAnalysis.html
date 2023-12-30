@@ -1,8 +1,9 @@
 ---
 title: Analýza údajov o futbalistoch
-description: "analýza údajov o futbalistoch"
+description: "Použitie štatistiky ukázané na údajoch zozberaných na futbalistoch. Na základe získaných informácií sa dá rozhodnúť, či klub kúpiť alebo nie."
 keywords: "štatistika príklad"
 permalink: analyza_udajov_o_futbalistoch
+mathjax: true
 ---
 
 <div class="content">
@@ -91,7 +92,7 @@ Možno Juventus má jedného alebo zopár slabších hráčov, pretože má prie
 Prvé, najľahšie čo môžeme vypočítať je variačné rozpätie. Najmenej rozdielny hráči vyzerajú byť v Leverkusene, ale stále treba mať na pamäti, že variačné rozpätie je citlivé na outlierov, tak sme pre istotu vypočítali aj priemernú absolútnu odchýlku, rozptyl a smerodajnú odchýlku. Všetky tri nám potvrdili, že najmenej rozdielny sú hráči Leverkusenu. Po započítaní veľkých odchýlok od priemeru vyšla smerodajná odchýlka ani nie o 1 menšia od priemernej absolútnej chyby. Ani pri ostatných tímoch sa smerodajná odchýlka veľmi nelíšili od priemernej absolútnej odchýlky. Veľké rozdiely tam nie sú, tak aj miery variability potvrdili, že v tímoch sú vyrovnaný hráči.<br /><br />
 
 Ak by si vedel, z akých dát sme počítali štatistiky, tak tu sú <i>overall</i> pre tímy: <br />
-<b>FC Bayern München:</b> 89,  88, 87, 86, 86, 86, 85, 85, 84, 84, 84, 84, 84, 84, 84, 83, 79, 79, 75, 72, 72, 67, 63 <br />
+<b>FC Bayern München:</b> 89, 88, 87, 86, 86, 86, 85, 85, 84, 84, 84, 84, 84, 84, 84, 83, 79, 79, 75, 72, 72, 67, 63 <br />
 <b>Real Madrid:</b> 91, 90, 89, 88, 88, 87, 87, 87, 86, 85, 85, 85, 85, 85, 83, 83, 82, 81, 81, 80, 80, 79, 79, 77, 76, 74, 73, 70, 69, 66, 66, 65, 62 <br />
 <b>Juventus:</b> 93, 89, 88, 86, 86, 86, 85, 85, 85, 85, 84, 84, 83, 83, 83, 83, 83, 83, 82, 82, 81, 79, 79, 77, 75, 74, 72, 71, 69, 68, 67, 66, 66 <br />
 <b>FC Barcelona:</b> 94, 90, 89, 89, 89, 88, 87, 86, 86, 85, 85, 85, 84, 84, 84, 82, 82, 81, 79, 76, 71, 71, 71, 70, 70, 68, 67, 67, 67, 65, 65, 65, 64 <br />
@@ -103,27 +104,27 @@ Ak by si vedel, z akých dát sme počítali štatistiky, tak tu sú <i>overall<
 Aby si vedel, že do štatistiky patria aj grafy, tak sme ich zopár spravili pre FC Bayern München.
 
 <figure>
-  <img src="../assets/images/stat_linearGraph.png" alt="Graf závislosti ceny od overallu">
+  <img loading="lazy" src="assets/images/stat_linearGraph.png" alt="Graf závislosti ceny od overallu">
   <figcaption>Obr. 1.: Graf zobrazuje, ako rastie cena hráčov v závislosti od ich overallu. Ceny sú uvedené v desiatkach miliónov (tá 6 znamená, že hráč stál 60 000 000 a nie 6 eur.)</figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/stat_barGraph.png" alt="Porovnanie schopností pravákov a ľavákov">
+  <img loading="lazy" src="assets/images/stat_barGraph.png" alt="Porovnanie schopností pravákov a ľavákov">
   <figcaption>Obr. 2.: Tu sme porovnali pravákov a ľavákov. Pre obe skupiny sme z každého atribútu vypočítali priemer. Čiže napríklad tempo je priemerné tempo ľavákov a pravákov.</figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/stat_histGraph.png" alt="Histogram overallov">
+  <img loading="lazy" src="assets/images/stat_histGraph.png" alt="Histogram overallov">
   <figcaption>Obr. 3.: Graf zobrazuje počet hráčov s daným <i>overallom</i>. Hráčov s <i>overallom</i> 84 je v Mníchove najviac. </figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/stat_pieGraph.png" alt="Rozdelenie hráčov podľa veku">
+  <img loading="lazy" src="assets/images/stat_pieGraph.png" alt="Rozdelenie hráčov podľa veku">
   <figcaption>Obr. 4.: Tu je zobrazené rozdelenie hráčov podľa ich veku. Dvadsaťtri ročných a tridsaťročných je najviac.</figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/stat_scatterGraph.png" alt="Korelácia medzi schopnosťou strieľať a ">
+  <img loading="lazy" src="assets/images/stat_scatterGraph.png" alt="Korelácia medzi schopnosťou strieľať a ">
   <figcaption>Obr. 5.: Tento graf zobrazuje závislosť medzi schopnosťou strieľať a brániť. Hráči, ktorí majú vysoký počet bodov pre bránenie, majú nízky počet bodov pre strieľanie a naopak. Môžeme usúdiť, že čím lepší obranca, tým horšie strieľa.</figcaption>
 </figure>
 

@@ -1,8 +1,9 @@
 ---
 title: Priamka
-description: "analytická geometria priamky"
+description: "Priamka je daná dvomi bodmi. Z toho sa dá vypočítať smerový vektor priamky. Pomocou bodu a smerového vektora sa dajú vytvoriť rovnice, ktoré opisujú priamku v priestore/rovine."
 keywords: "priamka, smerový vektor, normálový vektor, parametrická rovnica priamky, všeobecná rovnica priamky, smernicová rovnica priamky"
 permalink: analyticka_geometria_priamka
+mathjax: true
 ---
 
 <div class="content">
@@ -18,7 +19,7 @@ Teda stačia nám iba dva body na to, aby sme vedeli identifikovať priamku v pr
 Niekedy nám to však nestačí (napríklad, keď chceme osvetliť objekty v počítačových hrách) a treba priamku vyjadriť pomocou bodu a smerového vektora. Smerový vektor priamky, je taký <b>vektor, ktorý ukazuje smerom, ktorým ide priamka</b>. Smerovým vektorom máme určený smer priamky a bodom jej polohu. Pozri sa na obrázok, čo by sa stalo, ak by sme poznali buď bod alebo smerový vektor a nie oboje.
 
 <figure>
-  <img src="../assets/images/aGeom_lineDefinition.png" alt="Priamka je daná bodom a smerovým vektorom">
+  <img src="assets/images/aGeom_lineDefinition.png" alt="Priamka je daná bodom a smerovým vektorom">
   <figcaption>Obr. 1.: a) Priamka daná iba bodom. Nevieme, ktorým smerom má ísť. b) Priamka daná iba vektorom. Smer vieme, ale nevieme, kde sa nachádza. c) Priamka daná bodom aj smerovým vektorom. Bod určí polohu priamky a vektor jej smer.</figcaption>
 </figure>
 
@@ -42,7 +43,7 @@ $$ X=A+t\vec{s} $$
 <b>X</b> je nový bod, ktorý <b>chceme dostať</b>. Bod <b>A</b> je ten, ktorý <b>poznáme</b>. Vektor <b>$\vec{s}$</b> poznáme tiež, je to <b>smerový vektor priamky</b>. Písmeno <b><i>t</i></b> sa nazýva <b>parameter</b>. Zaň si dosádzame ľubovoľné číslo, podľa toho, na ktorý bod chceme dočiahnuť.
 
 <figure>
-  <img src="../assets/images/aGeom_lineParamEq.png" alt="Parametrická rovnica priamky">
+  <img loading="lazy" src="assets/images/aGeom_lineParamEq.png" alt="Parametrická rovnica priamky">
   <figcaption>Obr. 2.: Priamku máme danú bodom A a smerovým vektorom $\vec{s}$. Podľa toho, aké zvolíme <i>t</i>, sa smerový vektor natiahne. Keď smerový vektor pričítame k bodu A, dostaneme iný bod. Naťahovaním a skracovaním vektora dostaneme každý bod na priamke. Výpočet nového bodu sme ukázali na bode X.</figcaption>
 </figure>
 
@@ -54,7 +55,7 @@ Vyššie sme si povedali, že priamku vieme vyjadriť smerovým vektorom (označ
 Zo smerového vektora $\vec{s}$ si spravíme normálový vektor $\vec{n}$. Normálový vektor je kolmý na priamku a teda aj na hocijaký iný vektor, ktorý je s priamkou rovnobežný. Teraz si spravíme vektor z bodu A do bodu X (vektor si označme $\vec{v}$). Ak je normálový vektor stále kolmý na náš vektor $\vec{v}$, tak bod leží na priamke. Ak nie sú kolmé, bod na priamke neleží.
 
 <figure>
-  <img src="../assets/images/aGeom_lineGeneralEq.png" alt="Všeobecná rovnica priamky">
+  <img loading="lazy" src="assets/images/aGeom_lineGeneralEq.png" alt="Všeobecná rovnica priamky">
   <figcaption>Obr. 3.: a) na priamke poznáme bod, smerový vektor a z neho odvodený normálový vektor. b) chceme zistiť, či dva body X a Y ležia na priamke. Spravíme vektory ktoré idú z bodu A do bodu X a Y. Ak je vzniknutý vektor stále kolmý na normálový, tak bod na priamke leží.</figcaption>
 </figure>
 
@@ -114,7 +115,7 @@ Malá úloha na záver. Všimni si, čo sme nahradili písmenami a, b, c.
 Opäť ďalší spôsob, ako vyjadriť priamku. Tentoraz nám rovnica slúži na to, aby sme pre každú x-ovú súradnicu vedeli vypočítať tú y-ovú.
 
 <figure>
-  <img src="../assets/images/aGeom_lineStraightLineEq.png" alt="Smernicová rovnica priamky">
+  <img loading="lazy" src="assets/images/aGeom_lineStraightLineEq.png" alt="Smernicová rovnica priamky">
   <figcaption>Obr. 4.: Odvodenie smernicovej rovnice priamky.</figcaption>
 </figure>
 

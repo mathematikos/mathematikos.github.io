@@ -1,8 +1,9 @@
 ---
-title: Sínus, kosínus, tangens
-description: "goniometrické funkcie - sínus, kosínus a tangens"
+title: Goniometrické funkcie - sínus, kosínus, tangens
+description: "Goniometrické funkcie vznikli z pomerov strán v pravouhlom trojuholníku. Neskôr sa ich definícia rozšírila na jednotkovú kružnicu. Vďaka tomu môžeme dnes tieto pomery strán používať ako funkcie."
 keywords: "goniometrické funkcie, sínus, kosínus, tangens, kotangens, sekans, kosekans, matematika"
 permalink: goniometricke_funkcie_sinus_kosinus_tangens
+mathjax: true
 ---
 
 <script src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
@@ -13,19 +14,19 @@ permalink: goniometricke_funkcie_sinus_kosinus_tangens
 Goniometrické funkcie vznikli z pomerov strán v pravouhlom trojuholníku. Neskôr sa ich definícia rozšírila na jednotkovú kružnicu. Vďaka tomu môžeme dnes tieto pomery strán používať ako funkcie. <b>Na jednotkovej kružnici sú goniometrické funkcie definované pomocou dĺžok jednotlivých čiar</b>. Na obrázku 1. sú tieto čiary vyznačené farebne.
 
 <figure>
-  <img src="../assets/images/gonio_unitCircle.png" alt="Jednotková kružnica s vyznačenými goniometrickými funkciami">
+  <img src="assets/images/gonio_unitCircle.png" alt="Jednotková kružnica s vyznačenými goniometrickými funkciami">
   <figcaption>Obr. 1.: Na jednotkovej kružnici sú zobrazené hodnoty goniometrických funkcií pomocou čiar. Dĺžka čiary je rovná hodnote goniometrickej funkcie. Doporučujeme dobre si všimnúť tri čiary: bledožltú s nápisom <i>sin</i>, tmavožltú s nápisom <i>cos</i> a oranžovú s nápisom <i>tan</i>. Neskôr v článku ich budeš potrebovať.</figcaption>
 </figure>
 
 V článku <a href="goniometricke_funkcie" target="_blank">Goniometrické funkcie</a> je opísané, ako goniometrické funkcie vznikli a je tam aj bližšie vysvetlená definícia týchto funkcií na jednotkovej kružnici. <br /><br />
 
 <h2>Sínus</h2>
-V 12. storočí istý pán Gerardo z Cremony prekladal staré arabské texty o geometrii do latinčiny. Pri preklade slova "jiba" sa pomýlil a namiesto "jiba" prečítal "jaib". "Jiba" znamená  tetiva oblúka a "jaib" znamená záhyb na šatách. Asi mu to ani neprišlo čudné a tak sa latinské slovo "sinus", znamenajúce <b>záhyb na šatách</b>, udomácnilo v matematike. O štyri storočia neskôr, v roku 1590, slovo <b>"sinus"</b> použil pán Thomas Fale na pomenovanie <b>pomeru medzi protiľahlou stranou trojuholníka a jeho preponou.[1]</b><br /><br />
+V 12. storočí istý pán Gerardo z Cremony prekladal staré arabské texty o geometrii do latinčiny. Pri preklade slova "jiba" sa pomýlil a namiesto "jiba" prečítal "jaib". "Jiba" znamená tetiva oblúka a "jaib" znamená záhyb na šatách. Asi mu to ani neprišlo čudné a tak sa latinské slovo "sinus", znamenajúce <b>záhyb na šatách</b>, udomácnilo v matematike. O štyri storočia neskôr, v roku 1590, slovo <b>"sinus"</b> použil pán Thomas Fale na pomenovanie <b>pomeru medzi protiľahlou stranou trojuholníka a jeho preponou.[1]</b><br /><br />
 
-Sínus, ako funkcia, je zadefinovaná na jednotkovej kružnici pomocou dĺžky jednej čiary. Je to konkrétne bledožltá čiara z obrázku 1. Na obrázku 2 je vysvetlené, prečo je to práve dĺžka tej čiary. 
+Sínus, ako funkcia, je zadefinovaná na jednotkovej kružnici pomocou dĺžky jednej čiary. Je to konkrétne bledožltá čiara z obrázku 1. Na obrázku 2 je vysvetlené, prečo je to práve dĺžka tej čiary.
 
 <figure>
-  <img src="../assets/images/gonio_unitCircleSine.png" alt="Definícia sínusu na jednotkovej kružnici">
+  <img loading="lazy" src="assets/images/gonio_unitCircleSine.png" alt="Definícia sínusu na jednotkovej kružnici">
   <figcaption>Obr. 2.: Máme <b>jednotkovú kružnicu</b> a chceme na nej <b>zadefinovať sínus</b>. Samozrejme chceme si čo najviac <b>zjednodušiť počítanie</b>. Vieme, že sínus je protiľahlá strana/prepona. No a akým číslom sa <b>najlepšie delí</b>? Predsa <b>číslom 1</b>. Takže treba <b>trojuholník s preponou 1</b>. Presne taký trojuholník dostaneme, keď ako <b>preponu zvolíme "polomer" kružnice</b>. Sínus je teda protiľahlá strana/prepona. To je protiľahlá strana/1, čo vlastne znamená, že <b>sínus je rovný protiľahlej strane</b>. A protiľahlá strana je tá žltá čiara. To je dôvod, prečo môžeme sínus zadefinovať na jednotkovej kružnici pomocou dĺžky tej žltej čiary.</figcaption>
 </figure>
 
@@ -33,7 +34,7 @@ Sínus, ako funkcia, je zadefinovaná na jednotkovej kružnici pomocou dĺžky j
 Goniometrické funkcie a teda aj <b>sínus sa dá zobraziť viacerými spôsobmi</b>. Každý spôsob je na niečo dobrý. Keď je zobrazený na <b>jednotkovej kružnici</b>, spolu s ďalšími funkciami, je pekne vidieť vzťahy medzi týmito funkciami. Napríklad, že čím je väčší sínus, tým je menší kosínus. Ďalej sa sínus dá zobraziť <b>v grafe</b>. Tu je sú pekne vidieť jeho vlastnosti. Napríklad jeho definičný obor, obor hodnôt, rôzne posunutia natiahnutia, či je k nemu niečo pripočítané a tak. Na grafe pekne vidno aj to, že sínus je periodický, a teda sa po určitom čase opakuje. Sínus sa dá zobraziť aj <b>v tabuľke</b>. Tu sú vidieť konkrétne hodnoty pre konkrétne uhly.
 
 <figure>
-  <img src="../assets/images/gonio_sineExplanation.gif" alt="Sínus je zobrazený v tabuľke, grafe a na jednotkovej kružnici.">
+  <img loading="lazy" src="assets/images/gonio_sineExplanation.gif" alt="Sínus je zobrazený v tabuľke, grafe a na jednotkovej kružnici.">
   <figcaption>Obr. 3.: Sínus je vypočítaný pre pár uhlov. Je zobrazený v grafe a na jednotkovej kružnici. Tabuľka by sa do obrázku nezmestila, tak je tam aspoň pre každý krok uvedený uhol a jeho hodnota. </figcaption>
 </figure>
 
@@ -46,29 +47,29 @@ $$ a \cdot sin(b \cdot x + c) + d $$
 Na nasledujúcich obrázkoch je nakreslené, ako sínus menia jednotlivé písmenká. Bledomodrou čiarou je nakreslený "obyčajný" sínus (teda sin(x)). Tmavomodrou čiarou je nakreslený zmenený sínus.
 
 <figure>
-  <img src="../assets/images/gonio_graphAsinx.png" alt="a*sin(x)">
+  <img loading="lazy" src="assets/images/gonio_graphAsinx.png" alt="a*sin(x)">
   <figcaption>Obr. 4.: Písmenom <i>a</i> sa násobí výsledok sínusu. Znamená to, že keď dostaneme výsledok zo sínusu, tak ho ešte a-krát zväčšíme. Na obrázku sme ho zväčšili dva-krát. Teda aj graf bude dva-krát vyšší. Pôjde od -2 po 2. <b>Takémuto natiahnutiu sínusu sa hovorí aj amplitúda.</b></figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/gonio_graphSinBx.png" alt="sin(b*x)">
+  <img loading="lazy" src="assets/images/gonio_graphSinBx.png" alt="sin(b*x)">
   <figcaption>Obr. 5.: Písmenom <i>b</i> sa násobí uhol vnútri sínusu. Znamená to, že uhly sa síce dávajú do sínusu pekne po rade, ale výsledok je akoby pre každý b-tý uhol. <i>Napríklad: funkcia sin(4*x). Za x postupne dosadíme 1°, 2°, 3°. S týmito číslami sa však najprv stane to, že sa vynásobia so štvorkou a až potom sa z nich spraví sínus. Teda pre 1° bude výsledok sin(4°), pre 2° bude výsledok sin(8°) a pre 3° to bude sin(12°).</i> Násobenie písmenkom <i>b</i> sínus ponaťahuje/poskŕča do šírky. Skrátka vzdialenosť medzi kopčekmi bude iná. <b>Písmeno <i>b</i> mení dĺžku periódy.</b></figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/gonio_graphSinCplusX.png" alt="sin(x+c)">
+  <img loading="lazy" src="assets/images/gonio_graphSinCplusX.png" alt="sin(x+c)">
   <figcaption>Obr. 6.: Písmeno <i>c</i> sa pripočíta k stupňom vnútri sínusu. Ono posunie ten sínus o c stupňov. To znamená, že do sínusu sa síce dá nejaký uhol, ale výsledok bude akoby pre uhol o c stupňov ďalej. Napríklad si povedzme, že by bolo c=30°, funkcia by bola sin(x+30). Do sínusu by sme dali napríklad 45°, ale výsledok by akoby bol pre uhol 75°. <b>Písmeno <i>c</i> posúva celý sínus doľava alebo doprava. Toto posunutie sa volá fázový posun.</b> </figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/gonio_graphDplusSinX.png" alt="sin(x)+d">
+  <img loading="lazy" src="assets/images/gonio_graphDplusSinX.png" alt="sin(x)+d">
   <figcaption>Obr. 7.: <b>Písmeno <i>d</i></b> sa pripočítava k výsledku sínusu. To spôsobí, že sínus už akoby nebude začínať na y osi v nule, ale práve na čísle <i>d</i>. Bude teda <b>posunutý nahor alebo nadol. Tomuto sa hovorí aj vertikálny posun.</b></figcaption>
 </figure>
 
 Aby si lepšie rozumel, čo vlastne ten sínus vyprodukuje z daného uhlu, skús si vypočítať túto tabuľku a aj si to nakresli do grafu.
 
 <figure>
-  <img id="sineTable" src="../assets/images/gonio_sineTableEmpty.png" onclick="changeSineTable()" alt="Tabuľka na precvičenie sínusu">
+  <img loading="lazy" id="sineTable" src="assets/images/gonio_sineTableEmpty.png" onclick="changeSineTable()" alt="Tabuľka na precvičenie sínusu">
   <figcaption>Obr. 8: Tu je tabuľka so zopár uhlami. Vyrátaj si x a aj sínus. Dobre si všimni, ako sa menia x a sínus, keď sa k nim niečo pripočítava alebo sa násobia. Keď klikneš/ťukneš na obrázok, zobrazia sa ti výsledky. Odporúčame však neklikať, dokiaľ to sám nebudeš mať vyrátané.</figcaption>
 </figure>
 
@@ -77,11 +78,11 @@ Aby si lepšie rozumel, čo vlastne ten sínus vyprodukuje z daného uhlu, skús
 function changeSineTable(){
 
 var sineTableImg = document.getElementById("sineTable")
-if(sineTableImg.src.match("../assets/images/gonio_sineTableEmpty.png")){
-	sineTableImg.src="../assets/images/gonio_sineTable.png"
+if(sineTableImg.src.match("assets/images/gonio_sineTableEmpty.png")){
+	sineTableImg.src="assets/images/gonio_sineTable.png"
 }
 else{
-	sineTableImg.src="../assets/images/gonio_sineTableEmpty.png"
+	sineTableImg.src="assets/images/gonio_sineTableEmpty.png"
 }
 
 }
@@ -164,7 +165,7 @@ Pán <b>Edmund Gunter</b> sa narodil v Hertfordshire v roku 1581. Vyštudoval te
 Kosínus ako funkcia je na jednotkovej kružnici definovaný pomocou dĺžky jednej čiary. Je to tmavožltá čiara z obrázku 1. Na obrázku 9 je vysvetlené, prečo je to práve tá tmavožltá čiara.
 
 <figure>
-  <img src="../assets/images/gonio_unitCircleCosine.png" alt="Definícia kosínusu na jednotkovej kružnici.">
+  <img loading="lazy" src="assets/images/gonio_unitCircleCosine.png" alt="Definícia kosínusu na jednotkovej kružnici.">
   <figcaption>Obr. 9.: Kosínus chceme definovať ako funkciu. V článku <a href="goniometricke_funkcie" target="_blank">Goniometrické funkcie</a> sme si povedali, že sa to dá na jednotkovej kružnici. Vieme, že <b>kosínus je priľahlá strana/prepona</b>. Samozrejme chceme čo najmenej počítať. Dobre si obzrieme jednotkovú kružnicu a zistíme, že tam dokážeme dostať <b>pravouhlý trojuholník s dĺžkou prepony 1, keď ako preponu použijeme "polomer" kružnice</b>. Kosínus teda definujeme ako priľahlá strana/prepona. Prepona je rovná 1, dostaneme: kosínus α = priľahlá strana/1, teda <b>kosínus α = priľahlá strana</b>. No a priľahlá strana je tá tmavožltá čiara z obrázku 1.</figcaption>
 </figure>
 
@@ -172,7 +173,7 @@ Kosínus ako funkcia je na jednotkovej kružnici definovaný pomocou dĺžky jed
 <b>Aj kosínus sa dá zobraziť na jednotkovej kružnici, v grafe a v tabuľke</b>. Na jednotkovej kružnici vidno jeho vzťahy s ostatnými funkciami alebo aj to, v ktorom kvadrante je kladný a v ktorom záporný. V grafe vidno jeho vlastnosti. Definičný obor, obor hodnôt, či je s niečím vynásobený, či je k nemu niečo pripočítané a podobne. Je tu vidno aj to, že je periodický, lebo sa jeho hodnoty opakujú. V tabuľke sú zasa vidno konkrétne hodnoty pre konkrétne uhly. Z grafu alebo z jednotkovej kružnice sa len ťažko dá vyčítať presná hodnota kosínusu pre daný uhol.
 
 <figure>
-  <img src="../assets/images/gonio_cosineExplanation.gif" alt="Kosínus je zobrazený v grafe, tabuľke a jednotkovej kružnici.">
+  <img loading="lazy" src="assets/images/gonio_cosineExplanation.gif" alt="Kosínus je zobrazený v grafe, tabuľke a jednotkovej kružnici.">
   <figcaption>Obr. 10.: Kosínus je vypočítaný pre pár uhlov. Sú tu uhly aj väčšie ako 360°(teda počet stupňov, ktoré má kruh). Keď sa presiahne táto hranica, kosínus sa začne opakovať, lebo ide akoby odznova. Je to zobrazené na jednotkovej kružnici a v grafe. Tabuľka sa nezmestila, tak je tu napísaný iba uhol a jeho hodnota kosínusu. Ak ti tabuľka bude veľmi chýbať, pokojne si ju sprav vedľa na papier &#128521;.</figcaption>
 </figure>
 
@@ -181,30 +182,30 @@ Kosínus ako funkcia je na jednotkovej kružnici definovaný pomocou dĺžky jed
 $$ a \cdot cos(b \cdot x + c) + d $$
 
 <figure>
-  <img src="../assets/images/gonio_graphAcosx.png" alt="a*cos(x)">
+  <img loading="lazy" src="assets/images/gonio_graphAcosx.png" alt="a*cos(x)">
   <figcaption>Obr. 11.: Písmeno <i>a</i> násobí výsledok kosínusu. Kosínus teda dostane nejaký uhol, nájde preň prislúchajúci pomer strán a vráti výsledok. Tento výsledok sa ešte vynásobí s písmenkom <i>a</i>. Keďže výsledky obyčajného kosínusu sú od -1 po 1, tak po vynásobení s písmenkom <i>a</i> budú od <i>-a</i> po <i>a</i>. Napríklad ak by bolo <i>a</i>=10, tak výsledky by išli od -10 po 10. Ak by bolo <i>a</i>=0,8, tak výsledky by išli od -0,8 po 0,8. Písmenko <i>a</i> teda natiahne graf po výške. <b>Vertikálnemu natiahnutiu sa hovorí amplitúda.</b></figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/gonio_graphCosBx.png" alt="cos(b*x)">
+  <img loading="lazy" src="assets/images/gonio_graphCosBx.png" alt="cos(b*x)">
   <figcaption>Obr. 12.: Písmeno <i>b</i> naťahuje alebo zužuje kosínus po šírke. Teda mení vzdialenosť medzi kopčekmi. Odbornejšie povedané <b>mení periódu</b>. Robí to tak, že vynásobí uhol, ktorý vstupuje do kosínusu. Napríklad ak by sme do kosínusu dávali uhly pekne po jednom stupni a vnútri kosínusu ich násobili napr. číslom 2, tak by kosínus vracal výsledky akoby pre každý druhý uhol. Pre uhol 1° by to bolo cos(2*1°)=cos(2°), pre uhol 2° by to bolo cos(2*2°)=cos(4°) atď.
   </figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/gonio_graphCosCplusX.png" alt="cos(x+c)">
+  <img loading="lazy" src="assets/images/gonio_graphCosCplusX.png" alt="cos(x+c)">
   <figcaption>Obr. 13.: Písmeno <i>c</i> posúva kosínus doprava alebo doľava. Je to z toho dôvodu, že prv, než sa z uhlu x spraví kosínus, tak sa tomu uhlu pripočíta číslo <i>c</i>. To posunie ten uhol o <i>c</i> stupňov ďalej. Napríklad ak by bolo <i>c</i> rovné 60, tak by kosínus bol posunutý o 60° doľava. Teda pre cos(5° + c) by sa počítalo cos(5+60)=cos(65°). Teda pre uhol 5° by bol výsledok cos(65°). Takémuto posunutiu sa hovorí aj <b>fázový posun.</b></figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/gonio_graphDplusCosX.png" alt="cos(x)+d">
+  <img loading="lazy" src="assets/images/gonio_graphDplusCosX.png" alt="cos(x)+d">
   <figcaption>Obr. 14.: Písmeno <i>d</i> posúva kosínus hore alebo dolu. Deje sa to vďaka tomu, že k výsledku pripočíta nejaké číslo. Teda všetky výsledky budú o to číslo posunuté a tým pádom bude posunutý celý kosínus. <b>Takémuto posunutiu sa hovorí vertikálny posun</b>.</figcaption>
 </figure>
 
 Skús si vypočítať kosínus pre pár uhlov. Všimni si, ako jednotlivé "písmená" menia hodnoty kosínusu. Nakresli si k jednotlivým kosínusom aj graf. Porozmýšľaj nad tým, ako má byť natiahnutý a posunutý.
 
 <figure>
-  <img id="cosineTable" src="../assets/images/gonio_cosineTableEmpty.png" onclick="changeCosineTable()" alt="Tabuľka na precvičenie kosínusu">
+  <img loading="lazy" id="cosineTable" src="assets/images/gonio_cosineTableEmpty.png" onclick="changeCosineTable()" alt="Tabuľka na precvičenie kosínusu">
   <figcaption>Obr. 15.: V tabuľke je zopár príkladov na vypočítanie kosínusu. Všímaj si hlavne to, ako násobenie a pričítanie nejakých čísiel zmení hodnoty kosínusu. Návod na použitie sem dávať nebudeme. Predpokladáme, že si sa úspešne prelúskal tabuľkou so sínusom (obr. 8.). Toto sa ráta takisto, iba namiesto sínusu je kosínus. Klikaním na obrázok si vieš meniť prázdnu tabuľku a tabuľku s výsledkami.</figcaption>
 </figure>
 
@@ -213,11 +214,11 @@ Skús si vypočítať kosínus pre pár uhlov. Všimni si, ako jednotlivé "pís
 function changeCosineTable(){
 
 var cosineTableImg = document.getElementById("cosineTable")
-if(cosineTableImg.src.match("../assets/images/gonio_cosineTableEmpty.png")){
-	cosineTableImg.src="../assets/images/gonio_cosineTable.png"
+if(cosineTableImg.src.match("assets/images/gonio_cosineTableEmpty.png")){
+	cosineTableImg.src="assets/images/gonio_cosineTable.png"
 }
 else{
-	cosineTableImg.src="../assets/images/gonio_cosineTableEmpty.png"
+	cosineTableImg.src="assets/images/gonio_cosineTableEmpty.png"
 }
 
 }
@@ -277,7 +278,7 @@ Albert Girard bol Francúz. Žil v Holandsku, mal rád hudbu, vyštudoval matema
 Tangens je na jednotkovej kružnici zadefinovaný pomocou "oranžovej čiary" z obrázku č. 1. Dolu na obrázku je vysvetlené, prečo je to práve tá čiara.
 
 <figure>
-  <img src="../assets/images/gonio_unitCircleTangent.png" alt="Definícia tangensu na jednotkovej kružnici.">
+  <img loading="lazy" src="assets/images/gonio_unitCircleTangent.png" alt="Definícia tangensu na jednotkovej kružnici.">
   <figcaption>Obr. 16.: Tangens je definovaný ako protiľahlá strana / priľahlá strana. Chceme si ho zadefinovať aj na jednotkovej kružnici. Aby, sa nám ľahko počítalo, potrebujeme na jednotkovej kružnici dostať pravouhlý trojuholník s dĺžkou priľahlej strany, ktorá bude jedna. "Polomer" kružnice je tiež jedna, takže by sa nám hodil. Keď trochu pošpekulujeme, vieme tam nakresliť trojuholník, ktorý je na tomto obrázku. Potom už len ľahko dopočítame: <b>tan(α)=protiľahlá/priľahlá, tan(α)=protiľahlá/1, tan(α)=protiľahlá</b>. No a <b>protiľahlá strana je tá oranžová čiara</b>, takže tangens sa dá na jednotkovej kružnici zadefinovať pomocou oranžovej čiary.</figcaption>
 </figure>
 
@@ -285,40 +286,39 @@ Rovnako, ako sínus a kosínus, aj <b>tangens sa dá zobraziť viacerými spôso
 
 <b>Tangens nie je spojitá funkcia</b>, čo znamená, že jeho graf nie je jedna dlhá neprerušená čiara. Graf tangensu tvoria krivky, ktoré idú od -&#8734; po &#8734;. Je to preto, lebo pre uhly 90° a 270° "oranžová čiara" z obr. 1. (pomocou ktorej je definovaný tangens) na jednotkovej kružnici ide do nekonečna. Dobre to je vidno na animácií z článku <a href="goniometricke_funkcie#gonio_unitCircleAnimation" target="_blank">Goniometrické funkcie</a>. Do nekonečna ide preto, lebo tangens je dĺžka protiľahlej strany, u nás tá oranžová čiara. Na spomínanej animácií si môžeš všimnúť, že pri 90° a 270° trojuholník nachvíľu zaniká, lebo tá oranžová čiara (protiľahlá strana) sa nepretína s osou <i>x</i>. V tej chvíli oranžová čiara ide do nekonečna a keďže tangens je dĺžka tej čiary, tak aj tangens je nekonečno. Pri uhloch blízkych 90° a 270° sú hodnoty tangensu veľmi veľké, pretože tá oranžová čiara je veľmi dlhá.
 
-
 <figure>
-  <img src="../assets/images/gonio_tangentExplanation.gif" alt="Tagens na grafe, jednotkovej kružnici a v tabuľke">
-  <figcaption>Obr. 17.: Tangens je vypočítaný pre pár uhlov. Sú to uhly aj záporné a aj väčšie ako 360°. Tangens má periódu 180°, teda každých 180° nájdeš na ňom rovnaké hodnoty. Zobrazený je v grafe, na jednotkovej kružnici a namiesto tabuľky sú tu len aktuálne hodnoty pre x (uhly) a tangens.  </figcaption>
+  <img loading="lazy" src="assets/images/gonio_tangentExplanation.gif" alt="Tangens na grafe, jednotkovej kružnici a v tabuľke">
+  <figcaption>Obr. 17.: Tangens je vypočítaný pre pár uhlov. Sú to uhly aj záporné a aj väčšie ako 360°. Tangens má periódu 180°, teda každých 180° nájdeš na ňom rovnaké hodnoty. Zobrazený je v grafe, na jednotkovej kružnici a namiesto tabuľky sú tu len aktuálne hodnoty pre x (uhly) a tangens.</figcaption>
 </figure>
 
-Rovnako ako sínus a kosínus, aj tangens sa dá naťahovať. Znovu na to slúžia písmenká <i>a,b,c,d</i>, za ktoré sa dajú dosadiť čísla. 
+Rovnako ako sínus a kosínus, aj tangens sa dá naťahovať. Znovu na to slúžia písmenká <i>a,b,c,d</i>, za ktoré sa dajú dosadiť čísla.
 
 $$ a \cdot tan(b \cdot x + c) + d $$
 
 <figure>
-  <img src="../assets/images/gonio_graphAtanx.png" alt="a*tan(x)">
+  <img loading="lazy" src="assets/images/gonio_graphAtanx.png" alt="a*tan(x)">
   <figcaption>Obr. 18.: Písmenom <i>a</i> sa násobí výsledok tangensu. Po tomto násobení sa výsledok a-krát zväčší. Na obrázku je zväčšený dva-krát. Na grafe sa to prejaví tak, že bude strmší. <b>Takémuto natiahnutiu sa hovorí aj amplitúda.</b></figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/gonio_graphTanBx.png" alt="tan(b*x)">
+  <img loading="lazy" src="assets/images/gonio_graphTanBx.png" alt="tan(b*x)">
   <figcaption>Obr. 19.: <b>Písmeno <i>b</i> mení dĺžku periódy tangensu</b>, teda vzdialenosť medzi tými čiarami. Deje sa to kvôli tomu, že za x sa síce dosadí nejaká hodnota, ale <i>b</i> ju zmení, čiže tangens sa robí z iného uhla. Funguje to rovnako ako pri sínuse a kosínuse.</figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/gonio_graphTanCplusX.png" alt="tan(x+c)">
+  <img loading="lazy" src="assets/images/gonio_graphTanCplusX.png" alt="tan(x+c)">
   <figcaption>Obr. 20.: Písmeno <i>c</i> posúva tangens doprava alebo doľava. Keďže sa vnútri tangensu k x vždy pripočíta rovnaké číslo, tak všetky hodnoty budú rovnako posunuté. Tým pádom bude posunutý celý tangens. <b>Posunutiu doprava alebo doľava sa hovorí fázový posun.</b> </figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/gonio_graphDplusTanX.png" alt="tan(x)+d">
+  <img loading="lazy" src="assets/images/gonio_graphDplusTanX.png" alt="tan(x)+d">
   <figcaption>Obr. 21.: Písmeno <i>d</i> posúva graf hore alebo dole. Deje sa to vďaka tomu, že sa k výsledku tangensu pripočíta nejaké číslo. Ku každému výsledku tangensu sa pripočíta to číslo, tým pádom sú o to číslo posunuté všetky výsledky a teda aj celá funkcia. <b>Posunutiu hore alebo dole sa hovorí vertikálny posun.</b></figcaption>
 </figure>
 
 Skús si vypočítať tangens niektorých uhlov. Vyrátaj aj posunuté tangensy a porozmýšľaj nad tým, ktoré písmenko ako a prečo spravilo s tangensom to, čo spravilo. Keď si ich nakreslíš do grafu, veríme, že sa ti bude nad tým rozmýšľať lepšie.
 
 <figure>
-  <img id="tangensTable" src="../assets/images/gonio_tangensTableEmpty.png" onclick="changeTangensTable()" alt="Tabuľka na precvičenie tangensu">
+  <img loading="lazy" id="tangensTable" src="assets/images/gonio_tangensTableEmpty.png" onclick="changeTangensTable()" alt="Tabuľka na precvičenie tangensu">
   <figcaption>Obr. 22.: Tabuľka na precvičenie tangensu. Zase si všimni, ako jednotlivé "písmenká" menia hodnoty tangensu. Klikaním na obrázok si vieš meniť prázdnu tabuľku a tabuľku s výsledkami.</figcaption>
 </figure>
 
@@ -327,11 +327,11 @@ Skús si vypočítať tangens niektorých uhlov. Vyrátaj aj posunuté tangensy 
 function changeTangensTable(){
 
 var tangensTableImg = document.getElementById("tangensTable")
-if(tangensTable.src.match("../assets/images/gonio_tangensTableEmpty.png")){
-	tangensTable.src="../assets/images/gonio_tangensTable.png"
+if(tangensTable.src.match("assets/images/gonio_tangensTableEmpty.png")){
+	tangensTable.src="assets/images/gonio_tangensTable.png"
 }
 else{
-	tangensTable.src="../assets/images/gonio_tangensTableEmpty.png"
+	tangensTable.src="assets/images/gonio_tangensTableEmpty.png"
 }
 
 }

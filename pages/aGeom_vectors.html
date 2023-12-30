@@ -1,8 +1,9 @@
 ---
 title: Vektory
-description: "vektory"
+description: "Vektor vyjadruje zmenu niečoho. Môže to byť napríklad 10 minút. Keď sa vektor 10 minút aplikuje na bod 18:30, dostávame čas 18:40. Keď sa aplikuje na čas 12:55 dostávame 13:05."
 keywords: "vektor, veľkosť vektora, smer vektora, sčítanie vektorov, násobenie vektorov, skalárny súčin, vektorový súčin, normálový vektor"
 permalink: analyticka_geometria_vektory
+mathjax: true
 ---
 
 <div class="content">
@@ -14,7 +15,7 @@ Vetu: "Prídem o päť minút." ti už niekto povedal aspoň stokrát. Keď to p
 Tých 5 minút je z matematického hľadiska vektor, pretože predstavuje zmenu. Čas 12:00 je bod, kde sa vektor aplikuje. Keď teda aplikujeme vektor 5 minút na čas 12:00, zmení sa nám tento čas na 12:05. Keď ten istý vektor aplikujeme na čas 8:53, tak budeme mať 8:58. Keď vektor 15 minút aplikujeme na čas 12:00, budeme mať čas 12:15. Môžeme mať aj záporný vektor, napríklad -5 minút. Keď aplikujeme ten na čas 12:00, dostaneme 11:55. Vektor môže mať teda veľkosť aj smer. Veľkosť je počet minút (napr. 5 min) a smer je + alebo -.<br /><br />
 
 <figure>
-  <img src="../assets/images/aGeom_vecTime.png" alt="Čas ako vektor">
+  <img src="assets/images/aGeom_vecTime.png" alt="Čas ako vektor">
   <figcaption>Obr. 1.: Vektor predstavuje zmenu nejakého bodu</figcaption>
 </figure>
 
@@ -29,7 +30,7 @@ Ako sme si už povedali, <b>vektor je zmena polohy bodu</b>. Pre viacrozmerný p
 Vektor sa kreslí medzi dvomi bodmi. Bod na začiatku vektora je ten, z ktorého vychádzame a bod na konci vektora je ten, do ktorého prídeme. Tieto dva body však nie sú samotný vektor. Vektor je tá šípka/cesta/zmena medzi nimi. Vychádzať môžeme z hocijakého bodu a prísť tiež do hocijakého bodu. <b>Ak sa však pohneme o rovnaký úsek, rovnakým smerom, je to stále ten istý vektor,</b> nech sa pohneme skadiaľkoľvek. Vektor je teda daný veľkosťou a smerom, nie pozíciou.
 
 <figure>
-  <img src="../assets/images/aGeom_vecVectors.png" alt="Vektor je daný veľkosťou a smerom. Nie pozíciou.">
+  <img loading="lazy" src="assets/images/aGeom_vecVectors.png" alt="Vektor je daný veľkosťou a smerom. Nie pozíciou.">
   <figcaption>Obr. 2.: Vektor je daný veľkosťou a smerom, preto šípky rovnakej dĺžky a rovnakého smeru predstavujú ten istý vektor, aj keď sú na rôznych miestach.</figcaption>
 </figure>
 
@@ -41,11 +42,11 @@ Počet dielikov zistíme tak, že od koncového bodu vektora odpočítame začia
 Na obrázku môžeš vidieť vektor na troch rôznych miestach, ktorý sme posunuli do bodu [0,0]. Výpočet je spravený pre začiatočný bod A a koncový bod A’. <br /><br />
 
 <figure>
-  <img src="../assets/images/aGeom_vecCoors.png" alt="Umiestnenie vektora do začiatku súradnicového systému">
+  <img loading="lazy" src="assets/images/aGeom_vecCoors.png" alt="Umiestnenie vektora do začiatku súradnicového systému">
   <figcaption>Obr. 3.: Vektor $\vec{v}$ je na troch rôznych miestach. Na začiatok ho presunieme tak, že od koncového aj začiatočného bodu odčítame začiatočný bod.</figcaption>
 </figure>
 
-Takže vždy, keď budeme robiť nejaké operácie s vektormi, posunieme si ich tak, aby začínali v bode [0,0]. Vďaka tomu sa môžeme spoľahnúť na to, že súradnice vektora nám hovoria o počte dielikov na jednotlivých osiach. 
+Takže vždy, keď budeme robiť nejaké operácie s vektormi, posunieme si ich tak, aby začínali v bode [0,0]. Vďaka tomu sa môžeme spoľahnúť na to, že súradnice vektora nám hovoria o počte dielikov na jednotlivých osiach.
 
 <h2>Veľkosť a smer vektora</h2>
 
@@ -54,12 +55,12 @@ Zatiaľ sme hovorili iba to, že vektor udáva nejaký smer a veľkosť ako sa t
 Smer je jednoduchý. Sú to súradnice jeho koncového bodu. Veľkosť vektora je vzdialenosť medzi jeho začiatočným a koncovým bodom. Vieme ju vypočítať pomocou Pytagorovej vety, lebo poznáme vzdialenosť medzi týmito bodmi aj na osi x aj na osi y.
 
 <figure>
-  <img src="../assets/images/aGeom_vecSize.png" alt="Výpočet veľkosti vektora pomocou Pytagorovej vety">
+  <img loading="lazy" src="assets/images/aGeom_vecSize.png" alt="Výpočet veľkosti vektora pomocou Pytagorovej vety">
   <figcaption>Obr. 4.: Veľkosť vektora $\vec{v}$ sme vypočítali pomocou Pytagorovej vety. Smer vektora udáva koncový bod vektora (lebo vektor naň ukazuje). </figcaption>
 </figure>
 
 <h2>Umiestnenie vektora</h2>
-Pri vektoroch sa môžeš stretnúť so slovami <b>kolineárny</b> a <b>komplanárny</b>. Na prvé počutie to znie dosť zložito, ale tieto dve slová iba pomenúvajú umiestenie vektorov. Keď hovoríme, že vektory sú kolineárne, myslíme tým, že vektory sú rovnobežné. <br /><br />
+Pri vektoroch sa môžeš stretnúť so slovami <b>kolineárny</b> a <b>komplanárny</b>. Na prvé počutie to znie dosť zložito, ale tieto dve slová iba pomenúvajú umiestenie vektorov. Keď hovoríme, že vektory sú kolineárne, myslíme tým, že vektory sú rovnobežné.<br /><br />
 
 Kolineárne vektory môžeme ešte rozdeliť na <b>súhlasné</b> a <b>nesúhlasné</b>. Súhlasné vektory idú rovnobežne, rovnakým smerom. Nesúhlasné vektory sú tiež rovnobežné, ale idú opačným smerom.<br /><br />
 
@@ -68,11 +69,11 @@ Kolineárne vektory môžeme ešte rozdeliť na <b>súhlasné</b> a <b>nesúhlas
 <h2>Násobenie vektora číslom</h2>
 Vektor môžeme vynásobiť hocijakým číslom. Po násobení sa zmení veľkosť vektora. Vektor najprv posunieme na začiatok súradnicovej sústavy a potom jeho koncové súradnice vynásobíme nejakým číslom. Dostaneme nové súradnice, ktoré budú určovať vynásobený vektor.<br /><br />
 
-Keď násobíme vektor <b>kladným číslom väčším ako 1, bude dlhší</b>. Keď je to <b>kladné číslo medzi 0 a 1, vektor sa skráti</b>. Keď sa násobí <b>záporným číslom, vektor bude mať opačný smer</b>. 
+Keď násobíme vektor <b>kladným číslom väčším ako 1, bude dlhší</b>. Keď je to <b>kladné číslo medzi 0 a 1, vektor sa skráti</b>. Keď sa násobí <b>záporným číslom, vektor bude mať opačný smer</b>.
 
 <figure>
-  <img src="../assets/images/aGeom_vecMultWithK.png" alt="Násobenie vektora číslom">
-  <figcaption>Obr. 5.: Menili sme veľkosť vektora  $\vec{v}$. Po vynásobení číslom 2 vznikol dlhší vektor $\vec{u}$. Keď sa $\vec{v}$ vynásobil číslom 0,5, vznikol skrátený vektor $\vec{w}$. Po vynásobení číslom -2 vznikol vektor $\vec{t}$ s opačným smerom. Vektory $\vec{u}$ a $\vec{t}$ sú rovnako dlhé, len majú opačný smer.  </figcaption>
+  <img loading="lazy" src="assets/images/aGeom_vecMultWithK.png" alt="Násobenie vektora číslom">
+  <figcaption>Obr. 5.: Menili sme veľkosť vektora $\vec{v}$. Po vynásobení číslom 2 vznikol dlhší vektor $\vec{u}$. Keď sa $\vec{v}$ vynásobil číslom 0,5, vznikol skrátený vektor $\vec{w}$. Po vynásobení číslom -2 vznikol vektor $\vec{t}$ s opačným smerom. Vektory $\vec{u}$ a $\vec{t}$ sú rovnako dlhé, len majú opačný smer.</figcaption>
 </figure>
 
 <h2>Sčítavanie vektorov</h2>
@@ -80,7 +81,7 @@ Vektory, ktoré ideme sčítavať, najprv presunieme na začiatok sústavy. Poto
 
 Na obrázku sú štyri modré vektory, ktoré chceme sčítať. Po ich zrátaní vznikne výsledný vektor, ktorý je nakreslený červenou. V prvej časti výsledný vektor dostaneme tak, že sčítame x a y súradnice modrých vektorov. Je jedno, s ktorým vektorom začneme a ktorými pokračujeme, výsledok je vždy rovnaký. V druhej časti je ukázané sčítavanie vektorov tak, že bod sa posunie najprv o prvý vektor, potom o druhý, o tretí, o štvrtý. Tu je tiež jedno, ktorým vektorom začneme.
 <figure>
-  <img src="../assets/images/aGeom_vecSuma.png" alt="Sčítanie vektorov">
+  <img loading="lazy" src="assets/images/aGeom_vecSuma.png" alt="Sčítanie vektorov">
   <figcaption>Obr. 6.: Sčítanie vektorov znamená, že bod postupne posunieme o každý vektor.</figcaption>
 </figure>
 
@@ -96,17 +97,17 @@ Algebraický: vyjadrí sa pomocou súradníc
 $$ \vec{v} \cdot \vec{u} = u_{x} \cdot v_{x} + u_{y} \cdot v_{y}$$
 
 <figure>
-  <img src="../assets/images/aGeom_vecDotProduct.png" alt="Skalárny súčin">
-  <figcaption>Obr. 7.: Skalárny súčin troch vektorov. Vypočítali sme ho pre každú dvojicu vektorov algebraicky aj geometricky. Všimni si, že výsledky algebraickej aj geometrickej formy sú rovnaké. Pri geometrickej forme sa kosínus násobí číslami 4,5 a 3. To je veľkosť vektorov. Uhol medzi $\vec{u}$ a $\vec{u}$ je 63&#176;, medzi $\vec{u}$ a $\vec{w}$ je 27&#176; a medzi $\vec{v}$ a $\vec{w}$ je 90&#176;   </figcaption>
+  <img loading="lazy" src="assets/images/aGeom_vecDotProduct.png" alt="Skalárny súčin">
+  <figcaption>Obr. 7.: Skalárny súčin troch vektorov. Vypočítali sme ho pre každú dvojicu vektorov algebraicky aj geometricky. Všimni si, že výsledky algebraickej aj geometrickej formy sú rovnaké. Pri geometrickej forme sa kosínus násobí číslami 4,5 a 3. To je veľkosť vektorov. Uhol medzi $\vec{u}$ a $\vec{u}$ je 63&#176;, medzi $\vec{u}$ a $\vec{w}$ je 27&#176; a medzi $\vec{v}$ a $\vec{w}$ je 90&#176;</figcaption>
 </figure>
 
 
 V praxi je niekedy treba zistiť uhol medzi dvomi vektormi. Tu prichádza na scénu skalárny súčin, pretože vďaka nemu vieme uhol vypočítať. Geometrickú a algebraickú podobu skalárneho súčinu vieme dať do rovnosti. Následne si z toho odvodíme kosínus uhla medzi vektormi. (Pozor, výsledok je kosínus uhla a nie samotný uhol. Keď treba vypočítať uhol, tak výsledok ešte musí ísť do funkcie arkuskosínus (arccos))
 
-$$ 
+$$
 \begin{equation}
 \displaylines{
-u_{x} \cdot v_{x} + u_{y} \cdot v_{y} = |\vec{v}| \cdot |\vec{u}| \cdot cos \alpha \\ 
+u_{x} \cdot v_{x} + u_{y} \cdot v_{y} = |\vec{v}| \cdot |\vec{u}| \cdot cos \alpha \\
 \frac{u_{x} \cdot v_{x} + u_{y} \cdot v_{y}}{|\vec{v}| \cdot |\vec{u}| } = cos \alpha
 }
 \end{equation}
@@ -139,7 +140,7 @@ Vec druhá je ten vektor $\vec{n}$ na konci vzorca. To je jednotkový vektor kol
 
 
 <figure>
-  <img src="../assets/images/aGeom_vecCrossProduct.png" alt="Vektorový súčin">
+  <img loading="lazy" src="assets/images/aGeom_vecCrossProduct.png" alt="Vektorový súčin">
   <figcaption>Obr. 8.: Vektorový súčin. Násobili sme vektor $\vec{v}$ s vektorom $\vec{u}$ a vznikol vektor $\vec{w}$, ktorý je kolmý na oba tieto vektory. Tu by sme ťa chceli upozorniť na jednu zaujímavú vec. Vektory, ktoré sa spolu násobia, tvoria kosodĺžnik. My sme ho vyznačili žltou farbou. Obsah kosodĺžnika je rovnaký, ako dĺžka výsledného vektora (v našom prípade vektor $\vec{w}$). Nám vyšla veľkosť vektora $\vec{w}$ a obsah kosodĺžnika zhruba 19.</figcaption>
 </figure>
 
@@ -150,10 +151,10 @@ Sú to vektory, ktoré dostali mená, lebo sa často používajú.<br /><br />
 
 <b>Normálový vektor</b> je taký vektor, ktorý je na niečo <b>kolmý</b>. Je jedno, či na iný vektor/y, priamku, plochu. Skratka slovami normálový vektor sa označuje vektor, ktorý je na niečo kolmý.<br /><br />
 
-<b>Jednotkový vektor je vektor, ktorý má  dĺžku 1.</b> 
+<b>Jednotkový vektor je vektor, ktorý má dĺžku 1.</b>
 
 <figure>
-  <img src="../assets/images/aGeom_vecUnitVec.png" alt="Jednotkový vektor">
+  <img loading="lazy" src="assets/images/aGeom_vecUnitVec.png" alt="Jednotkový vektor">
   <figcaption>Obr. 9.: Všetky tri vektory $\vec{u}$, $\vec{v}$ a $\vec{w}$ sú jednotkové vektory, pretože majú dĺžku 1.</figcaption>
 </figure>
 

@@ -23,7 +23,7 @@
       url: /linearna_funkcia
     - page: Funkcie a ich vlastnosti
       url: /funkcie_a_ich_vlastnosti
-      
+
 - title: Goniometria
   id: goniometry
   submenu:
@@ -43,7 +43,7 @@
       url: /goniometria_vzorce
     - page: Použitie goniometrických funkcií
       url: /pouzitie_goniometrickych_funkcii
-      
+
 - title: Geometria
   id: geometry
   submenu:

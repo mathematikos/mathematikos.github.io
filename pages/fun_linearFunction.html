@@ -1,65 +1,67 @@
 ---
 title: Lineárna funkcia
-description: "lineárna funkcia"
+description: "Lineárna funkcia opisuje vzťah, kedy sa nejaká vec mení v čase stále rovnako. Napríklad aj šetrenie peňazí, keď si každý mesiac odložíš rovnakú sumu, opisuje lineárna funkcia."
 keywords: "lineárna funkcia"
 permalink: linearna_funkcia
+mathjax: true
 ---
 
 <div class="content">
 
 <h1>Lineárna funkcia</h1>
 
-Určite si už postrehol, že na svete existuje niečo také ako práca, výplata a bankový účet. Možno máš s tým už aj osobné skúsenosti a ak nie, budeme predpokladať, že si o tom už počul. Ešte potrebujeme nejakú drahšiu vec, ktorú by si si chcel kúpiť, tak si ju prosím predstav. Ideme šetriť. 
+Určite si už postrehol, že na svete existuje niečo také ako práca, výplata a bankový účet. Možno máš s tým už aj osobné skúsenosti a ak nie, budeme predpokladať, že si o tom už počul. Ešte potrebujeme nejakú drahšiu vec, ktorú by si si chcel kúpiť, tak si ju prosím predstav. Ideme šetriť.
 <br /> <br />
 
-Pre účel tohto článku budeš chodiť na brigádu. Na slabo platenú brigádu, lebo sa nám nechce kresliť veľké grafy. Na brigáde zarobíš každý mesiac euro a pekne si ho odložíš na účet. Prvý mesiac zarobíš jedno euro a na jeho konci bude tvoj zostatok na účte euro. Druhý mesiac zarobíš euro a na účte už budeš mať dve eurá. Tretí mesiac tiež zarobíš euro a budeš mať na účte tri eurá, a tak ďalej, pokým nenašetríš alebo sa ti už nebude chcieť robiť. Každý mesiac sa teda našetrená suma zdvihne o euro. 
+Pre účel tohto článku budeš chodiť na brigádu. Na slabo platenú brigádu, lebo sa nám nechce kresliť veľké grafy. Na brigáde zarobíš každý mesiac euro a pekne si ho odložíš na účet. Prvý mesiac zarobíš jedno euro a na jeho konci bude tvoj zostatok na účte euro. Druhý mesiac zarobíš euro a na účte už budeš mať dve eurá. Tretí mesiac tiež zarobíš euro a budeš mať na účte tri eurá, a tak ďalej, pokým nenašetríš alebo sa ti už nebude chcieť robiť. Každý mesiac sa teda našetrená suma zdvihne o euro.
 
 <figure>
-  <img src="../assets/images/fun_linearGrowthPerOne.png" alt="Šetríme euro">
+  <img src="assets/images/fun_linearGrowthPerOne.png" alt="Šetríme euro">
   <figcaption>Obr. 1.: Takto rastie tvoja našetrená suma, ak si každý mesiac odložíš euro.</figcaption>
 </figure>
- Lepšie by sa však šetrilo, ak by bola výplata väčšia. Nájdeš si teda lepšie platenú brigádu a každý mesiac si odložíš 5 eur. Prvý mesiac zarobíš 5 eur, odložíš si ich a máš ušetrených 5 eur. Druhý mesiac zarobíš zasa 5 eur a už máš našetrených 10 eur. Tretí mesiac dostaneš ďalších 5 eur a už máš našetrených 15 eur. Zostatok na účte bude teraz rásť o niečo krajšie:
+
+Lepšie by sa však šetrilo, ak by bola výplata väčšia. Nájdeš si teda lepšie platenú brigádu a každý mesiac si odložíš 5 eur. Prvý mesiac zarobíš 5 eur, odložíš si ich a máš ušetrených 5 eur. Druhý mesiac zarobíš zasa 5 eur a už máš našetrených 10 eur. Tretí mesiac dostaneš ďalších 5 eur a už máš našetrených 15 eur. Zostatok na účte bude teraz rásť o niečo krajšie:
 
 <figure>
-  <img src="../assets/images/fun_linearGrowthPerFive.png" alt="Šetríme 5 eur">
+  <img loading="lazy" src="assets/images/fun_linearGrowthPerFive.png" alt="Šetríme 5 eur">
   <figcaption>Obr. 2.: Takto rastie tvoja našetrená suma, ak si každý mesiac odložíš 5 euro. Pre porovnanie, je tu graf, ako rastie našetrená suma, ak si odkladáš po eure.</figcaption>
 </figure>
 
-Keď si už konečne nájdeš normálnu brigádu, tak aj normálne zarobíš. Dajme tomu, že v čistom dostaneš 512 eur. To sa bude teraz šetriť. Pre porovnanie sme v grafe nechali aj čiaru, keď šetríš po eure a po piatich. Tá, kde šetríš po euro tak málo rastie, že ju ani nie je vidno. 
+Keď si už konečne nájdeš normálnu brigádu, tak aj normálne zarobíš. Dajme tomu, že v čistom dostaneš 512 eur. To sa bude teraz šetriť. Pre porovnanie sme v grafe nechali aj čiaru, keď šetríš po eure a po piatich. Tá, kde šetríš po euro tak málo rastie, že ju ani nie je vidno.
 
 <figure>
-  <img src="../assets/images/fun_linearGrowthPerEarn.png" alt="Šetríme 512 eur">
+  <img loading="lazy" src="assets/images/fun_linearGrowthPerEarn.png" alt="Šetríme 512 eur">
   <figcaption>Obr. 3.: Tvoj zostatok na účte, keď máš normálnu brigádu.</figcaption>
 </figure>
 
-Dúfam, že si si všimol, že čím viac si odkladáš, tým viac sa každý mesiac zvýši našetrená suma. <br /> <br />
+Dúfam, že si si všimol, že čím viac si odkladáš, tým viac sa každý mesiac zvýši našetrená suma.<br /> <br />
 
-Ostaňme na tej brigáde, kde zarábaš 512 eur. Vieš koľko by si si našetril za mesiac? Za dva? Za desať? Za 1 953,125 mesiaca? Za mesiac to je jasné, to rátať netreba, je to 512 eur. Za dva mesiace je to 512+512=1024 eur. Za desať mesiacov zrátaš 512 desaťkrát a za 1 953,125 sa mi ani nechce písať. Ak by si mal zrátavať, že 512+512+512+.....+512, trvalo by to asi dlho. Jednoduchšie riešenie je, keď vynásobíš výplatu s počtom mesiacov a máš našetrenú sumu. Takže za 10 mesiacov si našetríš 10*512=5 120 eur a za 1 953,125 mesiacov si našetríš 1 953,125*512=1 000 000. Super! Vďaka matematike teraz vieš, že za 1 953,125 mesiacov (čo je iba necelých 163 rokov), budeš milionár. No neteš sa. <br /> <br />
+Ostaňme na tej brigáde, kde zarábaš 512 eur. Vieš koľko by si si našetril za mesiac? Za dva? Za desať? Za 1 953,125 mesiaca? Za mesiac to je jasné, to rátať netreba, je to 512 eur. Za dva mesiace je to 512+512=1024 eur. Za desať mesiacov zrátaš 512 desaťkrát a za 1 953,125 sa mi ani nechce písať. Ak by si mal zrátavať, že 512+512+512+.....+512, trvalo by to asi dlho. Jednoduchšie riešenie je, keď vynásobíš výplatu s počtom mesiacov a máš našetrenú sumu. Takže za 10 mesiacov si našetríš 10*512=5 120 eur a za 1 953,125 mesiacov si našetríš 1 953,125*512=1 000 000. Super! Vďaka matematike teraz vieš, že za 1 953,125 mesiacov (čo je iba necelých 163 rokov), budeš milionár. No neteš sa.<br /> <br />
 
 Keďže matematika má veľmi rada zovšeobecňovanie, nebudeme písať, že: našetrená suma = výplata * počet mesiacov. Je to dlhé a navyše to nesedí, ak by si si odkladal sumu len raz za rok alebo namiesto výplaty by si si odkladal cukríky. Preto budeme písať: $$y = a \cdot x$$
 
-Písmeno <i>y</i> je tá vec, ktorú chceš vedieť. Môže to byť napríklad našetrená suma. Písmeno <i>x</i> je niečo čo sa mení. V našom prípade je to počet mesiacov, lebo raz chceš vedieť našetrenú sumu po troch mesiacoch, inokedy po desiatich alebo po sto mesiacoch. Pretože sa <i>x</i> mení, nazýva sa premenná. Písmeno <i>a</i> sa nazýva konštanta, pretože sa nemení (krátka odbočka k významu slova: keď je niečo konštantné, tak to znamená, že sa to nemení, je to stále rovnaké). Môžeš si všimnúť, že zmena hodnoty <i>y</i> medzi <i>x</i> a <i>x+1</i> je práve písmenko <i>a</i>. V našom prípade si vyber <i>x</i> akýkoľvek mesiac (napr. mesiac 9), tak <i>x+1</i> je mesiac hneď po ňom (mesiac 10). Rozdiel v úsporách medzi týmito dvomi mesiacmi je práve písmeno <i>a</i>. Tiež si ešte prosím všimni, že čím je <i>a</i> väčšie, tým rýchlejšie rastie našetrená suma. <br /> <br />
+Písmeno <i>y</i> je tá vec, ktorú chceš vedieť. Môže to byť napríklad našetrená suma. Písmeno <i>x</i> je niečo čo sa mení. V našom prípade je to počet mesiacov, lebo raz chceš vedieť našetrenú sumu po troch mesiacoch, inokedy po desiatich alebo po sto mesiacoch. Pretože sa <i>x</i> mení, nazýva sa premenná. Písmeno <i>a</i> sa nazýva konštanta, pretože sa nemení (krátka odbočka k významu slova: keď je niečo konštantné, tak to znamená, že sa to nemení, je to stále rovnaké). Môžeš si všimnúť, že zmena hodnoty <i>y</i> medzi <i>x</i> a <i>x+1</i> je práve písmenko <i>a</i>. V našom prípade si vyber <i>x</i> akýkoľvek mesiac (napr. mesiac 9), tak <i>x+1</i> je mesiac hneď po ňom (mesiac 10). Rozdiel v úsporách medzi týmito dvomi mesiacmi je práve písmeno <i>a</i>. Tiež si ešte prosím všimni, že čím je <i>a</i> väčšie, tým rýchlejšie rastie našetrená suma.<br /> <br />
 
-V naozajstnom svete však iba nezarábaš, ale aj míňaš. Predstav si, že pri zakladaní účtu si zabudol banke poslať doklad o návšteve školy a teraz máš namiesto študentského účtu platený. Okrem toho si ešte nezačal chodiť na brigádu, tak nič nezarábaš, ale za účet už platíš. Poplatok za účet sa pohybuje okolo 6 eur na mesiac. Ideš každý mesiac do mínusu. Aby sme to vyhrotili ešte viac, tak sa odsťahuješ do vlastného bytu a budeš platiť nájom. Nejakých 490 eur vrátane energií by mohlo stačiť. Poďme sa pozrieť, ako rýchlo sa budeš rútiť do dlhov keď budeš platiť iba za účet a ako rýchlo keď budeš platiť nájom. 
+V naozajstnom svete však iba nezarábaš, ale aj míňaš. Predstav si, že pri zakladaní účtu si zabudol banke poslať doklad o návšteve školy a teraz máš namiesto študentského účtu platený. Okrem toho si ešte nezačal chodiť na brigádu, tak nič nezarábaš, ale za účet už platíš. Poplatok za účet sa pohybuje okolo 6 eur na mesiac. Ideš každý mesiac do mínusu. Aby sme to vyhrotili ešte viac, tak sa odsťahuješ do vlastného bytu a budeš platiť nájom. Nejakých 490 eur vrátane energií by mohlo stačiť. Poďme sa pozrieť, ako rýchlo sa budeš rútiť do dlhov keď budeš platiť iba za účet a ako rýchlo keď budeš platiť nájom.
 
 <figure>
-  <img src="../assets/images/fun_linearAisNegative.png" alt="Míňame 6 eur alebo 490 eur">
+  <img loading="lazy" src="assets/images/fun_linearAisNegative.png" alt="Míňame 6 eur alebo 490 eur">
   <figcaption>Obr. 4.: Tvoj zostatok (skôr úbytok) na účte, keď iba míňaš a nič nezarábaš.</figcaption>
 </figure>
 
-Môžeš si všimnúť, že to funguje rovnako, ako pri zarábaní. Čím viac minieš každý mesiac, tým máš väčšie dlhy. Na tomto príklade sme ti chceli ukázať, že písmeno <i>a</i> v starom známom vzorci $y = a \cdot x$, nemusí byť iba kladné, ale môže ísť aj do mínusu. <br /> <br />
+Môžeš si všimnúť, že to funguje rovnako, ako pri zarábaní. Čím viac minieš každý mesiac, tým máš väčšie dlhy. Na tomto príklade sme ti chceli ukázať, že písmeno <i>a</i> v starom známom vzorci $y = a \cdot x$, nemusí byť iba kladné, ale môže ísť aj do mínusu.<br /> <br />
 
 Poďme pridať do dlhov trochu optimizmu. Teraz sa prenes do situácie, že si zakladáš v banke účet, začínaš brigádu a tete si nezabudol doniesť papierik s potvrdením o návšteve školy. Keď si založíš účet, tak si na nule, žiadne dlhy. Teraz ten optimizmus. Na novučičký účet ti rodičia pošlú stovku, takže nezačínaš vlastne na nule ale na sto eurách. Nech nie je toho dobrého veľa, necháme ťa na brigáde zarábať 50 eur. V grafe to vyzerá takto:
 
 <figure>
-  <img src="../assets/images/fun_linearStartAt100.png" alt="Rodičia dajú stovku na začiatok">
+  <img loading="lazy" src="assets/images/fun_linearStartAt100.png" alt="Rodičia dajú stovku na začiatok">
   <figcaption>Obr. 5.: Keď ťa rodičia podporia stovkou.</figcaption>
 </figure>
 
 Keď tvoji rodičia nájdu ropu alebo vyhrajú jackpot, tak si predstav, kde by si začínal, lebo to kresliť do grafu nebudeme. Nezmestí sa. Nebuď však smutný, aj keby si začínal na 10-tich eurách, je to stále lepšie, ako by si mal začínať na mínus 10 eur. Zoberme si takého Ferka, Jožka a Terezku. Všetci traja si nájdu brigádu, kde zarobia 17 eur za mesiac. Všetci si idú založiť účet. Jožko nájde na chodníku 20 eurovku a tak si ju hneď vloží na účet. Jožko začína na 20 eur. Ferko si tiež založil účet v banke, ale po ceste domov stretol kamaráta, s ktorým sa stavil o 20 eur, že preskočí plot. Ferko plot nepreskočil, prehral 20 eur a navyše má rozbitú ústa. Ferko začína na -20 eur. Terezka ani nenašla na chodníku peniaze a ani sa nestavila s kamarátom, tak začína na nule. Môžeš z grafu hádať, kto bude mať našetrené viac po ôsmich mesiacoch.
 
 <figure>
-  <img src="../assets/images/fun_linearThreeDifferentB.png" alt="Každý kamarát začína šetriť na inej sume">
+  <img loading="lazy" src="assets/images/fun_linearThreeDifferentB.png" alt="Každý kamarát začína šetriť na inej sume">
   <figcaption>Obr. 6.: Ferko, Jožko a Terezka začínajú šetriť na inej sume.</figcaption>
 </figure>
 
@@ -67,9 +69,9 @@ Teraz pôjdeme zase zovšeobecňovať. Mohol si si všimnúť, že nám tu pribu
 
 $$y = a \cdot x + b$$
 
-Ak vieš čo znamenajú písmená <i>y,x,a,b,</i> tak gratulujeme, práve si pochopil lineárnu funkciu. Ak nevieš, tak sa to bež doučiť, lebo my už končíme. <br /> <br />
+Ak vieš čo znamenajú písmená <i>y,x,a,b,</i> tak gratulujeme, práve si pochopil lineárnu funkciu. Ak nevieš, tak sa to bež doučiť, lebo my už končíme.<br /> <br />
 
-Ešte záverečné opakovanie. Písmeno <i>y</i>, je to čo chceš vedieť (to čo rátaš). Písmeno <i>x</i> je premenná (lebo sa mení). Zvyčajne zaň dosádzaš čísla z osi <i>x</i>. V príkladoch to nemáme uvedené, ale <i>x</i> môže byť samozrejme aj záporné alebo desatinné číslo. Môže to byť hocičo od -&infin; po +&infin;. Písmeno <i>a</i> je konštanta. Máš ju danú. Môže byť záporná, kladná, veľká, malá, celá, desatinná a neviem aká ešte. Jej veľkosť určuje, ako rýchlo funkcia rastie (klesá). Ak je kladná, čím väčšie <i>x</i>, tým väčšie <i>y</i> (ideš do plusu). Ak je záporná, tak čím väčšie <i>x</i>, tým menšie <i>y</i> (dlhy narastajú). Ak zaň dáme nulu, lineárna funkcia sa zmení na konštantnú (lebo y bude stále rovné <i>b</i>). Písmeno <i>b</i>, je hodnota funkcie v bode 0. Hovorí ti, že kde začínaš. Tiež môže záporné, kladné, celé aj desatinné číslo. Všimni si, že keď dosadíš za <i>x</i> nulu, tak <i>y</i> ti vyjde rovný <i>b</i>. <br /> <br />
+Ešte záverečné opakovanie. Písmeno <i>y</i>, je to čo chceš vedieť (to čo rátaš). Písmeno <i>x</i> je premenná (lebo sa mení). Zvyčajne zaň dosádzaš čísla z osi <i>x</i>. V príkladoch to nemáme uvedené, ale <i>x</i> môže byť samozrejme aj záporné alebo desatinné číslo. Môže to byť hocičo od -&infin; po +&infin;. Písmeno <i>a</i> je konštanta. Máš ju danú. Môže byť záporná, kladná, veľká, malá, celá, desatinná a neviem aká ešte. Jej veľkosť určuje, ako rýchlo funkcia rastie (klesá). Ak je kladná, čím väčšie <i>x</i>, tým väčšie <i>y</i> (ideš do plusu). Ak je záporná, tak čím väčšie <i>x</i>, tým menšie <i>y</i> (dlhy narastajú). Ak zaň dáme nulu, lineárna funkcia sa zmení na konštantnú (lebo y bude stále rovné <i>b</i>). Písmeno <i>b</i>, je hodnota funkcie v bode 0. Hovorí ti, že kde začínaš. Tiež môže záporné, kladné, celé aj desatinné číslo. Všimni si, že keď dosadíš za <i>x</i> nulu, tak <i>y</i> ti vyjde rovný <i>b</i>.<br /> <br />
 
-Tak to je naozaj všetko. Ďakujeme, že si to s nami vydržal až to konca a dúfame, že sme ti aspoň trošičku pomohli :). 
+Tak to je naozaj všetko. Ďakujeme, že si to s nami vydržal až to konca a dúfame, že sme ti aspoň trošičku pomohli :).
 </div>

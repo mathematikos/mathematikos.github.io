@@ -1,8 +1,9 @@
 ---
 title: Rovina
-description: "rovina"
+description: "Rovina je daná tromi bodmi. Z nich sa dajú vyrátať dva vektory, ktoré opisujú rovinu. Rovina tiež môže byť daná iba vektorom a bodom. Z týchto informácii sa dajú odvodiť rovnice pre rovinu."
 keywords: "rovina"
 permalink: analyticka_geometria_rovina
+mathjax: true
 ---
 
 <div class="content">
@@ -16,7 +17,7 @@ Ak by sme poznali iba dva body, alebo dokonca iba jeden, nevedeli by sme o ktor�
 Dôležité upozornenie. Rovina je nekonečná. My ju budeme kresliť ako štvorec, pretože nekonečno sa nám nevojde do obrázku.
 
 <figure>
-  <img src="../assets/images/aGeom_planeDefinition.png" alt="Definícia roviny pomocou dvoch bodov">
+  <img src="assets/images/aGeom_planeDefinition.png" alt="Definícia roviny pomocou dvoch bodov">
   <figcaption>Obr. 1.: a) Ak by bola rovina daná iba jedným bodom, nevieme, o ktorú rovinu ide. Jeden bod môže patriť do nekonečne veľa rovín. b) Rovina daná dvomi bodmi Tu sme vylúčili roviny podobné rovine sigma z obrázku a, teda všetky roviny, do ktorých nepatrí bod B (je buď nad rovinou, pod ňou alebo vedľa nej). Stále však vieme tieto dva body priradiť nekonečne veľa rovinám. c) Rovina daná tromi bodmi. To je tá správna definícia, pretože tretí bod eliminuje roviny, ktoré sú nejak naklonené. Z obrázku b vypadávajú roviny sigma a tau.</figcaption>
 </figure>
 
@@ -35,7 +36,7 @@ Už máme vektor, ktorým budeme ukazovať, ale nemáme miesto, z ktorého budem
 Ukážeme si to na obrázku.
 
 <figure>
-  <img src="../assets/images/aGeom_planeDefinition.gif" alt="Parametrická rovnica roviny">
+  <img loading="lazy" src="assets/images/aGeom_planeDefinition.gif" alt="Parametrická rovnica roviny">
   <figcaption>Obr. 2.: Na bodoch M, N, O, P chceme ukázať, ako sa pomocou jedného bodu a dvoch vektorov dá dočiahnuť na každý bod v rovine. Treba poznať jeden bod v rovine, od ktorého sa dá odraziť. V našom prípade je to bod A. Potom treba dva vektory. Sú to $\vec{u}$ a $\vec{v}$. Tieto dva vektory sa rôzne naškálujú a potom sa spočítajú. Rôznym škálovaním vektorov $\vec{u}$ a $\vec{v}$ sa dosiahne na každý bod v rovine.</figcaption>
 </figure>
 
@@ -56,8 +57,8 @@ Vo všeobecnej rovnici roviny budeme potrebovať normálový vektor, tak si ho t
 Poznáme tri body a vieme z nich spraviť dva vektory. Poznáme ich pod menami $\vec{u}$ a $\vec{v}$. Pri vektoroch sme si povedali, že keď sa vynásobia dva vektory pomocou <a href="analyticka_geometria_vektory#aGeom_vecCrossProduct" target="_blank">vektorového súčinu</a>, vznikne tretí vektor, ktorý je na ne kolmý. Keďže naše dva vektory patria rovine, tak vzniknutý vektor je kolmý aj na rovinu. <b>Vektor kolmý na rovinu sa nazýva normálový vektor roviny a zvyčajne sa označuje $\vec{n}$</b>.
 
 <figure>
-  <img src="../assets/images/aGeom_planeNormalVec.png" alt="Normálový vektor roviny">
-  <figcaption>Obr. 3.: Na rovine poznáme tri body A, B, C. Spravíme z nich vektory $\vec{u}$ a $\vec{v}$. Vektorovým  súčinom dostaneme normálový vektor roviny $\vec{n}$.</figcaption>
+  <img loading="lazy" src="assets/images/aGeom_planeNormalVec.png" alt="Normálový vektor roviny">
+  <figcaption>Obr. 3.: Na rovine poznáme tri body A, B, C. Spravíme z nich vektory $\vec{u}$ a $\vec{v}$. Vektorovým súčinom dostaneme normálový vektor roviny $\vec{n}$.</figcaption>
 </figure>
 
 <h2>Skalárny súčin normálového vektora a vektora, ktorý patrí rovine</h2>
@@ -65,7 +66,7 @@ Poznáme tri body a vieme z nich spraviť dva vektory. Poznáme ich pod menami $
 Na pochopenie všeobecnej rovnice roviny treba ešte jednu vec. Je ňou poznatok, že <a href="analyticka_geometria_vektory#aGeom_vecDotProduct" target="_blank">skalárny súčin</a> dvoch vektorov, ktoré sú na seba kolmé, je nula. Normálový vektor roviny je kolmý na všetky vektory, ktoré patria rovine. Teda ich skalárny súčin bude 0. Vektory patriace rovine sa dajú vypočítať z bodov.
 
 <figure>
-  <img src="../assets/images/aGeom_planeDotProduct.png" alt="Skalárny súčin normálového vektora a vektora roviny">
+  <img loading="lazy" src="assets/images/aGeom_planeDotProduct.png" alt="Skalárny súčin normálového vektora a vektora roviny">
   <figcaption>Obr. 4.: Z akýchkoľvek dvoch bodov na rovine vieme spraviť vektor. Tento vektor bude patriť rovine. Normálový vektor naň bude kolmý. My sme si na ukážku vybrali body <i>A</i> a <i>X</i>. Skalárny súčin normálového vektora a vektora <i>A-X</i> bude 0.</figcaption>
 </figure>
 
@@ -81,15 +82,15 @@ $$
 Z rovnice vidíme, že tieto dva skalárne súčiny sú rovnaké. Oba body patria rovine a teda môžeme povedať, že keď spravíme skalárny súčin akýchkoľvek bodov roviny s normálovým vektorom, tak výsledky musia byť rovnaké.
 
 <figure>
-  <img src="../assets/images/aGeom_planePointNormalScalar.png" alt="Skalárny súčin normálového vektora a bodu v rovine">
+  <img loading="lazy" src="assets/images/aGeom_planePointNormalScalar.png" alt="Skalárny súčin normálového vektora a bodu v rovine">
   <figcaption>Obr. 5.: Skalárny súčin normálového vektora a akéhokoľvek bodu v rovine je rovnaký. Na obrázku sme násobili normálový vektor $\vec{n}$ s bodmi <i>X,Y,Z,Ž</i>. Výsledok skalárneho súčinu bol vždy rovnaký. Vyšiel <i>s</i>.
   </figcaption>
 </figure>
 
-Poznámka pre pozorných čitateľov, ktorý si všimli, že hovoríme o skalárnom súčine vektora s bodom. Možno ti napadlo, že skalárny súčin sa robí medzi vektormi a tu máme zrazu vektor a bod. Z jedného uhla pohľadu máme vektor a bod, ale z druhého máme dva vektory. Keď sa na to pozrieš z druhého uhla, zistíš, že naše body sú vlastne koncové súradnice vektora začínajúceho v bode [0,0,0]. 
+Poznámka pre pozorných čitateľov, ktorý si všimli, že hovoríme o skalárnom súčine vektora s bodom. Možno ti napadlo, že skalárny súčin sa robí medzi vektormi a tu máme zrazu vektor a bod. Z jedného uhla pohľadu máme vektor a bod, ale z druhého máme dva vektory. Keď sa na to pozrieš z druhého uhla, zistíš, že naše body sú vlastne koncové súradnice vektora začínajúceho v bode [0,0,0].
 
 <figure>
-  <img src="../assets/images/aGeom_planeVec000NormalScalar.png" alt="Body sú koncové súradnice vektora začínajúceho v bode [0,0,0]">
+  <img loading="lazy" src="assets/images/aGeom_planeVec000NormalScalar.png" alt="Body sú koncové súradnice vektora začínajúceho v bode [0,0,0]">
   <figcaption>Obr. 6.: Na bod môžeme pozerať aj ako na vektor, ktorý začína v bode [0,0,0]</figcaption>
 </figure>
 
@@ -104,7 +105,7 @@ Budeme potrebovať <b>normálový vektor roviny</b>, tak ho skúsime získať. P
 Chceme si spraviť nástroj, vďaka ktorému budeme vedieť, či bod napr. <i>X</i> patrí rovine. Stačí nám zistiť, či skalárny súčin bodu <i>X</i> s normálovým vektorom je rovnaký ako skalárny súčin normálového vektora a bodu, o ktorom vieme, že je v rovine. Ak sú tieto dva skalárne súčiny rovnaké, bod patrí rovine, inak nepatrí.<br /><br />
 
 <figure>
-  <img src="../assets/images/aGeom_planeGeneralEq.png" alt="Všeobecná rovnica roviny">
+  <img loading="lazy" src="assets/images/aGeom_planeGeneralEq.png" alt="Všeobecná rovnica roviny">
   <figcaption>Obr. 7.: Vo všeobecnej rovnici roviny ide o to, aby sme sa dozvedeli, či bod leží alebo neleží v rovine. V rovine poznáme bod <i>A</i> a normálový vektor. Na ukážku sme si vybrali dva body. Bod X patrí rovine, bod Y v nej neleží. Pre všetky tri body <i>X,Y,A</i> sme si spravili skalárny súčin s normálovým vektorom. Potom sme tieto skalárne súčiny porovnali. Skalárne súčiny pre bod <i>X</i> a <i>A</i> sú rovnaké, lebo oba body patria rovine. Skalárny súčin pre bod <i>Y</i> je iný.</figcaption>
 </figure>
 

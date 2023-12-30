@@ -1,57 +1,29 @@
+/*.................................LESS VARIABLES.................................*/
 :root {
-  --primary: #b0dfe5;
-  --secondary: #404040;
-  --tertiary: #588bae;
-  --quaternary: #003152;
-  --quinary: #f9f9f9;
-  
+  --primary: #b0dfe5; /*ligt cyan blue*/
+  --secondary: #404040; /*grey*/
+  --tertiary: #588bae; /*ligt sky blue*/
+  --quaternary: #003152; /*semi dark blue*/
+  --quinary: #f9f9f9; /*light grey*/
+
   --primaryFont: Monospace;
 }
 
-.page{
-	width: 100%;
-	height: 100%;
-}
+/*.................................GENERAL STYLES.................................*/
 
-#contact_page{
+footer{
 	text-align: center;
-	background: url(/assets/images/homepage/bgContact.png);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-
-#contact_page div{
+	font-family: var(--primaryFont);
+	background-color: var(--quaternary);
 	color: white;
-	font-family: Monospace;
-	font-size: 250%;
-	padding-top: 20%;
+	padding: 15%;
+	font-size: 200%;
 }
 
-#boy {
-	width: 50%;
-	float: right;
-	text-align: left;
-	margin-top: 50px;
-}
-
-#boy img {
-	width: 60%;
-	height: auto;
-	margin-top: -10%;
-}
-
-.more {
-	display: none;
+footer div{
 	text-align: justify;
-	padding: 20px 20px;
-	background-color: blue;
-	border: 10px solid navy;
-	/*padding="20%";*/
-	}
-	
-.more div{
-	/*background-color: green;*/
-	}
+	overflow-wrap: break-word;
+}
 
 h1 {
 	text-align: center;
@@ -74,39 +46,19 @@ h3 {
 	font-size: 200%;
 }
 
-footer{
+.audioPlayer{
 	text-align: center;
-	font-family: var(--primaryFont);
-	background-color: var(--quaternary);
-	color: white;
-	padding: 15%;
-	font-size: 200%;
-}
-
-footer div{
-	text-align: justify;
-	overflow-wrap: break-word;
 }
 
 .center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.extendingText, .extendingText h2{
-	color: #707070;
-}
-
-
-
-.literature {
-	overflow-wrap: break-word;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .content{
 	text-align: justify;
 	font-family: Verdana;
-	width: 70%;
+	width: 100%;
 	padding: 5%;
 	padding-top: 0%;
 	margin: 0 auto;
@@ -114,20 +66,86 @@ footer div{
 }
 
 .content figure{
+	width: 100%;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .content figure img{
-	width: 80%;
+	width: 100%;
 	height: auto;
-}
-
-.audioPlayer{
-	text-align: center;
 }
 
 .egyptNumbers{
 	font-size: 500%;
+}
+
+.example /*text with math examples*/{
+	color: #646d7a;
+}
+
+.extendingText, .extendingText h2{
+	color: #707070;
+}
+
+.history_container {
+	width: 100%;
+	margin-bottom: 2%;
+}
+
+.history_intro {
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+.history_intro img{
+	width: 100%;
+	height: auto;
+}
+
+.literature {
+	overflow-wrap: break-word;
+}
+
+.more {
+	display: none;
+	text-align: justify;
+	padding: 20px 20px;
+	background-color: blue;
+	border: 10px solid navy;
+	/*padding="20%";*/
+}
+
+.more div{
+	/*background-color: green;*/
+}
+
+.overflowedItem { /* items which are too wide and overflow, e.g. math expressions, tables */
+	overflow-x: auto;
+}
+
+.page{
+	width: 100%;
+	height: 210%;
+}
+
+.statTable td,th{
+	padding-right: 8px;
+}
+
+.vertical_line {
+	border-left: 6px solid var(--primary);
+	height: 100px;
+	margin-left: 50%;
+}
+
+.vocabEntry b{
+	float: none;
+}
+
+.vocabEntry div{
+	margin-left: 10%;
 }
 
 .vocabLetter{
@@ -137,6 +155,70 @@ footer div{
 	margin: 5%;
 }
 
+#boy {
+	width: 100%;
+	float: none;
+	text-align: center;
+	margin-top: 50px;
+}
+
+#boy img {
+	width: 100%;
+	height: auto;
+	margin-top: -10%;
+}
+
+#opticalIllusionImages img{/*TODO REMOVE*/
+	width: 100%;
+	height: auto;
+}
+
+/*.................................LARGE PHONES STYLES.................................*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+.content{
+	width: 80%;
+}
+
+.history_intro img{
+	width: 70%;
+}
+
+.vocabEntry div{
+	margin-left: 20%;
+}
+
+
+#boy {
+	margin-top: 0px;
+}
+
+#boy img {
+	margin-top: 0%;
+}
+
+#opticalIllusionImages img{
+	width: 100%;
+	height: auto;
+}
+}
+
+/*.................................TABLET STYLES.................................*/
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+.content{
+	width: 70%;
+}
+
+.history_intro img{
+	width: 35%;
+	height: auto;
+}
+
+.page{
+	width: 100%;
+	height: 100%;
+}
 
 .vocabEntry b{
 	float: left;
@@ -146,23 +228,32 @@ footer div{
 	margin-left: 20%;
 }
 
-.overflowedItem{ /* items which are too wide and overflow, e.g. math expressions, tables */
-	overflow-x: auto;
+#boy {
+	width: 50%;
+	float: right;
+	text-align: left;
 }
 
-.statTable td,th{
-	padding-right: 8px;
+#boy img {
+	width: 60%;
+	height: auto;
 }
 
-.history_container {
+#opticalIllusionImages img{
 	width: 100%;
-	margin-bottom: 2%;
-	
+	height: auto;
+}
 }
 
-.history_intro {
-	margin-bottom: 5%;
-	text-align: center;
+/*.................................DESKTOP STYLES.................................*/
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+.content{
+	width: 70%;
+}
+	
+.content figure img{
+	width: 80%;
 }
 
 .history_intro img{
@@ -170,58 +261,33 @@ footer div{
 	height: auto;
 }
 
-.vertical_line {
-  border-left: 6px solid var(--primary);
-  height: 100px;
-  margin-left: 50%;
-}
-
-.example /*text with math examples*/{
-	color: #646d7a;
-}
-
-.examples b /*text with math examples marked as bold*/{
-	color: #646d7a;
-}
-
-
-#opticalIllusionImages img{
-	width: 50%;
-	height: auto;
-}
-
-@media screen and (max-width: 600px) {
-.content{
+.page{
 	width: 100%;
-}	
-	
-.content figure img{
-	width: 100%;
-	height: auto;
+	height: 100%;
 }
 
-.history_intro img{
-	width: 100%;
-	height: auto;
+.vocabEntry b{
+	float: left;
 }
+
+.vocabEntry div{
+	margin-left: 20%;
+}
+
 
 #boy {
+	width: 50%;
+	float: right;
+	text-align: left;
+}
+
+#boy img {
+	width: 60%;
+	height: auto;
+}
+
+#opticalIllusionImages img{
 	width: 100%;
-	float: none;
+	height: auto;
 }
-
-#boy img{
-	width: 100%;
-}
-
-.page{
- height: 210%;
-}
-
-#contact_page{
-height: 50%;
-width: 100%;
-font-size: 70%;
-}
-
 }

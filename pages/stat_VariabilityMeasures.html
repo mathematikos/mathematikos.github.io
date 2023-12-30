@@ -1,8 +1,9 @@
 ---
 title: Miery variability
-description: "miery variability"
+description: "Miery variability vyjadrujú ako veľmi sú údaje rozdielne. Ďalšie využitie je, keď je priemer viacerých štatistických súborov rovnaký a my ich chceme napriek tomu porovnať."
 keywords: "variačné rozpätie, priemerná absolútna odchýlka, rozptyl, smerodajná odchýlka, variačný koeficient"
 permalink: miery_variability
+mathjax: true
 ---
 
 <div class="content">
@@ -11,19 +12,19 @@ permalink: miery_variability
 
 Miery variability používame keď chceme vedieť ako veľmi sú údaje rozdielne. Ďalšie využitie je, keď je priemer viacerých štatistických súborov rovnaký a my ich chceme napriek tomu porovnať.<br /><br />
 
-Tieto miery nám povedia niečo o tom, ako veľmi sa údaje od seba líšia. Väčšinou sa zisťuje, ako sú dáta  rozložené okolo priemeru. Či sú ďaleko alebo blízko. Napríklad, ak máme dve čísla a ich priemer je 5, chceme vedieť, či sú obe blízko päťky (4 a 6: (4+6)/2=5) alebo sú ďaleko od päťky (-100 a 110: (-100+110)/2=5).<br /><br />
+Tieto miery nám povedia niečo o tom, ako veľmi sa údaje od seba líšia. Väčšinou sa zisťuje, ako sú dáta rozložené okolo priemeru. Či sú ďaleko alebo blízko. Napríklad, ak máme dve čísla a ich priemer je 5, chceme vedieť, či sú obe blízko päťky (4 a 6: (4+6)/2=5) alebo sú ďaleko od päťky (-100 a 110: (-100+110)/2=5).<br /><br />
 
 Čím sú údaje menej rozdielne, tým sú miery variability menšie. Či sú pre nás lepšie vyrovnané dáta alebo úplne rozdielne, záleží od problému, ktorí riešime.<br /><br />
 
 Na obrázku ti chceme ukázať, čo znamená rozptýlenie dát okolo priemeru. Na prvej osi sú údaje okolo priemeru rozptýlené menej a na druhej viac. Údaje sú nakreslené bledomodré a priemer je číslo 5.
 
 <figure>
-  <img src="../assets/images/stat_VariabilityOfData.png" alt="=Variabilita údajov">
+  <img src="assets/images/stat_VariabilityOfData.png" alt="=Variabilita údajov">
   <figcaption>Obr. 1.: Prvé údaje sú od 4 po 6. Nejak veľmi sa od seba nelíšia, tak ich variabilita je menšia. Druhé dáta sú od 1 po 10. Ich údaje sa už líšia viac. Variabilita druhých dát je väčšia.</figcaption>
 </figure>
 
 <h2>Variačné rozpätie</h2>
-Variačné rozpätie hovorí o tom, v akom rozsahu sú dáta. Čím je menšie, tým sú dáta viac rovnaké. 
+Variačné rozpätie hovorí o tom, v akom rozsahu sú dáta. Čím je menšie, tým sú dáta viac rovnaké.
 
 $$ R=x_{max}-x_{min}$$
 
@@ -44,10 +45,10 @@ Pre Inter Milano to vypočítame takto:
 <div class='overflowedItem'>
 $$ \overline{d}=\frac{1}{11} \sum_{i=1}^{11} \left| \overline{overall} - overall_{i} \right| = 2,479 $$
 </div>
-<i>V hlave budeš robiť klasický výpočet. Ak by si náhodou zabudol, tak zvislé zátvorky znamenajú absolútnu hodnotu. (|83.73-88| + |83.73-88| + |83.73-86| + |83.73-85| + |83.73-85| + |83.73-84| + |83.73-82| + |83.73-81| + |83.73-81| + |83.73-81| + |83.73-80|)/11 = 27.269 / 11 = 2.479  </i>. Teraz vieme, že hráči Interu Milano sa od priemeru líšia priemerne o 2,479 bodov <i>overall</i>.
+<i>V hlave budeš robiť klasický výpočet. Ak by si náhodou zabudol, tak zvislé zátvorky znamenajú absolútnu hodnotu. (|83.73-88| + |83.73-88| + |83.73-86| + |83.73-85| + |83.73-85| + |83.73-84| + |83.73-82| + |83.73-81| + |83.73-81| + |83.73-81| + |83.73-80|)/11 = 27.269 / 11 = 2.479</i>. Teraz vieme, že hráči Interu Milano sa od priemeru líšia priemerne o 2,479 bodov <i>overall</i>.
 
 <figure>
-  <img src="../assets/images/stat_MAE.png" alt="=Rátanie priemernej absolútnej odchýlky">
+  <img loading="lazy" src="assets/images/stat_MAE.png" alt="=Rátanie priemernej absolútnej odchýlky">
   <figcaption>Obr. 2.: Tu je ukázané, ako funguje matematika v priemernej absolútnej odchýlke. 1. Namerané údaje. 2. Pre každý údaj sa dozvieme, o koľko sa líši od priemeru. 3. Rozdiely medzi údajmi a priemerom. 4. Z rozdielov sa spraví priemer a vidíme, že údaje sa priemerne líšia od priemeru o jednu kocku.</figcaption>
 </figure>
 
@@ -65,13 +66,12 @@ Pre Inter Milano to vypočítame takto:
 <div class='overflowedItem'>
 $$ s^2=\frac{1}{11} \sum_{i=1}^{11} \left( \overline{overall} - overall_{i} \right)^2 = 7.652 $$
 </div>
-<i>V hlave alebo na kalkulačke si sumu rozpíšeš normálne: ((83.73-88)<sup>2</sup> + (83.73-88)<sup>2</sup> + (83.73-86)<sup>2</sup> + (83.73-85)<sup>2</sup> + (83.73-85)<sup>2</sup> + (83.73-84)<sup>2</sup> + (83.73-82)<sup>2</sup> + (83.73-81)<sup>2</sup> + (83.73-81)<sup>2</sup> + (83.73-81)<sup>2</sup> + (83.73-80)<sup>2</sup>)/11 = 84.182 / 11 = 7.652  </i>. Ak sa ti nechce toto rátať z hlavy, tak môžeš aj na papier. Aspoň uvidíš, že zápis so sumou ušetrí veľa miesta. <br /><br />
+<i>V hlave alebo na kalkulačke si sumu rozpíšeš normálne: ((83.73-88)<sup>2</sup> + (83.73-88)<sup>2</sup> + (83.73-86)<sup>2</sup> + (83.73-85)<sup>2</sup> + (83.73-85)<sup>2</sup> + (83.73-84)<sup>2</sup> + (83.73-82)<sup>2</sup> + (83.73-81)<sup>2</sup> + (83.73-81)<sup>2</sup> + (83.73-81)<sup>2</sup> + (83.73-80)<sup>2</sup>)/11 = 84.182 / 11 = 7.652</i>. Ak sa ti nechce toto rátať z hlavy, tak môžeš aj na papier. Aspoň uvidíš, že zápis so sumou ušetrí veľa miesta.<br /><br />
 
-Zvýraznenie väčších odchýlok ti ukážeme na príklade. Tu sú rozdiely medzi údajom a priemerom: 1,2,3,4,5,6. Absolútna hodnota je to isté. Druhé mocniny rozdielu medzi priemerom a údajom sú tieto: 1,4,9,16,25,36. Už tak na pohľad vidíš, že 1 a 6 nie sú až tak rozdielne čísla. Ale medzi 1 a 36 je oveľa väčší rozdiel. Druhá mocnina práve väčší rozdiel zvýrazní viac ako menší rozdiel. <br /><br />
-
+Zvýraznenie väčších odchýlok ti ukážeme na príklade. Tu sú rozdiely medzi údajom a priemerom: 1,2,3,4,5,6. Absolútna hodnota je to isté. Druhé mocniny rozdielu medzi priemerom a údajom sú tieto: 1,4,9,16,25,36. Už tak na pohľad vidíš, že 1 a 6 nie sú až tak rozdielne čísla. Ale medzi 1 a 36 je oveľa väčší rozdiel. Druhá mocnina práve väčší rozdiel zvýrazní viac ako menší rozdiel.<br /><br />
 
 <figure>
-  <img src="../assets/images/stat_MSE.png" alt="=Rátanie rozptylu">
+  <img loading="lazy" src="assets/images/stat_MSE.png" alt="=Rátanie rozptylu">
   <figcaption>Obr. 3.: Tu je zobrazené, ako funguje matematika v rozptyle. 1. Namerané údaje. 2. Pre každý údaj sa dozvieme, o koľko sa líši od priemeru. 3. Rozdiely medzi údajmi a priemerom sa umocnia. Všimni si, že veľké rozdiely sú viac zvýraznené než pri priemernej absolútnej chybe. V našom príde je týmto veľkým rozdielom číslo 2. Kým pri priemernej absolútnej chybe je rozdiel stále dva, tak pri rozptyle je už štyri. 4. Z umocnených rozdielov sa spraví priemer. Priemer je 1,667 a s trochou fantázie si domysli na obrázku, že údaje sa priemerne líšia o 1,667 kocky (tá vrchná "kocka" je 0,667 kocky ).</figcaption>
 </figure>
 
@@ -91,7 +91,7 @@ $$ s=\sqrt{\frac{1}{11} \sum_{i=1}^{11} \left( \overline{overall} - overall_{i} 
 Rozptyl pod odmocninou už máme vyrátaný, tak to len odmocníme $ s=\sqrt{7.652} = 2.766$. Teraz môžeme povedať, že hráči sa priemerne od seba líšia o 2,766 <i>overall-u</i>.
 
 <figure>
-  <img src="../assets/images/stat_Std.png" alt="=Rátanie smerodajnej odchýlky">
+  <img loading="lazy" src="assets/images/stat_Std.png" alt="=Rátanie smerodajnej odchýlky">
   <figcaption>Obr. 4.: Tu je matematika skrývajúca sa za smerodajnou odchýlkou. 1. Namerané údaje. 2. Pre každý údaj sa dozvieme, o koľko sa líši od priemeru. 3. Rozdiely medzi údajmi a priemerom sa umocnia. Všimni si, že veľké rozdiely sú viac zvýraznené než pri priemernej absolútnej chybe. V našom príde je týmto veľkým rozdielom číslo 2. Kým pri priemernej absolútnej chybe je rozdiel stále dva, tak pri rozptyle je už štyri. 4. Z umocnených rozdielov sa spraví priemer a ten sa odmocní. Výsledok je 1,291 a s trochou fantázie si domysli na obrázku, že údaje sa priemerne líšia o 1,291 kocky (tá vrchná "kocka" je 0,291 kocky ).</figcaption>
 </figure>
 
@@ -112,11 +112,10 @@ Toto je teda variačný koeficient. Smerodajná odchýlka sa vydelí priemerom a
 
 Skúsme teda porovnať variabilitu vráskavca a baktérií variačným koeficientom. Vráskavec meria v priemere 30m a baktéria 400nm. Smerodajná odchýlka pre vráskavce je 1m a pre baktériu 100nm. Teraz to dokonca ani netreba premieňať na centimetre, lebo variačný koeficient je variabilita na jednu jednotku dát a je jedno, aká je tá jednotka. Je jedno či sú to metre, alebo nanometre alebo niečo iné. No poďme počítať. Variačný koeficient pre vráskavca je 1m/30m=0,033=3,33%. Variačný koeficient pre baktérie je 100nm/400nm=0,25=25%. Teraz je už jasné, že viac sa líši veľkosť baktérií ako veľkosť vráskavcov. O dosť viac. Takto môžeme porovnávať variabilitu údajov, ktoré nie sú rovnaké. Napríklad môžeme porovnať variabilitu teplôt v máji s variabilitou cien bytov alebo podobné hruška a jablká.<br /><br />
 
- 
 Pozrime sa na to, ako veľmi sú rozptýlení hráči Inter Milano. Vypočítame si variačný koeficient $ v=\frac{2,766}{\overline{83,73}}*100=3,303%$. Po výpočte vidíme, že hráči Interu nie sú veľmi rozptýlený. 3,303% nie je veľa. Dokonca ich môžeme porovnať s baktériami a vráskavcami. Veľkosť baktérií a počet bodov <i>overall</i> hráčov má zhruba rovnaké rozptýlenie.
 
 <figure>
-  <img src="../assets/images/stat_VarCoef.png" alt="Variačný koeficient">
+  <img loading="lazy" src="assets/images/stat_VarCoef.png" alt="Variačný koeficient">
   <figcaption>Obr. 5.: Takto vyzerá keď sa smerodajná odchýlka vydelí veľkosťou dát.</figcaption>
 </figure>
 

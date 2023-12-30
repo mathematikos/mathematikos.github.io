@@ -1,6 +1,6 @@
 ---
 title: Outliers
-description: "outliers"
+description: "Outliers sú dáta, ktorých hodnota je veľmi ďaleko od ostatných údajov. Napríklad 2,5 metrový človek je outlier, pretože sa vyskytuje veľmi zriedka."
 keywords: "outliers"
 permalink: outliers
 ---
@@ -10,12 +10,12 @@ permalink: outliers
 <h1>Outliers</h1>
 
 Na koniec si povieme niečo o outliers. Táto vec nepatrí k nástrojom štatistiky (teda k vzorcom), ale sú to dáta.<br /><br />
- 
-Ako angličtiny znalý človek, vieš, že outliers znamená <i>tí, čo ležia mimo</i>. Out je von alebo mimo a liers je ležiaci. Nevieme presný termín v slovenčine, tak budeme používať tento anglický. Outlier je teda to, čo leží mimo. V dátach sú to údaje, ktoré sú absolútne od veci. Buď sú príliš veľké alebo príliš malé. <br /><br />
+
+Ako angličtiny znalý človek, vieš, že outliers znamená <i>tí, čo ležia mimo</i>. Out je von alebo mimo a liers je ležiaci. Nevieme presný termín v slovenčine, tak budeme používať tento anglický. Outlier je teda to, čo leží mimo. V dátach sú to údaje, ktoré sú absolútne od veci. Buď sú príliš veľké alebo príliš malé.<br /><br />
 
 Príklady: Meriaš teploty v januári. V jeden deň príde teplý front a bude 41 &deg;C. Je to jasný outlier, v januári predsa nameráš tak od +2&deg;C po -20&deg;C. Druhý príklad. Meriaš výšku prvákov. Prváci merajú tak 130cm. Lenže v triede je aj prepadnutý 15-násť ročný Móric. Ten má 190cm. Zase vyčnieva z radu. Je to outlier. Takisto outlierom by bola aj nadpriemerne inteligentná 7-ročná Anička. Študovala by už na strednej škole. Jej spolužiaci merajú okolo 180cm a ona iba 130cm. Aj jej výška vyčnieva z radu. Outlierov v dátach nie je veľa. Od toho sú outlieri. Ak by ich bolo veľa, už by nevyčnievali z radu. Ak by v januári bežne bývalo 40 &deg;C, tak by to bolo úplne normálne, nie výnimočné.<br /><br />
 
-Na outlier-ov treba dávať pozor. Sú to takí záškodníci. Natiahnu ti priemer, ani nevieš ako. Napríklad zoberme si skupinku desiatich zamestnancov a ich šéfa. Každý zamestnanec má plat 500 eur a šéf má 5000. Rád by si povedal, že zamestnanci dostávajú priemerne 500 eur, ale nemôžeš, lebo šéf ti priemer posunie úplne niekde inde. Rátaj s nami: (500*10+5000)/11=909,09 eur. Priemer ti síce vyskočí takto vysoko, ale medián ťa zachráni. Ten ti povie, že stredná hodnota je 500. <br /><br />
+Na outlier-ov treba dávať pozor. Sú to takí záškodníci. Natiahnu ti priemer, ani nevieš ako. Napríklad zoberme si skupinku desiatich zamestnancov a ich šéfa. Každý zamestnanec má plat 500 eur a šéf má 5000. Rád by si povedal, že zamestnanci dostávajú priemerne 500 eur, ale nemôžeš, lebo šéf ti priemer posunie úplne niekde inde. Rátaj s nami: (500*10+5000)/11=909,09 eur. Priemer ti síce vyskočí takto vysoko, ale medián ťa zachráni. Ten ti povie, že stredná hodnota je 500.<br /><br />
 
 Je fajn si spraviť z dát medián aj priemer, lebo ti povedia, či máš v dátach outlierov alebo nie. Skús si tipnúť ako. Hej, je to tak, že keď sú to podobné čísla, tak tam outliere nie sú, ale keď ti priemer vyjde 1000 a medián 500 (skrátka je veľký rozdiel medzi priemerom a mediánom), tak niečo nie je v poriadku. Outlierov ti môžu naznačiť aj miery variability, lebo keď tam máš outliera, tak ti vyjde variabilita dát veľká. Veľkú variabilitu ti môžu spraviť aj veľmi rozptýlené dáta. Ale môžeš sa spoľahnúť na to, že keď ti vyjde variabilita malá, tak tam outliers nie sú.<br /><br />
 
@@ -24,9 +24,9 @@ Okrem priemeru je na outlierov citlivé aj variačné rozpätie.
 Outliere v bežných prípadoch ani nechceš v dátach, lebo ti veľmi skreslia informácie o nich (viď tie výplaty). Preto sa pri výpočtoch outliery tak nejak zabudnú do nich pridať.
 
 <h2>Odhalenie outlierov</h2>
-Už sme si povedali, že outliery v dátach znamenajú niečo zlé. Môžu znamenať, že naše merania boli chybné alebo bolo chybné, to čo sa meralo. Keď zistíme, že ich máme v dátach, treba hľadať chybu. Ale najprv to treba zistiť, takže sa ideme pozrieť, či nám štatistika pomôže. <br /><br />
- 
-Spravili sme si dva ukážkové štatistické súbory. Oba majú 21 údajov. Prvý má však všetky dáta rovnaké až na jedného outliera. Druhý má dáta pekne rozložené od 1 do 100. <br /><br />
+Už sme si povedali, že outliery v dátach znamenajú niečo zlé. Môžu znamenať, že naše merania boli chybné alebo bolo chybné, to čo sa meralo. Keď zistíme, že ich máme v dátach, treba hľadať chybu. Ale najprv to treba zistiť, takže sa ideme pozrieť, či nám štatistika pomôže.<br /><br />
+
+Spravili sme si dva ukážkové štatistické súbory. Oba majú 21 údajov. Prvý má však všetky dáta rovnaké až na jedného outliera. Druhý má dáta pekne rozložené od 1 do 100.<br /><br />
 
 x1 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 100]<br />
 x2 = [1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]<br /><br />
@@ -41,6 +41,6 @@ Presnejšie je použiť priemernú absolútnu chybu, rozptyl alebo smerodajnú o
 
 Keď chceme zvýrazniť tie dáta, ktoré sú od priemeru ďalej, použijeme rozptyl. Na súbore x1 je vidno ako zvýrazňuje väčšie chyby. Pre x1 je drvivá väčšina údajov od priemeru vzdialená o 4,714. Toto nie je veľké číslo, tak aj druhá mocnina bude malá. Ak by sme rátali rozptyl bez tej stovky, tak by vyšiel 22,221. Keď prirátame aj rozdiel medzi 100 a 5,714 tak výsledok bude 444,489. Môžete vidieť, že stačí jeden veľký rozdiel a rozptyl hneď vyskočí. V súbore x2 sú už rozdiely medzi údajmi a priemerom väčšie, tak aj rozptyl bude veľký. Pre x1 je teda rozptyl 444,489 a pre x2 je rozptyl 911,950.<br /><br />
 
-Ak chceme vrátiť rozptyl späť do jednotiek, v ktorých sme počítali, tak ho odmocníme. Vznikne smerodajná odchýlka.  Outlier je zvyčajne od priemeru vzdialený ďaleko. Rozptyl veľké vzdialenosti zachytí, lebo ich umocňuje. Smerodajná odchýlka vracia rozptyl späť do jednotiek, ale veľké rozdiely sú už v nej zachytené (vďaka tomu, že sa ráta z rozptylu). Smerodajná odchýlka je pre x1 rovná 21,082 a pre x2 je 30,198. Keď výsledky porovnáme s priemernou absolútnou chybou vidíme, že pre x1 sa líšia viac ako pre x2. Aj z tohto je vidno, že v dátach niečo nie je na poriadku.
+Ak chceme vrátiť rozptyl späť do jednotiek, v ktorých sme počítali, tak ho odmocníme. Vznikne smerodajná odchýlka. Outlier je zvyčajne od priemeru vzdialený ďaleko. Rozptyl veľké vzdialenosti zachytí, lebo ich umocňuje. Smerodajná odchýlka vracia rozptyl späť do jednotiek, ale veľké rozdiely sú už v nej zachytené (vďaka tomu, že sa ráta z rozptylu). Smerodajná odchýlka je pre x1 rovná 21,082 a pre x2 je 30,198. Keď výsledky porovnáme s priemernou absolútnou chybou vidíme, že pre x1 sa líšia viac ako pre x2. Aj z tohto je vidno, že v dátach niečo nie je na poriadku.
 
 </div>
