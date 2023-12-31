@@ -88,13 +88,13 @@ Na obrázku sú štyri modré vektory, ktoré chceme sčítať. Po ich zrátaní
 <h2><a id="aGeom_vecDotProduct">Skalárny súčin</a></h2>
 V polovici 19. storočia sa ujo Hamilton zaoberal niečím, čo sa nazýva "quaternion". Pri skúmaní quaternion-ov objavil vec, ktorú dnes voláme skalárny súčin. Táto vec sa neskôr adaptovala do vektorov.<br /><br />
 
-Skalárny súčin je jeden zo spôsobov ako spolu vynásobiť dva vektory. <b>Výsledok skalárneho súčinu je číslo a hovorí o tom, ako veľmi sú vektory rovnobežné.</b> Teda ako veľmi pôsobí jeden vektor v smere druhého. Keď chceme povedať, že dva vektory sa násobia skalárnym súčinom, <b>znamienko súčinu je bodka</b>. Skalárny súčin môžeme vyjadriť dvomi rôznymi spôsobmi. Algebraickým a geometrickým. <br /><br />
+<a href="analyticka_geometria_skalarny_sucin" target="_blank">Skalárny súčin</a> je jeden zo spôsobov ako spolu vynásobiť dva vektory. <b>Výsledok skalárneho súčinu je číslo a hovorí o tom, ako veľmi sú vektory rovnobežné.</b> Teda ako veľmi pôsobí jeden vektor v smere druhého. Keď chceme povedať, že dva vektory sa násobia skalárnym súčinom, <b>znamienko súčinu je bodka</b>. Skalárny súčin môžeme vyjadriť dvomi rôznymi spôsobmi. Algebraickým a geometrickým. <br /><br />
 
 Geometrický: vyjadríme ho pomocou uhla medzi vektormi
-$$ \vec{v} \cdot \vec{u} = |\vec{v}| \cdot |\vec{u}| \cdot cos \alpha $$
+$$ \vec{u} \cdot \vec{v} = |\vec{u}| |\vec{v}| cos \alpha $$
 
 Algebraický: vyjadrí sa pomocou súradníc
-$$ \vec{v} \cdot \vec{u} = u_{x} \cdot v_{x} + u_{y} \cdot v_{y}$$
+$$ \vec{u} \cdot \vec{v} = u_{x} v_{x} + u_{y} v_{y}$$
 
 <figure>
   <img loading="lazy" src="assets/images/aGeom_vecDotProduct.png" alt="Skalárny súčin">
@@ -107,8 +107,8 @@ V praxi je niekedy treba zistiť uhol medzi dvomi vektormi. Tu prichádza na sc�
 $$
 \begin{equation}
 \displaylines{
-u_{x} \cdot v_{x} + u_{y} \cdot v_{y} = |\vec{v}| \cdot |\vec{u}| \cdot cos \alpha \\
-\frac{u_{x} \cdot v_{x} + u_{y} \cdot v_{y}}{|\vec{v}| \cdot |\vec{u}| } = cos \alpha
+u_{x} v_{x} + u_{y} v_{y} = |\vec{u}| |\vec{v}| cos \alpha \\
+\frac{u_{x} v_{x} + u_{y} v_{y}}{|\vec{u}| |\vec{v}| } = cos \alpha
 }
 \end{equation}
 $$

@@ -9,7 +9,7 @@
 
 <title>{{ page.title }}</title>
 
-{%- assign styles = "nav_styles, carusel_styles, styles" | split: ", " %}
+{%- assign styles = "nav_styles, styles" | split: ", " %}
 {% for style in styles %}
 <link rel="stylesheet" type="text/css" href="assets/css/{{ style }}.css">
 {%- endfor %}
