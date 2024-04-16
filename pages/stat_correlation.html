@@ -10,7 +10,7 @@ mathjax: true
 
 <h1>Korelácia</h1>
 
-Korelácia hovorí o tom, či a ako sú dáta od seba závislé. Vďaka korelácií by sme zistili, či spolu súvisí <i>overall</i> hráča a jeho cena. Možno by sme našli vzťah, že čím je hráč lepší, tým bude drahší. Koreláciu medzi výškou a vekom hráča by sme asi nenašli, pretože výška hráča nezávisí od jeho veku. Zápornú koreláciu by sme možno našli medzi atribútmi <i>gk_diving</i> a <i>skill_ball_control</i>. Prvý hovorí o tom, ako dobre sa brankár hádže za loptou a druhý o tom, ako dobre hráč vedie loptu. Môžeme predpokladať, že hráči, ktorí sa dobre hádžu po lopte sú brankári a vo vedení lopty sú slabší. Hráči v poli sa zasa budú biedne hádzať za loptou, ale vedednie lopty budú mať excelentné. Či sú tieto naše hypotézy pravdivé, sa dá overiť korelačným koeficientom.
+Korelácia hovorí o tom, či a ako sú dáta od seba závislé. Vďaka korelácií by sme zistili, či spolu súvisí <i>overall</i> hráča a jeho cena. Možno by sme našli vzťah, že čím je hráč lepší, tým bude drahší. Koreláciu medzi výškou a vekom hráča by sme asi nenašli, pretože výška hráča nezávisí od jeho veku. Zápornú koreláciu by sme možno našli medzi atribútmi <i>gk_diving</i> a <i>skill_ball_control</i>. Prvý hovorí o tom, ako dobre sa brankár hádže za loptou a druhý o tom, ako dobre hráč vedie loptu. Môžeme predpokladať, že hráči, ktorí sa dobre hádžu po lopte sú brankári a vo vedení lopty sú slabší. Hráči v poli sa zasa budú biedne hádzať za loptou, ale vedenie lopty budú mať excelentné. Či sú tieto naše hypotézy pravdivé, sa dá overiť korelačným koeficientom.
 
 <h2>Korelačný koeficient</h2>
 
@@ -28,7 +28,7 @@ Korelačný koeficient:<br /><br />
 
 $$ r=\frac{k}{s_{x} \cdot s_{y}} $$
 
-Výsledkom korelačného koeficientu je nejaké číslo od -1 po 1. Výsledok určuje silu a druh závislosti. Keď je od -1 po 0, znamená, že údaje rastú každý opačne. Teda keď je x menšie, y je väčšie. Čím je číslo bližšie k -1, tým je závisloť silnejšia. Výsledok 0 znamená, že medzi údajmi nie je žiaden vzťah. Čísla okolo 0 hovoria o veľmi slabej závislosti. Keď ideme na opačnú stranu k 1, tak údaje rastú rovnako. Čím je <i>x</i> väčšie, tým je aj <i>y</i> väčšie. Zasa platí, že čím bližšie je výsledok k 1, tým je závislosť silnejšia.<br /><br />
+Výsledkom korelačného koeficientu je nejaké číslo od -1 po 1. Výsledok určuje silu a druh závislosti. Keď je od -1 po 0, znamená, že údaje rastú každý opačne. Teda keď je x menšie, y je väčšie. Čím je číslo bližšie k -1, tým je závislosť silnejšia. Výsledok 0 znamená, že medzi údajmi nie je žiaden vzťah. Čísla okolo 0 hovoria o veľmi slabej závislosti. Keď ideme na opačnú stranu k 1, tak údaje rastú rovnako. Čím je <i>x</i> väčšie, tým je aj <i>y</i> väčšie. Zasa platí, že čím bližšie je výsledok k 1, tým je závislosť silnejšia.<br /><br />
 
 Teraz si ideme ukázať, ako takýto zázrak môže fungovať. <br /><br />
 
@@ -162,15 +162,15 @@ V tabuľke máme vypočítané súčiny. Ešte stále však nevieme povedať, ak
 
 Super, máme jedno číslo a mohli by sme porovnať závislosť. Pri overalle a cene teda platí, že rastú rovnakým smerom. Gk_diving a skill_ball_control rastú každé opačným smerom. Medzi overallom a cenou vyšla závislosť v miliónoch a medzi gk_diving a skill_ball_control iba v tisícoch. Platí, že overall a cena majú medzi sebou oveľa väčšiu závislosť ako gk_diving a skill_ball_control? No nie, neplatí. Zase treba prihliadnuť na veľkosť dát.<br /><br />
 
-Ako porovnať nerovnaké dáta sme mali už vo variančnom koeficiente. Riešením bolo spraviť porovnávané údaje relatívne (rozptyl sme vyjadrili na jednu jednotku údajov, pamätáš?). Niečo podobné chceme teda aj tu. To, čo sme teraz porovnali je priemer z rozdielov. Spravíme teda rozdiely relatívne. To znamená, že ich vyjadríme na jednu jednotku. Zatiaľ ešte nevieme na akú.<br /><br />
+Ako porovnať nerovnaké dáta sme mali už vo variačnom koeficiente. Riešením bolo spraviť porovnávané údaje relatívne (rozptyl sme vyjadrili na jednu jednotku údajov, pamätáš?). Niečo podobné chceme teda aj tu. To, čo sme teraz porovnali je priemer z rozdielov. Spravíme teda rozdiely relatívne. To znamená, že ich vyjadríme na jednu jednotku. Zatiaľ ešte nevieme na akú.<br /><br />
 
-Keď porozmýšlaš nad rozdielom, zistíš, že je to vlastne nejaká variabilita. Lebo keď odčítaš priemer od údaju, dostaneš, ako ďaleko sú od seba. Takže rozdiel je variabilita a tú treba vyjadriť na jednotku variability. Veľkosť variability sme už počítali viacerými spôsobmi. Vyberieme si z nich smerodajnú odchýlku.<br /><br />
+Keď porozmýšľaš nad rozdielom, zistíš, že je to vlastne nejaká variabilita. Lebo keď odčítaš priemer od údaju, dostaneš, ako ďaleko sú od seba. Takže rozdiel je variabilita a tú treba vyjadriť na jednotku variability. Veľkosť variability sme už počítali viacerými spôsobmi. Vyberieme si z nich smerodajnú odchýlku.<br /><br />
 
-Poznáme variabilitu pre jeden údaj a aj pre všetky údaje (je to smerodajná odchýlka). Už stačí len spraviť rozdiel deleno smerodajná odchýlka a máme rozdiel relatívny. Tak to vyskúšame.<br /><br />
+Poznáme variabilitu pre jeden údaj a aj pre všetky údaje (je to smerodajná odchýlka). Už stačí len spraviť rozdiel delené smerodajná odchýlka a máme rozdiel relatívny. Tak to vyskúšame.<br /><br />
 
 Vypočítame si smerodajné odchýlky pre overall=12.57, cena=39 381 326.57, gk_diving=36.69 a skill_ball_control=31.84. <br /><br />
 
-Skúsime vypočítať vzťah medzi dátami znovu. Pre každý údaj vypočítame rozdiel medzi ním a priemerom. Tu prichádza zásadný krok. Každý rozdiel vydelíme jeho smerodajnou odchýlkou (rozdiely overallu sa delia smerodajnou odchýlkou overallu, rozdiely ceny sa delia smerodajnou odchýlkou ceny a podobne). Takto upravené rozdiely môžeme medzi sebou vynásobiť. Nakoniec z nich spravíme priemer a dostaneme závisloť medzi údajmi.<br /><br />
+Skúsime vypočítať vzťah medzi dátami znovu. Pre každý údaj vypočítame rozdiel medzi ním a priemerom. Tu prichádza zásadný krok. Každý rozdiel vydelíme jeho smerodajnou odchýlkou (rozdiely overallu sa delia smerodajnou odchýlkou overallu, rozdiely ceny sa delia smerodajnou odchýlkou ceny a podobne). Takto upravené rozdiely môžeme medzi sebou vynásobiť. Nakoniec z nich spravíme priemer a dostaneme závislosť medzi údajmi.<br /><br />
 
 V tejto tabuľke sú rozdiely vydelené príslušnou smerodajnou odchýlkou. Pre overall Jonathana Mitchella je to -17/12=-1,417 a pre ostatné sa to ráta rovnako. Ani delenie nepokazilo vzťahy medzi údajmi. Stále platí, že čím väčší overal, tým väčšia cena a čím väčší gk_diving, tým menší skill_ball_control.<br /><br />
 
@@ -256,7 +256,7 @@ Keď predchádzajúce výpočty upravíme, dostaneme kovarianciu a korelačný k
 <li>Z x aj y sa vypočítal priemer a smerodajná odchýlka. Od každého údaju sa priemer odráta. Tento rozdiel sa predelí smerodajnou odchýlkou. Príslušné rozdiely sa vynásobia (u nás to bol overall a cena hráča). Nakoniec sa z toho spraví priemer.</li>
 <li>Aby sme nemuseli každé x a y deliť zvlášť, upravíme si zápis. Zlomky, ktoré sa spolu násobia dáme do jedného.</li>
 <li>Ďalšia úprava. Sčítanie zlomkov nahradíme sumou. Písmeno <i>i</i> bude postupne prechádzať všetkými údajmi x a y.</li>
-<li>Delenie smerodajnými odchýlkami dáme von pred sumu. Matematika nám to dovolí, pretože smerodajné odchýlky sú počas celého sčítavania rovnaké a je jedno, či sa najprv delí a potom sčítavá alebo sa najprv sčíta a potom sa to celé vydelí. </li>
+<li>Delenie smerodajnými odchýlkami dáme von pred sumu. Matematika nám to dovolí, pretože smerodajné odchýlky sú počas celého sčítavania rovnaké a je jedno, či sa najprv delí a potom sčítava alebo sa najprv sčíta a potom sa to celé vydelí. </li>
 <li>Delenie smerodajnými odchýlkami presunieme do ďalšieho kroku. Vznikol vzorec, ktorý už poznáš. Je to kovariancia.</li>
 <li>Kovarianciu predelíme smerodajnými odchýlkami a dostaneme výraz, ktorý sa nazýva korelačný koeficient.</li>
 </ol>

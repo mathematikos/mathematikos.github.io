@@ -67,13 +67,13 @@
       url: /analyticka_geometria_priamka
     - page: Rovina
       url: /analyticka_geometria_rovina
-    - page:  Vzájomná poloha priamok
+    - page: Vzájomná poloha priamok
       url: /analyticka_geometria_vzajomna_poloha_priamka
     - page: Vzájomná poloha priamky a roviny
       url: /analyticka_geometria_vzajomna_poloha_priamka_rovina
-    - page:  Vzájomná poloha rovín
+    - page: Vzájomná poloha rovín
       url: /analyticka_geometria_vzajomna_poloha_rovina
-    - page:  Skalárny súčin
+    - page: Skalárny súčin
       url: /analyticka_geometria_skalarny_sucin
     - page: Použitie v počítačovej grafike
       url: /analyticka_geometria_v_pocitacovej_grafike
