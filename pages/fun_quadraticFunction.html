@@ -1,0 +1,508 @@
+---
+title: Kvadratická funkcia
+description: "Kvadratická funkcia opisuje veci, ktoré sa menia a ešte sa mení aj tá zmena, ktorou sa menia."
+keywords: "kvadraticka funkcia, ax2+bx+c=y, graf kvadratickej funkcie"
+permalink: kvadraticka_funkcia
+mathjax: true
+---
+
+<script src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+
+<div class="content">
+<h1>Kvadratická funkcia</h1>
+<b>Funkcie opisujú ako sa nejaká hodnota mení na základe inej.</b> Napríklad ako sa mení prejdená dráha v závislosti na čase, stav bankového účtu na základe vkladania peňazí ale aj odhadovanie veľkosti populácie nejakého živočícha v závislosti na počasí (napr. priemernej teplote na jar).<br /><br />
+
+<b>Keďže rôzne veci sa menia rôzne</b>, treba vymyslieť aj <b>rôzne</b> opisy týchto zmien, teda <b>funkcie</b>. <b>Kvadratická funkcia</b> je jednou z nich. <b>Opisuje takú zmenu, že sa mení nejaká veličina a ešte sa mení aj táto zmena</b>.<br /><br />
+
+Napríklad by sme do banky vkladali každý mesiac peniaze a sledovali by sme stav účtu. Nedávali by sme však stále rovnako peňazí, ale každý mesiac by sa vkladaná čiastka navýšila o rovnakú sumu. Napr. prvý mesiac by sa dalo euro, druhý by sa dali tri eurá, tretí mesiac by sa vložilo päť eur. Skrátka vždy by sa vkladaná suma navýšila o dve eurá. Stav účtu by sa potom dal opísať kvadratickou funkciou.<br /><br /> 
+
+Samozrejme stav účtu nemusí iba rásť, môže aj klesať. Kvadraticky by klesal vtedy, keby každý mesiac z neho vyberieme o rovnakú sumu viac ako minule<br /><br />
+
+Na to, aby sme lepšie pochopili, čo je kvadratická funkcia zač, treba sa pozrieť na jej vznik. Aspoň trochu &#x1F642;
+
+<h2>Ako vznikla kvadratická funkcia</h2>
+
+Svoj názov dostala zhruba v roku <b>1660 podľa latinského slova quadratum [1], čo znamená štvorec</b>. Jej pomenovanie je veľmi výstižné, pretože kvadratickú rovnicu (nie ešte kvadratickú funkciu) používali národy po tisícročia v súvislosti so štvorcami. Oni potrebovali rozdeľovať pôdu a stavať stavby. Pri tom sa im často stávalo, že <b>poznali rozlohu pôdorysu</b> alebo pozemku a potrebovali nejak <b>zistiť jeho strany</b>.[2]<br /><br />
+
+<b>Prvé kvadratické problémy sú známe už zo starovekého Egypta</b>, kedy jeho obyvatelia potrebovali zistiť dĺžku strán pozemkov a stavieb. Oni síce vedeli vypočítať obsah štvorca a obdĺžnika ak poznali jeho strany. No naopak to išlo ťažko. Vyvinuli si na to nejaké postupy. Tie však boli zdĺhavé a egyptské písmo bolo zložité, tak si strany pre rôzne obsahy predpočítavali do tabuliek. Keď poznali strany a chceli vedieť rozlohu, stačilo im pozrieť do tabuliek. Lenže toto <b>nebolo veľmi dobré riešenie, pretože v tabuľke nemohli mať zapísané všetky rozlohy a ani všetky strany</b>. Často teda počítali iba približne. A to nie je dobré, ak chcete vyberať dane.[2]<br /><br />
+
+<b>Ako nájsť strany, keď je známy obsah trápilo aj Sumerov</b>. Vďaka jednoduchšiemu písmu <b>našli trochu všeobecnejšie riešenie</b> ako boli tabuľky. Vytvorili postup na nájdenie strán obdĺžnika. Problém bol zhruba takýto. Vieme, že jedna strana obdĺžnika je veľká <i>x</i>. Druhá strana je o <i>b</i> stôp dlhšia ako <i>x</i>. Ako veľké sú strany obdĺžnika? To <i>b</i> sa poznalo, takže stačilo už iba vyrátať <i>x</i>. Sumeri vymysleli na to niečo, čo dnes poznáme pod názvom <b>metóda doplnenia na štvorec</b>. O nej si povieme inokedy, pretože <b>dnes riešime kvadratické rovnice vzorcom, ktorý je odvodený práve z tejto metódy</b>.[2]<br /><br />
+
+Postupom času sa objavovali <b>ďalšie kvadratické problémy</b> a s nimi aj <b>ďalšie tvary dnešných rovníc</b>. Vtedy to však boli iba geometrické riešenia a neskôr rovnice s číslami. Stále to však nebolo nič všeobecné a <b>na každý problém muselo byť zvlášť riešenie</b>. Napríklad vtedy bola pre nich iná rovnica $x^2+6=0$, iná $8x^2=0$ a iná $x^2+4x=0$. Samozrejme rovnice neboli napísané písmenkami, ale slovami a číslami.[2]<br /><br />
+
+Preto ľudia stále hľadali všeobecnú rovnicu. Až ju nakoniec našiel indický matematik Brahmagupta[2]. Neskôr sa do matematiky pridali písmenká a tak dnes máme tvar kvadratickej rovnice takýto:
+
+$$ax^2+bx+c=y$$
+
+Až neskorší rozvoj matematiky v sedemnástom a osemnástom storočí priniesol používanie kvadratickej rovnice ako funkcie.
+
+<h2>Rozdiel medzi kvadratickou funkciou a kvadratickou rovnicou</h2>
+Aký je rozdiel medzi funkciou a rovnicou?<br /><br />
+
+<a href="funkcie_a_ich_vlastnosti#fun_whatIsFunction" target="_blank">Funkcia</a> je taká vec, do ktorej sa dosadia čísla za <i>x</i> a ona vráti výsledok <i>y</i>.<br /><br />
+
+V rovnici práve naopak, je známy "výsledok" <i>y</i> a cieľom riešenia rovnice je nájsť <i>x</i>, ktoré viedlo k výsledku.<br /><br />
+
+Zhrnutie: <b>v rovnici je známe <i>y</i> a ráta sa <i>x</i>. Vo funkcii je známe <i>x</i> (lebo sa zaň dosádzajú čísla) a hľadá sa <i>y</i></b>.
+
+<h2>Kvadratická funkcia</h2>
+Ľudstvo o kvadratických problémoch vedelo už dávno. <b>Keďže tých problémov bolo veľa, chceli to zapísať nejak všeobecne. Pretože keby sa vie vyriešiť všeobecná funkcia, tak by sa vedel vyriešiť aj každý z tých problémov.</b> A tak sa ľudstvo postupom času dopracovalo k zápisu kvadratickej funkcie, aký poznáme dnes:
+
+$$f(y)=ax^2+bx+c$$
+
+Môžeme si ukázať jednotlivé zložky kvadratickej funkcie. Že čo vlastne znamenajú.<br /><br />
+
+<b>f(y)</b> - to je výsledok. Keď si za x dosadíme nejaké číslo a vyrátame preň tú funkciu, tak f(y) je výsledok. Napríklad mali by sme funkciu $f(y) = 1,5x^2 - 4x + 3$. Za x by sme dosadili napríklad 8,3, tak by sme dostali:
+<div class='overflowedItem'>
+$$ f(8,3) = 1,5*8,3^2 - 4*8,3 + 23 = 103,335 - 33,2 + 23 = 93,135 $$
+</div>
+Teda výsledok funkcie v bode 8,3 je 93,135.<br /><br />
+
+<b>a,b,c</b> - sú koeficienty. Ich hodnoty sú známe. Teda v takom bežnom zápise funkcie to nebudú písmenká, ale už nejaké konkrétne čísla. O tom, prečo sú dôležité si povieme neskôr.<br /><br />
+
+<b>x</b> - to je premenná. Za ňu sa dosádza číslo, pre ktoré treba vedieť výsledok funkcie. Keď sa funkcia kreslí do grafu, tak sa tieto čísla zakresľujú na osi x.<br /><br />
+
+<b>x<sup>2</sup></b> - dosadí sa tam to isté číslo, čo za x, ibaže sa umocní na druhú. Toto x<sup>2</sup> opisuje práve tú zmenu zmeny. 
+
+<figure>
+  <img loading="lazy" src="assets/images/fun_quadTableX2.png" alt="Rozdiely medzi susednými hodnotami x na druhú ukázané v tabuľke.">
+  <figcaption>Obr. 1.: x<sup>2</sup> má taký rast, že v každom kroku pribudne viac ako v tom predošlom. Nedeje sa to však halabala, ale má to svoju zákonitosť. To, o koľko sa zväčšuje rast, sa mení lineárne. Ak daná vec klesá, tak sa samozrejme nebavíme o pribúdaní, ale odbúdaní.</figcaption>
+</figure>
+
+<div class="homework">
+  <h3>&#x1f989; ÚLOHA</h3>
+  Skús si spraviť podobnú tabuľku pre viaceré $x^2$. Pre každé vyrátaj zopár základných hodnôt, vyrátaj rozdiely medzi nimi a ešte vyrátaj aj rozdiely medzi týmito rozdielmi. Tu je zopár inšpirácii:
+  
+  <ul>
+	  <li>$2x^2$ pre hodnoty 1.1, 1.2, 1.3, 1.4, 1.5</li>
+	  <li>$1,5x^2$ pre hodnoty -4, -3, -2, -1, 0, 1, 2, 3, 4</li>
+	  <li>$-x^2$ pre hodnoty 0, 1, 2, 3, 4, 5</li>
+  </ul>
+</div>
+
+<h2>Koeficienty kvadratickej funkcie</h2>
+
+Zákonitosť, s akou sa mení kvadratická funkcia sa dá celkom pekne vysvetliť na kockách.
+
+<figure>
+  <img loading="lazy" src="assets/images/fun_quadCubesX2.png" alt="Vysvetlenie x2 na kockách.">
+  <figcaption>Obr. 2.: V nultom kroku nie sú žiadne kocky. Pre 1 a -1 to bude jedna  kocka, pretože tá zmena zmeny sa rozdelí na obe strany. No a ďalšie kroky sú v podstate rovnaké. Zoberie sa počet kociek z predchádzajúceho kroku, zoberie sa celková zmena a ešte sa pridajú dve kocky, aby narástla tá zmena. Potom sa z toho postaví vežička. Prerátaj si počet kociek v jednotlivých krokoch aj farbách, aby si tak lepšie pochopil, ako sa to mení.</figcaption>
+</figure>
+
+Ak si to dočítal až potiaľto, možno ti napadla otázka, že <b>prečo sa to mení akurát o dva a nie napríklad o jeden</b>. To vychádza zo samotnej podstaty $x^2$. Pretože to $x^2$ ako keby opisuje plochu štvorca, že ako keby to $x$ sa mení súčasne dva razy. <b>Lebo keď sa mení plocha štvorca, tá zmena zmeny sa musí meniť v dvoch rozmeroch.</b><br /><br />
+
+Teraz je na rade <b>koeficient <i>a</i>. To je číslo, s ktorým sa násobí $x^2$. Spôsobuje to, že veľkosť $x^2$ môže byť ľubovoľne veľká</b>. Lebo tým, že sa nejaké číslo násobí iným, tak ho vieme meniť, zväčšiť, zmenšiť či dať do záporu.
+
+<figure>
+  <img loading="lazy" src="assets/images/fun_quadTableAX2.png" alt="Tabuľka pre hodnoty ax2">
+  <figcaption>Obr. 3.: Kladné číslo väčšie ako 1 zväčší hodnoty $x^2$. Kladné číslo menšie ako 1 ich zmenší (lebo je to delenie). Záporné číslo ich obráti "hore kopcom". Aj tu platí, že hodnoty medzi 0 a -1 výsledky predelia.</figcaption>
+</figure>
+
+<figure>
+  <img loading="lazy" src="assets/images/fun_quadCubesAX2.png" alt="Kocky pre koeficient a">
+  <figcaption>Obr. 4.: Koeficient <i>a</i> mení veľkosť zmeny zmeny. Je to ukázané na oranžových kockách.</figcaption>
+</figure>
+
+Ďalšou dôležitou udalosťou v živote <b>kvadratickej funkcie je prirátanie <i>x</i>. To je vlastne tá zmena, ktorá je menená $x^2$.</b> Keď vo funkcii nie je <i>x</i>, to znamená, že veličina sa na začiatku nemenila, začala sa meniť, až keď sa zmenila zmena (teda zmenilo sa to, že sa to nemenilo &#x1F601;). Keď vo funkcii už existuje nejaké <i>x</i>, znamená to, že na začiatku už je nejaká zmena a tá je menená tým $x^2$.
+
+<figure>
+  <img loading="lazy" src="assets/images/fun_quadCubesX.png" alt="Tabuľka a kocky pre hodnoty x">
+  <figcaption>Obr. 5.: Tuto sa zmena nijako nemení, stále je to 1. Až keď sa k nej pridá $x^2$, vtedy sa začne meniť.</figcaption>
+</figure>
+
+Na obrázku 5 sa veličina mení stále rovnako, pretože v každom kroku pribudne iba jedna kocka. Ale niekedy netreba meniť veličinu stále rovnako, treba meniť aj tú zmenu. To sa spraví tak, že sa k tomu priráta $x^2$. To, ako to celé funguje je nakreslené na nasledujúcom obrázku.
+
+<figure>
+  <img loading="lazy" src="assets/images/fun_quadCubesX2plusX.png" alt="Kocky pre x2+x">
+  <figcaption>Obr. 6.: K základnej zmene (zelené kocky) sa pridáva nejaká ďalšia zmena (modré, žlté a oranžové kocky). Celé to funguje tak, že najprv sa zmení tá základná zmena, teda v každom ďalšom kroku pribudnú nejaké zelené kocky. Potom sa bude k tomu pridávať tá zmena zmeny, teda $x^2$. To znamená, že v každom ďalšom kroku pribudnú modré kocky, ktoré predstavujú počet modrých, žltých a oranžových kociek, ktoré pribudli v minulom kroku. Pribudnú aj žlté kocky, ktoré predstavujú celkovú zmenu a nakoniec pribudnú aj oranžové kocky, ktorých je stále rovnako a reprezentujú tú zmenu zmeny.</figcaption>
+</figure>
+
+<b>Samozrejme aj tá základná zmena <i>x</i> môže byť ľubovoľne veľká</b>. Nechceme ju stále zvyšovať o 1. Niekedy ju chceme aj znížiť, zvýšiť o 0,052 alebo zvýšiť o 26 478. To sa spraví tak, že sa <i>x</i> prenásobí daným číslom. Vo všeobecnosti sa to označuje <i>b</i>.
+
+<figure>
+  <img loading="lazy" src="assets/images/fun_quadCubesAX2plusBX.png" alt="Kocky pre ax2+bx">
+  <figcaption>Obr. 7.: Koeficient <i>b</i> určuje veľkosť zmeny, teda <i>x</i>. Koeficient <i>a</i> už tradične predstavuje veľkosť zmeny zmeny, teda veľkosť $x^2$.</figcaption>
+</figure>
+
+Do tretice je tu posledná vec, posledný koeficient. A to je <b>číslo, ktoré sa označuje písmenkom <i>c</i></b>. Toto číslo je v každom kroku rovnaké, nijak sa nemení. No a vždy sa pridá k celkovému výsledku. Reprezentuje nejaký počiatočný stav veličiny.
+
+<figure>
+  <img loading="lazy" src="assets/images/fun_quadCubesAX2plusBXplusC.png" alt="Kocky pre ax2+bx+c">
+  <figcaption>Obr. 8.: Toto číslo sa pripočíta do výsledku v každom "kroku" funkcie. Vo všeobecnosti sa označuje písmenom <i>c</i>.</figcaption>
+</figure>
+
+<div class="homework">
+  <h3>&#x1f989; ÚLOHA</h3>
+  Skús nakresliť kocky pre nasledujúce funkcie:
+  
+  <ul>
+	  <li>$f(x)=4,5x^2$</li>
+	  <li>$f(x)=4,5x^2+2x$</li>
+	  <li>$f(x)=4,5x^2+2x+1$</li>
+  </ul>
+</div>
+
+<h2>Graf kvadratickej funkcie</h2>
+
+<b>Aby sa ľuďom lepšie rozmýšľalo nad vecami, ktoré reprezentuje kvadratická funkcia, je celkom užitočné si ich nejako zobraziť.</b> Dá sa to všelijako, napríklad aj kockami, ako sme to robili doteraz. Ibaže to je nepresné (ťažko z toho vyčítame aspoň približnú hodnotu napr. pre x=1,5) a z vlastnej skúsenosti už vieš, že aj namáhavé. Inteligentnejší spôsob sú napríklad <b>tabuľky a grafy</b>. <a href="funkcie_a_ich_vlastnosti#fun_functionDisplaying" target="_blank">V tabuľke vidíme presné hodnoty a v grafe zase tú funkciu tak celkovo</a>.<br /><br />
+
+Graf funkcie sa robí jednoducho. Zoberú sa nejaké <i>x</i>, vyrátajú sa pre ne hodnoty <i>y</i>. Na papier sa nakreslia dve kolmé čiary. Na tú rovnú sa spravia guličky tam, kde majú byť <i>x</i> a na tú zvislú sa nakreslia guličky tam, kde má byť <i>y</i>. To sa potom pospája.
+
+<figure>
+  <img loading="lazy" src="assets/images/fun_quadGraph.png" alt="Graf kvadratickej funkcie">
+  <figcaption>Obr. 9.: Takto sa kreslí graf kvadratickej funkcie.</figcaption>
+</figure>
+
+Poďme sa pozrieť na to, ako jednotlivé zložky funkcie vplývajú na tvar grafu. Tie grafy sú tu také, že sa dá s nimi hýbať a majú v sebe aj tabuľky pre pár hodnôt, tak si to môžeš poskúšať a popozerať, ako sa to správa.<br /><br />
+
+<b>$x^2$ spraví z grafu parabolu</b> - niečo podobné ako písmeno U. Všetky čísla, ktoré sa dosadia za <i>x</i> budú kladné. <b>Pretože je to na druhú, číslo sa násobí samým sebou</b> a + krát + aj - krát - je +. Tie výsledky nebudú však rásť stále rovnako, pretože výsledky pre susedné čísla sa budú stále viac a viac od seba líšiť, ako sa  pôjde smerom od nuly.<br /><br />
+
+<b>Koeficient <i>a</i></b> ovplyvňuje veľkosť $x^2$, teda to, <b>ako veľký bude rozdiel medzi susednými hodnotami</b>. Čím väčšie bude áčko, tým budú výsledky rozdielnejšie. Čím je áčko menšie, tým budú aj rozdiely medzi susedmi menšie. Na grafe sa to prejaví tak, že bude to účko strmšie alebo čapatejšie. Negatívne áčko všetky tie hodnoty dá do mínusu a graf bude hore nohami. Už to nebude účko, ale kopec.<br /><br />
+
+<div id="calculator" style="height: 480px;"></div>
+<script>
+  var elt = document.getElementById('calculator');
+  var calculator = Desmos.GraphingCalculator(elt);
+  calculator.setExpression({ id: 'ax2', latex: 'f(x) = ax^2', readonly: true});
+calculator.setExpression({
+  id: 'slider1',
+  latex:'a=1',
+  sliderBounds: { min: -10, max: 10, step: 0.1 },
+});
+calculator.setExpression({
+  type: 'table',
+  columns: [
+    {
+      latex: 'x',
+      values: ['-4', '-3', '-2', '-1', '-0.28', '0', '0.28', '1', '2', '3', '4']
+    },
+    {
+      latex: 'f(x)',
+      dragMode: Desmos.DragModes.XY
+    },
+  ]
+});
+</script><br /><br />
+
+<b>Pridanie členu <i>bx</i></b> do funkcie spraví s grafom, takú zvláštnu vec, že <b>keď sa mení veľkosť <i>b</i>, graf sa hýbe po parabole</b>. Môžeš to vyskúšať na nasledujúcom grafe.<br /><br />
+
+Stručné vysvetlenie je takéto:<br /><br />
+
+$x^2$ je vlastne graf, kedy je <i>b</i>, teda  tá počiatočná zmena nulová.<br /><br />
+
+Pridanie <i>bx</i> do funkcie znamená, že na začiatku už bola nejaká zmena. <b>Tým, že sa do funkcie pridal <i>bx</i>, čo je lineárny člen, deje sa tam to, že sa ku kvadratickej funkcii pričíta lineárna funkcia.</b><br /><br />
+
+Teda ku každej hodnote sa priráta/odráta hodnota lineárnej funkcie <i>bx</i> v danom bode. Keď si vyrátame pár hodnôt do tabuľky, <b>dá sa všimnúť, že v istom momente bude <i>x</i> väčšie ako $x^2$</b>. <br /><br />
+
+Vtedy to <i>x</i> preváži a hodnoty stiahne pod nulu, čiže kúsok toho grafu sa bude nachádzať pod osou <i>x</i>. <b>Ten úsek je medzi priesečníkmi grafu s osou <i>x</i></b>.<br /><br />
+
+Keď sa <b>bude meniť iba <i>b</i>, ten graf bude robiť pohyb po parabole</b>, lebo čím väčšie béčko, tým ešte väčšia <i>y</i> súradnica minima. Je to nadlhšie vysvetľovať, ak chceš príď na to sám, prečo sa to hýbe po parabole. Pomôcka môže byť, že si treba vyrátať <i>y</i> súradnicu minima/maxima funkcie a pozrieť sa na to, ako sa mení a ako sa ráta.<br /><br />
+
+<div id="calculator1" style="height: 480px;"></div>
+<script>
+  var elt = document.getElementById('calculator1');
+  var calculator = Desmos.GraphingCalculator(elt);
+  calculator.setExpression({ id: 'ax2+bx', latex: 'f(x)= ax^2+bx', readonly: true});
+calculator.setExpression({
+  id: 'slider1',
+  latex:'a=1',
+  sliderBounds: { min: -10, max: 10, step: 0.1 },
+});
+calculator.setExpression({
+  id: 'slider2',
+  latex:'b=1',
+  sliderBounds: { min: -10, max: 10, step: 0.1 },
+});
+calculator.setExpression({
+  type: 'table',
+  columns: [
+    {
+      latex: 'x',
+      values: ['-4', '-3', '-2', '-1', '-0.28', '0', '0.28', '1', '2', '3', '4']
+    },
+    {
+      latex: 'f(x)',
+      dragMode: Desmos.DragModes.XY
+    },
+  ]
+});
+</script><br /><br />
+
+<b>Koeficient <i>c</i> je číslo, ktoré sa pripočíta k výsledkom</b>. Ku každému sa pripočíta rovnaké číslo, čiže všetky budú rovnako väčšie alebo rovnako menšie. To <b>posúva graf hore dole po <i>y</i> osi</b>.<br /><br />
+
+<div id="calculator2" style="height: 480px;"></div>
+<script>
+  var elt = document.getElementById('calculator2');
+  var calculator = Desmos.GraphingCalculator(elt);
+  calculator.setExpression({ id: 'ax2+bx+c', latex: 'f(x)= ax^2+bx+c', readonly: true});
+calculator.setExpression({
+  id: 'slider1',
+  latex:'a=1',
+  sliderBounds: { min: -10, max: 10, step: 0.1 },
+});
+calculator.setExpression({
+  id: 'slider2',
+  latex:'b=1',
+  sliderBounds: { min: -10, max: 10, step: 0.1 },
+});
+calculator.setExpression({
+  id: 'slider3',
+  latex:'c=1',
+  sliderBounds: { min: -10, max: 10, step: 0.1 },
+});
+calculator.setExpression({
+  type: 'table',
+  columns: [
+    {
+      latex: 'x',
+      values: ['-4', '-3', '-2', '-1', '-0.28', '0', '0.28', '1', '2', '3', '4']
+    },
+    {
+      latex: 'f(x)',
+      dragMode: Desmos.DragModes.XY
+    },
+  ]
+});
+</script><br /><br />
+
+<div class="homework">
+  <h3>&#x1f989; ÚLOHA</h3>
+  Bez toho, aby si niečo počítal, nakresli grafy pre tieto funkcie. Mimochodom, na tých tvojich obrázkoch majú byť iba osi a parabola. Ide o to, či zhruba trafíš, ako má byť parabola vysoko, ako má byť otočená, či má byť strmá alebo čapatá a podobe.
+  
+  <ol>
+	  <li>$f(x) = x^2$</li>
+	  <li>$f(x) = 10x^2$</li>
+	  <li>$f(x) = 100x^2$</li>
+	  <li>$f(x) = -10x^2$</li>
+	  <li>$f(x) = x^2 + 20$</li>
+	  <li>$f(x) = x^2 - 5$</li>
+	  <li>$f(x) = x^2 + 3x$</li>
+	  <li>$f(x) = x^2 - 3x$</li>
+	  <li>$f(x) = 5x^2 + 5x + 5$</li>
+	  <li>$f(x) = -10x^2 - 10x - 10$</li>
+  </ol>
+</div>
+
+<h2>Kvadratická funkcia na príklade - rovnomerne zrýchlený priamočiary pohyb</h2>
+<b>Žijeme vo svete, kde veci menia svoju rýchlosť.</b> Keby to tak nebolo, autobus by nikdy nemohol zastaviť na zastávke, pretože by nemohol spomaliť. Hokejista  by nikdy nemohol dať gól, pretože ak by trafil puk, nemohol by ho zrýchliť na poriadnu strelu. Ani ty by si si nikdy nemohol sadnúť k raňajkám a musel by si ísť večne rovno dopredu.<br /><br />
+
+<b>Aj napriek tomu, že veci menia svoju rýchlosť, chceme vedieť vyrátať vzdialenosť akú prešli za určitý čas.</b> Takým jednoduchým príkladom môže byť aj auto, ktoré zrýchľuje alebo spomaľuje.<br /><br />
+
+<b>Zrýchlenie je zmena rýchlosti za čas</b>. Nemusí to byť iba zrýchlenie akože <b>zrýchlenie</b>, ale je to aj <b>spomaľovanie</b>, že niečo brzdí. Tu sa budeme baviť o <b>rovnomerne zrýchlenom priamočiarom pohybe</b>. To znamená, že <b>zrýchľovať sa bude konštantne</b> (každú časovú jednotku sa zmení rýchlosť rovnako).<br /><br />
+
+Poďme sa pozrieť na to, ako zrýchlenie funguje. Rýchlosť hovorí o tom, koľko nejakej dĺžky prejdeme za jednu časovú jednotku. Napríklad, koľko kilometrov prejdeme za jednu hodinu. Počas tejto hodiny sa <b>môže meniť aj samotná rýchlosť. Vtedy hovoríme o zrýchlení.</b><br /><br />
+
+Na začiatok budeme mať úplne najjednoduchší pohyb. <b>Za jednu hodinu prejde auto jeden kilometer</b>. Hádaj koľko kilometrov prejde auto za 5 hodín? Áno, je to 5, uhádol si, si šikovný.<br /><br />
+
+Matematickým jazykom zapísané:
+
+$$s = 1t$$
+
+<i>UPOZORNENIE: nasledujú obrázky s modrým autom. Keď budeš na ne klikať/ťukať, auto sa bude hýbať.</i>
+
+<figure>
+  <img loading="lazy" id="v1kmhSlideShow" src="assets/images/quadraticFunction/v1kmh/00.png" onclick="changeV1kmh()" alt="Obrázky s autom, ktoré ide rýchlosťou 1km/h">
+  <figcaption>Obr. 10.: Pri rýchlosti 1km/h prejde auto každú hodinu jeden kilometer.</figcaption>
+</figure>
+
+<script>
+
+var v1kmhIterator = 0;
+
+function changeV1kmh(){
+
+const v1kmhImages = ["assets/images/quadraticFunction/v1kmh/00.png",
+					"assets/images/quadraticFunction/v1kmh/01.png",
+					"assets/images/quadraticFunction/v1kmh/02.png",
+					"assets/images/quadraticFunction/v1kmh/03.png",
+					"assets/images/quadraticFunction/v1kmh/04.png",
+					"assets/images/quadraticFunction/v1kmh/05.png"]
+
+v1kmhIterator = v1kmhIterator+1
+if (v1kmhIterator >= 6)
+{
+	v1kmhIterator = 0
+}
+
+v1kmhSlideShow.src=v1kmhImages[v1kmhIterator]
+
+}
+
+</script>
+
+<b>Rýchlosť môže byť samozrejme rôzna.</b> Za jednu hodinu nemusí auto prejsť iba jeden kilometer, ale napríklad aj štyri. Ak treba zistiť, <b>koľko kilometrov prešlo auto za <i>x</i> hodín</b>, tak dáme iba <b>rýchlosť krát počet hodín</b>.<br /><br />
+ 
+Matematickou rečou zapísané:
+
+$$s = vt$$
+
+<figure>
+  <img loading="lazy" id="v4kmhSlideShow" src="assets/images/quadraticFunction/v4kmh/00.png" onclick="changeV4kmh()" alt="Obrázky s autom, ktoré ide 4km/h">
+  <figcaption>Obr. 11.: Za prvú hodinu prešlo auto 4 kilometre. Za dve hodiny už 8 a za tri prešlo auto 12 kilometrov.</figcaption>
+</figure>
+
+<script>
+
+var v4kmhIterator = 0;
+
+function changeV4kmh(){
+
+const v4kmhImages = ["assets/images/quadraticFunction/v4kmh/00.png",
+					"assets/images/quadraticFunction/v4kmh/01.png",
+					"assets/images/quadraticFunction/v4kmh/02.png",
+					"assets/images/quadraticFunction/v4kmh/03.png",
+					"assets/images/quadraticFunction/v4kmh/04.png",
+					"assets/images/quadraticFunction/v4kmh/05.png"]
+
+v4kmhIterator = v4kmhIterator+1
+if (v4kmhIterator >= 6)
+{
+	v4kmhIterator = 0
+}
+
+v4kmhSlideShow.src=v4kmhImages[v4kmhIterator]
+
+}
+
+</script>
+
+Ako zistíme prejdenú dráhu pri konštantnom zrýchlení? Najprv si povieme, čo je to konštantné zrýchlenie. <b>Konštantné zrýchlenie je to, že na začiatku hodiny pôjde auto nejakou rýchlosťou, počas nej bude konštantne zrýchľovať a na jej konci už pôjde inou rýchlosťou.</b> Zrýchlenie sa vo fyzike označuje <b><i>a</i></b>. Ako jednotku zrýchlenia budeme používať $km/h^2$, pretože je to zmena rýchlosti (kilometre za hodinu) za hodinu.<br /><br />
+
+Napríklad na začiatku hodiny auto stojí, počas nej zrýchli o $2km/h$, takže na konci hodiny pôjde auto rýchlosťou $2km/h$.<br /><br />
+
+Na vypočítanie dráhy treba čas a rýchlosť. Čas, to si dosadíme a <b>rýchlosť vypočítame pomocou zrýchlenia</b>. Keď zrýchľujeme napr. $2km/h^2$, tak prvú hodinu máme rýchlosť $2km/h$, druhú už $4km/h$ a tretiu $6km/h$. Vo všeobecnosti sa to zapíše ako $v = at$.<br /><br />
+
+Vypočítať dráhu pri zrýchlení nie je také ľahké, ako sme to robili doteraz. Vieme, že dráha sa počíta $s = vt$, ale čo je v tomto prípade <i>v</i>? Je lákavé tam dosadiť $at$. Treba si uvedomiť, že rýchlosť sa menila postupne a kvôli zrýchleniu nebola rovnaká počas celého času <i>t</i>. Potrebujeme vypočítať priemernú rýchlosť, ktorou sa objekt počas toho času pohyboval.<br /><br />
+
+<b>Ak sa vrátime k autu, ktoré má zrýchlenie $2km/h^2$, aká bude jeho priemerná rýchlosť počas prvej hodiny?</b> No $2km/h$ to asi nebude, lebo na začiatku auto stálo. Keďže <b>auto zrýchľovalo konštantne</b> (stále rovnako), bude to logicky <b>priemerná rýchlosť vyrátaná z rýchlosti na začiatku a na konci</b>. Na začiatku je rýchlosť 0 a na konci 2. Priemer z tohto je $\frac{0+2}{2}$. Tá nula tam byť nemusí, čiže je to iba $\frac{2}{2} = 1$. Všeobecný zápis vyzerá takto (v našom prípade sa $t = 1$):
+
+$$\frac{at}{2}$$
+
+<b>A aká je prejdená dráha?</b> Stačí už iba dosadiť priemernú rýchlosť $\frac{at}{2}$ do vzorca $s = vt$. Dostávame teda $s = \frac{at}{2}t$, po upravení na chochmesný tvar: 
+
+$$s = \frac{1}{2}at^2$$
+
+V prípade nášho auta, ktoré sa pohybovalo jednu hodinu a počas tejto hodiny malo konštantné zrýchlenie $2km/h^2$, a teda priemernú rýchlosť $1km/h$ je to <b>1 km</b>.<br /><br />
+
+<b>Pri zrýchlení sa prejdená dráha mení za ten čas akoby dva razy zároveň. Lebo ju mení rýchlosť a zrýchlenie mení tú rýchlosť</b>, ktorá mení dráhu.
+
+<figure>
+  <img loading="lazy" id="a2kmhSlideShow" src="assets/images/quadraticFunction/a2kmh/00.png" onclick="changeA2kmh()" alt="Obrázky s autom, ktoré ma zrýchlenie 2 km/h na mínus druhú">
+  <figcaption>Obr. 12.: Na začiatku prvej hodiny má rýchlosť 0 $km/h$, na jej konci 2 $km/h$, priemer z tohto je 1, čiže auto prešlo 1km. Na začiatku druhej hodiny už má rýchlosť 2$km/h$ a na jej konci má auto rýchlosť o 2 $km/h$ väčšiu, teda ide rýchlosťou 4 $km/h$. Dráhu, ktorú prešlo auto počas tejto druhej hodiny vyrátame ako priemer rychlostí na jej začiatku a konci, teda $\frac{2+4}{2} = 3$. Počas druhej hodiny prešlo auto 3 km a spolu, počas oboch hodín prešlo auto 4km.<br /><br />
+
+Na začiatku tretej hodiny bude mať auto rýchlosť 4 $km/h$, počas nej zrýchli o 2 $km/h$, teda na jej konci bude mať rýchlosť 6 $km/h$. Dráhu, ktorú auto prešlo počas tretej hodiny znovu vyrátame ako priemer rychlostí, teda $\frac{4+6}{2} = 5 km$. Za tri hodiny auto spolu prešlo $1+3+5 = 9$ hodín. Skús si porozmýšľať nad tým, koľko kilometrov prejde auto po štvrtej a potom aj po piatej hodine.
+</figcaption>
+</figure>
+
+<script>
+
+var a2kmhIterator = 0;
+
+function changeA2kmh(){
+
+const a2kmhImages = ["assets/images/quadraticFunction/a2kmh/00.png",
+					"assets/images/quadraticFunction/a2kmh/01.png",
+					"assets/images/quadraticFunction/a2kmh/02.png",
+					"assets/images/quadraticFunction/a2kmh/03.png",
+					"assets/images/quadraticFunction/a2kmh/04.png",
+					"assets/images/quadraticFunction/a2kmh/05.png"]
+
+a2kmhIterator = a2kmhIterator+1
+if (a2kmhIterator >= 6)
+{
+	a2kmhIterator = 0
+}
+
+a2kmhSlideShow.src=a2kmhImages[a2kmhIterator]
+
+}
+
+</script>
+
+Zrýchlenie sa môže samozrejme meniť, preto to <b><i>a</i></b> môže byť hocijaké, napríklad aj $3km/h^2$.
+
+<figure>
+  <img loading="lazy" id="a3kmhSlideShow" src="assets/images/quadraticFunction/a3kmh/00.png" onclick="changeA3kmh()" alt="Obrázky s autom, ktoré má zrýchlenie 3km/h na mínus druhú.">
+  <figcaption>Obr. 13.: Veci môžu mať hocijaké zrýchlenie, preto vo vzorci je $t^2$ prenásobené nejakým <i>a</i>. Dokonca zrýchlenie môže byť aj záporné. To sa prejavuje napríklad vtedy, keď auto brzdí.</figcaption>
+</figure>
+
+<script>
+
+var a3kmhIterator = 0;
+
+function changeA3kmh(){
+
+const a3kmhImages = ["assets/images/quadraticFunction/a3kmh/00.png",
+					"assets/images/quadraticFunction/a3kmh/01.png",
+					"assets/images/quadraticFunction/a3kmh/02.png",
+					"assets/images/quadraticFunction/a3kmh/03.png",
+					"assets/images/quadraticFunction/a3kmh/04.png",
+					"assets/images/quadraticFunction/a3kmh/05.png"]
+
+a3kmhIterator = a3kmhIterator+1
+if (a3kmhIterator >= 6)
+{
+	a3kmhIterator = 0
+}
+
+a3kmhSlideShow.src=a3kmhImages[a3kmhIterator]
+
+}
+
+</script>
+
+Môže sa stať, že <b>keď auto začne zrýchľovať, už nejakú počiatočnú rýchlosť má</b>. Napríklad keď za obcou zrýchľuje z 50 $km/h$ na 90 $km/h$. Počet kilometrov, ktoré prešlo od konca obce sa vyráta tak, že sa <b>zoberie tá počiatočná rýchlosť a zrýchlenie sa bude pripočítavať k nej</b>. Matematicky zapísané:
+
+$$s = \frac{1}{2}at^2 + vt$$
+
+<figure>
+  <img loading="lazy" id="a3kmhv4kmhSlideShow" src="assets/images/quadraticFunction/a3kmhv4kmh/00.png" onclick="changeA3kmhV4kmh()" alt="Obrázky s autom, ktoré má zrýchlenie 3 km/h na mínus druhú a počiatočnú rýchlosť 4 km/h.">
+  <figcaption>Obr. 14.: V momente začatia zrýchľovania, už auto má nejakú počiatočnú rýchlosť. Prejdená dráha sa teraz vyráta z počiatočnej rýchlosti a zrýchlenia.<br /><br /> 
+  
+  Napríklad na začiatku prvej hodiny má auto rýchlosť 4 $km/h$. Vďaka nej prejde tú hodinu 4 km. Keďže má ešte aj zrýchlenie 3 $km/h^2$, tak vďaka nemu prejde o 1,5 km viac, pretože na začiatku mal vďaka zrýchleniu rýchlosť väčšiu o 0 $km/h$ a na konci išiel o 3 $km/h$ viac, čo je $\frac{0+3}{2} = 1,5$. Spolu za tú prvú hodinu prejde $1,5km + 4km = 5,5km$.<br /><br /> 
+  
+  Na začiatku druhej hodiny už ide 7 $km/h$ a stále zrýchľuje o 3 $km/h$, až na jej konci bude mať rýchlosť 10 $km/h$. Za druhú hodinu prejde $\frac{7+10}{2} = 8,5$. Za prvé dve hodiny auto prešlo $8,5km + 5,5km = 14km$.<br /><br />
+  
+  <b>A takto to bude pokračovať ďalej. Každú hodinu prejde auto o 4km viac, akoby prešlo, keby na začiatku stálo a nemalo žiadnu počiatočnú rýchlosť.</b>
+  </figcaption>
+</figure>
+
+<script>
+
+var a3kmhv4kmhIterator = 0;
+
+function changeA3kmhV4kmh(){
+
+const a3kmhv4kmhImages = ["assets/images/quadraticFunction/a3kmhv4kmh/00.png",
+					"assets/images/quadraticFunction/a3kmhv4kmh/01.png",
+					"assets/images/quadraticFunction/a3kmhv4kmh/02.png",
+					"assets/images/quadraticFunction/a3kmhv4kmh/03.png",
+					"assets/images/quadraticFunction/a3kmhv4kmh/04.png",
+					"assets/images/quadraticFunction/a3kmhv4kmh/05.png"]
+
+a3kmhv4kmhIterator = a3kmhv4kmhIterator+1
+if (a3kmhv4kmhIterator >= 6)
+{
+	a3kmhv4kmhIterator = 0
+}
+
+a3kmhv4kmhSlideShow.src=a3kmhv4kmhImages[a3kmhv4kmhIterator]
+
+}
+
+</script>
+
+V tomto okamihu máme auto, ktoré má počiatočnú rýchlosť a zrýchlenie. Ale čo ak by sme chceli vyrátať, <b>koľko km prešlo auto za svoj život? No spraví sa to tak, že sa k počtu kilometrov, ktoré sa dajú vyrátať pomocou rovnice $s = \frac{1}{2}at^2 + vt$ pripočíta ešte nejaká počiatočná dráha, ktorá už bola prejdená.</b> V našom prípade to bude počet prejdených kilometrov, čo malo auto na tachometri, keď začalo jazdiť. To bude vždy konštanta, pretože či auto ide hodinu alebo sto hodín, počet prejdených kilometrov do začiatku jazdy bude vždy rovnaký. Matematicky zapísané:
+
+$$s = \frac{1}{2}at^2 + vt + s_0$$
+
+Ako vidíš, dostali sme sa k úplne nádhernej kvadratickej funkcii. Keď poznáme zrýchlenie, rýchlosť a počiatočnú dráhu, stačí tam už len dosadiť čas a funkcia nám povie, koľko kilometrov prešlo auto za ten čas.
+
+<h2>Zdroje</h2>
+<div class='literature'>
+[1] HARPER, D. 2024. Online Etymology Dictionary. https://www.etymonline.com/search?q=quadratic<br /><br />
+
+[2] Pflugerville. 2017. The History Behind The Quadratic Formula. https://www.mathnasium.com/blog/the-history-behind-the-quadratic-formula
+</div>
+
+</div>

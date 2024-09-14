@@ -104,6 +104,11 @@ h3 {
 	height: auto;
 }
 
+.homework{
+	background-color: #dce9f5;
+	padding: 2%;
+}
+
 .literature {
 	overflow-wrap: break-word;
 }

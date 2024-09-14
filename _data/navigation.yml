@@ -21,6 +21,8 @@
   submenu:
     - page: Lineárna funkcia
       url: /linearna_funkcia
+    - page: Kvadratická funkcia
+      url: /kvadraticka_funkcia
     - page: Funkcie a ich vlastnosti
       url: /funkcie_a_ich_vlastnosti
 
