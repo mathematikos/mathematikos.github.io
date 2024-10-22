@@ -15,7 +15,6 @@
     - page: Písmená
       url: /pismena
 
-
 - title: Funkcie
   id: funkcie
   submenu:
@@ -23,6 +22,8 @@
       url: /linearna_funkcia
     - page: Kvadratická funkcia
       url: /kvadraticka_funkcia
+    - page: Goniometrické funkcie
+      url: /goniometricke_funkcie_linky
     - page: Funkcie a ich vlastnosti
       url: /funkcie_a_ich_vlastnosti
 
