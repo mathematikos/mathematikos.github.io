@@ -1,0 +1,153 @@
+---
+title: Lineárna funkcia
+description: "Lineárna funkcia opisuje vzťah, kedy sa nejaká vec mení v čase stále rovnako. Napríklad aj šetrenie peňazí, keď si každý mesiac odložíš rovnakú sumu, opisuje lineárna funkcia."
+keywords: "lineárna funkcia"
+permalink: linearna_funkcia
+mathjax: true
+---
+
+<script src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+
+<div class="content">
+
+<h1><a id="fun_linearFunction">Lineárna funkcia</a></h1>
+<b>Funkcie boli vymyslené na to, aby opisovali ako sa nejaké veci menia na základe iných</b>. Napríklad ako sa dávka lieku mení na základe váhy pacienta. Alebo ako veľkosť úrody závisí od slnka, dažďa a živín v pôde. Príkladom funkcie je aj to, ako veľkosť povrchu gule závisí od jej polomeru.<br /><br />
+
+Vzťah, ktorý opisuje <b>lineárna funkcia</b> patrí medzi najzrozumiteľnejšie pre nás ľudí. <b>Hovorí o veciach, ktoré sa menia stále rovnako</b>. Bežne sa vyskytuje vo svete okolo nás. Príkladom môže byť, ako sa prejdená dráha mení na základe rýchlosti, či ako sa mení počet zákuskov od počtu hostí alebo suma na účte na základe toho, koľko si tam človek odkladá.<br /><br />
+
+Zmena medzi jednotlivými "krokmi" je vždy rovnaká. Napríklad ak auto prejde za 1 hodinu 60 kilometrov, tak aj za druhú hodinu prejde 60 kilometrov. 60 kilometrov prejde aj za tretiu, štvrtú, piatu hodinu. Skratka vždy prejde rovnako. Podobne, <b>ak napríklad na svadbe sa ráta na jedného hosťa 5 zákuskov, tak na dvoch hostí sa už ráta 10, na troch sa ráta 15, na 100 hostí sa ráta 500 zákuskov</b>.
+
+<h2>História lineárnej funkcie</h2>
+To čo sa vyvinulo do dnešnej lineárnej funkcie má korene dávno, pradávno. Ešte v starovekom Egypte riešili problémy, že koľko jačmeňa majú nachystať na výrobu <i>x</i> sudov piva, keď na jeden ide toľko a toľko kilogramov. Alebo <b>koľko chlebov treba napiecť chlapom na stavbe, keď ich je tam <i>x</i> a každý z nich zje napr. 10 za deň</b> (Egypťania mali menšie chleby ako my. Teda možno &#128512;).<br /><br />
+
+Egypťania mali spôsob, ako vyriešiť problém, ktorý my dnes zapíšeme lineárnou rovnicou o jednej neznámej. Babylončania to updatli na dve rovnice o dvoch neznámych. Gréci spravili rovno upgrade a poskytli geometrické riešenie, ktoré zvládlo vyriešiť tieto problémy s ľubovoľným počtom neznámych.<br /><br />
+
+Do svetového úsilia sa zapojili aj India, Čína či Araby. No významnejší posun nastal až od 17. stor., kedy sa vymyslela analytická geometria, na jej základe spravili v 18. stor. kalkulus a nakoniec to v 19. stor. sformalizovali. <b>Dnes vďaka niekoľko tisícročnému  úsiliu celého ľudstva, vieme zapísať lineárne problémy takýmto zápisom</b>:
+
+$$ f(x) = ax+b $$
+
+Viac detailov o histórii funkcií nájdeš <a href="historia_funkcii#fun_historyOfFunctions" target="_blank">tu</a>.<br /><br />
+
+<div class="blueArea">
+  <h3>&#x1f989; ÚLOHA</h3>
+  Skús okolo seba pohľadať aspoň 5 lineárnych problémov.
+</div>
+
+<h2>Lineárna funkcia</h2>
+Problémy, ktoré dnes voláme <b>lineárne</b>, existovali už pradávno. <b>Opisujú veci, ktoré sa menia stále rovnako</b> a v svete okolo nás sa vyskytujú viac než bežne. Bolo ich veľmi veľa a ľuďom sa nechcelo riešiť každý problém zvlášť. Potrebovali vymyslieť nejaký nástroj, ktorý ich bude schopný opísať všetky naraz. Riešením tejto situácie pomaly dospeli k lineárnej funkcii tak, ako ju poznáme dnes:
+
+$$ f(x) = ax+b $$
+
+Pri vysvetľovaní jednotlivých členov funkcie si pomôžeme <b>príkladom šetrenia peňazí. Predstav si, že máš účet, na ktorý každý mesiac odkladáš peniaze. Vďaka lineárnej funkcii si vieš vyrátať, koľko peňazí máš/budeš mať na účte v nejaký daný mesiac</b> (aj bez toho, aby si vedel, že to čo robíš, sa nazýva lineárna funkcia).<br /><br />
+
+<b>f(x)</b> - závislá premenná. Je to výsledok funkcie. V našom prípade je to našetrená suma. Táto suma závisí na tom, koľko mesiacov si budeš šetriť.<br /><br />
+
+<b>x</b> - nezávislá premenná. Za ňu sa dosádzajú čísla. V našom prípade sa sem dosadí počet mesiacov šetrenia. To, koľko mesiacov šetríš nezávisí na ničom. Sporiť môžeš ľubovoľný počet mesiacov.<br /><br />
+
+<b>a,b</b> - koeficienty lineárnej funkcie. Sú známe. Sú to tie čísla, ktoré vidíš, keď máš zadanú nejakú lineárnu funkciu. K nim sa dostaneme o chvíľu.<br /><br />
+
+Lineárna funkcia opisuje veci, ktoré sa menia stále rovnako. Tá zmena sa nijak nemení.
+
+
+<figure>
+  <img src="assets/images/fun_linChange.png" loading="lazy" alt="Zmena medzi jednotlivými krokmi funkcie je stále rovnaká. Napríklad pre funkciu f(x) = 3x+2 je zmena stále 2.">
+  <figcaption>Obr. 1.: Posolstvom tohto obrázka je, aby si si všimol, že zmena je pri lineárnej funkcii stále rovnaká. Tu konkrétne je zmena medzi jednotlivými "krokmi" stále 3. V každom ďalšom kroku pribudnú na veži tri kocky, ani o jednu viac, ani o jednu menej.</figcaption>
+</figure>
+
+<h2>Koeficienty lineárnej funkcie</h2>
+
+Koeficienty <i>a</i> a <i>b</i> opisujú veľkosť zmeny a počiatočný stav veličiny.<br /><br />
+
+<b>Ako vyrátaš, koľko peňazí už máš našetrených? No dáš počet mesiacov krát suma, ktorú šetríš</b>. Suma je stále rovnaká, to čo sa mení je počet mesiacov. Lebo chceš vedieť, koľko budeš mať našetrené napríklad po mesiaci, 10-tich mesiacoch, po 5 rokoch. Ak šetríš 12 mesiacov po 50 eur, tak na účte bude 50*12=600 eur. Ak šetríš 24 mesiacov, tak suma na účte bude 50*24=1 200 eur.  No môžeš šetriť aj viac alebo menej. Môžeš šetriť napríklad iba 2 eurá alebo 1000 eur. <b>Vo všeobecnosti túto veľkosť zmeny označujeme písmenkom <i>a</i></b>.
+
+$$ f(x) = ax $$
+
+V našom prípade sa teda pod <i>a</i> bude skrývať suma, ktorú si každý mesiac odložíš. Čím viac si budeš odkladať, tým rýchlejšie bude suma na účte rásť. No nemusíš si iba odkladať. Môžeš si z účtu vyberať. Pôjdeš síce do dlhu, ale ak sa ti páči bývanie pod šírim nebom (resp. pod mostom), tak to nevadí. Týmto sme chceli povedať, že <b>veličina nemusí iba rásť, ale môže aj klesať</b>. V takom prípade sa bude pod <i>a</i> skrývať záporné číslo.
+
+<figure>
+  <img src="assets/images/fun_linACoef.png" loading="lazy" alt="Vežičky z kociek, na ktorých je vysvetlený koeficient a.">
+  <figcaption>Obr. 2.: Koeficient <i>a</i> hovorí o veľkosti zmeny. Keď napríklad pridávame po päť kociek, tak vežička rastie rýchlejšie, ako keď sa pridávajú dve kocky. Keď je <i>a</i> záporné, tak veličina klesá.</figcaption>
+</figure>
+
+Druhým koeficientom je <b>písmeno <i>b</i>. Reprezentuje akýsi počiatočný stav veličiny</b>. Predstav si, že šetríš, ale nezačínaš na nule. Rodičia ti dajú do začiatku nejakú tú stovku. Vtedy svoj stav účtu zistíš ako počet mesiacov šetrenia krát výška odkladanej sumy plus vklad od rodičov. Či si budeš výšku konta zisťovať pre mesiac šetrenia, pre 5 mesiacov alebo pre 50 mesiacov, ten vklad od rodičov je stále rovnaký a teda ho iba pripočítaš k zistenej sume. Vo všeobecnosti sa vo funkcii prirátava nejaké číslo, skryté za písmenko <i>b</i>:
+
+$$ f(x) = ax+b $$
+
+Samozrejme <b>začínať sa nemusí iba v pluse</b>. Ak ti rodičia nič nedajú a ty navyše rozbiješ okno na školskej jedálni, tak si nielen v kaši ale <b>aj v mínuse</b>, pretože okno musíš zaplatiť. Vtedy musíš sumu za okno odrátať od našetrenej sumy a teda pod písmenom <i>b</i> bude záporné číslo.
+
+<figure>
+  <img src="assets/images/fun_linBCoef.png" loading="lazy" alt="Kocky, na ktorých je vysvetlený koeficient b.">
+  <figcaption>Obr. 3.: B-čko je stále rovnaké, nemení sa. K výsledku funkcie sa vždy priráta/odráta rovnaká hodnota. Aj na kockách vidieť, že v každom kroku funkcie je do vežičky pridaný/odobraný rovnaký počet kociek (sú to tie žlté kocky).</figcaption>
+</figure>
+
+<h2>Graf lineárnej funkcie</h2>
+
+Účinok koeficientov na funkciu si vysvetlíme tu.<br /><br />
+
+Koeficient <i>a</i> hovorí o tom, ako veľká je zmena. Teda ako veľa peňazí odkladáme. <b>Čím väčšie bude <i>a</i>, tým strmší bude graf, pretože susedné hodnoty sa budú od seba viac líšiť. Keď je zmena záporná, tak graf bude klesať, pretože výsledky funkcie sa budú postupne zmenšovať</b>. Aj tu platí, že čím sa bude viac uberať, tým graf pôjde strmšie nadol (lebo susedné hodnoty sa budú líšiť viac a viac).
+
+<figure>
+  <img src="assets/images/fun_linACoefGraph.png" loading="lazy" alt="Graf pre rôzne hodnoty koeficientu a.">
+  <figcaption>Obr. 4.: Keď si odkladáš po päť eur, tak za mesiac máš 5 eur, za dva mesiace 10, za tri mesiace 15. Našetrená suma bude rásť oveľa rýchlejšie, ako keď si odkladáš po eure. Vtedy budeš mať po mesiaci euro, pod dvoch mesiacoch dve eurá a tak ďalej.</figcaption>
+</figure>
+
+<b>Koeficient <i>b</i> posúva graf hore a dole po <i>y</i> osi</b>. Reprezentuje nejaký počiatočný stav veličiny, ktorý sa nemení. Napríklad Jožko, Terezka a Ferko si chcú šetriť, ale začínajú v úplne iných podmienkach. Jožko 20 eur našiel, Ferko 20 eur stratil a Terezka nič nenašla a ani nič nestratila.<br /><br />
+
+Keby chceme pre nich nakresliť graf, tak Jožkov bude posunutý nahor, lebo vždy sa mu k našetrenej sume pripočíta 20 eur. Ferkov bude posunutý nadol, lebo on bude mať vždy o 20 eur menej. Terezkin graf nebude posunutý nijak, lebo k jej našetrenej sume sa nič nepričíta ani neodčíta.<br /><br />
+
+<figure>
+  <img src="assets/images/fun_linBCoefGraph.png" loading="lazy" alt="Graf pre rôzne hodnoty koeficientu b.">
+  <figcaption>Obr. 5.: Každý z kamarátov začína šetriť na inej sume. Ich stav účtu bude vždy o túto hodnotu väčší alebo menší. No a to sa samozrejme prejaví aj na grafe.</figcaption>
+</figure>
+
+<div class="blueArea">
+  <h3>&#x1f989; ÚLOHA</h3>
+Predstav si, že si môžeš splniť svoj detský sen a ideš si otvoriť cukráreň. Je s tým však veľmi veľa práce. Aby si vedel ako veľa, vybrali sme pre teba zopár skoro reálnych situácií, ktoré treba vyriešiť. Každú z nich skús opísať lineárnou funkciou. Vieme, že z celého srdca túžiš po tom, aby si si mohol tieto funkcie vyskúšať, a tak sme pod úlohou spravili graf kde máš na to priestor. Začíname:
+  
+  <ol>
+  <li>Po prastarom dedkovi si zdedil malinkú vilku, ktorú plánuješ prerobiť na cukráreň. Na účte máš síce nulu, ale každý mesiac minieš na jej opravu 1 500&#x20AC;. Koľko peňazí "budeš mať" na účte za mesiac? Za 5 mesiacov? Za dva roky?<br /><br /></li>
+  <li>Na opravu si minul 13 000&#x20AC;, čiže tvoje konto je v mínuse. Ešte k tomu každý mesiac splácaš pôžičku 120&#x20AC; za nádherné zariadenie tvojej cukrárne. Koľko peňazí "budeš mať" za miesiac? Za tri mesiace? Po pol roku?<br /><br /></li>
+  <li>Ideš kupovať krásne zlaté lyžičky na zákusky. Na každý stôl rátaš štyri lyžičky. Koľko ich musíš kúpiť, ak máš 5 stolov? 14 stolov? 38 stolov?<br /><br /></li>
+  <li>Zháňaš zamestnancov. Každý deň ti príde zhruba jeden životopis. Koľko uchádzačov ti napíše za týždeň? Za dva týždne? Za 17 dní?<br /><br /></li>
+  <li>Kupuješ suroviny. Cukrár minie do zákuskov za jeden deň asi 2,5 kg múky. Koľko múky musíš kúpiť, aby vydržala 5 dní? Mesiac (30 dní)? Pol roka (182 dní) ?<br /><br /></li>
+  <li>Konečne začína cukráreň zarábať. Po tom všetkom si v dlhu asi 52 000&#x20AC;. Každý mesiac zarobíš 3 100&#x20AC;. Koľko peňazí máš na účte po troch mesiacoch? Po roku? Po piatich rokoch?<br /><br /></li>
+  <li>Zarobil si si prvých 100 000&#x20AC; a ideš na zaslúženú dovolenku. Na cestu okolo sveta. Každý mesiac na nej minieš 2 500&#x20AC;. Koľko peňazí budeš mať na účte po prvom mesiaci? Po deviatich mesiacoch? Po 21 mesiacoch?</li>
+  </ol>
+</div>
+
+<div id="calculator" style="height: 480px;"></div>
+<script>
+  var elt = document.getElementById('calculator');
+  var calculator = Desmos.GraphingCalculator(elt);
+  calculator.setExpression({ id: 'ax+b', latex: 'f(x)= ax+b', readonly: true});
+calculator.setExpression({
+  id: 'slider1',
+  latex:'a=1',
+  sliderBounds: { min: -10, max: 10, step: 0.1 },
+});
+calculator.setExpression({
+  id: 'slider2',
+  latex:'b=1',
+  sliderBounds: { min: -10, max: 10, step: 0.1 },
+});
+calculator.setExpression({
+  type: 'table',
+  columns: [
+    {
+      latex: 'x',
+      values: ['-4', '-3', '-2', '-1', '-0.28', '0', '0.28', '1', '2', '3', '4']
+    },
+    {
+      latex: 'f(x)',
+      dragMode: Desmos.DragModes.XY
+    },
+  ]
+});
+</script><br /><br />
+
+
+
+Keby ťa náhodou lineárna funkcia strašne moc bavila, tak tu prikladáme ešte link na náš starší článok: <a href="linearna_funkcia_stara" target="blank">Lineárna funkcia</a>
+
+
+</div>

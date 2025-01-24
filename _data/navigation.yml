@@ -18,14 +18,16 @@
 - title: Funkcie
   id: funkcie
   submenu:
+    - page: História funkcií
+      url: /historia_funkcii
+    - page: Funkcie a ich vlastnosti
+      url: /funkcie_a_ich_vlastnosti
     - page: Lineárna funkcia
       url: /linearna_funkcia
     - page: Kvadratická funkcia
       url: /kvadraticka_funkcia
     - page: Goniometrické funkcie
       url: /goniometricke_funkcie_linky
-    - page: Funkcie a ich vlastnosti
-      url: /funkcie_a_ich_vlastnosti
 
 - title: Goniometria
   id: goniometry
